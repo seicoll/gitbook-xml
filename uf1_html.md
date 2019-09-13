@@ -44,7 +44,7 @@ Aquí hi trobaràs una llista d'etiquetes vàlides:
 
 ### Parts d'un document HTML
 
-Un document HTML ha d’estar delimitat per l’etiqueta &lt;HTML&gt; i &lt;/HTML&gt;.
+Un document HTML ha d'estar delimitat per l'etiqueta `<HTML>` i `</HTML>`.
 
 A dins podem distingir-hi dues parts:
 
@@ -54,7 +54,7 @@ A dins podem distingir-hi dues parts:
 
 ## Format dels paràgrafs
 
-Per definir els **paràgrafs** utilitzem l'etiqueta `*&lt;p&gt;*`, la qual introdueix una línia en blanc després del paràgraf.
+Per definir els **paràgrafs** utilitzem l'etiqueta `<p>`, la qual introdueix una línia en blanc després del paràgraf.
 
 L'etiqueta &lt;br&gt; la qual no té tancament, ens serveix per fer un salt de línia, dins dels paràgrafs.
 
@@ -77,10 +77,8 @@ això **no és correcte**, a vegades el camí més ràpid no és el millor.
 
 Coneixeu el CSS?
 
-Mireu l'exemple de l'"abadia del crimen", per entendre que una cosa ben
-feta dura més, és més fàcil de mantenir i es pot millorar amb facilitat.
-Si comencem a fer codi brut, "espaguetti" o altres defectes, les pàgines
-esdevenen totalment **inmantenibles**.
+Mireu l'exemple de l'"abadia del crimen", per entendre que una cosa ben feta dura més, és més fàcil de mantenir i es pot millorar amb facilitat.
+Si comencem a fer codi brut, "espaguetti" o altres defectes, les pàgines esdevenen totalment **inmantenibles**.
 
 En voleu més exemples? (en MAJÚSCULES EL QUE HEM D'EVITAR)
 
@@ -94,7 +92,7 @@ Atributs pel tipus de lletra
 * SIZE: Defineix el tamany de la lletra.
 * COLOR: Defineix el color del text de la lletra.
 
-Es defineix dins de l’etiqueta &lt;BODY&gt;
+Es defineix dins de l'etiqueta &lt;BODY&gt;
 
 * ATRIBUTS
 * BGCOLOR: Especifica el color de fons de la pàgina
