@@ -24,8 +24,7 @@ Què és una pàgina web?
 Sintaxis HTML
 -------------
 
--   El llenguatge HTML base la seva sintaxis en un element de base que
-    anomenem etiqueta.
+El llenguatge HTML base la seva sintaxis en un element de base que anomenem **etiqueta**.
 
 Una obertura de forma general &lt;etiqueta&gt; Un tancament de tipus
 &lt;/etiqueta&gt;
@@ -39,7 +38,7 @@ Una obertura de forma general &lt;etiqueta&gt; Un tancament de tipus
 
 El resultat serà:
 
-![image](hola.png)
+![](/uf1_images/hola.png)
 
 Però tot i que funciona, no és el que busquem, falta especificar molt
 millor les parts de la pàgina i la sintaxi de les etiquetes.
