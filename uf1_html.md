@@ -129,16 +129,19 @@ Són els que hem vist en un ús incorrecte, però la major part d'etiquetes tene
 
 **Atributs per la internacionalització**
 
-Per pàgines multi-idiomes, s'indica de forma explícita amb qui idioma està fet una pàgina. Per exemple: *lang=ca*
+Per pàgines multi-idiomes, s'indica de forma explícita amb qui idioma està fet una pàgina. Per 
+
+exemple: `lang=ca`
 
 **Atributs d'events**
 
 S'utilitzen a les pàgines web dinàmiques, fetes amb *Javascript*, 
+
 exemples: onclick, ondblclick, onmousedown, onmouseup, ...
 
 **Atributs pels elements que poden obtenir el focus**
 
-Per exemple *tabindex=3*, estableix la posició en l'ordre de tabulació de la pàgina
+Per exemple `tabindex=3`, estableix la posició en l'ordre de tabulació de la pàgina
 
 ## Doctype
 
@@ -147,18 +150,27 @@ Serveix per indica al programa client (navegador) amb quina sintaxi s'ha creat l
 Pots veure els principals doctypes a la
 [Wiki](http://wiki.boscdelacoma.cat/mediawiki/index.php/M04._Llenguatge_de_marques#DOCTYPES)
 
-DOCTYPE HTML4
--------------
+### DOCTYPE HTML4
 
-> ESTRICTE: &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-> "<http://www.w3.org/TR/html4/strict.dtd>"&gt; TRANSICIONAL:
-> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-> "<http://www.w3.org/TR/html4/loose.dtd>"&gt; FRAMES: &lt;!DOCTYPE html
-> PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
-> "<http://www.w3.org/TR/html4/frameset.dtd>"&gt;
+ESTRICTE:
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "<http://www.w3.org/TR/html4/strict.dtd>"&gt; 
+```
 
-DOCTYPE XHTML 1.0
------------------
+TRANSICIONAL:
+```html
+>!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "<http://www.w3.org/TR/html4/loose.dtd>">; 
+```
+
+FRAMES: 
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+ "<http://www.w3.org/TR/html4/frameset.dtd>"&gt;
+```
+
+### DOCTYPE XHTML 1.0
+
 
 > ESTRICTE: &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 > "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>"&gt;
