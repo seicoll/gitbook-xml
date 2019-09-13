@@ -67,11 +67,11 @@ Llegireu que hi ha atributs per alinear els paràgrafs, com *align*
 
 **antigament...**
 
-* Text alineat a l'esquerre: &lt;p align=“left”&gt; Text left.&lt;/p&gt;
+* Text alineat a l'esquerre: &lt;p align="left"&gt; Text left.&lt;/p&gt;
 
-* Text alineat al centre: &lt;p align=“center”&gt; Text center&lt;/p&gt;
+* Text alineat al centre: &lt;p align="center"&gt; Text center&lt;/p&gt;
 
-* Text alineat a la dreta: &lt;p align=“right”&gt; Text right&lt;/p&gt;
+* Text alineat a la dreta: &lt;p align="right"&gt; Text right&lt;/p&gt;
 
 això **no és correcte**, a vegades el camí més ràpid no és el millor.
 
@@ -245,7 +245,7 @@ Cada element de la llista queda enmarcat per l'etiqueta
 ![image](cthu.png)
 
 L'atribut type ens serveix per definir el tipus de vinyeta. &lt;ul
-TYPE=“tipus vinyeta”&gt; On tipus vinyeta pot ser: circle, disc o square
+TYPE="tipus vinyeta"&gt; On tipus vinyeta pot ser: circle, disc o square
 
 (fer-ho amb **CSS**)
 
@@ -329,7 +329,7 @@ Podem aniuar els tipus de llista:
 -   L'atribut *href*, ens indica el destí d'aquest enllaç.
 
 ```html
-<a href=“destí”> contingut </a>
+<a href="destí"> contingut </a>
 ```
 
 essent *contingut* un text o una imatge i destí un arxiu, un correu
@@ -370,7 +370,7 @@ Ex:
 ```html
 enllaç origen: <a href="#avall"> Anar al final </a>
 
-enllaç destí: <a name=“avall”> </a>
+enllaç destí: <a name="avall"> </a>
 ```
 
 No utilitzar-los molt, és millor fer pàgines més petites ja que llavors
@@ -382,25 +382,26 @@ Enllaços locals
 -   Un lloc web està constituit de pàgines interconnectades.
 
 ```html
-<a href=“arxiu.html”> Arxiu </a>
+<a href="arxiu.html"> Arxiu </a>
 ```
 
 Per regla general, un lloc web ha d'estar ordenat per directoris. S'ha
-d'utilitzar la “/” per especificar on es troben les coses. Clarificació
+d'utilitzar la "/" per especificar on es troben les coses. Clarificació
 del desplaçament entre diferents arxius.
+
 
 -   Els enllaços locals també poden apuntar a una secció en concret
     dintre d'un altre pàgina.
 
 ```html
-<a href=“arxiu.html#seccio”> Arxiu </a>
+<a href="arxiu.html#seccio"> Arxiu </a>
 ```
 
 -   La pàgina **arxiu.html** ha de contenir la marca referent a
     la secció.
 
 ```html
-<a name=“seccio”> </a>
+<a name="seccio"> </a>
 ```
 
 Enllaços externs
@@ -412,7 +413,7 @@ Enllaços externs
 -   Totes les direccions van precedides de <http://>
 
 ```html
-<a href=“http://www.elmundodeportivo.es”> Anar a El Mundo deportivo </a>
+<a href="http://www.elmundodeportivo.es"> Anar a El Mundo deportivo </a>
 ```
 
 Enllaços a direccions de correu
@@ -424,7 +425,7 @@ Enllaços a direccions de correu
     \*\*[mailto:\*\*](mailto:**) seguit de la direcció d'enllaç.
 
 ```html
-<a href=“mailto:pep@hotmail.com”> Contactar amb en Pep </a>
+<a href="mailto:pep@hotmail.com"> Contactar amb en Pep </a>
 ```
 
 -   Per tal de configurar altres paràmetres del correu electrònic
@@ -441,7 +442,7 @@ Enllaços a arxius
     nom del fitxer (i en cas que sigui necessari la ruta).
 
 ```html
-<a href=“fitxer.pdf”> Descarregar el fitxer </a>
+<a href="fitxer.pdf"> Descarregar el fitxer </a>
 ```
 
 Imatges
@@ -666,8 +667,8 @@ html 4.01
 
 xhtml
 
-> &lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Frameset//EN”
-> “<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>”&gt;
+> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+> "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>"&gt;
 
 -   L'estructura també es veu modificada. No té *body*, té *frameset*
 
