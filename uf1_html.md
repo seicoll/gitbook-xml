@@ -152,39 +152,44 @@ Pots veure els principals doctypes a la
 
 ### DOCTYPE HTML4
 
-ESTRICTE:
+Estricte:
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
- "<http://www.w3.org/TR/html4/strict.dtd>"&gt; 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "<http://www.w3.org/TR/html4/strict.dtd>"> 
 ```
 
-TRANSICIONAL:
+Transicional:
 ```html
->!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "<http://www.w3.org/TR/html4/loose.dtd>">; 
+>!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "<http://www.w3.org/TR/html4/loose.dtd>">
 ```
 
-FRAMES: 
+Frames:
+
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
- "<http://www.w3.org/TR/html4/frameset.dtd>"&gt;
+ "<http://www.w3.org/TR/html4/frameset.dtd>">
 ```
 
 ### DOCTYPE XHTML 1.0
 
+Estricte:
 
-> ESTRICTE: &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-> "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>"&gt;
-> TRANSITIONAL: &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
-> Transitional//EN"
-> "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>"&gt;
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>">
+ ```
+ TRANSITIONAL:
+ 
+ ```html
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN"
+ "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>">
+ ```
 
-DOCTYPE HTML5
--------------
+### DOCTYPE HTML5
 
-> &lt;!DOCTYPE html&gt;
+`<!DOCTYPE html>`
 
-Metadades
-=========
+## Metadades
 
 -   L'etiqueta *&lt;meta ..&gt;* serveix per afegir informació sobre la
     pàgina
@@ -200,8 +205,8 @@ charse=utf-8
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 ```
 
-Caràcters especials
-===================
+## Caràcters especials
+
 
 -   En anglès entities, en català no se sol fer servir "entitats"
 -   Una pàgina web es veu en diferents països que tenen
