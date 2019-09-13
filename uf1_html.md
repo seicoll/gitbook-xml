@@ -6,7 +6,7 @@
 
 Les pàgines són vistes pels usuaris mitjançant un tipus d'aplicació anomenat **navegador**.
 
-Conseqüentment, el llenguatge HTML serveix al navegador per mostrar les pàgines a l’usuari.
+Conseqüentment, el llenguatge HTML serveix al navegador per mostrar les pàgines a l'usuari.
 
 ### Història d'Internet
 
@@ -84,7 +84,7 @@ En voleu més exemples? (en MAJÚSCULES EL QUE HEM D'EVITAR)
 
 Color, tamany i tipus de lletra
 
-Això es feia mitjançant l’etiqueta *&lt;FONT&gt;* i el seu tancament.
+Això es feia mitjançant l'etiqueta *&lt;FONT&gt;* i el seu tancament.
 
 Atributs pel tipus de lletra
 
@@ -226,11 +226,12 @@ Serveixen per enumerar i definir elements. Podem distingir tres tipus de llistes
 * Llistes ordenades
 * Llistes de definició
 
-## Llistes sense ordre
+### Llistes sense ordre
 
 
-Definides per les etiquetes *&lt;ul&gt;* i *&lt;/ul&gt;* (unordered
-list). Cada element de la llista queda enmarcat per l’etiqueta
+Definides per les etiquetes `<ul>` i `</ul>` (**u**nordered **l**ist). 
+
+Cada element de la llista queda enmarcat per l'etiqueta
 *&lt;li&gt;* ( no cal fer el tancament )
 
 ```html
@@ -243,7 +244,7 @@ list). Cada element de la llista queda enmarcat per l’etiqueta
 
 ![image](cthu.png)
 
-L’atribut type ens serveix per definir el tipus de vinyeta. &lt;ul
+L'atribut type ens serveix per definir el tipus de vinyeta. &lt;ul
 TYPE=“tipus vinyeta”&gt; On tipus vinyeta pot ser: circle, disc o square
 
 (fer-ho amb **CSS**)
@@ -252,7 +253,7 @@ TYPE=“tipus vinyeta”&gt; On tipus vinyeta pot ser: circle, disc o square
 
 
 Definides per les etiquetes &lt;ol&gt; i &lt;/ol&gt; ( ordered list).
-Cada element de la llista queda enmarcat per l’etiqueta *&lt;li&gt;*
+Cada element de la llista queda enmarcat per l'etiqueta *&lt;li&gt;*
 
 ```html
 <p> Països del mon </p>
@@ -264,14 +265,14 @@ Cada element de la llista queda enmarcat per l’etiqueta *&lt;li&gt;*
 
 ![image](cthu.png)
 
-L’atribut **TYPE** ens serveix per definir el tipus de numeració que
+L'atribut **TYPE** ens serveix per definir el tipus de numeració que
 utilitzarem.
 
 > 1 per ordenar amb nombres
 >
-> > a per lletra de l’alfabet
+> > a per lletra de l'alfabet
 >
-> A per lletres majúscules de l’alfabet
+> A per lletres majúscules de l'alfabet
 >
 > i per ordenar amb xifres romanes
 >
@@ -325,9 +326,9 @@ Podem aniuar els tipus de llista:
 -   Un enllaç és facilment detectable en una pàgina HTML
 -   Per col·locar un enllaç utlitzarem les etiquetes *&lt;a&gt;* i
     *&lt;/a&gt;*.
--   L’atribut *href*, ens indica el destí d’aquest enllaç.
+-   L'atribut *href*, ens indica el destí d'aquest enllaç.
 
-``` {.sourceCode .html}
+```html
 <a href=“destí”> contingut </a>
 ```
 
@@ -354,19 +355,19 @@ electrònic o una pàgina
 
 **Enllaços amb arxius:**
 
-:   perquè els usuaris puguin fer downloads d’arxius.
+:   perquè els usuaris puguin fer downloads d'arxius.
 
 Enllaços interns
 ----------------
 
 -   Són enllaços que apunten a un lloc diferent dins de la
     mateixa pàgina.
--   Per crear un enllaç d’aquest tipus és necessari a part de l’enllaç
-    de l’origen, col·locar un enllaç al destí.
+-   Per crear un enllaç d'aquest tipus és necessari a part de l'enllaç
+    de l'origen, col·locar un enllaç al destí.
 
 Ex:
 
-``` {.sourceCode .html}
+```html
 enllaç origen: <a href="#avall"> Anar al final </a>
 
 enllaç destí: <a name=“avall”> </a>
@@ -380,25 +381,25 @@ Enllaços locals
 
 -   Un lloc web està constituit de pàgines interconnectades.
 
-``` {.sourceCode .html}
+```html
 <a href=“arxiu.html”> Arxiu </a>
 ```
 
-Per regla general, un lloc web ha d’estar ordenat per directoris. S’ha
-d’utilitzar la “/” per especificar on es troben les coses. Clarificació
+Per regla general, un lloc web ha d'estar ordenat per directoris. S'ha
+d'utilitzar la “/” per especificar on es troben les coses. Clarificació
 del desplaçament entre diferents arxius.
 
 -   Els enllaços locals també poden apuntar a una secció en concret
-    dintre d’un altre pàgina.
+    dintre d'un altre pàgina.
 
-``` {.sourceCode .html}
+```html
 <a href=“arxiu.html#seccio”> Arxiu </a>
 ```
 
 -   La pàgina **arxiu.html** ha de contenir la marca referent a
     la secció.
 
-``` {.sourceCode .html}
+```html
 <a name=“seccio”> </a>
 ```
 
@@ -406,11 +407,11 @@ Enllaços externs
 ----------------
 
 -   Dirigits cap a altres llocs web.
--   A l’atribut *href* i col·loquem la URL o direcció de la pàgina amb
+-   A l'atribut *href* i col·loquem la URL o direcció de la pàgina amb
     la que es vol enllaçar.
 -   Totes les direccions van precedides de <http://>
 
-``` {.sourceCode .html}
+```html
 <a href=“http://www.elmundodeportivo.es”> Anar a El Mundo deportivo </a>
 ```
 
@@ -419,15 +420,15 @@ Enllaços a direccions de correu
 
 -   Ens obren una nova finestra de correu electrònic per enviar a una
     direcció de correu determinat.
--   A l’atribut *href* i col·loquem la paraula
-    \*\*[mailto:\*\*](mailto:**) seguit de la direcció d’enllaç.
+-   A l'atribut *href* i col·loquem la paraula
+    \*\*[mailto:\*\*](mailto:**) seguit de la direcció d'enllaç.
 
-``` {.sourceCode .html}
+```html
 <a href=“mailto:pep@hotmail.com”> Contactar amb en Pep </a>
 ```
 
 -   Per tal de configurar altres paràmetres del correu electrònic
-    s’afegeix un interrogant després de la direcció de correu.
+    s'afegeix un interrogant després de la direcció de correu.
 -   No és recomenable posar enllaços a correus, pel tema dels robots
     i l'SPAM.
 
@@ -436,32 +437,32 @@ Enllaços a arxius
 
 -   El mecanisme és el mateix que hem vist en els enllaços remots
     i locals.
--   En comptes d’indicar la direcció web el que hem de fer és indicar el
+-   En comptes d'indicar la direcció web el que hem de fer és indicar el
     nom del fitxer (i en cas que sigui necessari la ruta).
 
-``` {.sourceCode .html}
+```html
 <a href=“fitxer.pdf”> Descarregar el fitxer </a>
 ```
 
 Imatges
 =======
 
--   L’aspecte més vistós i atractiu d’una pàgina web és el grafisme. Les
-    imatges són emmagatzemades en forma d’arxius, principalment GI /PNG
+-   L'aspecte més vistós i atractiu d'una pàgina web és el grafisme. Les
+    imatges són emmagatzemades en forma d'arxius, principalment GI /PNG
     ( per dibuixos ) i JPG ( per fotos ).
 
-L’etiqueta que utilitzem per insertar una imatge és *&lt;img&gt;*, no
+L'etiqueta que utilitzem per insertar una imatge és *&lt;img&gt;*, no
 cal fer el tancament.
 
--   Mitjançant l’atribut *src* ( source ), especifiquem el lloc on es
+-   Mitjançant l'atribut *src* ( source ), especifiquem el lloc on es
     troba la imatge.
 
-ATRIBUTS DE L’ETIQUETA &lt;img&gt;
+ATRIBUTS DE L'ETIQUETA &lt;img&gt;
 ----------------------------------
 
 **Alt:**
 
-:   Breu descripció de l’imatge.
+:   Breu descripció de l'imatge.
 
 i el ja vist *src* són els únics atributs que hauria de tenir... però
 com sempre, històricament s'ha fet malament...
@@ -470,16 +471,16 @@ com sempre, històricament s'ha fet malament...
 
 Altres coses mal fetes:
 
-> HEIGHT I WIDTH: Defineixen l’altura i amplada de les imatges en
+> HEIGHT I WIDTH: Defineixen l'altura i amplada de les imatges en
 > pixels.
 >
-> BORDER: Defineix el tamany en pixels del quadrat que rodeja l’imatge.
+> BORDER: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
 >
 > LOWSRC: Quant tenim activada aquesta opció primer es descarrega la
 > imatge amb una baixa resolució i va millorant a mesura que es va
 > descarregant.
 
-Tipus d’arxius per les imatges
+Tipus d'arxius per les imatges
 ------------------------------
 
 GIF ( per dibuixos ) JPG ( per fotos )
@@ -492,7 +493,7 @@ Els dos formats comprimeixen les imatges per guardar-les.
 -   Transparència: És una utilitat per definir algunes parts de la
     imatge com a transparents.
 -   Colors: Es poden utilitzar paletes, conjunts de 256 o menys. Quant
-    menys colors utilitzem menys tamany ocuparà l’imatge.
+    menys colors utilitzem menys tamany ocuparà l'imatge.
 
 Actualment s'està utilitzant un format **PNG** que té les mateixes
 prestacions que el GIF (transparència i animació) i a més a més
@@ -520,23 +521,23 @@ Reduïm el numero de colors de la paleta.
 
 **ARXIUS JPG**
 
--   Ajustem la qualitat i la mida de l’arxiu quant l’estem guardant.
--   És impresindible disposar d’un bon editor fotogràfic a fi
-    d’optimitzar una imatge: **GIMP**
+-   Ajustem la qualitat i la mida de l'arxiu quant l'estem guardant.
+-   És impresindible disposar d'un bon editor fotogràfic a fi
+    d'optimitzar una imatge: **GIMP**
 
 Taules
 ======
 
 -   Una taula és un conjunt de cel·les organitzades dintre de les quals
     podem col·locar diferents continguts.
--   Una taula ens permet organitzar i distribuir els espais d’una manera
+-   Una taula ens permet organitzar i distribuir els espais d'una manera
     més òptima.
--   L’etiqueta per definir les taules és: *&lt;table&gt; &lt;/table&gt;*
+-   L'etiqueta per definir les taules és: *&lt;table&gt; &lt;/table&gt;*
 
-Les taules són descrites per línies d’esquerra a dreta, mitjançant
+Les taules són descrites per línies d'esquerra a dreta, mitjançant
 *&lt;tr&gt; &lt;/tr&gt;*
 
-``` {.sourceCode .html}
+```html
 <table>
     <tr>
         <td> Cel.la1-fila1 </td>
@@ -557,7 +558,7 @@ Com es pot veure així no es veu massa clar que hi hagi una taula...
 
 si afegim un atribut *border="1"* ho veurem més clar:
 
-``` {.sourceCode .html}
+```html
 <table boder="1">
 ```
 
@@ -580,13 +581,13 @@ ATRIBUTS PER FILES I CEL·LES
 >
 > una cel·la.
 >
-> Height: Defineix l’altura de la cel·la en pixels o percentatge.
+> Height: Defineix l'altura de la cel·la en pixels o percentatge.
 >
-> Width: Defineix l’amplada de la cel·la en pixels o percentatge.
+> Width: Defineix l'amplada de la cel·la en pixels o percentatge.
 >
 > Align: Alinea la taula respecte al seu entorn
 >
-> Background: Ens permet col·locar un fons per la taula a partir d’una
+> Background: Ens permet col·locar un fons per la taula a partir d'una
 > imatge.
 >
 > Bgcolor: Color de fons de la taula.
@@ -595,14 +596,14 @@ ATRIBUTS PER FILES I CEL·LES
 >
 > Bordercolor: Defineix el color del marc.
 >
-> Cellpadding: Defineix en pixels l’espai entre les cel·les dela taula i
+> Cellpadding: Defineix en pixels l'espai entre les cel·les dela taula i
 > el seu contingut.
 >
-> Cellspacing: Defineix l’espai entre els marcs ( en pixels )
+> Cellspacing: Defineix l'espai entre els marcs ( en pixels )
 >
-> Height: Defineix l’altura de la taula en pixels o percentatge.
+> Height: Defineix l'altura de la taula en pixels o percentatge.
 >
-> Width: Defineix l’amplada de la taula en pixels o percentatge.
+> Width: Defineix l'amplada de la taula en pixels o percentatge.
 
 Atributs de taula vàlids
 ------------------------
@@ -640,7 +641,7 @@ Atribut **target** a enllaços
     l'actual
 -   o també un nom de **frame** (definit amb l'atribut name)
 
-``` {.sourceCode .html}
+```html
 <a href="nom-pagina-a-carregar.html" target="nom-del-marc-a-carregar">
 ```
 
@@ -670,7 +671,7 @@ xhtml
 
 -   L'estructura també es veu modificada. No té *body*, té *frameset*
 
-``` {.sourceCode .html}
+```html
 <HTML>
 <HEAD><TITLE> Mi titulo ></TITLE></HEAD>
 
@@ -727,7 +728,7 @@ Exemples
 
 ![image](frames1.png)
 
-``` {.sourceCode .html}
+```html
 <FRAMESET COLS=30%,20%,50%>
    <FRAME SRC="a.htm">
    <FRAME SRC="b.htm">
@@ -740,7 +741,7 @@ Exemples
 
 ![image](frames2.png)
 
-``` {.sourceCode .html}
+```html
 <FRAMESET ROWS=25%,25%,50%>
    <FRAME SRC="a.htm">
    <FRAME SRC="b.htm">
@@ -753,7 +754,7 @@ combinat 2 àrees vertical amb 2 horitzontals
 
 ![image](frames3.png)
 
-``` {.sourceCode .html}
+```html
 <FRAMESET COLS=20%,*>
      <FRAME SRC="a.htm">
          <FRAMESET ROWS=40%,*>
@@ -768,7 +769,7 @@ combinat 2 àrees horitzontals amb 2 verticals
 
 ![image](frames4.png)
 
-``` {.sourceCode .html}
+```html
 <FRAMESET ROWS=50%,*>
    <FRAME SRC="a.htm">
    <FRAMESET COLS=50%,*>
@@ -789,7 +790,7 @@ Iframes
 -   El frame que ha sobreviscut a l'HTML5 és l'**iframe**.
 -   És un frame *intern*
 
-``` {.sourceCode .html}
+```html
 <iframe name="pag-interna" 
      src="index.htm" 
      width="300" hight="100" 
