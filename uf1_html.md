@@ -54,34 +54,27 @@ A dins podem distingir-hi dues parts:
 
 ## Format dels paràgrafs
 
-Per definir els **paràgrafs** utilitzem l’etiqueta `*&lt;p&gt;*`, la qual introdueix una línia en blanc després del paràgraf.
+Per definir els **paràgrafs** utilitzem l'etiqueta `*&lt;p&gt;*`, la qual introdueix una línia en blanc després del paràgraf.
 
-> L'etiqueta &lt;br&gt; la qual no té tancament, ens serveix per fer un salt de línia, dins dels paràgrafs.
+L'etiqueta &lt;br&gt; la qual no té tancament, ens serveix per fer un salt de línia, dins dels paràgrafs.
 
 A dins de l'etiqueta *&lt;p&gt;* podem definir atributs a fi de justificar el text del paràgraf.
-
-Invocacions a
--------------
-
-Cthulhu
--------
-
-![image](cthulhu.png)
 
 Aquí comencem amb els perills de les coses mal fetes però que sembla que
 funcionin...
 
 Llegireu que hi ha atributs per alinear els paràgrafs, com *align*
 
-antigament...
+**antigament...**
 
-> Text alineat a l’esquerre: &lt;p align=“left”&gt; Text left.&lt;/p&gt;
->
-> Text alineat al centre: &lt;p align=“center”&gt; Text center&lt;/p&gt;
->
-> Text alineat a la dreta: &lt;p align=“right”&gt; Text right&lt;/p&gt;
+* Text alineat a l'esquerre: &lt;p align=“left”&gt; Text left.&lt;/p&gt;
 
-això no és correcte, a vegades el camí més ràpid no és el millor.
+* Text alineat al centre: &lt;p align=“center”&gt; Text center&lt;/p&gt;
+
+* Text alineat a la dreta: &lt;p align=“right”&gt; Text right&lt;/p&gt;
+
+això **no és correcte**, a vegades el camí més ràpid no és el millor.
+
 Coneixeu el CSS?
 
 Mireu l'exemple de l'"abadia del crimen", per entendre que una cosa ben
@@ -97,48 +90,30 @@ Això es feia mitjançant l’etiqueta *&lt;FONT&gt;* i el seu tancament.
 
 Atributs pel tipus de lletra
 
-> FACE: Defineix el tipus de lletra.
->
-> SIZE: Defineix el tamany de la lletra.
->
-> COLOR: Defineix el color del text de la lletra.
+* FACE: Defineix el tipus de lletra.
+* SIZE: Defineix el tamany de la lletra.
+* COLOR: Defineix el color del text de la lletra.
 
 Es defineix dins de l’etiqueta &lt;BODY&gt;
 
-> ATRIBUTS
->
-> BGCOLOR: Especifica el color de fons de la pàgina
->
-> BACKGROUND: Serveix per indicar la col·locació d’una imatge com a fons
-> de pàgina.
->
-> COLOR DEL TEXT
->
-> TEXT: Serveix per definir el color del text de la pàgina.
->
-> LINK: El color del enllaços que no han estat visitats ( per defecte,
-> és blau ) VLINK: El color dels enllaços visitats.
+* ATRIBUTS
+* BGCOLOR: Especifica el color de fons de la pàgina
+* BACKGROUND: Serveix per indicar la col·locació d'una imatge com a fons de pàgina.
+* COLOR DEL TEXT
+* TEXT: Serveix per definir el color del text de la pàgina.
+* LINK: El color del enllaços que no han estat visitats ( per defecte, és blau ) VLINK: El color dels enllaços visitats.
 
 ... i un llarg etcètera...
 
-> Negreta: &lt;b&gt; i &lt;/b&gt; ( bold ) o &lt;strong&gt; i
-> &lt;/strong&gt;
->
-> Italica: &lt;i&gt; i &lt;/i&gt;
->
-> Subratllat &lt;u&gt; i &lt;/u&gt; ( underlined )
->
-> Subindex: &lt;sub&gt; i &lt;/sub&gt;
->
-> Superindex: &lt;sup&gt; i &lt;/sup&gt;
->
-> > Hem de mirar de formatar el contingut mitjançant les fulles d'estil
-> > (CSS)
+* Negreta: &lt;b&gt; i &lt;/b&gt; ( bold ) o &lt;strong&gt; i &lt;/strong&gt;
+* Italica: &lt;i&gt; i &lt;/i&gt;
+* Subratllat &lt;u&gt; i &lt;/u&gt; ( underlined )
+* Subindex: &lt;sub&gt; i &lt;/sub&gt;
+* Superindex: &lt;sup&gt; i &lt;/sup&gt;
 
-D'aquests caràcters els farem servir només pel tema del signficat o la
-forma, *&lt;b&gt;* (important), *&lt;i&gt;* (cursiva), MAI fer servir
-*&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que
-es pot pensar que és un link (enllaç).
+> Sempre hem de formatar el contingut mitjançant les fulles d'estil (CSS)
+
+D'aquests caràcters els farem servir només pel tema del signficat o la forma, *&lt;b&gt;* (important), *&lt;i&gt;* (cursiva), MAI fer servir *&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
 
 Altres paràgrafs
 ================
