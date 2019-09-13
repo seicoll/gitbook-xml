@@ -1,13 +1,12 @@
-# LLENGUATGE HTML
+# Llenguatge HTML
 
 ## Introducció
 
+> És el llenguatge amb el qual s’escriuen les pàgines web.
 
--   És el llenguatge amb el qual s’escriuen les pàgines web.
--   Les pàgines són vistes pels usuaris mitjançant un tipus d’aplicació
-    anomenat navegador.
--   Conseqüentment, el llenguatge HTML serveix al navegador per mostrar
-    les pàgines a l’usuari.
+Les pàgines són vistes pels usuaris mitjançant un tipus d'aplicació anomenat **navegador**.
+
+Conseqüentment, el llenguatge HTML serveix al navegador per mostrar les pàgines a l’usuari.
 
 Història d'Internet
 -------------------
