@@ -8,21 +8,19 @@ Les pàgines són vistes pels usuaris mitjançant un tipus d'aplicació anomenat
 
 Conseqüentment, el llenguatge HTML serveix al navegador per mostrar les pàgines a l’usuari.
 
-Història d'Internet
--------------------
+### Història d'Internet
 
 <https://www.youtube.com/watch?v=h8K49dD52WA>
 
-Què és una pàgina web?
-----------------------
+### Què és una pàgina web?
 
 > És un arxiu de text amb extensió .html o . htm
 
 Pot ser creada amb el bloc de notes o programes Editors de codi HTML.
 HTML és únicament text pla.
 
-Sintaxis HTML
--------------
+### Sintaxis HTML
+
 
 El **llenguatge HTML** base la seva sintaxis en un element de base que anomenem **etiqueta**.
 
@@ -44,8 +42,7 @@ Aquí hi trobaràs una llista d'etiquetes vàlides:
 
 [https://www.w3schools.com/TAGS/default.asp](https://www.w3schools.com/TAGS/default.asp)
 
-Parts d'un document HTML
-------------------------
+### Parts d'un document HTML
 
 Un document HTML ha d’estar delimitat per l’etiqueta &lt;HTML&gt; i &lt;/HTML&gt;.
 
@@ -57,13 +54,11 @@ A dins podem distingir-hi dues parts:
 
 ## Format dels paràgrafs
 
-Per definir els **paràgrafs** utilitzem l’etiqueta *&lt;p&gt;*, la qual introdueix una línia en blanc després del paràgraf.
+Per definir els **paràgrafs** utilitzem l’etiqueta `*&lt;p&gt;*`, la qual introdueix una línia en blanc després del paràgraf.
 
-> L’etiqueta &lt;br&gt; la qual no té tancament, ens serveix per fer un
-> salt de línia, dins dels paràgrafs.
+> L'etiqueta &lt;br&gt; la qual no té tancament, ens serveix per fer un salt de línia, dins dels paràgrafs.
 
-A dins de l’etiqueta *&lt;p&gt;* podem definir atributs a fi de
-justificar el text del paràgraf.
+A dins de l'etiqueta *&lt;p&gt;* podem definir atributs a fi de justificar el text del paràgraf.
 
 Invocacions a
 -------------
