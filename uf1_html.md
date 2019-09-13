@@ -210,11 +210,11 @@ Una pàgina web es veu en diferents països que tenen diferents codificacions.
 
 Exemples
 
-* &nbsp; -&gt; espai
-* &gt; -&gt; &gt;
-* &lt; -&gt; &lt;
+* &nbsp; -> espai
+* &gt; -> &gt;
+* &lt; -> &lt;
 
-``` {.sourceCode .html}
+```html
 h&nbsp;o&nbsp;&nbsp;l&nbsp;&nbsp;a
 ```
 
@@ -222,18 +222,18 @@ h&nbsp;o&nbsp;&nbsp;l&nbsp;&nbsp;a
 
 Serveixen per enumerar i definir elements. Podem distingir tres tipus de llistes:
 
--   Llistes desordenades
--   Llistes ordenades
--   Llistes de definició
+* Llistes desordenades
+* Llistes ordenades
+* Llistes de definició
 
-Llistes sense ordre
--------------------
+## Llistes sense ordre
+
 
 Definides per les etiquetes *&lt;ul&gt;* i *&lt;/ul&gt;* (unordered
 list). Cada element de la llista queda enmarcat per l’etiqueta
 *&lt;li&gt;* ( no cal fer el tancament )
 
-``` {.sourceCode .html}
+```html
 <p> Països del mon </p>
 <ul>
     <li> Argentina </li>
@@ -248,13 +248,13 @@ TYPE=“tipus vinyeta”&gt; On tipus vinyeta pot ser: circle, disc o square
 
 (fer-ho amb **CSS**)
 
-Llistes ordenades
------------------
+### Llistes ordenades
+
 
 Definides per les etiquetes &lt;ol&gt; i &lt;/ol&gt; ( ordered list).
 Cada element de la llista queda enmarcat per l’etiqueta *&lt;li&gt;*
 
-``` {.sourceCode .html}
+```html
 <p> Països del mon </p>
 <ol>
     <li> Argentina </li>
@@ -277,8 +277,7 @@ utilitzarem.
 >
 > I per ordenar amb xifres romanes majúscules
 
-Llistes de definició
---------------------
+### Llistes de definició
 
 -   Cada element és presentat juntament amb la seva definició.
 -   Definides per les etiquetes *&lt;dl&gt;* i *&lt;/dl&gt;*
@@ -286,7 +285,7 @@ Llistes de definició
 -   Les etiquetes de cada element són *&lt;dt&gt;* (definition term) i
     la seva definició *&lt;dd&gt;* (definition definition).
 
-``` {.sourceCode .html}
+```html
 <dl>
       <dt>Casa</dt>
       <dd>Lloc on habitar</dd>
@@ -295,12 +294,11 @@ Llistes de definició
 </dl>
 ```
 
-Aniuar les llistes
-------------------
+### Aniuar les llistes
 
 Podem aniuar els tipus de llista:
 
-``` {.sourceCode .html}
+```html
 <p>Ciutats del mon</p>
 <ul>
     <li>
@@ -320,8 +318,8 @@ Podem aniuar els tipus de llista:
 </ul>
 ```
 
-Enllaços
-========
+## Enllaços
+
 
 -   Necessitat de que les pàgines HTML estiguin interconnectades.
 -   Un enllaç és facilment detectable en una pàgina HTML
