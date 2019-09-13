@@ -38,7 +38,7 @@ Una obertura de forma general &lt;etiqueta&gt; Un tancament de tipus
 -   Tot el que estiqui dintre d’aquesta etiqueta tindrà les
     modificacions que caracteritzen aquesta etiqueta.
 
-``` {.sourceCode .html}
+```html
 <b> Hola a tots. </b>
 ```
 
