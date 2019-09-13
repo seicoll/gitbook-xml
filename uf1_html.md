@@ -131,7 +131,7 @@ Són els que hem vist en un ús incorrecte, però la major part d'etiquetes tene
 
 Per pàgines multi-idiomes, s'indica de forma explícita amb qui idioma està fet una pàgina. Per 
 
-exemple: `lang=ca`
+Exemple: `lang=ca`
 
 **Atributs d'events**
 
@@ -191,44 +191,36 @@ Estricte:
 
 ## Metadades
 
--   L'etiqueta *&lt;meta ..&gt;* serveix per afegir informació sobre la
-    pàgina
--   Els buscadors consultes l'informació d'aquesta etiqueta per millorar
-    la seva cerca i indexació
--   Conté els atributs *name* i *content*
--   La metadada més important és la **codificació**, és a dir declarar
-    amb quin joc de caràcters s'ha dissenyat la pàgina
+L'etiqueta <meta ...> serveix per afegir informació sobre la pàgina.
 
-charse=utf-8
+Els buscadors consultes l'informació d'aquesta etiqueta per millorar la seva cerca i indexació
 
-``` {.sourceCode .html}
+Conté els atributs *name* i *content*
+
+La metadada més important és la **codificació**, és a dir declarar amb quin joc de caràcters s'ha dissenyat la pàgina `charset=utf-8`.
+
+```html
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 ```
 
 ## Caràcters especials
 
+En anglès entities, en català no se sol fer servir "entitats"
+Una pàgina web es veu en diferents països que tenen diferents codificacions.
 
--   En anglès entities, en català no se sol fer servir "entitats"
--   Una pàgina web es veu en diferents països que tenen
-    diferents codificacions.
+Exemples
 
-Exmples
-
-> &nbsp; -&gt; espai
->
-> &gt; -&gt; &gt;
->
-> &lt; -&gt; &lt;
+* &nbsp; -&gt; espai
+* &gt; -&gt; &gt;
+* &lt; -&gt; &lt;
 
 ``` {.sourceCode .html}
 h&nbsp;o&nbsp;&nbsp;l&nbsp;&nbsp;a
 ```
 
-Llistes
-=======
+## Llistes
 
-Serveixen per enumerar i definir elements. Podem distingir tres tipus de
-llistes:
+Serveixen per enumerar i definir elements. Podem distingir tres tipus de llistes:
 
 -   Llistes desordenades
 -   Llistes ordenades
