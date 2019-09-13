@@ -16,21 +16,19 @@ Història d'Internet
 Què és una pàgina web?
 ----------------------
 
--   És un arxiu de text amb extensió .html o . htm
--   Pot ser creada amb el bloc de notes o programes Editors de
-    codi HTML.
--   HTML és únicament text pla
+> És un arxiu de text amb extensió .html o . htm
+
+Pot ser creada amb el bloc de notes o programes Editors de codi HTML.
+HTML és únicament text pla.
 
 Sintaxis HTML
 -------------
 
-El llenguatge HTML base la seva sintaxis en un element de base que anomenem **etiqueta**.
+El **llenguatge HTML** base la seva sintaxis en un element de base que anomenem **etiqueta**.
 
-Una obertura de forma general &lt;etiqueta&gt; Un tancament de tipus
-&lt;/etiqueta&gt;
+Una obertura de forma general &lt;etiqueta&gt; Un tancament de tipus &lt;/etiqueta&gt;
 
--   Tot el que estiqui dintre d’aquesta etiqueta tindrà les
-    modificacions que caracteritzen aquesta etiqueta.
+Tot el que estigui dintre d'aquesta etiqueta tindrà les modificacions que caracteritzen aquesta etiqueta.
 
 ```html
 <b> Hola a tots. </b>
@@ -40,33 +38,26 @@ El resultat serà:
 
 ![](/uf1_images/hola.png)
 
-Però tot i que funciona, no és el que busquem, falta especificar molt
-millor les parts de la pàgina i la sintaxi de les etiquetes.
+Però tot i que funciona, no és el que busquem, falta especificar molt millor les parts de la pàgina i la sintaxi de les etiquetes.
 
 Aquí hi trobaràs una llista d'etiquetes vàlides:
-<https://www.w3schools.com/TAGS/default.asp>
+
+[https://www.w3schools.com/TAGS/default.asp](https://www.w3schools.com/TAGS/default.asp)
 
 Parts d'un document HTML
 ------------------------
 
-Un document HTML ha d’estar delimitat per l’etiqueta &lt;HTML&gt; i
-&lt;/HTML&gt;.
+Un document HTML ha d’estar delimitat per l’etiqueta &lt;HTML&gt; i &lt;/HTML&gt;.
 
 A dins podem distingir-hi dues parts:
 
-**L’encapçalament** definit per *&lt;head&gt;* i *&lt;/head&gt;* on
-col·locarem etiquetes de tipus informatiu, com per exemple el títol de
-la pàgina.
+* **L'encapçalament** definit per *&lt;head&gt;* i *&lt;/head&gt;* on col·locarem etiquetes de tipus informatiu, com per exemple el títol de la pàgina.
 
-**El cos**, flanquejat per les etiquetes *&lt;body&gt;* i
-*&lt;/body&gt;* que serà on col·locarem el nostre text i imatges
-delimitat per altres etiquetes.
+* **El cos**, flanquejat per les etiquetes *&lt;body&gt;* i *&lt;/body&gt;* que serà on col·locarem el nostre text i imatges delimitat per altres etiquetes.
 
-Format dels paràgrafs
-=====================
+## Format dels paràgrafs
 
-Per definir els paragrafs utilitzem l’etiqueta *&lt;p&gt;*, la qual
-introdueix una línia en blanc després del paràgraf.
+Per definir els **paràgrafs** utilitzem l’etiqueta *&lt;p&gt;*, la qual introdueix una línia en blanc després del paràgraf.
 
 > L’etiqueta &lt;br&gt; la qual no té tancament, ens serveix per fer un
 > salt de línia, dins dels paràgrafs.
