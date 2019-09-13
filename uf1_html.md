@@ -1,11 +1,7 @@
-LLENGUATGE HTML
-===============
+# LLENGUATGE HTML
 
-Index
-=====
+## Introducció
 
-HTML
-====
 
 -   És el llenguatge amb el qual s’escriuen les pàgines web.
 -   Les pàgines són vistes pels usuaris mitjançant un tipus d’aplicació
