@@ -44,7 +44,7 @@ Aquí hi trobaràs una llista d'etiquetes vàlides:
 
 ### Parts d'un document HTML
 
-Un document HTML ha d’estar delimitat per l’etiqueta &lt;HTML&gt; i &lt;/HTML&gt;.
+Un document HTML ha d'estar delimitat per l'etiqueta `<HTML>` i `</HTML>`.
 
 A dins podem distingir-hi dues parts:
 
@@ -54,7 +54,7 @@ A dins podem distingir-hi dues parts:
 
 ## Format dels paràgrafs
 
-Per definir els **paràgrafs** utilitzem l'etiqueta `*&lt;p&gt;*`, la qual introdueix una línia en blanc després del paràgraf.
+Per definir els **paràgrafs** utilitzem l'etiqueta `<p>`, la qual introdueix una línia en blanc després del paràgraf.
 
 L'etiqueta &lt;br&gt; la qual no té tancament, ens serveix per fer un salt de línia, dins dels paràgrafs.
 
@@ -77,10 +77,8 @@ això **no és correcte**, a vegades el camí més ràpid no és el millor.
 
 Coneixeu el CSS?
 
-Mireu l'exemple de l'"abadia del crimen", per entendre que una cosa ben
-feta dura més, és més fàcil de mantenir i es pot millorar amb facilitat.
-Si comencem a fer codi brut, "espaguetti" o altres defectes, les pàgines
-esdevenen totalment **inmantenibles**.
+Mireu l'exemple de l'"abadia del crimen", per entendre que una cosa ben feta dura més, és més fàcil de mantenir i es pot millorar amb facilitat.
+Si comencem a fer codi brut, "espaguetti" o altres defectes, les pàgines esdevenen totalment **inmantenibles**.
 
 En voleu més exemples? (en MAJÚSCULES EL QUE HEM D'EVITAR)
 
@@ -94,7 +92,7 @@ Atributs pel tipus de lletra
 * SIZE: Defineix el tamany de la lletra.
 * COLOR: Defineix el color del text de la lletra.
 
-Es defineix dins de l’etiqueta &lt;BODY&gt;
+Es defineix dins de l'etiqueta &lt;BODY&gt;
 
 * ATRIBUTS
 * BGCOLOR: Especifica el color de fons de la pàgina
@@ -115,46 +113,36 @@ Es defineix dins de l’etiqueta &lt;BODY&gt;
 
 D'aquests caràcters els farem servir només pel tema del signficat o la forma, *&lt;b&gt;* (important), *&lt;i&gt;* (cursiva), MAI fer servir *&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
 
-Altres paràgrafs
-================
+## Altres paràgrafs
 
-Pre
----
+### Pre
 
--   És un paràgraf que respecte els codis propis del text pla (intros,
-    número d'espais...)
--   Adequat per fer textos literals, per exemple els poemes amb els seus
-    salts de línia sense *&lt;br&gt;*
+És un paràgraf que respecte els codis propis del text pla (intros, número d'espais...)
 
-Tipus d'atributs
-================
+Adequat per fer textos literals, per exemple els poemes amb els seus salts de línia sense *&lt;br&gt;*
+
+## Tipus d'atributs
 
 **Atributs bàsics**
 
-:   són els que hem vist en un ús incorrecte, però la major part
-    d'equites tenen atributs ben vàlids, útils i de
-    vegades imprescindibles.
+Són els que hem vist en un ús incorrecte, però la major part d'etiquetes tenen atributs ben vàlids, útils i de vegades imprescindibles.
 
 **Atributs per la internacionalització**
 
-:   per pàgines multi-idiomes, s'indica de forma explícita amb quin
-    idioma està fet una pàgina. Per exemple: *lang=ca*
+Per pàgines multi-idiomes, s'indica de forma explícita amb qui idioma està fet una pàgina. Per exemple: *lang=ca*
 
 **Atributs d'events**
 
-:   s'utilitzen a les pàgines web dinàmiques, fetes amb *Javascript*,
-    exemples: onclick, ondblclick, onmousedown, onmouseup, ...
+S'utilitzen a les pàgines web dinàmiques, fetes amb *Javascript*, 
+exemples: onclick, ondblclick, onmousedown, onmouseup, ...
 
 **Atributs pels elements que poden obtenir el focus**
 
-:   per exemple *tabindex=3*, estableix la posició en l'ordre de
-    tabulació de la pàgina
+Per exemple *tabindex=3*, estableix la posició en l'ordre de tabulació de la pàgina
 
-Doctype
-=======
+## Doctype
 
--   S'indica al programa client amb quina sintaxi s'ha creat la pàgina,
-    és una sentencia que es posa al principi de tot de la pàgina
+Serveix per indica al programa client (navegador) amb quina sintaxi s'ha creat la pàgina, és una sentencia que es posa al principi de tot de la pàgina.
 
 Pots veure els principals doctypes a la
 [Wiki](http://wiki.boscdelacoma.cat/mediawiki/index.php/M04._Llenguatge_de_marques#DOCTYPES)
