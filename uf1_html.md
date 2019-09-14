@@ -4,9 +4,9 @@
 
 > El **llenguatge HTML** és el llenguatge amb el qual s'escriuen les pàgines web.
 
-Les pàgines són vistes pels usuaris mitjançant un tipus d'aplicació anomenat **navegador**.
+Les pàgines web són vistes pels usuaris mitjançant un tipus d'aplicació anomenat **navegador**.
 
-Conseqüentment, el llenguatge HTML serveix al navegador per mostrar les pàgines a l'usuari.
+Conseqüentment, el **llenguatge HTML** serveix al navegador per mostrar les pàgines a l'usuari.
 
 ### Història d'Internet
 
@@ -14,17 +14,17 @@ Conseqüentment, el llenguatge HTML serveix al navegador per mostrar les pàgine
 
 ### Què és una pàgina web?
 
-> És un arxiu de text amb extensió .html o . htm
+> Una **pàgina web** és un arxiu de text amb extensió *.html* o *.htm*
 
 Pot ser creada amb el bloc de notes o programes Editors de codi HTML.
-HTML és únicament text pla.
+
+**HTML** és únicament text pla.
 
 ### Sintaxis HTML
 
-
 El **llenguatge HTML** base la seva sintaxis en un element de base que anomenem **etiqueta**.
 
-Una obertura de forma general &lt;etiqueta&gt; Un tancament de tipus &lt;/etiqueta&gt;
+Una obertura de forma general `<etiqueta>` Un tancament de tipus `</etiqueta>` .
 
 Tot el que estigui dintre d'aquesta etiqueta tindrà les modificacions que caracteritzen aquesta etiqueta.
 
@@ -38,61 +38,64 @@ El resultat serà:
 
 Però tot i que funciona, no és el que busquem, falta especificar molt millor les parts de la pàgina i la sintaxi de les etiquetes.
 
-Aquí hi trobaràs una llista d'etiquetes vàlides:
+Aquí hi trobaràs una llista d'**etiquetes vàlides**:
 
 [https://www.w3schools.com/TAGS/default.asp](https://www.w3schools.com/TAGS/default.asp)
 
 ### Parts d'un document HTML
 
-Un document HTML ha d'estar delimitat per l'etiqueta `<HTML>` i `</HTML>`.
+Un document HTML ha d'estar delimitat per l'etiqueta `<html>` i `</html>`.
 
-A dins podem distingir-hi dues parts:
+A dins podem distingir-hi **dues parts**:
 
-* **L'encapçalament** definit per *&lt;head&gt;* i *&lt;/head&gt;* on col·locarem etiquetes de tipus informatiu, com per exemple el títol de la pàgina.
+* **L'encapçalament** definit per `<head>` i `</head>` on col·locarem etiquetes de tipus informatiu, com per exemple el títol de la pàgina.
 
-* **El cos**, flanquejat per les etiquetes *&lt;body&gt;* i *&lt;/body&gt;* que serà on col·locarem el nostre text i imatges delimitat per altres etiquetes.
+
+* **El cos**, flanquejat per les etiquetes `<body>` i `</body>` que serà on col·locarem el nostre text i imatges delimitat per altres etiquetes.
 
 ## Format dels paràgrafs
 
 Per definir els **paràgrafs** utilitzem l'etiqueta `<p>`, la qual introdueix una línia en blanc després del paràgraf.
 
-L'etiqueta &lt;br&gt; la qual no té tancament, ens serveix per fer un salt de línia, dins dels paràgrafs.
+L'etiqueta `<br>` la qual no té tancament, ens serveix per fer un salt de línia, dins dels paràgrafs.
 
-A dins de l'etiqueta *&lt;p&gt;* podem definir atributs a fi de justificar el text del paràgraf.
+A dins de l'etiqueta `<p>` podem definir atributs a fi de justificar el text del paràgraf???
 
-Aquí comencem amb els perills de les coses mal fetes però que sembla que
-funcionin...
+Aquí comencem amb els perills de les coses mal fetes però que sembla que funcionin...
 
-Llegireu que hi ha atributs per alinear els paràgrafs, com *align*
+### Què no s'ha de fer
+
+Llegireu que hi ha atributs per alinear els paràgrafs, com `align`
 
 **antigament...**
 
-* Text alineat a l'esquerre: &lt;p align="left"&gt; Text left.&lt;/p&gt;
+* Text alineat a l'esquerre: `<p align="left"> Text left.</p>`
 
-* Text alineat al centre: &lt;p align="center"&gt; Text center&lt;/p&gt;
+* Text alineat al centre: `<p align="center"> Text center </p>`
 
-* Text alineat a la dreta: &lt;p align="right"&gt; Text right&lt;/p&gt;
+* Text alineat a la dreta: `<p align="right"> Text right </p>`
 
 això **no és correcte**, a vegades el camí més ràpid no és el millor.
 
-Coneixeu el CSS?
+**Coneixeu el CSS?**
 
-Mireu l'exemple de l'"abadia del crimen", per entendre que una cosa ben feta dura més, és més fàcil de mantenir i es pot millorar amb facilitat.
-Si comencem a fer codi brut, "espaguetti" o altres defectes, les pàgines esdevenen totalment **inmantenibles**.
+Mireu l'exemple de l'*abadia del crimen*, per entendre que una cosa ben feta dura més, és més fàcil de mantenir i es pot millorar amb facilitat.
+
+> Si comencem a fer codi brut, "espaguetti" o altres defectes, les pàgines esdevenen totalment **inmantenibles**.
 
 En voleu més exemples? (en MAJÚSCULES EL QUE HEM D'EVITAR)
 
 Color, tamany i tipus de lletra
 
-Això es feia mitjançant l'etiqueta *&lt;FONT&gt;* i el seu tancament.
+Això es feia mitjançant l'etiqueta `<FONT>` i el seu tancament.
 
-Atributs pel tipus de lletra
+Atributs pel tipus de lletra:
 
 * FACE: Defineix el tipus de lletra.
 * SIZE: Defineix el tamany de la lletra.
 * COLOR: Defineix el color del text de la lletra.
 
-Es defineix dins de l'etiqueta &lt;BODY&gt;
+Es definien dins de l'etiqueta `<body>`;
 
 * ATRIBUTS
 * BGCOLOR: Especifica el color de fons de la pàgina
@@ -109,15 +112,18 @@ Es defineix dins de l'etiqueta &lt;BODY&gt;
 * Subindex: &lt;sub&gt; i &lt;/sub&gt;
 * Superindex: &lt;sup&gt; i &lt;/sup&gt;
 
-> Sempre hem de formatar el contingut mitjançant les fulles d'estil (CSS)
+Aquestes etiquetes les farem servir només pel tema del significat o la forma, 
+* Per exemple: `<b>` per indicar que alguna cosa és important.
 
-D'aquests caràcters els farem servir només pel tema del signficat o la forma, *&lt;b&gt;* (important), *&lt;i&gt;* (cursiva), MAI fer servir *&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
+**MAI** fer servir *&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
+
+> **Sempre** hem de formatar el contingut mitjançant les **fulles d'estil (CSS)**.
 
 ## Altres paràgrafs
 
 ### Pre
 
-És un paràgraf que respecte els codis propis del text pla (intros, número d'espais...)
+L'etiqueta `<pre>` defineix un paràgraf que respecte els codis propis del text pla (intros, número d'espais...)
 
 Adequat per fer textos literals, per exemple els poemes amb els seus salts de línia sense *&lt;br&gt;*
 
@@ -147,43 +153,26 @@ Per exemple `tabindex=3`, estableix la posició en l'ordre de tabulació de la p
 
 Serveix per indica al programa client (navegador) amb quina sintaxi s'ha creat la pàgina, és una sentencia que es posa al principi de tot de la pàgina.
 
-Pots veure els principals doctypes a la
-[Wiki](http://wiki.boscdelacoma.cat/mediawiki/index.php/M04._Llenguatge_de_marques#DOCTYPES)
-
 ### DOCTYPE HTML4
 
 Estricte:
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "<http://www.w3.org/TR/html4/strict.dtd>"> 
-```
+`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "<http://www.w3.org/TR/html4/strict.dtd>"> `
 
 Transicional:
-```html
->!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "<http://www.w3.org/TR/html4/loose.dtd>">
-```
+`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "<http://www.w3.org/TR/html4/loose.dtd>">`
 
 Frames:
-
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
- "<http://www.w3.org/TR/html4/frameset.dtd>">
-```
+`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">`
 
 ### DOCTYPE XHTML 1.0
 
 Estricte:
 
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>">
- ```
- TRANSITIONAL:
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>">`
+
+Transitional:
  
- ```html
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
- Transitional//EN"
- "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>">
- ```
+ `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>">`
 
 ### DOCTYPE HTML5
 
@@ -228,11 +217,9 @@ Serveixen per enumerar i definir elements. Podem distingir tres tipus de llistes
 
 ### Llistes sense ordre
 
-
 Definides per les etiquetes `<ul>` i `</ul>` (**u**nordered **l**ist). 
 
-Cada element de la llista queda enmarcat per l'etiqueta
-*&lt;li&gt;* ( no cal fer el tancament )
+Cada element de la llista queda enmarcat per l'etiqueta `<li>`.
 
 ```html
 <p> Països del mon </p>
@@ -244,10 +231,13 @@ Cada element de la llista queda enmarcat per l'etiqueta
 
 ![image](cthu.png)
 
-L'atribut type ens serveix per definir el tipus de vinyeta. &lt;ul
-TYPE="tipus vinyeta"&gt; On tipus vinyeta pot ser: circle, disc o square
+L'atribut `type` ens serveix per definir el tipus de vinyeta. 
 
-(fer-ho amb **CSS**)
+`<ul TYPE="tipus vinyeta">`
+
+On tipus vinyeta pot ser: circle, disc o square
+
+> Recordeu que això s'ha de fer **CSS**.
 
 ### Llistes ordenades
 
