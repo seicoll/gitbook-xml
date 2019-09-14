@@ -209,7 +209,9 @@ h&nbsp;o&nbsp;&nbsp;l&nbsp;&nbsp;a
 
 ## Llistes
 
-Serveixen per enumerar i definir elements. Podem distingir tres tipus de llistes:
+> Les **llistes** serveixen per enumerar i definir elements. 
+
+Podem distingir **tres tipus** de llistes:
 
 * Llistes desordenades
 * Llistes ordenades
@@ -229,8 +231,7 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>`.
 </ul>
 ```
 
-![image](cthu.png)
-
+<!--
 L'atribut `type` ens serveix per definir el tipus de vinyeta. 
 
 `<ul TYPE="tipus vinyeta">`
@@ -238,6 +239,8 @@ L'atribut `type` ens serveix per definir el tipus de vinyeta.
 On tipus vinyeta pot ser: circle, disc o square
 
 > Recordeu que això s'ha de fer **CSS**.
+
+-->
 
 ### Llistes ordenades
 
@@ -325,30 +328,17 @@ Podem aniuar els tipus de llista:
 essent *contingut* un text o una imatge i destí un arxiu, un correu
 electrònic o una pàgina
 
--   Els enllaços es poden classificar de la següent manera:
+Els enllaços es poden classificar de la següent manera:
 
-**Enllaços interns:**
+* **Enllaços interns:**: els que es dirigeixen a diferents llocs de la mateixa pàgina.
 
-:   els que es dirigeixen a diferents llocs de la mateixa pàgina.
+* **Enllaços locals:**: els dirigeixen a un altre pàgina dintre de la mateixa web.
+* **Enllaços remots:**: els dirigits cap a altres pàgines web.
+* **Enllaços amb direccions de correu:**: per crear un missatge de correu dirigit a una direcció.
+* **Enllaços amb arxius:**: perquè els usuaris puguin fer downloads d'arxius.
 
-**Enllaços locals:**
+### Enllaços interns
 
-:   els dirigeixen a un altre pàgina dintre de la mateixa web.
-
-**Enllaços remots:**
-
-:   els dirigits cap a altres pàgines web.
-
-**Enllaços amb direccions de correu:**
-
-:   per crear un missatge de correu dirigit a una direcció.
-
-**Enllaços amb arxius:**
-
-:   perquè els usuaris puguin fer downloads d'arxius.
-
-Enllaços interns
-----------------
 
 -   Són enllaços que apunten a un lloc diferent dins de la
     mateixa pàgina.
@@ -366,8 +356,8 @@ enllaç destí: <a name="avall"> </a>
 No utilitzar-los molt, és millor fer pàgines més petites ja que llavors
 tarden menys a carregar-se i són més fàcils de llegir.
 
-Enllaços locals
----------------
+### Enllaços locals
+
 
 -   Un lloc web està constituit de pàgines interconnectades.
 
@@ -394,8 +384,8 @@ del desplaçament entre diferents arxius.
 <a name="seccio"> </a>
 ```
 
-Enllaços externs
-----------------
+### Enllaços externs
+
 
 -   Dirigits cap a altres llocs web.
 -   A l'atribut *href* i col·loquem la URL o direcció de la pàgina amb
@@ -406,8 +396,8 @@ Enllaços externs
 <a href="http://www.elmundodeportivo.es"> Anar a El Mundo deportivo </a>
 ```
 
-Enllaços a direccions de correu
--------------------------------
+### Enllaços a direccions de correu
+
 
 -   Ens obren una nova finestra de correu electrònic per enviar a una
     direcció de correu determinat.
@@ -423,8 +413,8 @@ Enllaços a direccions de correu
 -   No és recomenable posar enllaços a correus, pel tema dels robots
     i l'SPAM.
 
-Enllaços a arxius
------------------
+### Enllaços a arxius
+
 
 -   El mecanisme és el mateix que hem vist en els enllaços remots
     i locals.
@@ -435,8 +425,7 @@ Enllaços a arxius
 <a href="fitxer.pdf"> Descarregar el fitxer </a>
 ```
 
-Imatges
-=======
+## Imatges
 
 -   L'aspecte més vistós i atractiu d'una pàgina web és el grafisme. Les
     imatges són emmagatzemades en forma d'arxius, principalment GI /PNG
@@ -448,8 +437,8 @@ cal fer el tancament.
 -   Mitjançant l'atribut *src* ( source ), especifiquem el lloc on es
     troba la imatge.
 
-ATRIBUTS DE L'ETIQUETA &lt;img&gt;
-----------------------------------
+### ATRIBUTS DE L'ETIQUETA &lt;img&gt;
+
 
 **Alt:**
 
@@ -471,8 +460,7 @@ Altres coses mal fetes:
 > imatge amb una baixa resolució i va millorant a mesura que es va
 > descarregant.
 
-Tipus d'arxius per les imatges
-------------------------------
+### Tipus d'arxius per les imatges
 
 GIF ( per dibuixos ) JPG ( per fotos )
 
@@ -498,8 +486,8 @@ incorpora **color real**, 48 bits per píxel i compresió sense pèrdua.
     arees transparents.
 -   Colors: Treballa sempre amb 16 milions de colors.
 
-Optimitzar els fitxers d'imatge
--------------------------------
+### Optimitzar els fitxers d'imatge
+
 
 -   Hem de procurar de no posar imatges de tamany més gran que el que
     s'ha de visualitzar, per exemple si té 200x200 la imatge màxima no
@@ -516,8 +504,7 @@ Reduïm el numero de colors de la paleta.
 -   És impresindible disposar d'un bon editor fotogràfic a fi
     d'optimitzar una imatge: **GIMP**
 
-Taules
-======
+## Taules
 
 -   Una taula és un conjunt de cel·les organitzades dintre de les quals
     podem col·locar diferents continguts.
@@ -557,69 +544,59 @@ si afegim un atribut *border="1"* ho veurem més clar:
 
 ATRIBUTS PER FILES I CEL·LES
 
-> Align: Justifica el text de la cel·la
->
-> Valign: Podem escollir si el text apareix a dalt (top), a baix
-> (bottom) o al mig (middle) de la cel.la.
->
-> Bgcolor: Donar color a la cel·la o la fila escollida.
->
-> Bordercolor: Defineix el color del marc.
->
-> ATRIBUTS PER CEL.LES
->
-> Background: Ens permet col·locar de fons una imatge en
->
-> una cel·la.
->
-> Height: Defineix l'altura de la cel·la en pixels o percentatge.
->
-> Width: Defineix l'amplada de la cel·la en pixels o percentatge.
->
-> Align: Alinea la taula respecte al seu entorn
->
-> Background: Ens permet col·locar un fons per la taula a partir d'una
-> imatge.
->
-> Bgcolor: Color de fons de la taula.
->
-> Border: Defineix el tamany del marc.
->
-> Bordercolor: Defineix el color del marc.
->
-> Cellpadding: Defineix en pixels l'espai entre les cel·les dela taula i
-> el seu contingut.
->
-> Cellspacing: Defineix l'espai entre els marcs ( en pixels )
->
-> Height: Defineix l'altura de la taula en pixels o percentatge.
->
-> Width: Defineix l'amplada de la taula en pixels o percentatge.
+* Align: Justifica el text de la cel·la
 
-Atributs de taula vàlids
-------------------------
+* Valign: Podem escollir si el text apareix a dalt (top), a baix  (bottom) o al mig (middle) de la cel.la.
 
-**Colspan:**
+* Bgcolor: Donar color a la cel·la o la fila escollida.
 
-:   Expandeix una cel·la horitzontalment.
+* Bordercolor: Defineix el color del marc.
 
-**Rowspan:**
+ ATRIBUTS PER CEL.LES
 
-:   Expandeix una cel·la verticalment.TAULES EN HTML
+* Background: Ens permet col·locar de fons una imatge en
+
+ una cel·la.
+
+* Height: Defineix l'altura de la cel·la en pixels o percentatge.
+
+* Width: Defineix l'amplada de la cel·la en pixels o percentatge.
+
+* Align: Alinea la taula respecte al seu entorn
+
+* Background: Ens permet col·locar un fons per la taula a partir d'una imatge.
+
+* Bgcolor: Color de fons de la taula.
+
+* Border: Defineix el tamany del marc.
+
+* Bordercolor: Defineix el color del marc.
+
+* Cellpadding: Defineix en pixels l'espai entre les cel·les dela taula i el seu contingut.
+
+* Cellspacing: Defineix l'espai entre els marcs ( en pixels )
+
+* Height: Defineix l'altura de la taula en pixels o percentatge.
+
+* Width: Defineix l'amplada de la taula en pixels o percentatge.
+
+### Atributs de taula vàlids
+
+**Colspan:**:   Expandeix una cel·la horitzontalment.
+
+**Rowspan:**:   Expandeix una cel·la verticalment.TAULES EN HTML
 
 Es poden utilitzar taules anidades.
 
-Formularis
-==========
+## Formularis
 
 Validació de camps:
 <https://lenguajehtml.com/p/html/formularios/validaciones-html5>
 
-Frames
-======
+## Frames
 
-Previ targets
--------------
+
+### Previ targets
 
 Atribut **target** a enllaços
 
@@ -636,8 +613,8 @@ Atribut **target** a enllaços
 <a href="nom-pagina-a-carregar.html" target="nom-del-marc-a-carregar">
 ```
 
-invoquem?
----------
+### invoquem?
+
 
 ![image](cthu.png)
 
@@ -682,8 +659,8 @@ xhtml
 </HTML>
 ```
 
-Per què no s'utilitzen els frames
----------------------------------
+### Per què no s'utilitzen els frames
+
 
 -   Els motors de búsqueda tenen problemes per indexar-los
 -   Ocupen espai a la pantalla
@@ -692,8 +669,8 @@ Per què no s'utilitzen els frames
 -   Tenen problemes d'usabilitat i accessibilitat web per persones
     invidents
 
-Etiquetes
----------
+### Etiquetes
+
 
 **frameset**
 
@@ -709,13 +686,13 @@ Etiquetes
     es carregui. L'atribut *name* indica el nom del frame per ser
     utilitzat amb *targets*
 
-Exemples
---------
+### Exemples
+
 
 -   Anem a veure diferents dissenys de frames
 
-3 àrees verticals
------------------
+#### 3 àrees verticals
+
 
 ![image](frames1.png)
 
@@ -727,8 +704,7 @@ Exemples
 </FRAMESET>
 ```
 
-3 àrees horitzontals
---------------------
+#### 3 àrees horitzontals
 
 ![image](frames2.png)
 
@@ -740,8 +716,8 @@ Exemples
 </FRAMESET>
 ```
 
-combinat 2 àrees vertical amb 2 horitzontals
---------------------------------------------
+#### combinat 2 àrees vertical amb 2 horitzontals
+
 
 ![image](frames3.png)
 
@@ -755,8 +731,7 @@ combinat 2 àrees vertical amb 2 horitzontals
 </FRAMESET>
 ```
 
-combinat 2 àrees horitzontals amb 2 verticals
----------------------------------------------
+#### combinat 2 àrees horitzontals amb 2 verticals
 
 ![image](frames4.png)
 
@@ -770,13 +745,12 @@ combinat 2 àrees horitzontals amb 2 verticals
     </FRAMESET>
 ```
 
-Xuletes ràpides de frames
--------------------------
+### Xuletes ràpides de frames
 
 ![image](xuleta-html-framesets.png)
 
-Iframes
-=======
+## Iframes
+
 
 -   El frame que ha sobreviscut a l'HTML5 és l'**iframe**.
 -   És un frame *intern*
