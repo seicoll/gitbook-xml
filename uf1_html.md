@@ -61,16 +61,19 @@ El **DOCTYPE** s'ha de posar a la primera línia.
 #### DOCTYPE en HTML4
 
 **Estricte**:
+
 `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "<http://www.w3.org/TR/html4/strict.dtd>"> `
 
 **Transicional**:
+
 `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "<http://www.w3.org/TR/html4/loose.dtd>">`
 
 **Frames**:
+
 `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">`
 
 <!--
-#### DOCTYPE XHTML 1.0
+DOCTYPE XHTML 1.0
 
 Estricte:
 
@@ -117,10 +120,20 @@ Dins la pàgina HTML podem distingir-hi **dues parts**:
 * Col·locarem el nostre contingut de la pàgina.
 * **És el que es veu realment.**
 
-### Pàgina html bàsica
+### El joc de caràcters
+
+> És important definir dins del `<head>` el joc de caràcters utilitzat.
+
+* El **joc de caràcters** determina la forma en què els caràcters es converteixen en bytes (i viceversa).
+* El W3C recomana el charset **UTF-8**.
 
 ```html
+<meta charset="UTF-8">
+```
 
+### Pàgina HTML bàsica
+
+```html
 <!DOCTYPE html>
 <html lang="ca">
      <head>
@@ -134,7 +147,24 @@ Dins la pàgina HTML podem distingir-hi **dues parts**:
 
 ```
 
-## Format dels paràgrafs
+## Títols
+
+HTML defineix **6 nivells de capçaleres o títols**.
+
+```html
+<h1>Títol 1</h1>
+<h2>Títol 2</h2>
+<h3>Títol 3</h3>
+<h4>Títol 4</h4>
+<h5>Títol 5</h5>
+<h6>Títol 6</h6>
+```
+
+**Més informació**: w3schools HTML Headings [https://www.w3schools.com/html/html_headings.asp](https://www.w3schools.com/html/html_headings.asp)
+
+---
+
+## Paràgrafs
 
 Per definir els **paràgrafs** utilitzem l'etiqueta `<p>`, la qual introdueix una línia en blanc després del paràgraf.
 
