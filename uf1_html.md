@@ -47,16 +47,92 @@ El llenguatge HTML té **número d'etiquetes limitat**.
 
   * **HTML Element Reference:** [https://www.w3schools.com/TAGS/default.asp](https://www.w3schools.com/TAGS/default.asp)
 
-### Parts d'un document HTML
+
+## Creació de documents HTML
+
+### L'etiqueta DOCTYPE
+
+> Tot document **HTML5** ha de començar definint el **DOCTYPE**.
+
+> L'etiqueta **DOCTYPE** serveix per indica al programa client (navegador) amb quina sintaxi s'ha creat la pàgina, és una sentencia que es posa al principi de tot de la pàgina.
+
+El **DOCTYPE** s'ha de posar a la primera línia.
+
+#### DOCTYPE en HTML4
+
+**Estricte**:
+`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "<http://www.w3.org/TR/html4/strict.dtd>"> `
+
+**Transicional**:
+`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "<http://www.w3.org/TR/html4/loose.dtd>">`
+
+**Frames**:
+`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">`
+
+<!--
+#### DOCTYPE XHTML 1.0
+
+Estricte:
+
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>">`
+
+Transitional:
+ 
+ `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>">`
+ -->
+
+#### DOCTYPE HTML5
+
+`<!DOCTYPE html>`
+
+### L'etiqueta html
 
 Un document HTML ha d'estar delimitat per l'etiqueta `<html>` i `</html>`.
 
-A dins podem distingir-hi **dues parts**:
+Pot incloure l'atribut **lang**:
+* **lang** ens permet definir l'idioma en el que està la pàgina
+* Aquesta informació és important pels motors de cerca i els programes de síntesis de veu.
 
-* **L'encapçalament** definit per `<head>` i `</head>` on col·locarem etiquetes de tipus informatiu, com per exemple el títol de la pàgina.
+```html
+<!DOCTYPE html>
+<html lang="ca">
 
+     ... 
 
-* **El cos**, flanquejat per les etiquetes `<body>` i `</body>` que serà on col·locarem el nostre text i imatges delimitat per altres etiquetes.
+</html>
+```
+
+### Parts d'un document HTML
+
+Dins la pàgina HTML podem distingir-hi **dues parts**:
+
+**L'encapçalament** 
+* Flanquejat per les etiquetes `<head>` i `</head>` 
+* Dóna informació sobre la pàgina.
+* Col·locarem etiquetes de tipus informatiu, com per exemple el títol de la pàgina, autor, paraules clau.
+* **No es mostra en el navegador.**
+
+**El cos**
+* Flanquejat per les etiquetes `<body>` i `</body>` 
+* Col·locarem el nostre contingut de la pàgina.
+* **És el que es veu realment.**
+
+### Pàgina html bàsica
+
+```html
+
+<!DOCTYPE html>
+<html lang="ca">
+     <head>
+         <title>HTLM5</title>
+         <meta charset="UTF-8">
+     </head>
+     <body>
+          ...
+     </body>
+</html>
+
+```
 
 ## Format dels paràgrafs
 
@@ -136,12 +212,6 @@ Adequat per fer textos literals, per exemple els poemes amb els seus salts de l�
 
 La major part d'etiquetes tenen atributs ben vàlids, útils i de vegades imprescindibles.
 
-**Atributs per la internacionalització**
-
-Per pàgines multi-idiomes, s'indica de forma explícita amb qui idioma està fet una pàgina. 
-
-Per exemple: `lang=ca`
-
 **Atributs d'events**
 
 S'utilitzen a les pàgines web dinàmiques, fetes amb *Javascript*, 
@@ -152,34 +222,7 @@ Per exemple: onclick, ondblclick, onmousedown, onmouseup, ...
 
 Per exemple `tabindex=3`, estableix la posició en l'ordre de tabulació de la pàgina
 
-## Doctype
 
-> L'etiqueta **doctype** serveix per indica al programa client (navegador) amb quina sintaxi s'ha creat la pàgina, és una sentencia que es posa al principi de tot de la pàgina.
-
-### DOCTYPE HTML4
-
-Estricte:
-`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "<http://www.w3.org/TR/html4/strict.dtd>"> `
-
-Transicional:
-`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "<http://www.w3.org/TR/html4/loose.dtd>">`
-
-Frames:
-`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">`
-
-### DOCTYPE XHTML 1.0
-
-Estricte:
-
-`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>">`
-
-Transitional:
- 
- `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd>">`
-
-### DOCTYPE HTML5
-
-`<!DOCTYPE html>`
 
 ## Metadades
 
