@@ -2,15 +2,17 @@
 
 ## Introducció
 
-> El **llenguatge HTML** és el llenguatge amb el qual s'escriuen les pàgines web.
+> El **llenguatge HTML (HyperText Markup Language)** és el llenguatge amb el qual s'escriuen les pàgines web.
 
 Les pàgines web són vistes pels usuaris mitjançant un tipus d'aplicació anomenat **navegador**.
 
+El llenguatge HTML està pensat per compartir documents de manera que es vegin de forma semblant en diferents navegadors.
+
 Conseqüentment, el **llenguatge HTML** serveix al navegador per mostrar les pàgines a l'usuari.
 
-### Història d'Internet
+La versió actual del llenguatge HTML és **HTML5**.
 
-<https://www.youtube.com/watch?v=h8K49dD52WA>
+![](/uf1_images/html5.png)
 
 ### Què és una pàgina web?
 
@@ -38,9 +40,12 @@ El resultat serà:
 
 Però tot i que funciona, no és el que busquem, falta especificar molt millor les parts de la pàgina i la sintaxi de les etiquetes.
 
-Aquí hi trobaràs una llista d'**etiquetes vàlides**:
+El llenguatge HTML té **número d'etiquetes limitat**.
+* Cada etiqueta està pensada per representar documents d'una forma determinada o per marcar-ne l'estructura.
 
-[https://www.w3schools.com/TAGS/default.asp](https://www.w3schools.com/TAGS/default.asp)
+* Aquí hi trobaràs una llista d'**etiquetes vàlides**:
+
+  * **HTML Element Reference:** [https://www.w3schools.com/TAGS/default.asp](https://www.w3schools.com/TAGS/default.asp)
 
 ### Parts d'un document HTML
 
@@ -61,7 +66,7 @@ L'etiqueta `<br>` la qual no té tancament, ens serveix per fer un salt de líni
 
 A dins de l'etiqueta `<p>` podem definir atributs a fi de justificar el text del paràgraf???
 
-Aquí comencem amb els perills de les coses mal fetes però que sembla que funcionin...
+Aquí comencem amb els perills de les **coses mal fetes** però que sembla que funcionin...
 
 ### Què no s'ha de fer
 
@@ -85,17 +90,15 @@ Mireu l'exemple de l'*abadia del crimen*, per entendre que una cosa ben feta dur
 
 En voleu més exemples? (en MAJÚSCULES EL QUE HEM D'EVITAR)
 
-Color, tamany i tipus de lletra
+Podíem definir el **color**, **tamany** i **tipus** de lletra de diferents formes:
 
-Això es feia mitjançant l'etiqueta `<FONT>` i el seu tancament.
-
-Atributs pel tipus de lletra:
+Mitjançant l'etiqueta `<FONT>` teníem els atributs:
 
 * FACE: Defineix el tipus de lletra.
 * SIZE: Defineix el tamany de la lletra.
 * COLOR: Defineix el color del text de la lletra.
 
-Es definien dins de l'etiqueta `<body>`;
+Amb Es definien dins de l'etiqueta `<body>`;
 
 * ATRIBUTS
 * BGCOLOR: Especifica el color de fons de la pàgina
@@ -131,19 +134,19 @@ Adequat per fer textos literals, per exemple els poemes amb els seus salts de l�
 
 **Atributs bàsics**
 
-Són els que hem vist en un ús incorrecte, però la major part d'etiquetes tenen atributs ben vàlids, útils i de vegades imprescindibles.
+La major part d'etiquetes tenen atributs ben vàlids, útils i de vegades imprescindibles.
 
 **Atributs per la internacionalització**
 
-Per pàgines multi-idiomes, s'indica de forma explícita amb qui idioma està fet una pàgina. Per 
+Per pàgines multi-idiomes, s'indica de forma explícita amb qui idioma està fet una pàgina. 
 
-Exemple: `lang=ca`
+Per exemple: `lang=ca`
 
 **Atributs d'events**
 
 S'utilitzen a les pàgines web dinàmiques, fetes amb *Javascript*, 
 
-exemples: onclick, ondblclick, onmousedown, onmouseup, ...
+Per exemple: onclick, ondblclick, onmousedown, onmouseup, ...
 
 **Atributs pels elements que poden obtenir el focus**
 
@@ -151,7 +154,7 @@ Per exemple `tabindex=3`, estableix la posició en l'ordre de tabulació de la p
 
 ## Doctype
 
-Serveix per indica al programa client (navegador) amb quina sintaxi s'ha creat la pàgina, és una sentencia que es posa al principi de tot de la pàgina.
+> L'etiqueta **doctype** serveix per indica al programa client (navegador) amb quina sintaxi s'ha creat la pàgina, és una sentencia que es posa al principi de tot de la pàgina.
 
 ### DOCTYPE HTML4
 
@@ -777,3 +780,6 @@ dels *iframe* podrem utilitzar.
     l'espai dissenyat
 
 
+## Documentació i recursos
+
+* [Vídeo Història d'Internet](https://www.youtube.com/watch?v=h8K49dD52WA)
