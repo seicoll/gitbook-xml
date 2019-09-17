@@ -120,16 +120,45 @@ Dins la pàgina HTML podem distingir-hi **dues parts**:
 * Col·locarem el nostre contingut de la pàgina.
 * **És el que es veu realment.**
 
-### El joc de caràcters
+## Les metadades
 
-> És important definir dins del `<head>` el joc de caràcters utilitzat.
+L'etiqueta `<meta>` serveix per afegir informació sobre la pàgina i es posen dins el `<head>`.
+
+Els buscadors consultes l'informació d'aquesta etiqueta per millorar la seva cerca i indexació.
+
+Conté els atributs *name* i *content*
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
+
+> És important definir el joc de caràcters utilitzat.
 
 * El **joc de caràcters** determina la forma en què els caràcters es converteixen en bytes (i viceversa).
 * El W3C recomana el charset **UTF-8**.
 
+<!--
+## Caràcters especials
+
+En anglès entities, en català no se sol fer servir "entitats"
+Una pàgina web es veu en diferents països que tenen diferents codificacions.
+
+Exemples
+
+* &nbsp; -> espai
+* &gt; -> &gt;
+* &lt; -> &lt;
+
 ```html
-<meta charset="UTF-8">
+h&nbsp;o&nbsp;&nbsp;l&nbsp;&nbsp;a
 ```
+-->
 
 ### Pàgina HTML bàsica
 
@@ -236,6 +265,7 @@ L'etiqueta `<pre>` defineix un paràgraf que respecte els codis propis del text 
 
 Adequat per fer textos literals, per exemple els poemes amb els seus salts de línia sense *&lt;br&gt;*
 
+<!--
 ## Tipus d'atributs
 
 **Atributs bàsics**
@@ -252,36 +282,7 @@ Per exemple: onclick, ondblclick, onmousedown, onmouseup, ...
 
 Per exemple `tabindex=3`, estableix la posició en l'ordre de tabulació de la pàgina
 
-
-
-## Metadades
-
-L'etiqueta <meta ...> serveix per afegir informació sobre la pàgina.
-
-Els buscadors consultes l'informació d'aquesta etiqueta per millorar la seva cerca i indexació
-
-Conté els atributs *name* i *content*
-
-La metadada més important és la **codificació**, és a dir declarar amb quin joc de caràcters s'ha dissenyat la pàgina `charset=utf-8`.
-
-```html
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-```
-
-## Caràcters especials
-
-En anglès entities, en català no se sol fer servir "entitats"
-Una pàgina web es veu en diferents països que tenen diferents codificacions.
-
-Exemples
-
-* &nbsp; -> espai
-* &gt; -> &gt;
-* &lt; -> &lt;
-
-```html
-h&nbsp;o&nbsp;&nbsp;l&nbsp;&nbsp;a
-```
+-->
 
 ## Llistes
 
@@ -307,6 +308,8 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>`.
 </ul>
 ```
 
+**Més informació**: [w3schools.com: HTML Lists](https://www.w3schools.com/html/html_lists.asp)
+
 <!--
 L'atribut `type` ens serveix per definir el tipus de vinyeta. 
 
@@ -321,8 +324,8 @@ On tipus vinyeta pot ser: circle, disc o square
 ### Llistes ordenades
 
 
-Definides per les etiquetes &lt;ol&gt; i &lt;/ol&gt; ( ordered list).
-Cada element de la llista queda enmarcat per l'etiqueta *&lt;li&gt;*
+Definides per les etiquetes `<ol>` i `</ol>` ( ordered list).
+Cada element de la llista queda enmarcat per l'etiqueta `<li>`
 
 ```html
 <p> Països del mon </p>
@@ -334,26 +337,20 @@ Cada element de la llista queda enmarcat per l'etiqueta *&lt;li&gt;*
 
 ![image](cthu.png)
 
-L'atribut **TYPE** ens serveix per definir el tipus de numeració que
-utilitzarem.
+L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzarem.
 
-> 1 per ordenar amb nombres
->
-> > a per lletra de l'alfabet
->
-> A per lletres majúscules de l'alfabet
->
-> i per ordenar amb xifres romanes
->
-> I per ordenar amb xifres romanes majúscules
+* 1 per ordenar amb nombres
+* a per lletra de l'alfabet
+* A per lletres majúscules de l'alfabet
+* i per ordenar amb xifres romanes
+* I per ordenar amb xifres romanes majúscules
 
 ### Llistes de definició
 
--   Cada element és presentat juntament amb la seva definició.
--   Definides per les etiquetes *&lt;dl&gt;* i *&lt;/dl&gt;*
-    (definition list).
--   Les etiquetes de cada element són *&lt;dt&gt;* (definition term) i
-    la seva definició *&lt;dd&gt;* (definition definition).
+> Cada element és presentat juntament amb la seva definició.
+  
+* Definides per les etiquetes `<dl>` i `</dl>`   (**d**efinition **l**ist).
+*  Les etiquetes de cada element són `<dt>` (**d**efinition **t**erm) i la seva definició `<dd>` (**d**efinition **d**efinition).
 
 ```html
 <dl>
