@@ -158,6 +158,23 @@ Exemples
 ```html
 h&nbsp;o&nbsp;&nbsp;l&nbsp;&nbsp;a
 ```
+
+ Tipus d'atributs
+
+**Atributs bàsics**
+
+La major part d'etiquetes tenen atributs ben vàlids, útils i de vegades imprescindibles.
+
+**Atributs d'events**
+
+S'utilitzen a les pàgines web dinàmiques, fetes amb *Javascript*, 
+
+Per exemple: onclick, ondblclick, onmousedown, onmouseup, ...
+
+**Atributs pels elements que poden obtenir el focus**
+
+Per exemple `tabindex=3`, estableix la posició en l'ordre de tabulació de la pàgina
+
 -->
 
 ### Pàgina HTML bàsica
@@ -265,25 +282,6 @@ L'etiqueta `<pre>` defineix un paràgraf que respecte els codis propis del text 
 
 Adequat per fer textos literals, per exemple els poemes amb els seus salts de línia sense *&lt;br&gt;*
 
-<!--
-## Tipus d'atributs
-
-**Atributs bàsics**
-
-La major part d'etiquetes tenen atributs ben vàlids, útils i de vegades imprescindibles.
-
-**Atributs d'events**
-
-S'utilitzen a les pàgines web dinàmiques, fetes amb *Javascript*, 
-
-Per exemple: onclick, ondblclick, onmousedown, onmouseup, ...
-
-**Atributs pels elements que poden obtenir el focus**
-
-Per exemple `tabindex=3`, estableix la posició en l'ordre de tabulació de la pàgina
-
--->
-
 ## Llistes
 
 > Les **llistes** serveixen per enumerar i definir elements. 
@@ -294,11 +292,11 @@ Podem distingir **tres tipus** de llistes:
 * Llistes ordenades
 * Llistes de definició
 
-### Llistes sense ordre
+### Llistes sense ordre (Unordered Lists)
 
 Definides per les etiquetes `<ul>` i `</ul>` (**u**nordered **l**ist). 
 
-Cada element de la llista queda enmarcat per l'etiqueta `<li>`.
+Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**tem).
 
 ```html
 <p> Països del mon </p>
@@ -321,11 +319,11 @@ On tipus vinyeta pot ser: circle, disc o square
 
 -->
 
-### Llistes ordenades
+### Llistes ordenades (Ordered Lists)
 
 
-Definides per les etiquetes `<ol>` i `</ol>` ( ordered list).
-Cada element de la llista queda enmarcat per l'etiqueta `<li>`
+Definides per les etiquetes `<ol>` i `</ol>` (**o**rdered **l**ist).
+Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**tem)
 
 ```html
 <p> Països del mon </p>
@@ -345,7 +343,7 @@ L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzare
 * i per ordenar amb xifres romanes
 * I per ordenar amb xifres romanes majúscules
 
-### Llistes de definició
+### Llistes de definició (Definition Lists)
 
 > Cada element és presentat juntament amb la seva definició.
   
@@ -510,8 +508,7 @@ cal fer el tancament.
 -   Mitjançant l'atribut *src* ( source ), especifiquem el lloc on es
     troba la imatge.
 
-### ATRIBUTS DE L'ETIQUETA &lt;img&gt;
-
+### Atributs de l'etiqueta `<img>`
 
 **Alt:**
 
@@ -520,18 +517,11 @@ cal fer el tancament.
 i el ja vist *src* són els únics atributs que hauria de tenir... però
 com sempre, històricament s'ha fet malament...
 
-![image](cthu.png)
+Altres **coses mal fetes**:
 
-Altres coses mal fetes:
-
-> HEIGHT I WIDTH: Defineixen l'altura i amplada de les imatges en
-> pixels.
->
-> BORDER: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
->
-> LOWSRC: Quant tenim activada aquesta opció primer es descarrega la
-> imatge amb una baixa resolució i va millorant a mesura que es va
-> descarregant.
+* HEIGHT I WIDTH: Defineixen l'altura i amplada de les imatges en pixels.
+* BORDER: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
+* LOWSRC: Quant tenim activada aquesta opció primer es descarrega la imatge amb una baixa resolució i va millorant a mesura que es va descarregant.
 
 ### Tipus d'arxius per les imatges
 
@@ -541,23 +531,17 @@ Els dos formats comprimeixen les imatges per guardar-les.
 
 **GIF** - Arxiu ideal per imatges que estan dibuixades.
 
--   Compresió: És molt bona per dibuixos.
--   Transparència: És una utilitat per definir algunes parts de la
-    imatge com a transparents.
--   Colors: Es poden utilitzar paletes, conjunts de 256 o menys. Quant
-    menys colors utilitzem menys tamany ocuparà l'imatge.
+* Compresió: És molt bona per dibuixos.
+* Transparència: És una utilitat per definir algunes parts de la imatge com a transparents.
+* Colors: Es poden utilitzar paletes, conjunts de 256 o menys. Quant menys colors utilitzem menys tamany ocuparà l'imatge.
 
-Actualment s'està utilitzant un format **PNG** que té les mateixes
-prestacions que el GIF (transparència i animació) i a més a més
-incorpora **color real**, 48 bits per píxel i compresió sense pèrdua.
+Actualment s'està utilitzant un format **PNG** que té les mateixes prestacions que el GIF (transparència i animació) i a més a més incorpora **color real**, 48 bits per píxel i compresió sense pèrdua.
 
 **JPG**
 
--   Compresió: El seu algorisme de compressió és ideal per
-    guardar fotos.
--   Transparència: Aquest format no té possiblitats de crear
-    arees transparents.
--   Colors: Treballa sempre amb 16 milions de colors.
+* Compresió: El seu algorisme de compressió és ideal per guardar fotos.
+* Transparència: Aquest format no té possiblitats de crear arees transparents.
+* Colors: Treballa sempre amb 16 milions de colors.
 
 ### Optimitzar els fitxers d'imatge
 
@@ -579,11 +563,9 @@ Reduïm el numero de colors de la paleta.
 
 ## Taules
 
--   Una taula és un conjunt de cel·les organitzades dintre de les quals
-    podem col·locar diferents continguts.
--   Una taula ens permet organitzar i distribuir els espais d'una manera
-    més òptima.
--   L'etiqueta per definir les taules és: *&lt;table&gt; &lt;/table&gt;*
+> Una taula és un conjunt de cel·les organitzades dintre de les quals podem col·locar diferents continguts.
+
+L'etiqueta per definir les taules és: `<table>` `</table>`
 
 Les taules són descrites per línies d'esquerra a dreta, mitjançant
 *&lt;tr&gt; &lt;/tr&gt;*
@@ -657,7 +639,7 @@ ATRIBUTS PER FILES I CEL·LES
 
 **Colspan:**:   Expandeix una cel·la horitzontalment.
 
-**Rowspan:**:   Expandeix una cel·la verticalment.TAULES EN HTML
+**Rowspan:**:   Expandeix una cel·la verticalment.
 
 Es poden utilitzar taules anidades.
 
