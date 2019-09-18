@@ -259,18 +259,23 @@ Amb Es definien dins de l'etiqueta `<body>`;
 
 ... i un llarg etcètera...
 
-* Negreta: &lt;b&gt; i &lt;/b&gt; ( bold ) o &lt;strong&gt; i &lt;/strong&gt;
-* Italica: &lt;i&gt; i &lt;/i&gt;
-* Subratllat &lt;u&gt; i &lt;/u&gt; ( underlined )
-* Subindex: &lt;sub&gt; i &lt;/sub&gt;
-* Superindex: &lt;sup&gt; i &lt;/sup&gt;
+## Etiquetes de text
 
-Aquestes etiquetes les farem servir només pel tema del significat o la forma, 
-* Per exemple: `<b>` per indicar que alguna cosa és important.
+Serveixen per indicar que un text concret té un significat especial.
 
-**MAI** fer servir *&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
 
+* `<b></b>` (bold) o `<strong></strong>`: Text important (es mostra en negreta): 
+* `<i></i>` (italic): es mostra en cursiva
+* `<u></u>` (underlined): es mostra subratllat
+* `<sub></sub>`: Subindex
+* `<sup></sup>`: Superindex
+* `<blockquote></blockquote>`: per cites (es mostra tabulat). [Exemple](https://www.w3schools.com/html/html_quotation_elements.asp)
+
+> No són per donar format sinò per donar significat especial al text.
 > **Sempre** hem de formatar el contingut mitjançant les **fulles d'estil (CSS)**.
+
+> **MAI** fer servir *&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
+
 
 ## Altres paràgrafs
 
