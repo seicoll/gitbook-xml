@@ -276,6 +276,7 @@ Serveixen per indicar que un text concret té un significat especial.
 
 > **MAI** fer servir *&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
 
+--- 
 
 ## Altres paràgrafs
 
@@ -600,51 +601,34 @@ si afegim un atribut *border="1"* ho veurem més clar:
 
 ![Forbidden](uf1_images/forbidden.jpg)
 
-ATRIBUTS PER FILES I CEL·LES
+**ATRIBUTS PER FILES I CEL·LES no vàlids**
 
-* Align: Justifica el text de la cel·la
+* **Align**: Justifica el text de la cel·la
+* **Valign**: Podem escollir si el text apareix a dalt (top), a baix  (bottom) o al mig (middle) de la cel.la.
+* **Bgcolor**: Donar color a la cel·la o la fila escollida.
+* **Bordercolor**: Defineix el color del marc.
 
-* Valign: Podem escollir si el text apareix a dalt (top), a baix  (bottom) o al mig (middle) de la cel.la.
+**ATRIBUTS PER CEL.LES no vàlids**
 
-* Bgcolor: Donar color a la cel·la o la fila escollida.
+* **Background**: Ens permet col·locar de fons una imatge en una cel·la.
+* **Height**: Defineix l'altura de la cel·la en pixels o percentatge.
+* **Width**: Defineix l'amplada de la cel·la en pixels o percentatge.
+* **Align**: Alinea la taula respecte al seu entorn
+* **Background**: Ens permet col·locar un fons per la taula a partir d'una imatge.
+* **Bgcolor**: Color de fons de la taula.
+* **Border**: Defineix el tamany del marc.
+* **Bordercolor**: Defineix el color del marc.
+* **Cellpadding**: Defineix en pixels l'espai entre les cel·les dela taula i el seu contingut.
+* **Cellspacing**: Defineix l'espai entre els marcs (en pixels)
+* **Height**: Defineix l'altura de la taula en pixels o percentatge.
+* **Width**: Defineix l'amplada de la taula en pixels o percentatge.
 
-* Bordercolor: Defineix el color del marc.
+**Atributs de taula vàlids**
 
- ATRIBUTS PER CEL.LES
+* **Colspan:**: Expandeix una cel·la horitzontalment.
+* **Rowspan:**: Expandeix una cel·la verticalment.
 
-* Background: Ens permet col·locar de fons una imatge en
-
- una cel·la.
-
-* Height: Defineix l'altura de la cel·la en pixels o percentatge.
-
-* Width: Defineix l'amplada de la cel·la en pixels o percentatge.
-
-* Align: Alinea la taula respecte al seu entorn
-
-* Background: Ens permet col·locar un fons per la taula a partir d'una imatge.
-
-* Bgcolor: Color de fons de la taula.
-
-* Border: Defineix el tamany del marc.
-
-* Bordercolor: Defineix el color del marc.
-
-* Cellpadding: Defineix en pixels l'espai entre les cel·les dela taula i el seu contingut.
-
-* Cellspacing: Defineix l'espai entre els marcs ( en pixels )
-
-* Height: Defineix l'altura de la taula en pixels o percentatge.
-
-* Width: Defineix l'amplada de la taula en pixels o percentatge.
-
-### Atributs de taula vàlids
-
-**Colspan:**:   Expandeix una cel·la horitzontalment.
-
-**Rowspan:**:   Expandeix una cel·la verticalment.
-
-Es poden utilitzar taules anidades.
+També es poden utilitzar taules anidades.
 
 ## Formularis
 
@@ -659,20 +643,15 @@ Atribut **target** a enllaços
 
 :   s'utilitza per decidir on es carrega l'enllaç, pot ser:
 
--   \_blank: nova finestra
--   \_top: finestra
--   \_self:(per defecte) en el frame actual
--   \_parent: es carrega al frame "pare", el que era havia cridat
-    l'actual
--   o també un nom de **frame** (definit amb l'atribut name)
+* \_blank: nova finestra
+* \_top: finestra
+* \_self:(per defecte) en el frame actual
+* \_parent: es carrega al frame "pare", el que era havia cridat l'actual
+* \- o també un nom de **frame** (definit amb l'atribut name)
 
 ```html
 <a href="nom-pagina-a-carregar.html" target="nom-del-marc-a-carregar">
 ```
-
-### invoquem?
-
-
 ![Forbidden](uf1_images/forbidden.jpg)
 
 * Estan **obsolets** per l'HTML5, però eren vàlids per altres DOCTYPES.
