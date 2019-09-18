@@ -208,23 +208,21 @@ HTML defineix **6 nivells de capçaleres o títols**.
 
 **Més informació**: w3schools HTML Headings [https://www.w3schools.com/html/html_headings.asp](https://www.w3schools.com/html/html_headings.asp)
 
----
-
 ## Paràgrafs
 
 Per definir els **paràgrafs** utilitzem l'etiqueta `<p>`, la qual introdueix una línia en blanc després del paràgraf.
 
 L'etiqueta `<br>` la qual no té tancament, ens serveix per fer un salt de línia, dins dels paràgrafs.
 
-A dins de l'etiqueta `<p>` podem definir atributs a fi de justificar el text del paràgraf???
+**Pregunta:** A dins de l'etiqueta `<p>` podem definir atributs a fi de justificar el text del paràgraf?
 
 Aquí comencem amb els perills de les **coses mal fetes** però que sembla que funcionin...
 
-### Què no s'ha de fer
+![Forbidden](uf1_images/forbidden.jpg)
+
+**Què no s'ha de fer**
 
 Llegireu que hi ha atributs per alinear els paràgrafs, com `align`
-
-**antigament...**
 
 * Text alineat a l'esquerre: `<p align="left"> Text left.</p>`
 
@@ -232,7 +230,7 @@ Llegireu que hi ha atributs per alinear els paràgrafs, com `align`
 
 * Text alineat a la dreta: `<p align="right"> Text right </p>`
 
-això **no és correcte**, a vegades el camí més ràpid no és el millor.
+Antigament es feia servir però ara **no és correcte**, a vegades el camí més ràpid no és el millor.
 
 **Coneixeu el CSS?**
 
