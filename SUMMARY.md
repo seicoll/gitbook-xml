@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Summary
 
 * [Índex](README.md)
