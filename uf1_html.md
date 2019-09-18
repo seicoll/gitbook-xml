@@ -311,7 +311,8 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**te
 
 **Més informació**: [w3schools.com: HTML Lists](https://www.w3schools.com/html/html_lists.asp)
 
-<!--
+![Forbidden](uf1_images/forbidden.jpg)
+
 L'atribut `type` ens serveix per definir el tipus de vinyeta. 
 
 `<ul TYPE="tipus vinyeta">`
@@ -320,7 +321,6 @@ On tipus vinyeta pot ser: circle, disc o square
 
 > Recordeu que això s'ha de fer **CSS**.
 
--->
 
 ### Llistes ordenades (Ordered Lists)
 
@@ -336,7 +336,7 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**te
 </ol>
 ```
 
-![image](cthu.png)
+![Forbidden](uf1_images/forbidden.jpg)
 
 L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzarem.
 
@@ -598,7 +598,7 @@ si afegim un atribut *border="1"* ho veurem més clar:
 <table boder="1">
 ```
 
-![image](cthulhu.png)
+![Forbidden](uf1_images/forbidden.jpg)
 
 ATRIBUTS PER FILES I CEL·LES
 
@@ -653,7 +653,6 @@ Validació de camps:
 
 ## Frames
 
-
 ### Previ targets
 
 Atribut **target** a enllaços
@@ -674,28 +673,24 @@ Atribut **target** a enllaços
 ### invoquem?
 
 
-![image](cthu.png)
+![Forbidden](uf1_images/forbidden.jpg)
 
--   Estan obsolets per l'HTML5, però són vàlids per altres DOCTYPES
--   Té l'interès "històric" de saber com es feien abans les pàgines web,
-    el CSS actualment les millora molt
--   Antigament els layouts una mica complexes es feien o bé amb taules o
-    bé amb frames. Les dues coses estan en desús avui en dia.
--   Podria interessar saber-los fer per actualitzar alguna pàgina web
-    antiga
--   Doctypes de 4.01 o de XHTML, amb FRAMESET
+* Estan **obsolets** per l'HTML5, però eren vàlids per altres DOCTYPES.
+* Té l'interès "històric" de saber com es feien abans les pàgines web, el CSS actualment les millora molt
+* Antigament els layouts una mica complexes es feien o bé amb taules o bé amb frames. Les dues coses estan en desús avui en dia.
+*  Podria interessar saber-los fer per actualitzar alguna pàgina web antiga
 
-html 4.01
+**Doctypes de 4.01 o de XHTML, amb FRAMESET**
 
-> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
-> "<http://www.w3.org/TR/html4/frameset.dtd>"&gt;
+html 4.01:
 
-xhtml
+`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">`
 
-> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
-> "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>"&gt;
+xhtml:
 
--   L'estructura també es veu modificada. No té *body*, té *frameset*
+`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>">`
+
+L'**estructura de la pàgina** també es veu modificada. No té *body*, té *frameset*
 
 ```html
 <HTML>
@@ -749,7 +744,7 @@ xhtml
 
 -   Anem a veure diferents dissenys de frames
 
-#### 3 àrees verticals
+**3 àrees verticals**
 
 
 ![image](frames1.png)
@@ -762,7 +757,7 @@ xhtml
 </FRAMESET>
 ```
 
-#### 3 àrees horitzontals
+**3 àrees horitzontals**
 
 ![image](frames2.png)
 
@@ -774,7 +769,7 @@ xhtml
 </FRAMESET>
 ```
 
-#### combinat 2 àrees vertical amb 2 horitzontals
+**combinat 2 àrees vertical amb 2 horitzontals**
 
 
 ![image](frames3.png)
@@ -789,7 +784,7 @@ xhtml
 </FRAMESET>
 ```
 
-#### combinat 2 àrees horitzontals amb 2 verticals
+**combinat 2 àrees horitzontals amb 2 verticals**
 
 ![image](frames4.png)
 
@@ -803,15 +798,17 @@ xhtml
     </FRAMESET>
 ```
 
+<!--
 ### Xuletes ràpides de frames
 
 ![image](xuleta-html-framesets.png)
+-->
 
 ## Iframes
 
+> El frame que ha sobreviscut a l'HTML5 és l'**iframe**.
 
--   El frame que ha sobreviscut a l'HTML5 és l'**iframe**.
--   És un frame *intern*
+És un frame *intern*
 
 ```html
 <iframe name="pag-interna" 
@@ -822,18 +819,12 @@ xhtml
      scrolling="Auto">
  </iframe> 
 ```
-
--   (posem el codi en minúscules com a codi que es pot utilitzar en
-    HTML5)\*
-
+<!--
 Es poden veure coses que semblarins pròpies del CSS, però que en el cas
 dels *iframe* podrem utilitzar.
+-->
 
-**scrolling**
-
-:   apareixen barres d'scroll en el frame si la pàgina és més gran que
-    l'espai dissenyat
-
+Apareixen **barres d'scroll** en el frame si la pàgina és més gran que l'espai dissenyat.
 
 ## Documentació i recursos
 
