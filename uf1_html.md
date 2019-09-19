@@ -589,7 +589,7 @@ Les taules són descrites per línies d'esquerra a dreta, mitjançant
 </table>
 ```
 
-![image](taula1.png)
+![](/assets/taula1.png)
 
 Com es pot veure així no es veu massa clar que hi hagi una taula...
 
