@@ -650,32 +650,38 @@ Atribut **target** a enllaços
 
 **Doctypes de 4.01 o de XHTML, amb FRAMESET**
 
-html 4.01:
+Html 4.01:
 
-`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">`
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">
+```
 
-xhtml:
+Xhtml:
 
-`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>">`
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>">
+```
 
 L'**estructura de la pàgina** també es veu modificada. No té *body*, té *frameset*
 
 ```html
 <HTML>
-<HEAD><TITLE> Mi titulo ></TITLE></HEAD>
+<HEAD>
+    <TITLE> Mi titulo ></TITLE>
+</HEAD>
 
-<FRAMESET>
-     <NOFRAMES>
-         <BODY>
-             Su visualizador no soporta frames. Pulse 
-             <A HREF="indice.htm">aqui </A> para volver.
-         </BODY>
-    </NOFRAMES>
+    <FRAMESET>
+        <NOFRAMES>
+            <BODY>
+                Su visualizador no soporta frames. Pulse 
+                <A HREF="indice.htm">aqui </A> para volver.
+            </BODY>
+        </NOFRAMES>
 
-    <FRAME SRC="pagina1.htm" >
-    <FRAME SRC="pagina2.htm" >
+        <FRAME SRC="pagina1.htm" >
+        <FRAME SRC="pagina2.htm" >
 
-</FRAMESET>
+    </FRAMESET>
 
 </HTML>
 ```
@@ -683,12 +689,10 @@ L'**estructura de la pàgina** també es veu modificada. No té *body*, té *fra
 ### Per què no s'utilitzen els frames
 
 
--   Els motors de búsqueda tenen problemes per indexar-los
--   Ocupen espai a la pantalla
--   No es poden utilitzar les funcionalitats d'anar endavant o endarrere
-    a l'historial de navegació
--   Tenen problemes d'usabilitat i accessibilitat web per persones
-    invidents
+* Els motors de búsqueda tenen problemes per indexar-los.
+* Ocupen espai a la pantalla.
+* No es poden utilitzar les funcionalitats d'anar endavant o endarrere a l'historial de navegació.
+* Tenen problemes d'usabilitat i accessibilitat web per persones invidents.
 
 ### Etiquetes
 
@@ -784,6 +788,8 @@ dels *iframe* podrem utilitzar.
 -->
 
 Apareixen **barres d'scroll** en el frame si la pàgina és més gran que l'espai dissenyat.
+
+[Exemple de iFrame](https://www.w3schools.com/html/html_iframe.asp)
 
 ## Documentació i recursos
 
