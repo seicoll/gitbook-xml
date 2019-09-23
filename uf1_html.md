@@ -397,82 +397,73 @@ Podem **aniuar** llistes, fins i tot de diferents tipus de llista:
 
 ## Enllaços
 
+> Els **enllaços** sorgeixen de la necessitat de que les pàgines HTML estiguin interconnectades (hypertext).
 
--   Necessitat de que les pàgines HTML estiguin interconnectades.
--   Un enllaç és facilment detectable en una pàgina HTML
--   Per col·locar un enllaç utlitzarem les etiquetes *&lt;a&gt;* i
-    *&lt;/a&gt;*.
--   L'atribut *href*, ens indica el destí d'aquest enllaç.
+* Per col·locar un enllaç utlitzarem les etiquetes `<a>` i `</a>` .
+* L'atribut `href`, ens indica el destí d'aquest enllaç.
 
 ```html
 <a href="destí"> contingut </a>
 ```
 
-essent *contingut* un text o una imatge i destí un arxiu, un correu
-electrònic o una pàgina
+Essent *contingut* un text o una imatge i destí un arxiu, un correu electrònic o una pàgina.
 
 Els enllaços es poden classificar de la següent manera:
 
-* **Enllaços interns:**: els que es dirigeixen a diferents llocs de la mateixa pàgina.
-* **Enllaços locals:**: els dirigeixen a un altre pàgina dintre de la mateixa web.
-* **Enllaços remots:**: els dirigits cap a altres pàgines web.
-* **Enllaços amb direccions de correu:**: per crear un missatge de correu dirigit a una direcció.
-* **Enllaços amb arxius:**: perquè els usuaris puguin fer downloads d'arxius.
+* **Enllaços interns:** els que es dirigeixen a diferents llocs de la mateixa pàgina.
+* **Enllaços locals:** els dirigeixen a un altre pàgina dintre de la mateixa web.
+* **Enllaços remots:** els dirigits cap a altres pàgines web.
+* **Enllaços amb direccions de correu:** per crear un missatge de correu dirigit a una direcció.
+* **Enllaços amb arxius:** perquè els usuaris puguin descarregar arxius.
 
 ### Enllaços interns
 
+> Són **enllaços** que apunten a un lloc diferent dins de la mateixa pàgina.
 
--   Són enllaços que apunten a un lloc diferent dins de la
-    mateixa pàgina.
--   Per crear un enllaç d'aquest tipus és necessari a part de l'enllaç
-    de l'origen, col·locar un enllaç al destí.
+Per crear un enllaç d'aquest tipus és necessari a part de l'enllaç de l'origen, col·locar un **enllaç al destí**.
 
-Ex:
+**Exemple**:
 
 ```html
-enllaç origen: <a href="#avall"> Anar al final </a>
+Enllaç origen: <a href="#avall"> Anar al final </a>
 
-enllaç destí: <a name="avall"> </a>
+Enllaç destí: <a name="avall"> </a>
 ```
 
-No utilitzar-los molt, és millor fer pàgines més petites ja que llavors
-tarden menys a carregar-se i són més fàcils de llegir.
+[Exemple d'enllaç intern](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_bookmark)
+
+**No utilitzar-los molt**, és millor fer pàgines més petites ja que llavors tarden menys a carregar-se i són més fàcils de llegir.
 
 ### Enllaços locals
 
-
--   Un lloc web està constituit de pàgines interconnectades.
+Un lloc web està constituit de pàgines interconnectades.
 
 ```html
 <a href="arxiu.html"> Arxiu </a>
 ```
 
-Per regla general, un lloc web ha d'estar ordenat per directoris. S'ha
-d'utilitzar la "/" per especificar on es troben les coses. Clarificació
-del desplaçament entre diferents arxius.
+Per regla general, un lloc web ha d'estar ordenat per directoris.
+S'ha d'utilitzar la "/" per especificar on es troben les coses. 
 
+* Els **enllaços locals** també poden apuntar a una secció en concret dintre d'un altre pàgina.
 
--   Els enllaços locals també poden apuntar a una secció en concret
-    dintre d'un altre pàgina.
+   ```html
+   <a href="arxiu.html#seccio"> Arxiu </a>
+   ```
 
-```html
-<a href="arxiu.html#seccio"> Arxiu </a>
-```
+* La pàgina **arxiu.html** ha de contenir la marca referent a la secció.
 
--   La pàgina **arxiu.html** ha de contenir la marca referent a
-    la secció.
-
-```html
-<a name="seccio"> </a>
-```
+   ```html
+   <a name="seccio"> </a>
+   ```
 
 ### Enllaços externs
 
+> Són enllaços dirigits cap a **altres llocs web**.
 
--   Dirigits cap a altres llocs web.
--   A l'atribut *href* i col·loquem la URL o direcció de la pàgina amb
-    la que es vol enllaçar.
--   Totes les direccions van precedides de <http://>
+A l'atribut `href` i col·loquem la **URL** o direcció de la pàgina amb la que es vol enllaçar.
+
+Totes les direccions van precedides de `http://`
 
 ```html
 <a href="http://www.elmundodeportivo.es"> Anar a El Mundo deportivo </a>
@@ -480,28 +471,23 @@ del desplaçament entre diferents arxius.
 
 ### Enllaços a direccions de correu
 
+Ens obren una nova finestra de correu electrònic per enviar a una direcció de correu determinat.
 
--   Ens obren una nova finestra de correu electrònic per enviar a una
-    direcció de correu determinat.
--   A l'atribut *href* i col·loquem la paraula
-    \*\*[mailto:\*\*](mailto:**) seguit de la direcció d'enllaç.
+A l'atribut `href` i col·loquem la paraula `mailto:` seguit de la direcció de correu.
 
 ```html
 <a href="mailto:pep@hotmail.com"> Contactar amb en Pep </a>
 ```
 
--   Per tal de configurar altres paràmetres del correu electrònic
-    s'afegeix un interrogant després de la direcció de correu.
--   No és recomenable posar enllaços a correus, pel tema dels robots
-    i l'SPAM.
+* Per tal de configurar altres paràmetres del correu electrònic s'afegeix un interrogant després de la direcció de correu.
+* No és recomenable posar enllaços a correus, pel tema dels robots i l'SPAM.
 
 ### Enllaços a arxius
 
 
--   El mecanisme és el mateix que hem vist en els enllaços remots
-    i locals.
--   En comptes d'indicar la direcció web el que hem de fer és indicar el
-    nom del fitxer (i en cas que sigui necessari la ruta).
+El mecanisme és el mateix que hem vist en els enllaços remots i locals.
+
+En comptes d'indicar la direcció web el que hem de fer és indicar el **nom del fitxer** (i en cas que sigui necessari la **ruta**).
 
 ```html
 <a href="fitxer.pdf"> Descarregar el fitxer </a>
@@ -509,68 +495,62 @@ del desplaçament entre diferents arxius.
 
 ## Imatges
 
--   L'aspecte més vistós i atractiu d'una pàgina web és el grafisme. Les
-    imatges són emmagatzemades en forma d'arxius, principalment GI /PNG
-    ( per dibuixos ) i JPG ( per fotos ).
+> L'aspecte més vistós i atractiu d'una pàgina web és el grafisme. 
 
-L'etiqueta que utilitzem per insertar una imatge és *&lt;img&gt;*, no
-cal fer el tancament.
+Les **imatges** són emmagatzemades en forma d'arxius, principalment GIF/PNG (per imatges) i JPG (per fotos).
 
--   Mitjançant l'atribut *src* ( source ), especifiquem el lloc on es
-    troba la imatge.
+L'etiqueta que utilitzem per insertar una imatge és `<img>`, no cal fer el tancament.
+
+Mitjançant l'atribut `src`  (***source***), especifiquem el lloc (URL) on es troba la imatge.
+
+[Exemple d'imatge](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_girl)
 
 ### Atributs de l'etiqueta `<img>`
 
-**Alt:**
+* **Alt:** Breu descripció de l'imatge. És **obligatori** per tal que el document HTLM sigui validat correctament.
 
-:   Breu descripció de l'imatge.
-
-i el ja vist *src* són els únics atributs que hauria de tenir... però
-com sempre, històricament s'ha fet malament...
+* **Height** i **Width**: Defineixen l'altura i amplada de les imatges en pixels.
 
 Altres **coses mal fetes**:
 
-* HEIGHT I WIDTH: Defineixen l'altura i amplada de les imatges en pixels.
-* BORDER: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
-* LOWSRC: Quant tenim activada aquesta opció primer es descarrega la imatge amb una baixa resolució i va millorant a mesura que es va descarregant.
+![Forbidden](uf1_images/forbidden.jpg)
+
+* **BORDER**: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
+* **LOWSRC**: Quant tenim activada aquesta opció primer es descarrega la imatge amb una baixa resolució i va millorant a mesura que es va descarregant.
 
 ### Tipus d'arxius per les imatges
 
-GIF ( per dibuixos ) JPG ( per fotos )
+PNG ( per dibuixos ) JPG ( per fotos ).
 
 Els dos formats comprimeixen les imatges per guardar-les.
 
 **GIF** - Arxiu ideal per imatges que estan dibuixades.
 
-* Compresió: És molt bona per dibuixos.
-* Transparència: És una utilitat per definir algunes parts de la imatge com a transparents.
-* Colors: Es poden utilitzar paletes, conjunts de 256 o menys. Quant menys colors utilitzem menys tamany ocuparà l'imatge.
+* **Compresió**: És molt bona per dibuixos.
+* **Transparència**: És una utilitat per definir algunes parts de la imatge com a transparents.
+* **Colors**: Es poden utilitzar paletes, conjunts de 256 o menys. Quant menys colors utilitzem menys tamany ocuparà l'imatge.
 
 Actualment s'està utilitzant un format **PNG** que té les mateixes prestacions que el GIF (transparència i animació) i a més a més incorpora **color real**, 48 bits per píxel i compresió sense pèrdua.
 
 **JPG**
 
-* Compresió: El seu algorisme de compressió és ideal per guardar fotos.
-* Transparència: Aquest format no té possiblitats de crear arees transparents.
-* Colors: Treballa sempre amb 16 milions de colors.
+* **Compresió**: El seu algorisme de compressió és ideal per guardar fotos.
+* **Transparència**: Aquest format no té possiblitats de crear arees transparents.
+* **Colors**: Treballa sempre amb 16 milions de colors.
 
 ### Optimitzar els fitxers d'imatge
 
+Hem de procurar de no posar imatges de tamany més gran que el que s'ha de visualitzar
+* Per exemple si té 200x200 la imatge màxima no  té sentit posar-hi una imatge a descarregar de més de 1000x1000 píxels!
 
--   Hem de procurar de no posar imatges de tamany més gran que el que
-    s'ha de visualitzar, per exemple si té 200x200 la imatge màxima no
-    té sentit posar-hi una imatge a descarregar de més de 1000x1000
-    píxels!
+**Arxius GIF**
 
-**ARXIUS GIF**
+* Reduïm el numero de colors de la paleta.
 
-Reduïm el numero de colors de la paleta.
+**Arxius JPG**
 
-**ARXIUS JPG**
-
--   Ajustem la qualitat i la mida de l'arxiu quant l'estem guardant.
--   És impresindible disposar d'un bon editor fotogràfic a fi
-    d'optimitzar una imatge: **GIMP**
+* Ajustem la qualitat i la mida de l'arxiu quant l'estem guardant.
+* És impresindible disposar d'un bon editor fotogràfic a fi d'optimitzar una imatge: **GIMP**
 
 ## Taules
 
@@ -728,7 +708,6 @@ L'**estructura de la pàgina** també es veu modificada. No té *body*, té *fra
     utilitzat amb *targets*
 
 ### Exemples
-
 
 -   Anem a veure diferents dissenys de frames
 
