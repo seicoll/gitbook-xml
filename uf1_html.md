@@ -259,6 +259,14 @@ Amb Es definien dins de l'etiqueta `<body>`;
 
 ... i un llarg etcètera...
 
+### L'etiqueta \<pre\>
+
+> L'etiqueta `<pre>` defineix un paràgraf que respecte els codis propis del text pla (intros, número d'espais, etc.).
+
+Adequat per fer textos literals, per exemple els poemes amb els seus salts de línia sense `<br>`.
+
+[Exemple](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre)
+
 ## Etiquetes de text
 
 Serveixen per indicar que un text concret té un significat especial.
@@ -276,16 +284,6 @@ Serveixen per indicar que un text concret té un significat especial.
 
 > **MAI** fer servir *&lt;u&gt;* per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
 
---- 
-
-## Altres paràgrafs
-
-### Pre
-
-L'etiqueta `<pre>` defineix un paràgraf que respecte els codis propis del text pla (intros, número d'espais...)
-
-Adequat per fer textos literals, per exemple els poemes amb els seus salts de línia sense *&lt;br&gt;*
-
 ## Llistes
 
 > Les **llistes** serveixen per enumerar i definir elements. 
@@ -295,6 +293,8 @@ Podem distingir **tres tipus** de llistes:
 * Llistes desordenades
 * Llistes ordenades
 * Llistes de definició
+
+**Més informació**: [w3schools.com: HTML Lists](https://www.w3schools.com/html/html_lists.asp)
 
 ### Llistes sense ordre (Unordered Lists)
 
@@ -310,7 +310,8 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**te
 </ul>
 ```
 
-**Més informació**: [w3schools.com: HTML Lists](https://www.w3schools.com/html/html_lists.asp)
+[Exemple de llista sense ordre](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered)
+
 
 ![Forbidden](uf1_images/forbidden.jpg)
 
@@ -318,7 +319,7 @@ L'atribut `type` ens serveix per definir el tipus de vinyeta.
 
 `<ul TYPE="tipus vinyeta">`
 
-On tipus vinyeta pot ser: circle, disc o square
+On ***tipus vinyeta*** pot ser: `circle`, `disc`, `square` o `none`.
 
 > Recordeu que això s'ha de fer **CSS**.
 
@@ -337,35 +338,40 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**te
 </ol>
 ```
 
+[Exemple de llista ordenada](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered)
+
 ![Forbidden](uf1_images/forbidden.jpg)
 
 L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzarem.
 
-* 1 per ordenar amb nombres
-* a per lletra de l'alfabet
-* A per lletres majúscules de l'alfabet
-* i per ordenar amb xifres romanes
-* I per ordenar amb xifres romanes majúscules
+* `1` per ordenar amb nombres
+* `a` per lletra de l'alfabet
+* `A` per lletres majúscules de l'alfabet
+* `i` per ordenar amb xifres romanes
+* `I` per ordenar amb xifres romanes majúscules
 
 ### Llistes de definició (Definition Lists)
 
 > Cada element és presentat juntament amb la seva definició.
   
 * Definides per les etiquetes `<dl>` i `</dl>`   (**d**efinition **l**ist).
-*  Les etiquetes de cada element són `<dt>` (**d**efinition **t**erm) i la seva definició `<dd>` (**d**efinition **d**efinition).
+* Les etiquetes de cada element són `<dt>` (**d**efinition **t**erm) i la seva definició `<dd>` (**d**efinition **d**efinition).
 
 ```html
 <dl>
       <dt>Casa</dt>
       <dd>Lloc on habitar</dd>
+
       <dt>Llar</dt>
       <dd>Lloc on viure</dd>
 </dl>
 ```
 
+[Exemple de llista de definició](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_description)
+
 ### Aniuar les llistes
 
-Podem aniuar els tipus de llista:
+Podem **aniuar** llistes, fins i tot de diferents tipus de llista:
 
 ```html
 <p>Ciutats del mon</p>
@@ -387,6 +393,8 @@ Podem aniuar els tipus de llista:
 </ul>
 ```
 
+[Exemple de llista aniuada](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested)
+
 ## Enllaços
 
 
@@ -406,7 +414,6 @@ electrònic o una pàgina
 Els enllaços es poden classificar de la següent manera:
 
 * **Enllaços interns:**: els que es dirigeixen a diferents llocs de la mateixa pàgina.
-
 * **Enllaços locals:**: els dirigeixen a un altre pàgina dintre de la mateixa web.
 * **Enllaços remots:**: els dirigits cap a altres pàgines web.
 * **Enllaços amb direccions de correu:**: per crear un missatge de correu dirigit a una direcció.
@@ -567,7 +574,7 @@ Reduïm el numero de colors de la paleta.
 
 ## Taules
 
-> Una taula és un conjunt de cel·les organitzades dintre de les quals podem col·locar diferents continguts.
+> Una **taula** és un conjunt de cel·les organitzades dintre de les quals podem col·locar diferents continguts.
 
 L'etiqueta per definir les taules és: `<table>` `</table>`
 
@@ -593,10 +600,12 @@ Les taules són descrites per línies d'esquerra a dreta, mitjançant
 
 Com es pot veure així no es veu massa clar que hi hagi una taula...
 
-si afegim un atribut *border="1"* ho veurem més clar:
+si afegim un atribut `border="1"` ho veurem més clar:
 
 ```html
-<table boder="1">
+<table border="1">
+    ...
+</table>
 ```
 
 ![Forbidden](uf1_images/forbidden.jpg)
