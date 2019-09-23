@@ -259,7 +259,7 @@ Amb Es definien dins de l'etiqueta `<body>`;
 
 ... i un llarg etcètera...
 
-### L'etiqueta \<pre\>
+### L'etiqueta pre
 
 > L'etiqueta `<pre>` defineix un paràgraf que respecte els codis propis del text pla (intros, número d'espais, etc.).
 
@@ -693,23 +693,15 @@ L'**estructura de la pàgina** també es veu modificada. No té *body*, té *fra
 ### Etiquetes
 
 
-**frameset**
+**frameset**: l'atribut cols o rows defineix el percentatge total de la pantalla que ocuparà cada secció. És interessant que alguna secció tingui \*     perquè el navegador calculi de forma automática l'ampada o l'alçada que ha de tenir.
 
-:   l'atribut cols o rows defineix el percentatge total de la pantalla
-    que ocuparà cada secció. És interessant que alguna secció tingui \*
-    perquè el navegador calculi de forma automática l'ampada o l'alçada
-    que ha de tenir.
-
-**frame**
-
-:   hi ha tants frames com blocs s'hagin indicat a l'etiqueta frameset.
-    L'atribut *src* fa referència a la url de la pàgina volem que
-    es carregui. L'atribut *name* indica el nom del frame per ser
-    utilitzat amb *targets*
+**frame**: hi ha tants frames com blocs s'hagin indicat a l'etiqueta frameset.
+* L'atribut *src* fa referència a la url de la pàgina volem que es carregui. 
+* L'atribut *name* indica el nom del frame per ser utilitzat amb *targets*
 
 ### Exemples
 
--   Anem a veure diferents dissenys de frames
+Anem a veure diferents dissenys de frames
 
 **3 àrees verticals**
 
