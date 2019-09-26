@@ -396,7 +396,7 @@ Grups de selectors
     definir estils. Permeten assignar el **MATEIX** estil a
     diversos selectors.
 
-``` {.sourceCode .css}
+```css
 h1, h2, p {
     font-family: Trebuchet MS;
     color: olive;
@@ -410,14 +410,14 @@ Més família… pares i germans
 
 **Pare:**:   L'element que conté directament al fill que es vol formatar.
 
-``` {.sourceCode .css}
+```css
 div > p { color =#00FF00; }
 ```
 
 **Germà:**:   L'element que precedeix directament, dintre el mateix element pare,
     al que es vol formatar.
 
-``` {.sourceCode .css}
+```css
 p+p { color=#00FF00; }
 ```
 
@@ -427,7 +427,7 @@ El selector universal
 -   El comodí `\*`
 -   Serveix per totes les caixes
 
-``` {.sourceCode .css}
+```css
 * {
  padding: 0;
  margin: 0;
