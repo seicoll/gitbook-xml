@@ -52,118 +52,113 @@ Per **aplicar fulles d'estil CSS a HTML** es pot fer a través de tres formes:
 * CSS **externes** al document 
   * Amb un arxiu extern .css i utilitzant l'etiqueta `<link>`
 
----
 
-Petites parts d’una pàgina
---------------------------
+## CSS intregades en una etiqueda html
 
--   mitjançant l’etiqueta *&lt;SPAN&gt;* i l’atribut *style*
+Permet especificar regles CSS d'una etiqueta HTML.
+> És la forma **menys recomanada** de fer-ho ja que complica la compartició.
+
+Es col·loca dins d'una etiqueta de HTML amb l'atribut `style`
+
+![image](uf1_images/forbidden.jpg)
+
+**Exemple 1: Estil definit per una etiqueta**
+
+```html
+<p style="color:#990000">
+   Això és un paràgraf de color vermell
+</p> 
+<p style="color:#000099">
+   Això és un paràgraf de color blau
+</p> 
+```
+
+El resultat serà:
+
+![image](uf1_images/uf1_p_css.png)
+
+**Exemple 2: Estil definit en petites parts d'una pàgina**
+
+Mitjançant l'etiqueta `<span>` i l'atribut `style`.
 
 ```html
 <p>
-Això és un paràgraf que té diverses paraules  
-<SPAN style="color:green">de color verd</SPAN>. fàcil, no?
+   Això és un paràgraf que té diverses paraules  
+   <SPAN style="color:green">de color verd</SPAN>. fàcil, no?
 </p>
 ```
 
 El resultat serà:
 
-![image](span.png)
+![image](uf1_images/uf1_span.png)
 
-i...
+**Exemple 3: Estil definit en una part de la pàgina**
 
-> POC SEMÀNTIC!
-
-Cthulhu
--------
-
-![image](cthulhu.png)
-
-Estil definit dins d'una pàgina
-===============================
-
-Estil definit per una etiqueta
-------------------------------
-
-```html
-<p style="color:#990000">
-Això és un paràgraf de color vermell
-</p> 
-<p style="color:#000099">
-Això és un paràgraf de color blau
-</p> 
-```
-
-El resultat serà:
-
-![image](p-css.png)
-
-Estil definit en una part de la pàgina
---------------------------------------
-
--   Mitjançant l’etiqueta *&lt;DIV&gt;* i l’atribut **style**
+Mitjançant l'etiqueta `<div>` i l'atribut `style`.
 
 ```html
 <div style="color:#000099; font-weight:bold">
     <h3>Aquestes etiquetes van en <i>blau i negreta</i></h3>
-        <p>
-    Seguim dins del DIV, encara funcionen els estils
+    <p>
+        Seguim dins del DIV, encara funcionen els estils
     </p> 
 </div>
 ```
 
 El resultat serà:
 
-![image](div-css.png)
+![image](uf1_images/uf1_div-css.png)
 
-Estil definit per tota una pàgina
-=================================
+##  CSS internes al document 
 
--   Es defineixen dintre del *&lt;head&gt;*.
--   S’utilitza l’etiqueta **&lt;style&gt;** i **&lt;/style&gt;**
+* Permet especificar regles CSS dins del document HTML.
+* Estil definit s'aplicarà a tota la pàgina HTML.
+* **No** és la forma més recomanada de fer-ho ja que complica la compartició.
+* Es defineixen dintre del `<head>`.
+* S'utilitza l'etiqueta `<style>` i `</style>`
 
 ```html
 <html>
 <head>
- <title>Exemple d'estils en una pàgina</title>
- <style type="text/css">
-
- h1 {
-     text-decoration: underline;
-     text-align:center}
- p {
-     font-Family:arial,verdana; 
-     color: white; 
-     background-color: black
-   }
-body {
-     color:black;
-     background-color: #cccccc; 
-     text-indent:1cm
-    }
-
- </style>
+   <title>Exemple d'estils en una pàgina</title>
+   <style>
+       h1 {
+          text-decoration: underline;
+          text-align:center
+        }
+        p {
+          font-Family:arial,verdana; 
+          color: white; 
+          background-color: black
+        }
+        body {
+          color:black;
+          background-color: #cccccc; 
+          text-indent:1cm
+        }
+    </style>
 </head> 
-    <body>
-<h1>Pàgina amb estils</h1>
-Benvinguts
-<p>n-èssim exemple sense massa importància en el contingut</p>
+<body>
+   <h1>Pàgina amb estils</h1>
+   Benvinguts
+   <p>n-èssim exemple sense massa importància en el contingut</p>
 </body>
 </html>
 ```
 
 El resultat serà:
 
-![image](pag-estil.png)
+![image](uf1_images/uf1_pag-estil.png)
 
-Estil definit per tot un lloc web
-=================================
 
--   Es crea un arxiu a part on guardem tota la informació d’estils de la
-    pàgina
--   El millor sistema. És reaprofitable per totes les pàgines del lloc
-    web
+## CSS Externes
 
+* Estil definit per **tot un lloc web**.
+* Es crea un **arxiu a part** on guardem tota la informació d'estils de la pàgina.
+
+> **És el millor sistema**. És reaprofitable per totes les pàgines del lloc web.
+
+**Exemple de document CSS:**
 ```html
 p  {
  font-size : 12pt;
@@ -190,56 +185,47 @@ body  {
 }
 ```
 
-Crida a una fulla d'estil
-=========================
+### Associar full d'estils CSS a una pàgina HTML
 
--   Un cop tenim creat l’arxiu, l’hem d’enllaçar amb les diferents
-    pàgines que tenim, mitjançant l’etiqueta *&lt;link&gt;*
+Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines que tenim, mitjançant l'etiqueta `<link>`
 
 ```html
-<link rel="STYLESHEET" type="text/css" href="estil.css">
+<head>
+   <link rel="stylesheet" href="estil.css">
+</head>
 ```
 
--   Atributs:
+* `rel="stylesheet"`: indica que l'enllaç és una fulla d'estils.
+* `href="estil.css"`: indica el nom del fitxer CSS dels estils.
 
-**rel="stylesheet"**
-
-:   indicant que l’enllaç és una fulla d’estils.
-
-**type="text/css"**
-
-:   perquè l’arxiu és de text, amb sintaxis CSS
-
-**href="estil.css"**
-
-:   indica el nom del fitxer font dels estils
+---
 
 Regles d'ús
 ===========
 
--   Els estils s’hereden d’una etiqueta a un altre.
+-   Els estils s'hereden d'una etiqueta a un altre.
 
-**Ex:** Definim l’estil del *body*, les etiquetes de dins tenen el
+**Ex:** Definim l'estil del *body*, les etiquetes de dins tenen el
 mateix estil.
 
 -   Sempre es té en compte la declaració més particular.
 
-**JERARQUÍA** ( Ordre d’importància de menys a més )
+**JERARQUÍA** ( Ordre d'importància de menys a més )
 
 > Per tot un lloc web
 >
-> **&lt;style&gt;** a la capçalera de la pàgina
+> **<style>** a la capçalera de la pàgina
 >
-> **&lt;div&gt;** caixes de tipus bloc
+> **<div>** caixes de tipus bloc
 >
-> **&lt;span&gt;** caixes de tipus inline
+> **<span>** caixes de tipus inline
 >
-> > *Style de l’etiqueta en qüestió*
+> > *Style de l'etiqueta en qüestió*
 
 Sintaxis del css
 ================
 
--   S’utilitzen atributs com: font-size, font-decoration, etc... Seguits
+-   S'utilitzen atributs com: font-size, font-decoration, etc... Seguits
     de “:” i el valor que els hi assignem.
 
 **Exemple**
@@ -340,7 +326,7 @@ Tipus de selectors
 Selectors de classe
 -------------------
 
--   Ens serveix per declarar estils que s’utilitzaran varies vegades.
+-   Ens serveix per declarar estils que s'utilitzaran varies vegades.
 
 ``` {.sourceCode .css}
 .nomdelaclasse {
@@ -357,7 +343,7 @@ Selectors de classe
 Selectors ID
 ------------
 
--   Ens serveix per declarar estils que s’utilitzaran UNA SOLA vegada.
+-   Ens serveix per declarar estils que s'utilitzaran UNA SOLA vegada.
 
 ``` {.sourceCode .css}
 #nomdelID {
@@ -431,7 +417,7 @@ Més família… pares i germans
 
 **Pare:**
 
-:   L’element que conté directament al fill que es vol formatar.
+:   L'element que conté directament al fill que es vol formatar.
 
 ``` {.sourceCode .css}
 div > p { color =#00FF00; }
@@ -439,7 +425,7 @@ div > p { color =#00FF00; }
 
 **Germà:**
 
-:   L’element que precedeix directament, dintre el mateix element pare,
+:   L'element que precedeix directament, dintre el mateix element pare,
     al que es vol formatar.
 
 ``` {.sourceCode .css}
@@ -580,7 +566,7 @@ Posicionament Relatiu
 -   Podem canviar la posició “relativa” posant valors a left, right, top
     o bottom
 -   Desplaça la caixa fora de la seva posició normal en el fluxe
--   Marca la posició original de l’element com a protegida (la resta de
+-   Marca la posició original de l'element com a protegida (la resta de
     caixes es pensen que encara hi és.
 
 ![image](posicionament-relatiu2.png)
@@ -588,11 +574,11 @@ Posicionament Relatiu
 -   Top, right, bottom o left es calculen respecte la posició original
     en el fluxe.
 
-> Top:25px -&gt; es desplaça 25 píxels des de dalt de la posició normal
+> Top:25px -> es desplaça 25 píxels des de dalt de la posició normal
 > de la caixa (es desplaça cap a baix)
 >
-> Right:25px -&gt; es desplaça 25 píxels de la dreta de la posició
-> original (es desplaça cap a l’esquerra)
+> Right:25px -> es desplaça 25 píxels de la dreta de la posició
+> original (es desplaça cap a l'esquerra)
 
 ![image](posicionament-relatiu3.png)
 
@@ -609,25 +595,25 @@ Posicionament Absolut
 
 ![image](posicionament-absolut.png)
 
--   Treu l’element del fluxe
--   L’element “s’eleva” i tots els altres elements es comporten com si
+-   Treu l'element del fluxe
+-   L'element “s'eleva” i tots els altres elements es comporten com si
     no hi fos
 -   La resta del contingut no quedarà al voltant sinó que pot quedar per
     sota
 
 ![image](posicionament-absolut2.png)
 
--   El posicionament absolut d’un element fa referència al seu
+-   El posicionament absolut d'un element fa referència al seu
     contenidor, ja sigui amb *relatiu*, *absolut* o *fixed*.
 -   És a dir que *top*, *right*, *bottom* o *left* depenen del
     seu contenidor.
 -   Si no hi ha cap element contenidor, els valos faran referència a
-    l’element més alt de l’estructura HTML (*body*)
+    l'element més alt de l'estructura HTML (*body*)
 
 Consell absolut
 ---------------
 
-> Fer les posicionaments absolut dins d’un posicionament relatiu, sense
+> Fer les posicionaments absolut dins d'un posicionament relatiu, sense
 > cap valor.
 
 ![image](posicionament-absolut3.png)
