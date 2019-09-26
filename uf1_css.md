@@ -203,24 +203,21 @@ Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines
 Regles d'ús
 ===========
 
--   Els estils s'hereden d'una etiqueta a un altre.
+* Els estils s'hereden d'una etiqueta a un altre.
 
-**Ex:** Definim l'estil del *body*, les etiquetes de dins tenen el
-mateix estil.
+**Ex:** Definim l'estil del *body*, les etiquetes de dins tenen el mateix estil.
 
--   Sempre es té en compte la declaració més particular.
+* Sempre es té en compte la declaració més particular.
 
 **JERARQUÍA** ( Ordre d'importància de menys a més )
 
-> Per tot un lloc web
->
-> **<style>** a la capçalera de la pàgina
->
-> **<div>** caixes de tipus bloc
->
-> **<span>** caixes de tipus inline
->
-> > *Style de l'etiqueta en qüestió*
+* Per tot un lloc web
+
+* **<style>** a la capçalera de la pàgina
+* **<div>** caixes de tipus bloc
+* **<span>** caixes de tipus inline
+
+*Style de l'etiqueta en qüestió*
 
 Sintaxis del css
 ================
@@ -388,13 +385,9 @@ Selectors pseudoelements
 Aquest tipus de selector és molt específic i prové d'efectes tipogràfics
 tradicionals.
 
-**:first-letter**
+**:first-letter**:   Permet seleccionar la primera lletra
 
-:   Permet seleccionar la primera lletra
-
-**:first-line**
-
-:   Primera línia
+**:first-line**:   Primera línia
 
 Grups de selectors
 ------------------
@@ -415,17 +408,13 @@ h1, h2, p {
 Més família… pares i germans
 ----------------------------
 
-**Pare:**
-
-:   L'element que conté directament al fill que es vol formatar.
+**Pare:**:   L'element que conté directament al fill que es vol formatar.
 
 ``` {.sourceCode .css}
 div > p { color =#00FF00; }
 ```
 
-**Germà:**
-
-:   L'element que precedeix directament, dintre el mateix element pare,
+**Germà:**:   L'element que precedeix directament, dintre el mateix element pare,
     al que es vol formatar.
 
 ``` {.sourceCode .css}
@@ -435,7 +424,7 @@ p+p { color=#00FF00; }
 El selector universal
 ---------------------
 
--   El comodí \*
+-   El comodí `\*`
 -   Serveix per totes les caixes
 
 ``` {.sourceCode .css}
