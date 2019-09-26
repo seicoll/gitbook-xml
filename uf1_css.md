@@ -1,34 +1,68 @@
-CSS: Cascade Style Sheets
-=========================
+# CSS (Cascade Style Sheets)
 
-Index
-=====
+## Introducció
 
-CSS
-===
+> Els **Cascading Style Sheets (CSS)** són la forma de donar format a les dades d'un document.
 
--   Cascade Style Sheets
--   El CSS dóna format als quadres rectangulars que es creen amb l’HTML.
-    Les possibilitats de format de CSS es poden dividir en 3 àrees
+Les possibilitats de format de CSS es poden dividir en 3 àrees:
 
-> -   **Fonts i colors**: format del contingut dels quadres
-> -   **Distàncies i marcs**: format dels propis quadres
-> -   **Layout**: modificar la posició dels quadres a la pàgina web
+* **Fonts i colors**: format del contingut
+* **Distàncies i marcs**
+* **Layout**: modificar la posició dels elements de la pàgina web
 
-Com ho apliquem:
-----------------
+Abans que es generalitzés l'ús dels **CSS**, s'utilitzaven etiquetes especials per modificar l'aspecte dels elements d'una pàgina.
 
--   Un lloc web (site) (amb un **arxiu extern .css**)
--   Una pàgina web (amb etiqueta **&lt;style&gt;**)
--   Un apartat d’una pàgina (amb **&lt;div&gt;**, **&lt;span&gt;**)
--   Una etiqueta en concret (a **&lt;p&gt;**, **&lt;h1&gt;**…)
+```html
+<body>
+  <h1><font color="red" face="Arial" size="5">Titular de la pàgina</font></h1>
+  <p><font color="gray" face="Verdana" size="2">Un paràgraf de text.</font></p>
+  <p><font color="gray" face="Verdana" size="2">Un altre paràgraf de text.</font></p>
+</body>
+```
+
+En els sites amb moltes pàgines, els **canvis de formats** de eren **molt laboriosos**.
+* Calia anar element per element, a cada pàgina!!
+
+### Avantatges del CSS
+
+* Permet **separar el contingut de la seva presentació**.
+* Permet **definir les regles de presentació** d'un document a partir de les etiquetes que conté.
+* Permet aplicar les regles de presentació a **múltiples pàgines**.
+
+### Versions
+
+* **CSS 1** (1996)
+* **CSS 2** (1998) 
+* **CSS 2.1** es finalitza al 2011.
+* **CSS 3** (versió actual) 
+
+![CSS3](uf1_images/css3.png)
+
+## Utilització dels CSS
+
+Per **aplicar fulles d'estil CSS a HTML** es pot fer a través de tres formes:
+
+* CSS **externes** al document 
+  * Amb un arxiu extern .css i utilitzant l'etiqueta `<link>`
+
+
+* CSS **internes** al document 
+  * Amb una etiqueta `<style>`
+
+
+* CSS **intregades** en un element HTML5 
+  * Amb l'atribut `style`  en etiquetes html.
+
+
+
+---
 
 Petites parts d’una pàgina
 --------------------------
 
 -   mitjançant l’etiqueta *&lt;SPAN&gt;* i l’atribut *style*
 
-``` {.sourceCode .html}
+```html
 <p>
 Això és un paràgraf que té diverses paraules  
 <SPAN style="color:green">de color verd</SPAN>. fàcil, no?
@@ -54,7 +88,7 @@ Estil definit dins d'una pàgina
 Estil definit per una etiqueta
 ------------------------------
 
-``` {.sourceCode .html}
+```html
 <p style="color:#990000">
 Això és un paràgraf de color vermell
 </p> 
@@ -72,7 +106,7 @@ Estil definit en una part de la pàgina
 
 -   Mitjançant l’etiqueta *&lt;DIV&gt;* i l’atribut **style**
 
-``` {.sourceCode .html}
+```html
 <div style="color:#000099; font-weight:bold">
     <h3>Aquestes etiquetes van en <i>blau i negreta</i></h3>
         <p>
@@ -91,7 +125,7 @@ Estil definit per tota una pàgina
 -   Es defineixen dintre del *&lt;head&gt;*.
 -   S’utilitza l’etiqueta **&lt;style&gt;** i **&lt;/style&gt;**
 
-``` {.sourceCode .html}
+```html
 <html>
 <head>
  <title>Exemple d'estils en una pàgina</title>
@@ -133,7 +167,7 @@ Estil definit per tot un lloc web
 -   El millor sistema. És reaprofitable per totes les pàgines del lloc
     web
 
-``` {.sourceCode .html}
+```html
 p  {
  font-size : 12pt;
  font-family : arial,helvetica;
@@ -165,7 +199,7 @@ Crida a una fulla d'estil
 -   Un cop tenim creat l’arxiu, l’hem d’enllaçar amb les diferents
     pàgines que tenim, mitjançant l’etiqueta *&lt;link&gt;*
 
-``` {.sourceCode .html}
+```html
 <link rel="STYLESHEET" type="text/css" href="estil.css">
 ```
 
@@ -319,7 +353,7 @@ Selectors de classe
 
 -   Un cop definida la podem utilitzar en qualsevol etiqueta
 
-``` {.sourceCode .html}
+```html
 <etiqueta class="nomdelaclasse">
 ```
 
@@ -336,7 +370,7 @@ Selectors ID
 
 -   Un cop definida la podem utilitzar en qualsevol etiqueta
 
-``` {.sourceCode .html}
+```html
 <etiqueta id="nomdelID">
 ```
 
