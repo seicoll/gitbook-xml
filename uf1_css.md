@@ -212,10 +212,10 @@ Regles d'ús
 **JERARQUÍA** ( Ordre d'importància de menys a més )
 
 * Per tot un lloc web
-
-* **<style>** a la capçalera de la pàgina
-* **<div>** caixes de tipus bloc
-* **<span>** caixes de tipus inline
+  
+* `<style>` a la capçalera de la pàgina
+* `<div>` caixes de tipus bloc
+* `<span>` caixes de tipus inline
 
 *Style de l'etiqueta en qüestió*
 
