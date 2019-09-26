@@ -42,18 +42,15 @@ En els sites amb moltes pàgines, els **canvis de formats** de eren **molt labor
 
 Per **aplicar fulles d'estil CSS a HTML** es pot fer a través de tres formes:
 
-* CSS **externes** al document 
-  * Amb un arxiu extern .css i utilitzant l'etiqueta `<link>`
-
+* CSS **intregades** en un element HTML5 
+  * Amb l'atribut `style`  en etiquetes html.
 
 * CSS **internes** al document 
   * Amb una etiqueta `<style>`
 
 
-* CSS **intregades** en un element HTML5 
-  * Amb l'atribut `style`  en etiquetes html.
-
-
+* CSS **externes** al document 
+  * Amb un arxiu extern .css i utilitzant l'etiqueta `<link>`
 
 ---
 
