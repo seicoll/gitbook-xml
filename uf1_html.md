@@ -576,7 +576,7 @@ Les taules són descrites per línies d'esquerra a dreta, mitjançant
 </table>
 ```
 
-![](/assets/taula1.png)
+![](uf1_images/taula1.png)
 
 Com es pot veure així no es veu massa clar que hi hagi una taula...
 
@@ -710,7 +710,7 @@ Anem a veure diferents dissenys de frames
 **3 àrees verticals**
 
 
-![image](frames1.png)
+![image](uf1_images/frames1.png)
 
 ```html
 <FRAMESET COLS=30%,20%,50%>
@@ -722,7 +722,7 @@ Anem a veure diferents dissenys de frames
 
 **3 àrees horitzontals**
 
-![image](frames2.png)
+![image](uf1_images/frames2.png)
 
 ```html
 <FRAMESET ROWS=25%,25%,50%>
@@ -731,6 +731,8 @@ Anem a veure diferents dissenys de frames
    <FRAME SRC="c.htm">
 </FRAMESET>
 ```
+
+<!--
 
 **combinat 2 àrees vertical amb 2 horitzontals**
 
@@ -760,6 +762,7 @@ Anem a veure diferents dissenys de frames
        </FRAMESET>
     </FRAMESET>
 ```
+-->
 
 <!--
 ### Xuletes ràpides de frames
