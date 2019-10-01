@@ -111,7 +111,7 @@ El resultat serà:
 
 ##  CSS internes al document 
 
-* Permet especificar regles CSS dins del document HTML.
+* Permet especificar regles **CSS dins del document** HTML.
 * Estil definit s'aplicarà a tota la pàgina HTML.
 * **No** és la forma més recomanada de fer-ho ja que complica la compartició.
 * Es defineixen dintre del `<head>`.
@@ -146,7 +146,7 @@ El resultat serà:
 </html>
 ```
 
-El resultat serà:
+**El resultat serà:**
 
 ![image](uf1_images/uf1_pag-estil.png)
 
@@ -159,7 +159,8 @@ El resultat serà:
 > **És el millor sistema**. És reaprofitable per totes les pàgines del lloc web.
 
 **Exemple de document CSS:**
-```html
+
+```css
 p  {
  font-size : 12pt;
  font-family : arial,helvetica;
