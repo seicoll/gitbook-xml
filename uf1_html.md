@@ -636,7 +636,7 @@ Validació de camps:
 
 ## Frames
 
-### Previ targets
+### Atribut target
 
 Atribut `target` a enllaços:   s'utilitza per decidir on es s'obrirà l'enllaç, pot ser:
 
