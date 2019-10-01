@@ -638,41 +638,37 @@ Validació de camps:
 
 ### Previ targets
 
-Atribut **target** a enllaços
+Atribut `target` a enllaços:   s'utilitza per decidir on es s'obrirà l'enllaç, pot ser:
 
-:   s'utilitza per decidir on es carrega l'enllaç, pot ser:
-
-* \_blank: nova finestra
-* \_top: finestra
-* \_self:(per defecte) en el frame actual
-* \_parent: es carrega al frame "pare", el que era havia cridat l'actual
-* \- o també un nom de **frame** (definit amb l'atribut name)
+* **\_blank**: nova finestra.
+* **\_top**: finestra.
+* **\_self**:(per defecte) en el frame actual.
+* \**_parent**: es carrega al frame "pare", el que era havia cridat l'actual.
+* **\-** o també un nom de **frame** (definit amb l'atribut name).
 
 ```html
 <a href="nom-pagina-a-carregar.html" target="nom-del-marc-a-carregar">
 ```
 ![Forbidden](uf1_images/forbidden.jpg)
 
-* Estan **obsolets** per l'HTML5, però eren vàlids per altres DOCTYPES.
-* Té l'interès "històric" de saber com es feien abans les pàgines web, el CSS actualment les millora molt
-* Antigament els layouts una mica complexes es feien o bé amb taules o bé amb frames. Les dues coses estan en desús avui en dia.
-*  Podria interessar saber-los fer per actualitzar alguna pàgina web antiga
+* Estan **obsolets** per l'HTML5, però eren vàlids per altres versions.
+* Té l'interès "històric" de saber com es feien abans les pàgines web, el CSS actualment les millora molt.
+* Antigament els ***layouts*** una mica complexes es feien o bé amb taules o bé amb frames. Les dues coses estan en desús avui en dia.
+*  Podria interessar saber-los fer per actualitzar alguna pàgina web antiga.
 
 **Doctypes de 4.01 o de XHTML, amb FRAMESET**
 
-Html 4.01:
+* Html 4.01:
+  ```html
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">
+  ```
 
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">
-```
+* Xhtml:
+  ```html
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>">
+  ```
 
-Xhtml:
-
-```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>">
-```
-
-L'**estructura de la pàgina** també es veu modificada. No té *body*, té *frameset*
+L'**estructura de la pàgina** també es veu modificada. No té `<body>`, té `<frameset>`
 
 ```html
 <HTML>
@@ -684,13 +680,12 @@ L'**estructura de la pàgina** també es veu modificada. No té *body*, té *fra
         <NOFRAMES>
             <BODY>
                 Su visualizador no soporta frames. Pulse 
-                <A HREF="indice.htm">aqui </A> para volver.
+                <A HREF="indice.htm">aquí</A> para volver.
             </BODY>
         </NOFRAMES>
 
         <FRAME SRC="pagina1.htm" >
         <FRAME SRC="pagina2.htm" >
-
     </FRAMESET>
 
 </HTML>
@@ -699,19 +694,19 @@ L'**estructura de la pàgina** també es veu modificada. No té *body*, té *fra
 ### Per què no s'utilitzen els frames
 
 
-* Els motors de búsqueda tenen problemes per indexar-los.
-* Ocupen espai a la pantalla.
-* No es poden utilitzar les funcionalitats d'anar endavant o endarrere a l'historial de navegació.
-* Tenen problemes d'usabilitat i accessibilitat web per persones invidents.
+* Els **motors de cerca** tenen problemes per indexar-los.
+* Ocupen **espai** a la pantalla.
+* No es poden utilitzar les funcionalitats d'anar endavant o endarrere a l'**historial** de navegació.
+* Tenen problemes d'**usabilitat i accessibilitat** web per persones invidents.
 
 ### Etiquetes
 
-
-**frameset**: l'atribut cols o rows defineix el percentatge total de la pantalla que ocuparà cada secció. És interessant que alguna secció tingui \*     perquè el navegador calculi de forma automática l'ampada o l'alçada que ha de tenir.
+**frameset**: l'atribut `cols` o `rows` defineix el percentatge total de la pantalla que ocuparà cada secció. 
+  * És interessant que alguna secció tingui \*     perquè el navegador calculi de forma automática l'ampada o l'alçada que ha de tenir.
 
 **frame**: hi ha tants frames com blocs s'hagin indicat a l'etiqueta frameset.
-* L'atribut *src* fa referència a la url de la pàgina volem que es carregui. 
-* L'atribut *name* indica el nom del frame per ser utilitzat amb *targets*
+* L'atribut `<src>` fa referència a la url de la pàgina volem que es carregui. 
+* L'atribut `<name>` indica el nom del frame per ser utilitzat amb *targets*
 
 ### Exemples
 
