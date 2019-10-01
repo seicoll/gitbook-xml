@@ -336,64 +336,46 @@ Paràgrafs
 
 ![image](fondos.png)
 
-Atributs amb unitats
-====================
+## Unitats
 
--   Es poden definir atributs amb els següents formats:
+> En CSS podem fer servir molts **tipus d'unitats**.
 
-**Absoluts:**
+Es poden definir atributs amb els següents formats:
 
-> Pixels(px)
->
-> Centimetres(cm)
->
-> Polzades(in)
->
-> Punts(pt) (72 punts = 1 polzada)
->
-> Piques (1 pica=12 punts)
+**Valors absoluts:**
 
-**Relatius:**
+* Pixels(px)
+* Centimetres(cm)
+* Polzades(in)
+* Punts(pt) (72 punts = 1 polzada)
 
-> Percentatges(%)
->
-> EM (alçada “M”)
->
-> Ex (alçada “x”)
+
+**Valors relatius:**
+
+* Percentatges(%)
+* EM (alçada "M")
+* Ex (alçada "x")
+
+**Exemples:**
+
+```css
+width: 744px; 
+margin-left: 1.25em; 
+left: 34%; 
+font-size: 12pt; 
+margin-top: 1.25in; 
+margin-bottom: 1.5cm; 
+```
+
+> **No s'ha de deixar espai entre el valor i la unitat**.
 
 Més info a: <https://www.w3.org/Style/Examples/007/units.en.html>
 
-Coses a saber per començar amb CSS
-==================================
-
--   Sintaxis. Els selectors
--   *Classes* i *pseudoclases*
--   Font i text
--   Propietats de les fonts
--   Propietats de text
--   Unitats de mesura
--   Fons i color
--   Color i background
--   Formatat de les caixes
--   Blocs i caixes
-
-**Estructures**
-
--   Taules
--   Llistes
-
-**Posicionament**
-
--   Absolut, relatiu, fixed...
--   Float
-
-**Altres...**
-
--   Cursors
--   Barres de desplaçament
-
 ## Selectors
 
+> Els **selectors** defineixen quin és l'element de la pàgina que modifiquem des del CSS.
+
+Disposem de diversos tipus de selectors:
 
 -   Selectors bàsics: elements HTML
 -   Selectors de classe
@@ -403,18 +385,21 @@ Coses a saber per començar amb CSS
 -   Selectors pseudoelements
 -   Grups de selectors
 
+---
+
 ### Selectors de classe
 
-
--   Ens serveix per declarar estils que s'utilitzaran varies vegades.
+> Els **selectors de classe** serveixen per declarar estils que s'utilitzaran **varies vegades**.
 
 ```css
 .nomdelaclasse {
-                 atribut: valor;
-                 atribut2:valor2; ..} 
+    atribut: valor;
+    atribut2: valor2; 
+    ...
+} 
 ```
 
--   Un cop definida la podem utilitzar en qualsevol etiqueta
+Un cop definida la podem utilitzar en qualsevol etiqueta
 
 ```html
 <etiqueta class="nomdelaclasse">
@@ -423,15 +408,16 @@ Coses a saber per començar amb CSS
 ### Selectors ID
 
 
--   Ens serveix per declarar estils que s'utilitzaran UNA SOLA vegada.
+> Els **selectors ID** ens serveixen per declarar estils que s'utilitzaran **UNA SOLA vegada**.
 
 ```css
 #nomdelID {
-                 atribut: valor;
-                 atribut2:valor2; ..} 
+    atribut: valor;
+    atribut2:valor2; ..
+} 
 ```
 
--   Un cop definida la podem utilitzar en qualsevol etiqueta
+Un cop definida la podem utilitzar en qualsevol etiqueta:
 
 ```html
 <etiqueta id="nomdelID">
@@ -442,10 +428,9 @@ Coses a saber per començar amb CSS
 
 ```css
 h1 b { 
-        font-weight: 
-        bold; 
-        color: red; 
-    }
+    font-weight: bold; 
+    color: red; 
+}
 ```
 
 -   Només les negretes que siguin descendents d'un element H1 seran de
@@ -504,15 +489,36 @@ p+p { color=#00FF00; }
 
 ### El selector universal
 
--   El comodí `\*`
--   Serveix per totes les caixes
+* El comodí (`*`)
+* Selecciona totes les etiquetes del document.
+
+**HTML**
+
+```html
+<body>
+    <h1> Títol principal </h1>
+    <p>Primer paràgraf </p>
+    <p>Segon paràgraf </p>
+</body>
+```
+
+**CSS**
 
 ```css
 * {
- padding: 0;
- margin: 0;
+ color: red;
 }
 ```
+
+**Visualtizació**
+
+<body >
+    <h1  style="color:red"> Títol principal </h1>
+    <p style="color:red">Primer paràgraf </p>
+    <p  style="color:red">Segon paràgraf </p>
+</body>
+
+
 
 ## Model de caixes \[Box Model\]
 
