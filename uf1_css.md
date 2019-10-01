@@ -168,14 +168,14 @@ p  {
 } 
 h1  {
  font-size : 36pt;
- font-family : verdana,arial;
+ font-family : verdana, arial;
  text-decoration : underline;
  text-align : center;
  background-color : Teal;
 }
 td  {
  font-size : 10pt;
- font-family : verdana,arial;
+ font-family : verdana, arial;
  text-align : center;
  background-color : 666666;
 }
@@ -199,10 +199,37 @@ Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines
 * `rel="stylesheet"`: indica que l'enllaç és una fulla d'estils.
 * `href="estil.css"`: indica el nom del fitxer CSS dels estils.
 
----
+## Regles CSS
 
-Regles d'ús
-===========
+> Les **regles CSS** defineixen de quina forma es representaran les diferents etiquetes HTML de la pàgina.
+
+![](uf1_images/uf1_css_regles.png)
+
+**Exemples:**
+
+```css
+font-size: 10pt; 
+text-decoration: underline; 
+color: black; 
+```
+
+Si volem especificar **més d'una propietat** en una regla CSS:
+* Es posen una darrere l'altra dins dels corxets.
+* Separades amb un punt i coma ( `;` )
+
+**Exemple:**
+
+```css
+h1 {       
+    font-family:arial;
+    font-weight:bold;
+    color:#FF0000;
+    background-color:#00FF00; 
+}
+```
+
+## Regles d'ús
+
 
 * Els estils s'hereden d'una etiqueta a un altre.
 
@@ -220,21 +247,6 @@ Regles d'ús
 
 *Style de l'etiqueta en qüestió*
 
-Sintaxis del css
-================
-
--   S'utilitzen atributs com: font-size, font-decoration, etc... Seguits
-    de “:” i el valor que els hi assignem.
-
-**Exemple**
-
-``` {.sourceCode .css}
-font-size: 10pt; 
-
-text-decoration: underline; 
-
-color: black; 
-```
 
 Exemples de regles
 ==================
@@ -326,7 +338,7 @@ Selectors de classe
 
 -   Ens serveix per declarar estils que s'utilitzaran varies vegades.
 
-``` {.sourceCode .css}
+```css
 .nomdelaclasse {
                  atribut: valor;
                  atribut2:valor2; ..} 
@@ -343,7 +355,7 @@ Selectors ID
 
 -   Ens serveix per declarar estils que s'utilitzaran UNA SOLA vegada.
 
-``` {.sourceCode .css}
+```css
 #nomdelID {
                  atribut: valor;
                  atribut2:valor2; ..} 
@@ -358,7 +370,7 @@ Selectors ID
 Selectors contextuals
 ---------------------
 
-``` {.sourceCode .css}
+```css
 h1 b { 
         font-weight: 
         bold; 
