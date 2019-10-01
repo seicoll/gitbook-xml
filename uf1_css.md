@@ -236,7 +236,7 @@ h1 {
 
 És possible tenir varies definicions d'estil (externes, internes i integrades en etiqueta).
 
-En cas que hi hagi un conflicte entre els estils definits s'aplica la següent prioritat:
+En cas que hi hagi un **conflicte entre els estils** definits s'aplica la següent prioritat:
 
 **De menor a major prioritat:**
 * 1er. Estils predeterminats del **navegador**.
@@ -263,31 +263,67 @@ En cas que hi hagi un conflicte entre els estils definits s'aplica la següent p
 
 **De quin color es veurà el text del títol, vermell o blau?**
 
+#### Selectors repetits
+
+Si **repetim una etiqueta en el mateix nivell** i s'hi repeteix alguna propietat, el darrer valor és el vàlid.
+
+```css
+h1 { 
+    font-family:arial;
+    color: blue 
+}
+
+h1 { color:red; }
+```
+
+El contingut de les etiquetes h1 es pintarà de color vermell perquè és la **última definició** que s'ha trobat
 
 ### Herència
 
 > Els estils CSS s'hereden d'una etiqueta a un altre.
 
-**Ex:** Definim l'estil del *body*, les etiquetes de dins tenen el mateix estil.
+**Exemple:** 
 
-* Sempre es té en compte la declaració més particular.
+```css
+body { font-family:arial;
+       color:#FF0000;
+       background-color:#00FF00; }
 
-**JERARQUÍA** ( Ordre d'importància de menys a més )
+h2 { font-style: italic; }
+```
+Definim l'estil del `<body>` i per tant les etiquetes de dins tenen el mateix estil.
+* `h2` a més de les característiques anteriors estarà en cursiva.
 
-* Per tot un lloc web
-  
-* `<style>` a la capçalera de la pàgina
-* `<div>` caixes de tipus bloc
-* `<span>` caixes de tipus inline
+## Comentaris
 
-*Style de l'etiqueta en qüestió*
+> CSS permet incloure **comentaris** entre les seves regles.
 
+* Els navegadors ignoraran aquests comentaris.
+* S'indiquen mitjançant els caràcters `/*` i `*/`
 
-Exemples de regles
-==================
+**Exemple:**
 
-Tipus de lletra
----------------
+```css
+/* Això és un comentari en CSS */
+```
+
+> **Alerta!** El comentaris s'envien al navegador juntament amb la resta d'estils, per tant no es poden incloure dades confidencials.
+
+---
+
+## Propietats CSS
+
+CSS defineix moltes **propietats** i a cada versió n'afegeixen més
+
+Les propietats poden ser agrupades en quatre grans grups:
+
+* Propietats de tipus de lletres
+* Propietats de color i fons de pantalla
+* Propietats de text
+* Propietats de caixes
+
+### Propietats de tipus de lletra
+
 
 ![image](font.png)
 
@@ -296,8 +332,7 @@ Paràgrafs
 
 ![image](paragrafs.png)
 
-Fons de pàgina
---------------
+#### Propietats de color i fons de pantalla
 
 ![image](fondos.png)
 
@@ -357,8 +392,8 @@ Coses a saber per començar amb CSS
 -   Cursors
 -   Barres de desplaçament
 
-Tipus de selectors
-==================
+## Selectors
+
 
 -   Selectors bàsics: elements HTML
 -   Selectors de classe
@@ -368,8 +403,8 @@ Tipus de selectors
 -   Selectors pseudoelements
 -   Grups de selectors
 
-Selectors de classe
--------------------
+### Selectors de classe
+
 
 -   Ens serveix per declarar estils que s'utilitzaran varies vegades.
 
@@ -385,8 +420,8 @@ Selectors de classe
 <etiqueta class="nomdelaclasse">
 ```
 
-Selectors ID
-------------
+### Selectors ID
+
 
 -   Ens serveix per declarar estils que s'utilitzaran UNA SOLA vegada.
 
@@ -402,8 +437,8 @@ Selectors ID
 <etiqueta id="nomdelID">
 ```
 
-Selectors contextuals
----------------------
+### Selectors contextuals
+
 
 ```css
 h1 b { 
@@ -419,16 +454,15 @@ h1 b {
 
 ![image](contextual.png)
 
-Selectors pseudoclasse: links
------------------------------
+### Selectors pseudoclasse: links
 
 -   Aquest és un tipus de selector una mica més especial que
     els anteriors. És un **ESTAT DETERMINAT**.
 
 ![image](links.png)
 
-Selectors pseudoelements
-------------------------
+### Selectors pseudoelements
+
 
 Aquest tipus de selector és molt específic i prové d'efectes tipogràfics
 tradicionals.
@@ -437,8 +471,7 @@ tradicionals.
 
 **:first-line**:   Primera línia
 
-Grups de selectors
-------------------
+### Grups de selectors
 
 -   Són en realitat selectors, sinó una manera abreujada de
     definir estils. Permeten assignar el **MATEIX** estil a
@@ -469,8 +502,7 @@ div > p { color =#00FF00; }
 p+p { color=#00FF00; }
 ```
 
-El selector universal
----------------------
+### El selector universal
 
 -   El comodí `\*`
 -   Serveix per totes les caixes
@@ -482,8 +514,7 @@ El selector universal
 }
 ```
 
-Model de caixes \[Box Model\]
-=============================
+## Model de caixes \[Box Model\]
 
 -   Quan es visualitza qualsevol cosa amb CSS és tractada com si estes
     dins d'una caixa rectangular
@@ -527,8 +558,7 @@ Amb el 'border' hi ha moltes més possibilitats:
 
 :   tot de cop especificant un rere l'altre amplada,estil i color
 
-Layout
-======
+## Layout
 
 Les caixes es poden comportar de formes diferents en respecte a les
 altres. El més corrent són dos comportaments:
