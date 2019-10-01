@@ -497,11 +497,21 @@ En comptes d'indicar la direcció web el que hem de fer és indicar el **nom del
 
 > L'aspecte més vistós i atractiu d'una pàgina web és el grafisme. 
 
-Les **imatges** són emmagatzemades en forma d'arxius, principalment GIF/PNG (per imatges) i JPG (per fotos).
+Les **imatges** són emmagatzemades en forma d'arxius, principalment **GIF/PNG** (per imatges) i **JPG** (per fotos).
 
-L'etiqueta que utilitzem per insertar una imatge és `<img>`, no cal fer el tancament.
+L'etiqueta que utilitzem per insertar una imatge és `<img>`, **no cal fer el tancament**.
 
 Mitjançant l'atribut `src`  (***source***), especifiquem el lloc (URL) on es troba la imatge.
+
+```html
+<img src="img_girl.jpg" alt="Girl in a jacket">
+``` 
+
+Si la imatge es troba en una carpeta diferents que la pàgina HTML:
+
+```html
+<img src="/images/img_girl.jpg" alt="Girl in a jacket">
+``` 
 
 [Exemple d'imatge](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_girl)
 
@@ -774,14 +784,12 @@ Anem a veure diferents dissenys de frames
 
 > El frame que ha sobreviscut a l'HTML5 és l'**iframe**.
 
-És un frame *intern*
+Un `iframe` s'utilitza per mostrar una web dins una altra pàgina web.
 
 ```html
-<iframe name="pag-interna" 
-     src="index.htm" 
-     width="300" hight="100" 
+<iframe src="index.htm" 
+     width="300" height="100" 
      frameborder="1" 
-     marginwidth="5" marginheight="5" 
      scrolling="Auto">
  </iframe> 
 ```
