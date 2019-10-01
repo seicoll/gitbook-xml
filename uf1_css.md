@@ -653,21 +653,18 @@ El posicionament en CSS reposa sobre quatre opcions:
 -   Si no hi ha cap element contenidor, els valos faran referència a
     l'element més alt de l'estructura HTML (*body*)
 
-Consell absolut
----------------
+**Consell absolut**
 
-> Fer les posicionaments absolut dins d'un posicionament relatiu, sense
-> cap valor.
+> Fer les posicionaments absolut dins d'un posicionament relatiu, sense cap valor.
 
 ![image](posicionament-absolut3.png)
 
-Exemple absolut sobre relative
-------------------------------
+**Exemple absolut sobre relative**
+
 
 ![image](posicionament-absolut4.png)
 
-Posicionament fixed
--------------------
+**Posicionament fixed**
 
 -   Un cas especial de posicionament absolut és el posicionament fix.
 -   Ens fixa una caixa en la pantalla de manera que no es mourà encara
