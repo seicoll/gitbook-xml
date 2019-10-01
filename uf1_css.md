@@ -230,8 +230,43 @@ h1 {
 
 ## Regles d'ús
 
+### Cascada
 
-* Els estils s'hereden d'una etiqueta a un altre.
+> La "C" de CSS vol dir "***Cascading***".
+
+És possible tenir varies definicions d'estil (externes, internes i integrades en etiqueta).
+
+En cas que hi hagi un conflicte entre els estils definits s'aplica la següent prioritat:
+
+**De menor a major prioritat:**
+* 1er. Estils predeterminats del **navegador**.
+* 2on. Fulles d'estil **externes** (en un arxiu CSS separat).
+* 3er. Fulles d'estil **internes** (en el `<head>`).
+* 4rt. Estils **integrats** en etiquetes HTML.
+
+**Per exemple:**
+
+```html
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red">Títol</h1>
+</body>
+</html>
+```
+
+**De quin color es veurà el text del títol, vermell o blau?**
+
+
+### Herència
+
+> Els estils CSS s'hereden d'una etiqueta a un altre.
 
 **Ex:** Definim l'estil del *body*, les etiquetes de dins tenen el mateix estil.
 
