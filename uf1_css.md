@@ -471,22 +471,6 @@ h1, h2, p {
     }
 ```
 
-Més família… pares i germans
-----------------------------
-
-**Pare:**:   L'element que conté directament al fill que es vol formatar.
-
-```css
-div > p { color =#00FF00; }
-```
-
-**Germà:**:   L'element que precedeix directament, dintre el mateix element pare,
-    al que es vol formatar.
-
-```css
-p+p { color=#00FF00; }
-```
-
 ### El selector universal
 
 * El comodí (`*`)
@@ -510,21 +494,33 @@ p+p { color=#00FF00; }
 }
 ```
 
-**Visualtizació**
+**Visualització:**
 
 <body >
-    <h1  style="color:red"> Títol principal </h1>
+    <h3  style="color:red"> Títol principal </h3>
     <p style="color:red">Primer paràgraf </p>
     <p  style="color:red">Segon paràgraf </p>
 </body>
 
+### Més família… pares i germans
 
+**Pare:**: L'element que conté directament al fill que es vol formatar.
 
-## Model de caixes \[Box Model\]
+```css
+div > p { color =#00FF00; }
+```
 
--   Quan es visualitza qualsevol cosa amb CSS és tractada com si estes
-    dins d'una caixa rectangular
--   Cada caixa té quatre components
+**Germà:**:  L'element que precedeix directament, dintre el mateix element pare, al que es vol formatar.
+
+```css
+p+p { color=#00FF00; }
+```
+
+## Model de caixes (*Box Model*)
+
+Quan es visualitza qualsevol cosa amb CSS és tractada com si estes dins d'una caixa rectangular
+
+Cada caixa té quatre components:
 
 ![image](box-model.png)
 
@@ -536,47 +532,29 @@ p+p { color=#00FF00; }
 
 Podem canviar-ne els valors amb les propietats:
 
-**Margin**
+* **Margin**:   margin, margin-left, margin-right, margin-top, margin-bottom
 
-:   margin, margin-left, margin-right, margin-top, margin-bottom
+* **Padding**:   padding, padding-left, padding-right, padding-top, padding-bottom
 
-**Padding**
+Amb el `border` hi ha moltes més possibilitats:
 
-:   padding, padding-left, padding-right, padding-top, padding-bottom
+* **border-style:** pot ser `none, solid, dashet, dotted, double, groove, ridge, inset,outset`
 
-Amb el 'border' hi ha moltes més possibilitats:
+* **border-width:** especifiquem l'amplada. 
+  * El més corrent és fer-ho amb pixels (10px)
 
-**border-style:**
+* **border-color:** el color que tindrà. 
+  * Pot ser amb el nom en anglès, amb la funció rgb() o en hexadecimal
 
-:   pot ser none, solid, dashet, dotted, double, groove, ridge, inset,
-    outset
-
-**border-width:**
-
-:   especifiquem l'amplada. El més corrent és fer-ho amb pixels (10px)
-
-**border-color:**
-
-:   el color que tindrà. Pot ser amb el nom en anglès, amb la
-    funció rgb() o en hexadecimal
-
-**border:**
-
-:   tot de cop especificant un rere l'altre amplada,estil i color
+* **border:** tot de cop especificant un rere l'altre amplada,estil i color
 
 ## Layout
 
-Les caixes es poden comportar de formes diferents en respecte a les
-altres. El més corrent són dos comportaments:
+Les caixes es poden comportar de formes diferents en respecte a les altres. El més corrent són dos comportaments:
 
-**block:**
+**block:** Blocs de contingut que ocupen tot l'espai d'una línia. Fa que la caixa defineixi un salt de línia rere seu.
 
-:   Blocs de contingut que ocupen tot l'espai d'una línia. Fa que la
-    caixa defineixi un salt de línia rere seu.
-
-**inline:**
-
-:   Les altres caixes permeten que les altres es posin al seu costat.
+**inline:** Les altres caixes permeten que les altres es posin al seu costat.
 
 ![image](inline-block.png)
 
@@ -593,9 +571,8 @@ altres. El més corrent són dos comportaments:
 Amagar contingut
 ----------------
 
--   Una caixa serà invisible si se li aplica la propietat
-    'visibility:hidden;'
--   Es reserva l'espai que ocupava l'etiqueta i queda buit.
+Una caixa serà invisible si se li aplica la propietat 'visibility:hidden;'
+Es reserva l'espai que ocupava l'etiqueta i queda buit.
 
 ![image](visibility.png)
 
@@ -608,31 +585,25 @@ Eliminar contingut
 
 ![image](hidden.png)
 
-Posicionament \[Layout\]
-========================
+## Posicionament (*Layout*)
 
--   CSS permet modificar el posicionament en el que es mostra
-    cada caixa.
--   El posicionament en CSS reposa sobre quatre opcions:
+CSS permet modificar el posicionament en el que es mostra cada caixa.
 
-> Posicionament Normal
->
-> Posicionament Relatiu
->
-> Posicionament Flotant
->
-> Posicionament Absolut
+El posicionament en CSS reposa sobre quatre opcions:
 
-Posicionament Normal
---------------------
+* Posicionament Normal
+* Posicionament Relatiu
+* Posicionament Flotant
+* Posicionament Absolut
+
+### Posicionament Normal
 
 -   Es tracta del funcionament per defecte, les caixes apareixen una
     rere l'altra i de dalt a baix
 
 ![image](posicionament-normal.png)
 
-Posicionament Relatiu
----------------------
+### Posicionament Relatiu
 
 -   Consisteix en posicionar la caixa segons el posicionament normal i
     llavors desplaçar-la respecte de la seva posició original.
@@ -660,8 +631,7 @@ Posicionament Relatiu
 
 ![image](posicionament-relatiu.png)
 
-Posicionament Absolut
----------------------
+### Posicionament Absolut
 
 -   Es pot posicionar una caixa en un lloc concret fent servir
     'position:absolute'
@@ -705,8 +675,7 @@ Posicionament fixed
 
 ![image](posicionament-fixed.png)
 
-Posicionament Flotant
----------------------
+### Posicionament Flotant
 
 'float' ens permet especificar una caixa flotant que deixa que les
 altres caixes es posin al seu voltant
@@ -720,31 +689,27 @@ El paràmetre “clear” pot tenir diferents valors:
 
 ![image](clear.png)
 
-Resum visual de posionaments
-============================
+## Resum visual de posionaments
 
-Inline vs block
----------------
+### Inline vs block
 
 ![image](resum-inline-block.png)
 
-Absolute
---------
+### Absolute
 
 ![image](resum-absolute.png)
 
-Fixed
------
+### Fixed
 
 ![image](resum-fixed.png)
 
-Relatiu
--------
+### Relatiu
+
 
 ![image](resum-relatiu.png)
 
-Float
------
+### Float
+
 
 ![image](resum-float.png)
 
