@@ -643,7 +643,7 @@ Atribut `target` a enllaços:   s'utilitza per decidir on es s'obrirà l'enllaç
 * **\_blank**: nova finestra.
 * **\_top**: finestra.
 * **\_self**:(per defecte) en el frame actual.
-* \**_parent**: es carrega al frame "pare", el que era havia cridat l'actual.
+* **\_parent**: es carrega al frame "pare", el que era havia cridat l'actual.
 * **\-** o també un nom de **frame** (definit amb l'atribut name).
 
 ```html
