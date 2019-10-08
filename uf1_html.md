@@ -427,7 +427,7 @@ Per crear un enllaç d'aquest tipus és necessari a part de l'enllaç de l'orige
 ```html
 Enllaç origen: <a href="#avall"> Anar al final </a>
 
-Enllaç destí: <a name="avall"> </a>
+Enllaç destí: <a id="avall"> </a>
 ```
 
 [Exemple d'enllaç intern](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_bookmark)
@@ -454,7 +454,7 @@ S'ha d'utilitzar la "/" per especificar on es troben les coses.
 * La pàgina **arxiu.html** ha de contenir la marca referent a la secció.
 
    ```html
-   <a name="seccio"> </a>
+   <a id"seccio"> </a>
    ```
 
 ### Enllaços externs
