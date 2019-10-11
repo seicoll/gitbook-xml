@@ -309,32 +309,29 @@ Definim l'estil del `<body>` i per tant les etiquetes de dins tenen el mateix es
 
 > **Alerta!** El comentaris s'envien al navegador juntament amb la resta d'estils, per tant no es poden incloure dades confidencials.
 
----
-
 ## Propietats CSS
 
 CSS defineix moltes **propietats** i a cada versió n'afegeixen més
 
-Les propietats poden ser agrupades en quatre grans grups:
+Les propietats poden ser agrupades en quatre grans **grups**:
 
 * Propietats de tipus de lletres
-* Propietats de color i fons de pantalla
 * Propietats de text
+* Propietats de fons de pantalla
 * Propietats de caixes
 
-### Propietats de tipus de lletra
+### Tipus de lletra
+
+![image](uf1_images/uf1-css-font.png)
+
+### Text
 
 
-![image](font.png)
+![image](uf1_images/uf1-css-text.png)
 
-Paràgrafs
----------
+### Fons de pantalla
 
-![image](paragrafs.png)
-
-#### Propietats de color i fons de pantalla
-
-![image](fondos.png)
+![image](uf1_images/uf1-css-backgrounds.png)
 
 ## Unitats
 
@@ -344,17 +341,17 @@ Es poden definir atributs amb els següents formats:
 
 **Valors absoluts:**
 
-* Pixels(px)
-* Centimetres(cm)
-* Polzades(in)
-* Punts(pt) (72 punts = 1 polzada)
+* `px` Pixels
+* `cm` Centimetres
+* `in` Polzades
+* `pt` Punts (72 punts = 1 polzada)
 
 
 **Valors relatius:**
 
-* Percentatges(%)
-* EM (alçada "M")
-* Ex (alçada "x")
+* `%` Percentatges
+* `em` (alçada "M")
+* `ex` (alçada "x")
 
 **Exemples:**
 
@@ -367,15 +364,15 @@ margin-top: 1.25in;
 margin-bottom: 1.5cm; 
 ```
 
-> **No s'ha de deixar espai entre el valor i la unitat**.
+![image](uf1_images/uf1-css-units.png)
 
-Més info a: <https://www.w3.org/Style/Examples/007/units.en.html>
+**Més info a:** <https://www.w3.org/Style/Examples/007/units.en.html>
 
 ## Selectors
 
 > Els **selectors** defineixen quin és l'element de la pàgina que modifiquem des del CSS.
 
-Disposem de diversos tipus de selectors:
+Disposem de diversos **tipus** de selectors:
 
 -   Selectors bàsics: elements HTML
 -   Selectors de classe
@@ -449,8 +446,7 @@ h1 b {
 ### Selectors pseudoelements
 
 
-Aquest tipus de selector és molt específic i prové d'efectes tipogràfics
-tradicionals.
+Aquest tipus de selector és molt específic i prové d'efectes tipogràfics tradicionals.
 
 **:first-letter**:   Permet seleccionar la primera lletra
 
@@ -458,9 +454,9 @@ tradicionals.
 
 ### Grups de selectors
 
--   Són en realitat selectors, sinó una manera abreujada de
-    definir estils. Permeten assignar el **MATEIX** estil a
-    diversos selectors.
+Són en realitat selectors, sinó una manera abreujada de definir estils. 
+
+> Permeten assignar el **mateix estil a diversos selectors**.
 
 ```css
 h1, h2, p {
@@ -468,7 +464,7 @@ h1, h2, p {
     color: olive;
     margin-left: 30px; 
     margin-top: 40px; 
-    }
+}
 ```
 
 ### El selector universal
@@ -490,7 +486,7 @@ h1, h2, p {
 
 ```css
 * {
- color: red;
+    color: red;
 }
 ```
 
@@ -504,16 +500,20 @@ h1, h2, p {
 
 ### Més família… pares i germans
 
-**Pare:**: L'element que conté directament al fill que es vol formatar.
+**Pare:** L'element que conté directament al fill que es vol formatar.
 
 ```css
-div > p { color =#00FF00; }
+div > p {
+    color= #00FF00; 
+}
 ```
 
-**Germà:**:  L'element que precedeix directament, dintre el mateix element pare, al que es vol formatar.
+**Germà:**  L'element que precedeix directament, dintre el mateix element pare, al que es vol formatar.
 
 ```css
-p+p { color=#00FF00; }
+p+p { 
+    color=#00FF00; 
+}
 ```
 
 ## Model de caixes (*Box Model*)
