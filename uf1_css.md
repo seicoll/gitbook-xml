@@ -365,15 +365,42 @@ margin-bottom: 1.5cm;
 
 Disposem de diversos **tipus** de selectors:
 
--   Selectors bàsics: elements HTML
+-   Selectors de tipus o etiqueta HTML
 -   Selectors de classe
 -   Selectors ID
 -   Selectors contextuals
 -   Selectors pseudoclasse: links
 -   Selectors pseudoelements
--   Grups de selectors
+-   Selector universal (*)
 
 ---
+
+### Selectors de tipus o etiqueta
+
+> Seleccionen els elements de la pàgina a partir de la seva etiqueta HTML
+
+**HTML**
+
+```html
+<body>
+    <h1> Títol 1 </h1>
+    <h2> Títol 2 </h2>
+</body>
+```
+
+**CSS**
+
+```css
+h1 { color: red; }
+h2 { color: blue; }
+```
+
+**Visualització:**
+
+<body style="border: 1px solid black">
+    <h3  style="color:red"> Títol 1 </h3>
+    <h4 style="color:blue"> Títol 2 </h4>
+</body>
 
 ### Selectors de classe
 
@@ -458,10 +485,9 @@ h1, h2, p {
 }
 ```
 
-### El selector universal
+### El selector universal (*)
 
-* El comodí (`*`)
-* Selecciona totes les etiquetes del document.
+> Selecciona totes les etiquetes del document.
 
 **HTML**
 
