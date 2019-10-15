@@ -438,20 +438,30 @@ Serveixen per declarar estils que s'utilitzaran **varies vegades**.
 ### Selectors ID (#)
 
 
-> Els **selectors ID** ens serveixen per declarar estils que s'utilitzaran **UNA SOLA vegada**.
+> Els **selectors ID** seleccionen qualsevol etiqueta que tingui l'identificador especificat en l'atribut `id`.
 
-```css
-#nomdelID {
-    atribut: valor;
-    atribut2:valor2; ..
-} 
-```
-
-Un cop definida la podem utilitzar en qualsevol etiqueta:
+Serveixen per declarar estils que s'utilitzaran **UNA SOLA vegada**.
 
 ```html
-<etiqueta id="nomdelID">
+<body>
+  <p>Olot</p>
+  <p id="comarca">Garrotxa</p>
+</body>
 ```
+ Definim una classe donant-li un nom que podreu utilitzar en qualsevol altra etiqueta.
+
+**CSS**
+
+```css
+#comarca { color: red; }
+```
+
+**Visualització:**
+
+<div style="border: 1px solid gray; padding: 7px; margin-bottom:10px">
+    <p>Olot</p>
+    <p style="color:red">Garrotxa</p>
+</div>
 
 > El mateix valor en  l'atribut `id` **NO es pot repetir** en dos etiquetes de la pàgina.
 
@@ -498,12 +508,39 @@ p a { color: red; }
 
 ### Selectors pseudoelements
 
+> S'afegeixen a un selector per definir l'estil d'una part de l'element.
 
-Aquest tipus de selector és molt específic i prové d'efectes tipogràfics tradicionals.
+* **::first-letter**: Selecciona la primera lletra
+* **::first-line**: Selecciona la primera línia
+* **::selection**: Selecciona allò que l'usuari ha seleccionat amb el ratolí.
 
-**:first-letter**:   Permet seleccionar la primera lletra
+**HTML**
 
-**:first-line**:   Primera línia
+```html
+<body>
+  <p>Primer paràgraf</p>
+  <p>Segon paràgraf</p>
+</body>
+```
+
+**CSS**
+
+```css
+p::first-letter { font-size: 200%; }
+```
+
+**Visualització:**
+
+<div style="border: 1px solid gray; padding: 7px; margin-bottom:20px">
+    <p><span style="font-size:200%">P</span>rimer paràgraf</p>
+    <p><span style="font-size:200%">S</span>egon paràgraf</p>
+</div>
+
+
+> CSS 3 afegeix molts més pseudoelements.
+
+**Més exemples a**: <http://www.w3schools.com/css/css_pseudo_elements.asp>
+
 
 ### Grups de selectors
 
