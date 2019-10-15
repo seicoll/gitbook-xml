@@ -205,14 +205,6 @@ Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines
 
 ![](uf1_images/uf1_css_regles.png)
 
-**Exemples:**
-
-```css
-font-size: 10pt; 
-text-decoration: underline; 
-color: black; 
-```
-
 Si volem especificar **més d'una propietat** en una regla CSS:
 * Es posen una darrere l'altra dins dels corxets.
 * Separades amb un punt i coma ( `;` )
@@ -221,9 +213,10 @@ Si volem especificar **més d'una propietat** en una regla CSS:
 
 ```css
 h1 {       
+    font-size: 10pt; 
+    text-decoration: underline; 
+    color: black; 
     font-family:arial;
-    font-weight:bold;
-    color:#FF0000;
     background-color:#00FF00; 
 }
 ```
@@ -363,8 +356,6 @@ font-size: 12pt;
 margin-top: 1.25in; 
 margin-bottom: 1.5cm; 
 ```
-
-![image](uf1_images/uf1-css-units.png)
 
 **Més info a:** <https://www.w3.org/Style/Examples/007/units.en.html>
 
