@@ -368,12 +368,10 @@ Disposem de diversos **tipus** de selectors:
 -   Selectors de tipus o etiqueta HTML
 -   Selectors de classe
 -   Selectors ID
--   Selectors contextuals
+-   Selectors descendents
 -   Selectors pseudoclasse: links
 -   Selectors pseudoelements
 -   Selector universal (*)
-
----
 
 ### Selectors de tipus o etiqueta
 
@@ -397,30 +395,47 @@ h2 { color: blue; }
 
 **Visualització:**
 
-<body style="border: 1px solid black">
+<div style="border: 1px solid gray; padding: 7px">
     <h3  style="color:red"> Títol 1 </h3>
     <h4 style="color:blue"> Títol 2 </h4>
-</body>
+</div>
 
-### Selectors de classe
+### Selectors de classe (.)
 
-> Els **selectors de classe** serveixen per declarar estils que s'utilitzaran **varies vegades**.
+> Els **selectors de classe** seleccionen totes les etiquetes que tinguin el mateix atribut `class`.
 
-```css
-.nomdelaclasse {
-    atribut: valor;
-    atribut2: valor2; 
-    ...
-} 
-```
+Serveixen per declarar estils que s'utilitzaran **varies vegades**.
 
-Un cop definida la podem utilitzar en qualsevol etiqueta
+**HTML**
 
 ```html
-<etiqueta class="nomdelaclasse">
+<body>
+  <p class="destacat">Primer paràgraf</p>
+  <p>Segon paràgraf</p>
+</body>
+```
+ Definim una classe donant-li un nom que podreu utilitzar en qualsevol altra etiqueta.
+
+**CSS**
+
+```css
+.destacat { color: red; }
 ```
 
-### Selectors ID
+**Visualització:**
+
+<div style="border: 1px solid gray; padding: 7px; margin-bottom:10px">
+    <p style="color:red">Primer paràgraf</p>
+    <p>Segon paràgraf</p>
+</div>
+
+
+* **Només** els paràgrafs de classe `destacat` es mostaran de color vermell.
+
+> **Varies** etiquetes de la pàgina poden utilitzar el mateix valor en l'atribut `class`.
+
+
+### Selectors ID (#)
 
 
 > Els **selectors ID** ens serveixen per declarar estils que s'utilitzaran **UNA SOLA vegada**.
@@ -438,21 +453,41 @@ Un cop definida la podem utilitzar en qualsevol etiqueta:
 <etiqueta id="nomdelID">
 ```
 
-### Selectors contextuals
+> El mateix valor en  l'atribut `id` **NO es pot repetir** en dos etiquetes de la pàgina.
 
 
-```css
-h1 b { 
-    font-weight: bold; 
-    color: red; 
-}
+### Selectors descendents
+
+> Selecciona les etiquetes que es trobin **dins** (descendents) de una altra d'etiqueta.
+
+
+**HTML**
+
+```html
+<body>
+     <p>
+         Consulteu la pàgina del <a href="www.w3.org">W3C</a>
+     </p>
+</body>
+
 ```
 
--   Només les negretes que siguin descendents d'un element H1 seran de
-    color vermell.
--   Vegem l'style sheet anterior en un exemple concret:
+**CSS**
 
-![image](contextual.png)
+```css
+p a { color: red; }
+
+```
+* **Només** els enllaços que siguin descendents d'un element `p` seran de color vermell.
+  
+**Visualització:**
+
+<div style="border: 1px solid gray; padding: 7px">
+    <p>
+         Consulteu la pàgina del <a style="color:red" href="www.w3.org">W3C</a>
+     </p>
+</div>
+
 
 ### Selectors pseudoclasse: links
 
@@ -509,11 +544,11 @@ h1, h2, p {
 
 **Visualització:**
 
-<body >
+<div style="border: 1px solid gray; padding: 7px">
     <h3  style="color:red"> Títol principal </h3>
     <p style="color:red">Primer paràgraf </p>
     <p  style="color:red">Segon paràgraf </p>
-</body>
+</div>
 
 ### Més família… pares i germans
 
