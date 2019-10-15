@@ -498,13 +498,38 @@ p a { color: red; }
      </p>
 </div>
 
+### Grups de selectors
 
-### Selectors pseudoclasse: links
+> Permeten assignar el **mateix estil a diversos selectors**.
 
--   Aquest és un tipus de selector una mica més especial que
-    els anteriors. És un **ESTAT DETERMINAT**.
+Són en realitat selectors, sinó una manera abreujada de definir estils. 
 
-![image](links.png)
+```css
+h1, h2, p {
+    font-family: Trebuchet MS;
+    color: olive;
+    margin-left: 30px; 
+}
+```
+
+### Selectors pseudoclasse: enllaços
+
+CSS permet aplicar diferents estils al mateix enllaç en funció del seu **estat**.
+
+* `:link`: Enllaços que encara no han sigut visitats
+* `:visited`: Enllaços que ja han sigut visitats
+* `:hover`: Enllaç que té el punter de ratolí a sobre
+* `:active`: Enllaç que està prement l'usuari
+
+```css
+a:hover { 
+      text-decoration: none;
+      background-color: red;
+      color: #FFF; 
+}
+```
+
+[Exemple](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_hover)
 
 ### Selectors pseudoelements
 
@@ -541,22 +566,6 @@ p::first-letter { font-size: 200%; }
 
 **Més exemples a**: <http://www.w3schools.com/css/css_pseudo_elements.asp>
 
-
-### Grups de selectors
-
-Són en realitat selectors, sinó una manera abreujada de definir estils. 
-
-> Permeten assignar el **mateix estil a diversos selectors**.
-
-```css
-h1, h2, p {
-    font-family: Trebuchet MS;
-    color: olive;
-    margin-left: 30px; 
-    margin-top: 40px; 
-}
-```
-
 ### El selector universal (*)
 
 > Selecciona totes les etiquetes del document.
@@ -587,9 +596,9 @@ h1, h2, p {
     <p  style="color:red">Segon paràgraf </p>
 </div>
 
-### Més família… pares i germans
+### Selectors jeràrquics (germans i fills)
 
-**Pare:** L'element que conté directament al fill que es vol formatar.
+**Fill (A > B):** Selecciona qualsevol element B que és fill **directe** de A.
 
 ```css
 div > p {
@@ -597,13 +606,15 @@ div > p {
 }
 ```
 
-**Germà:**  L'element que precedeix directament, dintre el mateix element pare, al que es vol formatar.
+**Germà (A + B):**  Selecciona qualsevol element B **precedit immediatament** d'un element A.
 
 ```css
-p+p { 
+h1+p { 
     color=#00FF00; 
 }
 ```
+
+---
 
 ## Model de caixes (*Box Model*)
 
