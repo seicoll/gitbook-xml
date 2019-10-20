@@ -614,21 +614,37 @@ h1+p {
 }
 ```
 
----
-
 ## Model de caixes (*Box Model*)
 
-Quan es visualitza qualsevol cosa amb CSS és tractada com si estes dins d'una caixa rectangular
+> Quan es visualitza qualsevol cosa amb CSS és tractada com si estes **dins d'una caixa** rectangular
 
 Cada caixa té quatre components:
 
-![image](box-model.png)
+![image](uf1_images/uf1_box_model.png)
 
--   Els atributs “width” i “height” permeten forçar la mida de la caixa
+L'**ordre de visualització** des del punt de vista de l'usuari és:
 
-![image](mides-caixa.png)
+![image](uf1_images/uf1_box_model_order.gif)
 
--   Per defecte els valors de margin, padding i border estan a zero
+### Amplada i alçada
+
+* Els atributs `width` i `height` permeten definir la mida de la caixa.
+
+```css
+table { 
+    width: 300px; 
+    height:100px; 
+}
+```
+
+![image](uf1_images/uf1_mides_caixa.png)
+
+> La **dimensió total** de l'element pot ser més gran si té margin i/o border.
+
+
+### Margin i padding
+
+* Per defecte els valors de margin, padding i border estan a zero.
 
 Podem canviar-ne els valors amb les propietats:
 
@@ -636,27 +652,50 @@ Podem canviar-ne els valors amb les propietats:
 
 * **Padding**:   padding, padding-left, padding-right, padding-top, padding-bottom
 
+ ```css
+    h1 { 
+        margin: 3px; 
+        padding-left:4px; 
+    }
+ ```
+
+### Border
+
 Amb el `border` hi ha moltes més possibilitats:
 
 * **border-style:** pot ser `none, solid, dashet, dotted, double, groove, ridge, inset,outset`
 
 * **border-width:** especifiquem l'amplada. 
-  * El més corrent és fer-ho amb pixels (10px)
+  * El més corrent és fer-ho amb pixels (Per exemple: 10px)
 
 * **border-color:** el color que tindrà. 
   * Pot ser amb el nom en anglès, amb la funció rgb() o en hexadecimal
 
-* **border:** tot de cop especificant un rere l'altre amplada,estil i color
+* **border:** tot de cop especificant un rere l'altre amplada, estil i color.
 
-## Layout
+```css
+p { border-color:#000000; border-style:solid; }
 
-Les caixes es poden comportar de formes diferents en respecte a les altres. El més corrent són dos comportaments:
+p { border: 2px solid #000000; }
+```
 
-**block:** Blocs de contingut que ocupen tot l'espai d'una línia. Fa que la caixa defineixi un salt de línia rere seu.
+[Exemple]( http://www.w3schools.com/css/css_border.asp)
 
-**inline:** Les altres caixes permeten que les altres es posin al seu costat.
+## Elements de bloc i en línia
 
-![image](inline-block.png)
+Les caixes es poden comportar de formes diferents en respecte a les altres. 
+
+El més corrent són dos comportaments:
+
+* **block:** 
+  * Són posicionats **verticalment**. 
+  * Blocs de contingut que ocupen tot l'espai d'una línia. Fa que la caixa defineixi un salt de línia rere seu.
+ 
+* **inline:** 
+  * Són posicionats **horitzontalment**.
+  * Les altres caixes permeten que les altres es posin al seu costat.
+
+![image](uf1-inline-block.png)
 
 -   El primer element és un paràgraf que ocupa tota la línia perquè és
     un element de *block*.
