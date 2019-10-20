@@ -263,7 +263,7 @@ Si **repetim una etiqueta en el mateix nivell** i s'hi repeteix alguna propietat
 ```css
 h1 { 
     font-family:arial;
-    color: blue 
+    color: blue;
 }
 
 h1 { color:red; }
