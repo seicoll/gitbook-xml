@@ -695,34 +695,39 @@ El més corrent són dos comportaments:
   * Són posicionats **horitzontalment**.
   * Les altres caixes permeten que les altres es posin al seu costat.
 
-![image](uf1-inline-block.png)
+![image](uf1_images/uf1-inline-block.png)
 
--   El primer element és un paràgraf que ocupa tota la línia perquè és
-    un element de *block*.
--   El segon element és un enllaç que ocupa només l'espai necessari pel
-    seu contingut ja que és un element *inline*.
--   Els elements inline no poden tenir amplada i per això s'han definit
-    els *\*inline-block*\*.
--   Són elements inline que es comporten com un block
+* El primer element és un **paràgraf** que ocupa tota la línia perquè és un element de ***block***.
+* El segon element és un **enllaç** que ocupa només l'espai necessari pel     seu contingut ja que és un element ***inline***.
 
-![image](inline-block2.png)
+### inline-block
 
-Amagar contingut
-----------------
+> Els elements inline **no poden tenir amplada**.
 
-Una caixa serà invisible si se li aplica la propietat 'visibility:hidden;'
+Per això s'han definit els ***inline-block***.
+ 
+Són elements inline que es comporten com un block:
+
+![image](uf1_images/uf1-inline-block2.png)
+
+## Amagar contingut
+
+Una caixa serà **invisible** si se li aplica la propietat `visibility:hidden;`
+
 Es reserva l'espai que ocupava l'etiqueta i queda buit.
 
-![image](visibility.png)
+![image](uf1_images/uf1-visibility.png)
 
-Eliminar contingut
-------------------
+## Eliminar contingut
 
--   Perquè una etiqueta no es representi es fa servir 'display:none'
--   L'espai que ocupava l'etiqueta queda lliure i és ocupat pels
-    altres elements.
+Perquè una etiqueta **no es representi** es fa servir `display:none;`
 
-![image](hidden.png)
+L'espai que ocupava l'etiqueta queda lliure i és ocupat pels altres elements.
+
+![image](uf1_images/hidden.png)
+
+  
+---
 
 ## Posicionament (*Layout*)
 
