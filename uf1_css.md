@@ -727,75 +727,72 @@ L'espai que ocupava l'etiqueta queda lliure i és ocupat pels altres elements.
 ![image](uf1_images/hidden.png)
 
   
----
+
 
 ## Posicionament (*Layout*)
 
-CSS permet modificar el posicionament en el que es mostra cada caixa.
+**CSS** permet modificar el posicionament en el que es mostra cada caixa.
 
 El posicionament en CSS reposa sobre quatre opcions:
 
-* Posicionament Normal
-* Posicionament Relatiu
-* Posicionament Flotant
-* Posicionament Absolut
+* Posicionament **Estàtic o Normal**
+* Posicionament **Relatiu**
+* Posicionament **Flotant**
+* Posicionament **Absolut**
+
+S'utiliza la propietat `position`
+
+```css
+position: static | relative | absolute | fixed
+```
+
+---
 
 ### Posicionament Normal
 
--   Es tracta del funcionament per defecte, les caixes apareixen una
-    rere l'altra i de dalt a baix
+Es tracta del funcionament per defecte, les caixes apareixen una rere l'altra i de dalt a baix.
 
 ![image](posicionament-normal.png)
 
 ### Posicionament Relatiu
 
--   Consisteix en posicionar la caixa segons el posicionament normal i
-    llavors desplaçar-la respecte de la seva posició original.
--   Podem canviar la posició “relativa” posant valors a left, right, top
-    o bottom
--   Desplaça la caixa fora de la seva posició normal en el fluxe
--   Marca la posició original de l'element com a protegida (la resta de
-    caixes es pensen que encara hi és.
+Consisteix en posicionar la caixa segons el posicionament normal i llavors desplaçar-la respecte de la seva posició original.
+
+Podem canviar la posició “relativa” posant valors a left, right, top o bottom
+
+Desplaça la caixa fora de la seva posició normal en el fluxe
+
+Marca la posició original de l'element com a protegida (la resta de caixes es pensen que encara hi és.
 
 ![image](posicionament-relatiu2.png)
 
--   Top, right, bottom o left es calculen respecte la posició original
-    en el fluxe.
+* Top, right, bottom o left es calculen respecte la posició original en el fluxe.
 
-> Top:25px -> es desplaça 25 píxels des de dalt de la posició normal
-> de la caixa (es desplaça cap a baix)
->
-> Right:25px -> es desplaça 25 píxels de la dreta de la posició
-> original (es desplaça cap a l'esquerra)
+* Top:25px -> es desplaça 25 píxels des de dalt de la posició normal de la caixa (es desplaça cap a baix)
+
+* Right:25px -> es desplaça 25 píxels de la dreta de la posició original (es desplaça cap a l'esquerra)
 
 ![image](posicionament-relatiu3.png)
 
--   Canviar la posició relativa pot fer que el contingut de dues caixes
-    quedi superposat
+* Canviar la posició relativa pot fer que el contingut de dues caixes quedi superposat
 
 ![image](posicionament-relatiu.png)
 
 ### Posicionament Absolut
 
--   Es pot posicionar una caixa en un lloc concret fent servir
-    'position:absolute'
+* Es pot posicionar una caixa en un lloc concret fent servir `position:absolute;`
 
 ![image](posicionament-absolut.png)
 
--   Treu l'element del fluxe
--   L'element “s'eleva” i tots els altres elements es comporten com si
-    no hi fos
--   La resta del contingut no quedarà al voltant sinó que pot quedar per
-    sota
+* Treu l'element del fluxe
+* L'element “s'eleva” i tots els altres elements es comporten com si no hi fos
+* La resta del contingut no quedarà al voltant sinó que pot quedar per sota
 
 ![image](posicionament-absolut2.png)
 
--   El posicionament absolut d'un element fa referència al seu
-    contenidor, ja sigui amb *relatiu*, *absolut* o *fixed*.
--   És a dir que *top*, *right*, *bottom* o *left* depenen del
-    seu contenidor.
--   Si no hi ha cap element contenidor, els valos faran referència a
-    l'element més alt de l'estructura HTML (*body*)
+* El posicionament absolut d'un element fa referència al seu contenidor, ja sigui amb *relative*, *absolut* o *fixed*.
+* És a dir que *top*, *right*, *bottom* o *left* depenen del seu contenidor.
+* Si no hi ha cap element contenidor, els valos faran referència a l'element més alt de l'estructura HTML (*body*)
 
 **Consell absolut**
 
@@ -834,29 +831,26 @@ El paràmetre “clear” pot tenir diferents valors:
 
 ### Inline vs block
 
-![image](resum-inline-block.png)
+![image](uf1_images/resum-inline-block.png)
 
 ### Absolute
 
-![image](resum-absolute.png)
+![image](uf1_images/resum-absolute.png)
 
 ### Fixed
 
-![image](resum-fixed.png)
+![image](uf1_images/resum-fixed.png)
 
 ### Relatiu
 
-
-![image](resum-relatiu.png)
+![image](uf1_images/resum-relatiu.png)
 
 ### Float
 
+![image](uf1_images/resum-float.png)
 
-![image](resum-float.png)
+### Z-index
 
-Z-index
-=======
+Controla la profunditat de les capes
 
--   Controla la profunditat de les capes
-
-![image](z-index.png)
+![image](uf1_images/z-index.png)
