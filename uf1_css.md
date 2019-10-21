@@ -786,16 +786,18 @@ El desplaçament de la caixa es controla amb les **propietats** `top`, `right`, 
 
 ![image](posicionament-absolut.png)
 
-* Treu l'element del fluxe
-* L'element “s'eleva” i tots els altres elements es comporten com si no hi fos
-* La resta del contingut no quedarà al voltant sinó que pot quedar per sota
+* Treu l'element del fluxe normal.
+* L'element ***s'eleva*** i tots els altres elements es comporten com si no hi fos.
+* La resta del contingut no quedarà al voltant sinó que pot quedar per **sota**.
 
-![image](posicionament-absolut2.png)
+![image](uf1_images/uf1-posicionament-absolut.png)
 
-* El posicionament absolut d'un element fa referència al seu contenidor, ja sigui amb *relative*, *absolut* o *fixed*.
-* És a dir que *top*, *right*, *bottom* o *left* depenen del seu contenidor.
-* Si no hi ha cap element contenidor, els valos faran referència a l'element més alt de l'estructura HTML (*body*)
+* El posicionament absolut d'un element fa referència al seu contenidor.<!--, ja sigui amb *relative*, *absolut* o *fixed*.-->
+* És a dir que `top`, `right`, `bottom` o `left` depenen del seu contenidor.
+* Si no hi ha cap element contenidor, els valos faran referència a l'element més alt de l'estructura HTML (el `body`).
 
+
+<!--
 **Consell absolut**
 
 > Fer les posicionaments absolut dins d'un posicionament relatiu, sense cap valor.
@@ -804,16 +806,24 @@ El desplaçament de la caixa es controla amb les **propietats** `top`, `right`, 
 
 **Exemple absolut sobre relative**
 
-
 ![image](posicionament-absolut4.png)
+-->
 
 **Posicionament fixed**
 
--   Un cas especial de posicionament absolut és el posicionament fix.
--   Ens fixa una caixa en la pantalla de manera que no es mourà encara
-    que es mogui la pàgina amunt o avall
+Un cas especial de posicionament absolut és el **posicionament fix**.
 
-![image](posicionament-fixed.png)
+Ens fixa una caixa en la pantalla de manera que **no es mourà** encara que es mogui la pàgina amunt o avall.
+
+```html
+.box1{ 
+    position:fixed; 
+    right:0px; 
+    top:0px; 
+}
+```
+
+![image](uf1_images/uf1-posicionament-fixed.png)
 
 ### Posicionament Flotant
 
