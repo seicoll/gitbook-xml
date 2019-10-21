@@ -782,19 +782,18 @@ El desplaçament de la caixa es controla amb les **propietats** `top`, `right`, 
 
 ### Posicionament Absolut
 
-* Es pot posicionar una caixa en un lloc concret fent servir `position:absolute;`
-
-![image](posicionament-absolut.png)
-
-* Treu l'element del fluxe normal.
-* L'element ***s'eleva*** i tots els altres elements es comporten com si no hi fos.
-* La resta del contingut no quedarà al voltant sinó que pot quedar per **sota**.
+Es pot posicionar una caixa **en un lloc concret** fent servir `position:absolute;`
 
 ![image](uf1_images/uf1-posicionament-absolut.png)
 
-* El posicionament absolut d'un element fa referència al seu contenidor.<!--, ja sigui amb *relative*, *absolut* o *fixed*.-->
-* És a dir que `top`, `right`, `bottom` o `left` depenen del seu contenidor.
-* Si no hi ha cap element contenidor, els valos faran referència a l'element més alt de l'estructura HTML (el `body`).
+* Treu l'element del fluxe normal.
+
+* L'element ***s'eleva*** i tots els altres elements es comporten com si no hi fos.
+  * La resta del contingut no quedarà al voltant sinó que pot quedar per **sota**.
+
+* El posicionament absolut d'un element **fa referència al seu contenidor**.<!--, ja sigui amb *relative*, *absolut* o *fixed*.-->
+  * És a dir que `top`, `right`, `bottom` o `left` depenen del seu contenidor.
+  * Si no hi ha cap element contenidor, els valos faran referència a l'element més alt de l'estructura HTML (el `body`).
 
 
 <!--
@@ -827,17 +826,21 @@ Ens fixa una caixa en la pantalla de manera que **no es mourà** encara que es m
 
 ### Posicionament Flotant
 
-'float' ens permet especificar una caixa flotant que deixa que les
-altres caixes es posin al seu voltant
+Podem definir una **caixa flotant** que deixa que les altres caixes es posin al seu voltant amb la propietat `float`.
 
-![image](posicionament-float.png)
+![image](uf1_images/uf1-posicionament-flotant.gif)
 
--   La caixa que hem definit float:left es posa primer i les altres es
-    posen al seu voltant sense sobreesciure-la
+* La caixa que hem definit `float:right;` es posa primer, al més a la dreta o esquerra possible, i les altres es posen al seu voltant sense sobreesciure-la.
 
-El paràmetre “clear” pot tenir diferents valors:
+La propietat `clear` permet anul·lar el comportament per introduït per la propietat float.
 
-![image](clear.png)
+![image](uf1_images/uf1-posicionament-flotant-clear.gif)
+
+* `clear: left;` anul·la els elements floants a l'esquerra.
+
+El paràmetre `clear` pot tenir diferents valors:
+
+![image](uf1_images/uf1-clear.png)
 
 ## Resum visual de posionaments
 
