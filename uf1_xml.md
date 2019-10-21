@@ -1,50 +1,47 @@
-Introducció a XML
-=================
+# Introducció a XML
 
-Index
-=====
+## Els llenguatges de marques
 
-Els llenguatges de marques
-==========================
+Un **llenguatge de marques** combina dades i etiquetes que les marquen i que contenen informació addicional sobre l'estructura del text o la seva presentació.
 
--   Un llenguatge de marques combina dades i etiquetes que les marquen i
-    que contenen informació addicional sobre l'estructura del text o la
-    seva presentació.
--   Les marques estan barrejades amb el propi text.
+Les marques estan barrejades amb el propi text.
 
-``` {.sourceCode .xml}
+```xml
 <persona>
     <nom>
-        Xavier
+        Sergi
     </nom>
     <cognom>
-        Sala
+        Coll
     </cognom>
 </persona>
 ```
 
--   Tot i que els sistemes de marques en que ens concentrarem són els
-    d'estil “web” cal no oblidar que n'hi ha d'altres:
+Tot i que els sistemes de marques en que ens concentrarem són els d'estil web cal no oblidar que n'hi ha d'altres:
 
-> Wikitext, TeX, DocBook, RTF, JSON
->
+* Wikitext, TeX, DocBook, RTF, JSON
+
+**Exemple Wikitext:**
+
+```
 > = Intercanvi de dades =
+* [[ XML ]]
+* [[ JSON ]]
+* [[ LDIF ]]
+```
 
--   \[\[ XML \]\]
--   \[\[ JSON \]\]
--   \[\[ LDIF \]\]
+**Exemple JSON:**
 
-``` {.sourceCode .json}
-{ “persona”: {
-“nom”: “Xavier”,
-“cognom”: “Sala”
+```json
+{ "persona": {
+    "nom": "Sergi",
+    "cognom": "Coll"
 } }
 ```
 
--   El llenguatge de marques més conegut és l'HTML, el de les pàgines
-    web
+El llenguatge de marques més conegut és l'**HTML**, el de les pàgines web.
 
-``` {.sourceCode .html}
+```html
 <html>
     <head>
     <title> Pàgina </title>
@@ -55,7 +52,7 @@ Els llenguatges de marques
 </html>
 ```
 
--   Però no és el primer que ha existit , ni l'únic
+Però no és el primer que ha existit , ni l'únic
 
 SGML
 ====
@@ -68,17 +65,14 @@ Recordant la història...
 
 <http://www.internethalloffame.org/brief-history-internet>
 
--   La primera tecnologia estandarditzada de llenguatges de marques va
-    ser l’**SGML**
--   Es va fer servir com estàndard de la informació de propòsit general
--   Partia de la idea de que s'han de separar les dades d'un document de
-    la seva forma
+* La primera tecnologia estandarditzada de llenguatges de marques va ser l'**SGML**
+* Es va fer servir com estàndard de la informació de propòsit general.
+* Partia de la idea de que s'han de separar les dades d'un document de la seva forma.
 
 Però:
 
--   La majoria dels documents estaven destinats a la impressió
--   Era terriblement complex de manera que només el feien servir els
-    especialistes
+* La majoria dels documents estaven destinats a la **impressió**.
+* Era terriblement **complex** de manera que només el feien servir els especialistes.
 
 HTML
 ====
