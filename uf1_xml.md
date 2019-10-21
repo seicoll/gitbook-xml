@@ -52,39 +52,32 @@ El llenguatge de marques més conegut és l'**HTML**, el de les pàgines web.
 </html>
 ```
 
-Però no és el primer que ha existit , ni l'únic
+Però no és el primer que ha existit, ni l'únic
 
-SGML
-====
 
-Recordant la història...
+* **Història del XML:** <http://www.tiki-toki.com/timeline/entry/7339/Histria-del-xHTMLnn/>
+* **Història del HTML:** <http://webdirections.org/history/>
 
-<http://www.tiki-toki.com/timeline/entry/7339/Histria-del-xHTMLnn/>
+## SGML
 
-<http://webdirections.org/history/>
-
-<http://www.internethalloffame.org/brief-history-internet>
-
-* La primera tecnologia estandarditzada de llenguatges de marques va ser l'**SGML**
-* Es va fer servir com estàndard de la informació de propòsit general.
-* Partia de la idea de que s'han de separar les dades d'un document de la seva forma.
+La primera tecnologia estandarditzada de llenguatges de marques va ser l'**SGML**
+Es va fer servir com estàndard de la informació **de propòsit general**.
+Partia de la idea de que s'han de **separar les dades** d'un document **de la seva forma**.
 
 Però:
 
 * La majoria dels documents estaven destinats a la **impressió**.
 * Era terriblement **complex** de manera que només el feien servir els especialistes.
 
-HTML
-====
+---
 
--   L'any 1989 Tim Berners-Lee i Anders Berglund, dos investigadors del
-    [CERN](https://ca.wikipedia.org/wiki/Organitzaci%C3%B3_Europea_per_a_la_Recerca_Nuclear),
-    van crear un llenguatge basat en etiquetes destinat a compartir
-    informació per Internet: **HTML**
+## HTML
+
+-   L'any 1989 Tim Berners-Lee i Anders Berglund, dos investigadors del [CERN](https://ca.wikipedia.org/wiki/Organitzaci%C3%B3_Europea_per_a_la_Recerca_Nuclear), van crear un llenguatge basat en etiquetes destinat a compartir informació per Internet: **HTML**
 -   HTML és un format que descriu la visualització d'una pàgina web
 -   HTML està molt orientat a la visualització
 -   HTML ha sofert molts canvis al llarg dels anys
--   El suport HTML dels navegadors cada vegada és més complexe
+
 
 ![image](uf1-xml-01.png)
 
@@ -120,8 +113,8 @@ Naixement de l'XML
 > -   Estructura
 > -   Validació
 
-XML
-===
+## XML
+
 
 Extensible Markup Language
 --------------------------
@@ -142,10 +135,9 @@ Totes les especificacions es revisen periòdicament
 
 <https://www.w3.org/standards/techs/xml#w3c_all>
 
-Què és l'XML
-============
+## Què és l'XML
 
-XML és un simple llenguatge de descripció d'informació
+> **XML** és un simple llenguatge de descripció d'informació
 
 -   És una estàndard que permet dissenyar i desenvolupar llenguatges
     de marques. XML és un format de text estandarditzat que serveix per
@@ -188,8 +180,7 @@ Formats Estàndards
 Tenim la capacitat de crear un vocabulari que només entengui el nostre
 programa
 
--   No necessita llicència --&gt; podem fer-lo obert perquè l'entengui
-    tothom
+-   No necessita llicència --&gt; podem fer-lo obert perquè l'entengui tothom
 -   Al fer servir el mateix format la comunicació de dades és més fàcil
 -   Ja hi ha vocabularis estàndards XML:
 
@@ -275,15 +266,15 @@ Bussines to Bussines (**BTB**), Bussines to Consumer (**BTC**)
 Problemes
 =========
 
-XML ocupa més espai a disc que els seus equivalents en format binari
+**XML** ocupa més espai a disc que els seus equivalents en format binari.
 
--   Hi ha tendència a crear fitxers molt grans
--   Això pot tenir un impacte en el rendiment dels programes
--   El fitxer és molt gran!
--   En format text!
+* Hi ha tendència a crear fitxers molt grans.
+* Això pot tenir un impacte en el rendiment dels programes.
+* El fitxer és molt gran!
+* En format text!
 
 Però això a vegades és compensat per:
 
--   La facilitat d'interoperatibilitat entre programes
--   El preu de l'emmagatzematge és baix
+* La facilitat d'interoperatibilitat entre programes.
+* El preu de l'emmagatzematge és baix.
 
