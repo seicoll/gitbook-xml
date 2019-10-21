@@ -681,6 +681,36 @@ p { border: 2px solid #000000; }
 
 [Exemple]( http://www.w3schools.com/css/css_border.asp)
 
+### Propietat box-sizing
+
+Des dels inicis del CSS, el box model (model de caixa) ha funcionat així:
+
+> **width real** visible d’un element de caixa = width + padding + border + margin 
+> **height real** visible d’un element de caixa = height + padding + border + margin
+
+![image](uf1_images/uf1-box-sizing.png)
+
+La gent s’ha adonant que que les matemàtiques no són divertides, de manera que s’ha creat una nova propietat **CSS3** anomenada `box-sizing`.
+
+Quan s'estableix `box-sizing: border-box;` sobre un element, el padding i el border d'aquest element ja **no fa augmentar la seva amplada ni alçada total**. 
+
+`* { box-sizing: border-box; }`
+
+Aquesta regla assegura que tots els elements sempre estan dimensionats d'una **manera més intuïtiva**.
+
+```css
+div {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #DDD;
+}
+```
+![image](uf1_images/uf1-box-sizing2.png)
+
+[Exemples](http://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
+
+
 ## Elements de bloc i en línia
 
 Les caixes es poden comportar de formes diferents en respecte a les altres. 
@@ -745,8 +775,6 @@ S'utiliza la propietat `position`
 ```css
 position: static | relative | absolute | fixed
 ```
-
----
 
 ### Posicionament Normal
 
