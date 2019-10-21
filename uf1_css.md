@@ -750,33 +750,35 @@ position: static | relative | absolute | fixed
 
 ### Posicionament Normal
 
-Es tracta del funcionament per defecte, les caixes apareixen una rere l'altra i de dalt a baix.
+Es tracta del funcionament **per defecte**.
 
-![image](posicionament-normal.png)
+> Les caixes apareixen una rere l'altra i de dalt a baix.
+
+![image](uf1_images/uf1-posionament-normal.png)
+
+Només es té en compte si l’element és en bloc o en línia.
+
 
 ### Posicionament Relatiu
 
-Consisteix en posicionar la caixa segons el posicionament normal i llavors desplaçar-la respecte de la seva posició original.
+Consisteix en posicionar la caixa segons el posicionament normal i llavors **desplaçar-la respecte de la seva posició original**.
 
-Podem canviar la posició “relativa” posant valors a left, right, top o bottom
+![image](uf1_images/uf1-posicionament-relatiu.gif)
 
-Desplaça la caixa fora de la seva posició normal en el fluxe
 
-Marca la posició original de l'element com a protegida (la resta de caixes es pensen que encara hi és.
+* Canviar la posició relativa pot fer que el contingut de dues caixes quedi **superposat**.
 
-![image](posicionament-relatiu2.png)
+* Es marca la posició original de l'element com a protegida (la resta de caixes es pensen que encara hi és).
 
-* Top, right, bottom o left es calculen respecte la posició original en el fluxe.
+El desplaçament de la caixa es controla amb les **propietats** `top`, `right`, `bottom` i `left`.
+  * `top`, `right`, `bottom` i `left` es calculen respecte la posició original de la caixa.
 
-* Top:25px -> es desplaça 25 píxels des de dalt de la posició normal de la caixa (es desplaça cap a baix)
+![image](uf1_images/uf1-posicionament-relatiu2.png)
 
-* Right:25px -> es desplaça 25 píxels de la dreta de la posició original (es desplaça cap a l'esquerra)
+* `top:25px;`: es desplaça 25 píxels des de dalt de la posició normal de la caixa (es desplaça cap a baix).
 
-![image](posicionament-relatiu3.png)
+* `right:25px;`: es desplaça 25 píxels de la dreta de la posició original (es desplaça cap a l'esquerra).
 
-* Canviar la posició relativa pot fer que el contingut de dues caixes quedi superposat
-
-![image](posicionament-relatiu.png)
 
 ### Posicionament Absolut
 
