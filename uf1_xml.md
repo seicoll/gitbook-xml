@@ -228,26 +228,11 @@ Hi ha diversos estàndards *DTD*, *XML Schema Language*, *Relax NG*, etc..
 
 -   Ens serviran per comprovar que el document compleix amb les normes del vocabulari
 
-### Perquè es fa servir?
-
+## Principals usos d'XML 
 
 XML s'està fent servir en múltiples camps:
 
-**Contingut de pàgines web**
-
-Un dels estàndards que es fan servir en pàgines web XHTML està basat en XML Però XML de forma inherent té múltiples formes en que pot ser representat (**XSL-FO**, **CSS**, ...)
-
-**Computació distribuïda**
-
-L'intercanvi de dades entre sistemes diferents que permetin les crides entre objectes entre màquines
-
-**Comerç electrònic**
-
-Bussines to Bussines (**BTB**), Bussines to Consumer (**BTC**)
-
-
-### Principals usos d'XML 
-
+* Un dels estàndards que es fan servir en pàgines web XHTML està basat en XML.
 * Emmagatzematge de **paràmetres de configuració** (Organització de la informació).
 * Organització estructurada de la informació.
 * Desenvolupament de **documentació tècnica** en diferents àmbits acadèmics, investigació, ...
@@ -255,7 +240,7 @@ Bussines to Bussines (**BTB**), Bussines to Consumer (**BTC**)
 * Intercanvi d'informació entre empreses.
 * Aplicacions ofimàtiques: Microsoft Office, OpenOffice, ..
 
-### Desavantatges de XML
+## Desavantatges de XML
 
 * Els fitxers XML tendeixen a ocupar molt d'espai.
   * XML ocupa més espai a disc que els seus equivalents en format binari. 
