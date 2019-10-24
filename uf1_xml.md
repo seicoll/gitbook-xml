@@ -1,6 +1,23 @@
-# Introducció a XML
+# XML
 
-## Els llenguatges de marques
+## Introducció a XML
+
+### Compartició d'informació
+
+* Les empreses necessiten **compartir** la informació entre elles (factures, comandes, etc).
+* La informació pot estar en **diversos formats** (fulles de càlcul, bases de dades, fitxer pdf, etc.).
+
+**Problema:**
+
+* La informació **no està estructurada**.
+* Fa difícil l'**automatització** d'aquesta informació amb un sistema informàtic.
+
+**Solució:**
+
+* **Acordar quin format** o estructura ha tenir la informació.
+* A més, podrem utilitzar **eines estàndars per validar** si el document compleix amb l'especificació acordada.
+
+### Els llenguatges de marques
 
 Un **llenguatge de marques** combina dades i etiquetes que les marquen i que contenen informació addicional sobre l'estructura del text o la seva presentació.
 
@@ -73,11 +90,8 @@ Però:
 
 ## HTML
 
-* L'any 1989 Tim Berners-Lee i Anders Berglund, dos investigadors del [CERN](https://ca.wikipedia.org/wiki/Organitzaci%C3%B3_Europea_per_a_la_Recerca_Nuclear), van crear un llenguatge  basat en etiquetes destinat a compartir informació per Internet: **HTML**
-* HTML és un format que descriu la visualització d'una pàgina web
+* HTML és un format que descriu la visualització d'una pàgina web.
 * HTML està molt orientat a la visualització
-* HTML ha sofert molts canvis al llarg dels anys
-
 
 ![image](uf1-xml-01.png)
 
@@ -112,7 +126,7 @@ En general, falta una forma de:
 
 ### Què és l'XML
 
-> **XML** és un simple llenguatge de descripció d'informació
+> **XML** és un simple llenguatge de descripció d'informació.
 
 * És una estàndard que permet dissenyar i desenvolupar llenguatges de marques. XML és un format de text estandarditzat que serveix per representar i transportar informació estructurada
 
@@ -128,13 +142,10 @@ Una de les idees més importants és:
 
 ![image](uf1-xml-04.png)
 
--   S'ha de saber que la primera línia són metadades
--   Afegir-hi noves dades pot ser molt problemàtic pel programa que les
-    llegeixi --&gt; Probablement haurem de canviar el programa
--   El format **CSV** encara s'utilitza molt en el món de la
-    informàtica, per exportar/importar dades normalment
-
-
+* S'ha de saber que la primera línia són metadades
+* Afegir-hi noves dades pot ser molt problemàtic pel programa que les llegeixi --&gt; Probablement haurem de canviar el programa
+* El format **CSV (Comma separated value)** encara s'utilitza molt en el món de la informàtica, per exportar/importar dades normalment.
+   * Es tracta d'enviar la informació utilitzant un caràcter per a separar cada un dels conceptes. Tot i que el nom pugui suggerir que sigui una coma, molts sistemes deixen definir el caràcter a utilitzar (punt i coma, salt de línia,...)
 
 ### Versions
 
@@ -154,14 +165,14 @@ Totes les especificacions es revisen periòdicament:
 
 <https://www.w3.org/standards/techs/xml#w3c_all>
 
-## Fitxers de marques
+## Característiques dels llenguatges de marques
 
--   Els llenguatges de marques estan basats en text
--   Poden ser creats amb qualsevol editor de textos
--   Però no estan pensats per ser llegits
--   XML està pensat per transportar dades
--   A diferència d'HTML si que es pot determinar de forma automàtica què
-    **signifiquen** les dades
+* Els llenguatges de marques estan **basats en text**.
+* Poden ser **creats i editats** amb qualsevol editor de textos.
+* La utilització de sistemes de codificació estàndars (UNICODE), fa els documents **fàcilment transportables** entre diferents sistemes (Linux, Windows,etc).
+* Però no estan pensats per ser llegits per una persona.
+* XML està pensat per transportar dades.
+
 
 ![image](uf1-xml-05.png)
 
@@ -222,28 +233,34 @@ Hi ha diversos estàndards *DTD*, *XML Schema Language*, *Relax NG*, etc..
 
 XML s'està fent servir en múltiples camps:
 
--   Contingut de pàgines web
+**Contingut de pàgines web**
 
 Un dels estàndards que es fan servir en pàgines web XHTML està basat en XML Però XML de forma inherent té múltiples formes en que pot ser representat (**XSL-FO**, **CSS**, ...)
 
--   Computació distribuïda
+**Computació distribuïda**
 
 L'intercanvi de dades entre sistemes diferents que permetin les crides entre objectes entre màquines
 
--   Comerç electrònic
+**Comerç electrònic**
 
 Bussines to Bussines (**BTB**), Bussines to Consumer (**BTC**)
 
--   Reduir la càrrega de servidors
 
-### Problemes
+### Principals usos d'XML 
 
-**XML** ocupa més espai a disc que els seus equivalents en format binari.
+* Emmagatzematge de **paràmetres de configuració** (Organització de la informació).
+* Organització estructurada de la informació.
+* Desenvolupament de **documentació tècnica** en diferents àmbits acadèmics, investigació, ...
+* Intercanvi d'informació entre sistemes informàtics (distribuïts). 
+* Intercanvi d'informació entre empreses.
+* Aplicacions ofimàtiques: Microsoft Office, OpenOffice, ..
 
-* Hi ha tendència a crear fitxers molt grans.
-* Això pot tenir un impacte en el rendiment dels programes.
-* El fitxer és molt gran!
-* En format text!
+### Desavantatges de XML
+
+* Els fitxers XML tendeixen a ocupar molt d'espai.
+  * XML ocupa més espai a disc que els seus equivalents en format binari. 
+  * Lentitud en el temps de càrrega.
+  * Temps de transferència més elevat.
 
 Però això a vegades és compensat per:
 

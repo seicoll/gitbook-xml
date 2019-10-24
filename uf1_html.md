@@ -4,13 +4,16 @@
 
 > El **llenguatge HTML (HyperText Markup Language)** és el llenguatge amb el qual s'escriuen les pàgines web.
 
+L'any 1989 **Tim Berners-Lee** i **Anders Berglund**, dos investigadors del [CERN](https://ca.wikipedia.org/wiki/Organitzaci%C3%B3_Europea_per_a_la_Recerca_Nuclear), van crear un llenguatge  basat en etiquetes destinat a compartir informació per Internet: **HTML**.
+
 Les pàgines web són vistes pels usuaris mitjançant un tipus d'aplicació anomenat **navegador**.
 
 El llenguatge HTML està pensat per compartir documents de manera que es vegin de forma semblant en diferents navegadors.
 
 Conseqüentment, el **llenguatge HTML** serveix al navegador per mostrar les pàgines a l'usuari.
 
-La versió actual del llenguatge HTML és **HTML5**.
+**HTML** ha sofert molts canvis al llarg del temps.
+  * La versió actual del llenguatge HTML és **HTML5**.
 
 ![](/uf1_images/html5.png)
 
