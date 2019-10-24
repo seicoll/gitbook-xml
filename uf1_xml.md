@@ -15,7 +15,7 @@
 **Solució:**
 
 * **Acordar quin format** o estructura ha tenir la informació.
-* A més, podrem utilitzar **eines estàndars per validar** si el document compleix amb l'especificació acordada.
+* A més, podrem utilitzar **eines estàndards per validar** si el document compleix amb l'especificació acordada.
 
 ### Els llenguatges de marques
 
@@ -112,8 +112,7 @@ En general, falta una forma de:
 
 ### Naixement de l'XML
 
-
-* El consorci W3C va desenvolupar una alternativa a l’HTML que podés satisfer les necessitats futures del web.
+* El consorci W3C va desenvolupar una alternativa a l'HTML que podés satisfer les necessitats futures del web.
 * El 1996 el consorci W3C es va proposar introduir el poder i la flexibilitat de l'**SGML** al web.
 
 **SGML** oferia tres avantatges que l'HTML no tenia:
@@ -157,7 +156,7 @@ L'ultima especificació d'**XML és la 1.1** que va sortir el 2004:
 
 <http://www.w3.org/TR/xml11/>
 
-Però d'alguna manera s'ha millorat la 1.0 en posteriorat (2008)
+Però d'alguna manera s'ha millorat la 1.0 en posterioritat (2008)
 
 <https://www.w3.org/TR/2008/REC-xml-20081126/>
 
@@ -169,7 +168,7 @@ Totes les especificacions es revisen periòdicament:
 
 * Els llenguatges de marques estan **basats en text**.
 * Poden ser **creats i editats** amb qualsevol editor de textos.
-* La utilització de sistemes de codificació estàndars (UNICODE), fa els documents **fàcilment transportables** entre diferents sistemes (Linux, Windows,etc).
+* La utilització de sistemes de codificació estàndards (UNICODE), fa els documents **fàcilment transportables** entre diferents sistemes (Linux, Windows,etc).
 * Però no estan pensats per ser llegits per una persona.
 * XML està pensat per transportar dades.
 
@@ -217,16 +216,15 @@ C:\> dir /a-d /s *.xml | find /c /v “”
 
 ### Extensible
 
-Un altre dels avantatges de XML és que es fàcilment extensible i adaptable
+Un altre dels avantatges de XML és que es fàcilment **extensible i adaptable**:
 
--   Creem els tags que tinguin significat per nosaltres
--   Podem crear el vocabulari que ens faci falta per allò que busquem
+* XML **no defineix un nombre limitat d'etiquetes**.
+* Podem crear les etiquetes (tags) que tinguin significat per nosaltres.
+* Podem crear el vocabulari que ens faci falta per allò que busquem.
 
-Però hi ha formes de definir quina és la estructura que nosaltres definim.
-
-Hi ha diversos estàndards *DTD*, *XML Schema Language*, *Relax NG*, etc..
-
--   Ens serviran per comprovar que el document compleix amb les normes del vocabulari
+A més, hi ha formes de definir quina és la **estructura** que nosaltres definim.
+  * Hi ha diversos estàndards ***DTD***, ***XML Schema Language***, ***Relax NG***, etc..
+  * Ens serviran per comprovar que el document compleix amb les normes del vocabulari
 
 ## Principals usos d'XML 
 
