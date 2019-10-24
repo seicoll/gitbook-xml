@@ -1,24 +1,19 @@
-Validació XML amb XSD
-=====================
+# Validació XML amb XSD
 
-Index
-=====
 
-Què és l'XSD?
-=============
 
-L'**XSD** (**X** ML **S** chema **D** efinition Language) és la manera
-més completa de crear validadors per l'xml
+## Què és l'XSD?
+
+L'**XSD** (**X**ML **S**chema **D**efinition Language) és la manera més completa de crear validadors per l'XML.
 
 -   Està definit en XML i per tant ja en coneixem les regles
 -   Com que està en XML ha de començar amb l'etiqueta d'XML
 
 ``` {.sourceCode .html}
-<?xml version=”1.0” ?>
+<?xml version="1.0" ?>
 ```
 
--   Actualment es troba en la versió 1.1 (des del 2012) i se'n poden
-    trobar les definicions a la pàgina <http://www.w3c.org/XML/Schema>
+Actualment es troba en la versió 1.1 (des del 2012) i se'n poden trobar les definicions a la pàgina <http://www.w3c.org/XML/Schema>
 
 Validació
 =========

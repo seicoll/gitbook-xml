@@ -1,11 +1,7 @@
-Validació XML amb DTD
-=====================
+# Validació XML amb DTD
 
-Index
-=====
+## Què és el DTD?
 
-Què és el DTD?
-==============
 
 El DTD (Document Type Definitions) és la forma de definició d'esquemes
 que va sortir primer
@@ -22,8 +18,7 @@ que va sortir primer
 <html xmlns=”http://w3c.org/1999/xhtml”>
 ```
 
-Limitacions del DTD
-===================
+## Limitacions del DTD
 
 -   El DTD no és un llenguatge XML: Això obliga a aprendre dos
     llenguatges en comptes d'un!
@@ -38,8 +33,8 @@ Limitacions del DTD
     en el document i **DTD no pot: per exemple una data entre 1970 i
     2032**
 
-Objectius
-=========
+## Objectius
+
 
 -   L'objectiu principal dels DTD és donar un mecanisme per validar les
     estructures dels documents XML
@@ -50,8 +45,8 @@ Objectius
 -   Això permetrà conèixer les especificacions que defineixen un
     vocabulari concret
 
-Validació
-=========
+## Validació
+
 
 -   La majoria dels validadors poden validar DTD sense problemes
 -   Per exemple amb xmllint ho podem fer amb 'valid':
@@ -65,11 +60,11 @@ $
 
 ![image](xmlcopyeditor.png)
 
-Definició del DTD en el document XML
-====================================
+## Definició del DTD en el document XML
 
-Definició de DTD Interna
-------------------------
+
+### Definició de DTD Interna
+
 
 -   Es poden incorporar DTD dins dels documents XML
 
@@ -89,8 +84,8 @@ Definició de DTD Interna
 
 > Separa les dades de la estructura
 
-Definició de DTD Externa
-------------------------
+### Definició de DTD Externa
+
 
 Per definir un DTD extern fem servir l'etiqueta DOCTYPE dins del
 document XML:
@@ -120,16 +115,16 @@ document XML:
 <!ELEMENT persona (nom,cognom)>
 ```
 
-DOCTYPE
-=======
+## DOCTYPE
+
 
 -   La declaració DOCTYPE és el que es posa en el document XML per
     indicar el DTD
 
 ![image](doctype.png)
 
-Tipus de DTD
-============
+## Tipus de DTD
+
 
 -   En el tipus de DTD hi solem trobar dues paraules clau: **SYSTEM** o
     **PUBLIC**
@@ -156,16 +151,16 @@ ex. El fan servir els DOCTYPE de HTML
 
 ![image](public.png)
 
-FPI
-===
+## FPI
+
 
 ![image](fpi.png)
 
-El llenguatge
-=============
+## El llenguatge
 
-Definició d'etiquetes
----------------------
+
+### Definició d'etiquetes
+
 
 -   La base de tot rau en la definició dels elements que composen el
     llenguatge
@@ -182,11 +177,11 @@ XML:
 
 ![image](etiqueta.png)
 
-Elements
-========
+## Elements
 
-Elements genèrics
------------------
+
+### Elements genèrics
+
 
 -   Si tenim elements que poden tenir qualsevol cosa a dins els podem
     definir amb ANY
@@ -207,8 +202,8 @@ Elements genèrics
 <!ELEMENT persona ANY>
 ```
 
-Entrada de text: \#PCDATA
--------------------------
+### Entrada de text: \#PCDATA
+
 
 Un **\#PCDATA** indica que l'element que estem definint només pot tenir
 dades a dins
@@ -227,8 +222,8 @@ dades a dins
 <!ELEMENT cognom (#PCDATA)>
 ```
 
-Elements sense dades
---------------------
+### Elements sense dades
+
 
 Si tenim elements que no tenen contingut els podem definir amb EMPTY
 
@@ -249,8 +244,8 @@ Si tenim elements que no tenen contingut els podem definir amb EMPTY
 <!ELEMENT real EMPTY>
 ```
 
-Elements fills
---------------
+### Elements fills
+
 
 El més normal és que una etiqueta en contingui d'altres
 
@@ -282,8 +277,8 @@ Es poden definir elements recursius
 
 -   O sigui que es poden fer però sempre s'han de tractar amb cura
 
-Modificadors dels elements fills
---------------------------------
+### Modificadors dels elements fills
+
 
 -   Podem especificar quantes instàncies dels elements fills hi poden
     haver en un element
@@ -294,8 +289,8 @@ Modificadors dels elements fills
 
 ![image](modificadors-persones.png)
 
-Operador d'elecció
-------------------
+### Operador d'elecció
+
 
 -   També tenim un operador que ens permet posar alternatives “|”
 
@@ -319,8 +314,8 @@ Operador d'elecció
 </titol>
 ```
 
-Parèntesis
-----------
+### Parèntesis
+
 
 -   Evidentment podem fer tantes agrupacions de parèntesi com ens facin
     falta
@@ -340,8 +335,8 @@ Parèntesis
 <!ELEMENT paragraf (#PCDATA | nom | professio | marca | data )* >
 ```
 
-Limitacions
------------
+### Limitacions
+
 
 -   No es poden posar etiquetes i **\#PCDATA** que no siguin
     “contingut mesclat”.
@@ -364,8 +359,8 @@ Limitacions
 <!ELEMENT exercici (#PCDATA, apartat)*>
 ```
 
-Expressions deterministes
--------------------------
+### Expressions deterministes
+
 
 -   Una altra de les limitacions és que obliga a que les expressions han
     de ser deterministes
@@ -399,8 +394,8 @@ Expressions deterministes
 
 -   Ara no queda cap dubte de on som al rebre una etiqueta
 
-Atributs
-========
+## Atributs
+
 
 -   Ens pot interessar limitar quins atributs pot contenir una etiqueta
 -   No es poden fer atributs genèrics s'han de definir en cada element
@@ -572,13 +567,13 @@ Entitats predefinides i externes
 -   Tenim entitats que ens permeten escriure caràcters amb el seu valor
     hexadecimal:
 
-``` {.sourceCode .bash}
+```bash
 &#41;
 ```
 
 -   I les ja conegudes
 
-``` {.sourceCode .bash}
+```bash
 &lt; &gt; &amp; &apos;
 ```
 
@@ -603,22 +598,19 @@ Entitats
 <!ELEMENT home (persona, adreca)>
 ```
 
--   Això permet reutilitzar els DTD que tinguem si els hem dissenyat amb
-    cura
+Això permet reutilitzar els DTD que tinguem si els hem dissenyat amb cura
 
 Altres
 ======
 
--   També disposem d'unes comandes més que ens permeten especificar
-    seccions condicionals:
+També disposem d'unes comandes més que ens permeten especificar seccions condicionals:
 
 ```dtd
 <![INCLUDE [declaracions visibles]]>
 <![IGNORE [declaracions invisibles]]>
 ```
 
--   Al fer servir **INCLUDE** el contingut és visible pel DTD i a
-    l'inrevés
+Al fer servir **INCLUDE** el contingut és visible pel DTD i a l'inrevés
 
 ```dtd
 <![IGNORE[<!ELEMENT nom #PCDATA]]>
