@@ -30,7 +30,7 @@ Limitacions del DTD
 -   Pot ser que no puguem fer-hi tot el que ens faci falta: **DTD no pot
     fer comprovacions del contingut de dades**
 
-``` {.sourceCode .xml}
+```xml
 <data>.</data>
 ```
 
@@ -73,7 +73,7 @@ Definició de DTD Interna
 
 -   Es poden incorporar DTD dins dels documents XML
 
-``` {.sourceCode .xml}
+```xml
 <?xml version=”1.0” encoding=”UTF-8” ?>
 <!DOCTYPE process [
 <!ELEMENT adress (#PCDATA)>
@@ -95,26 +95,26 @@ Definició de DTD Externa
 Per definir un DTD extern fem servir l'etiqueta DOCTYPE dins del
 document XML:
 
-``` {.sourceCode .xml}
+```xml
 <!DOCTYPE alumnes SYSTEM “http://www.iescendrassos.net/alumnes.dtd”>
 ```
 
 -   Es poden definir **DOCTYPES** d'Internet
 
-``` {.sourceCode .xml}
+```xml
 <?xml version=”1.0” encoding=”UTF-8” ?>
 <!DOCTYPE alumnes SYSTEM “alumnes.dtd”>
 ```
 
 -   O en fitxers locals de la màquina
 
-``` {.sourceCode .html}
+```html
 <!DOCTYPE alumnes SYSTEM “C:\alumnes.dtd”>
 ```
 
 -   I després només hem de crear el DTD extern en el lloc adequat:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT cognom (#PCDATA)>
 <!ELEMENT persona (nom,cognom)>
@@ -171,7 +171,7 @@ Definició d'etiquetes
     llenguatge
 -   S'han de definir tots els elements que formen el document:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT nom contingut >
 ```
 
@@ -192,7 +192,7 @@ Elements genèrics
     definir amb ANY
 -   Si tenim un XML semblant a aquest:
 
-``` {.sourceCode .xml}
+```xml
 <persona>Federicu Pi</persona>
 
 <persona>
@@ -203,7 +203,7 @@ Elements genèrics
 
 -   Podem definir &lt;persona&gt;:
 
-``` {.sourceCode .xml}
+```xml
 <!ELEMENT persona ANY>
 ```
 
@@ -215,14 +215,14 @@ dades a dins
 
 -   Per definir una cosa com aquesta:
 
-``` {.sourceCode .xml}
+```xml
 <nom>Xavier</nom>
 <cognom>Sala</cognom>
 ```
 
 -   Es definiria el DTD amb:
 
-``` {.sourceCode .xml}
+```xml
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT cognom (#PCDATA)>
 ```
@@ -232,7 +232,7 @@ Elements sense dades
 
 Si tenim elements que no tenen contingut els podem definir amb EMPTY
 
-``` {.sourceCode .xml}
+```xml
 <persona>
     <nom>Xavier</nom>
     <cognom>Sala</cognom>
@@ -245,7 +245,7 @@ Si tenim elements que no tenen contingut els podem definir amb EMPTY
 </persona>
 ```
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT real EMPTY>
 ```
 
@@ -254,7 +254,7 @@ Elements fills
 
 El més normal és que una etiqueta en contingui d'altres
 
-``` {.sourceCode .xml}
+```xml
 <persona>
     <nom>Xavier</nom>
     <cognom>Sala</cognom>
@@ -263,7 +263,7 @@ El més normal és que una etiqueta en contingui d'altres
 
 -   Els definim posant les etiquetes que pot contenir:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT cognom (#PCDATA)>
 <!ELEMENT persona (nom,cognom)>
@@ -299,13 +299,13 @@ Operador d'elecció
 
 -   També tenim un operador que ens permet posar alternatives “|”
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT titol (president|treballador)>
 ```
 
 -   Ens permetria fer o:
 
-``` {.sourceCode .xml}
+```xml
 <titol>
     <president>Federicu Pi</president>
 </titol>
@@ -313,7 +313,7 @@ Operador d'elecció
 
 -   O per contra:
 
-``` {.sourceCode .xml}
+```xml
 <titol>
 <treballador>Federicu Pi</treballador>
 </titol>
@@ -326,17 +326,17 @@ Parèntesis
     falta
 -   Centre i radi o bé centre i diàmetre
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT cercle (centre, (radi | diametre))>
 ```
 
 -   cognom o nom+inicials+cognom o nom+cognom
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT comic (cognom | ( nom,(inicials, cognom) | cognom ))>
 ```
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT paragraf (#PCDATA | nom | professio | marca | data )* >
 ```
 
@@ -347,20 +347,20 @@ Limitacions
     “contingut mesclat”.
 -   Això és erroni:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT exercici (#PCDATA, apartat*)>
 ```
 
 -   Tampoc podem duplicar definicions:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT exercici (#PCDATA)  >
 <!ELEMENT exercici (apartat*) >
 ```
 
 -   O sigui que hem de fer això (tot i que pot no ser el que volem)
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT exercici (#PCDATA, apartat)*>
 ```
 
@@ -371,7 +371,7 @@ Expressions deterministes
     de ser deterministes
 -   Això vol dir que no es pot fer això:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT terrestre((persona,home)|(persona,dona))>
 ```
 
@@ -379,21 +379,21 @@ Expressions deterministes
     és l'expressió que estem fent
 -   Ho hem d'escriure:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT terrestre(persona,(home|dona))>
 ```
 
 -   El mateix ens passarà si fem servir modificadors:
 -   Per exemple perquè surti en l'ordre que vulguem autor i títol:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT llibre((autor?,titol?)|(titol?,autor?))>
 ```
 
 -   Després de rebre autor en quina expressió estem? I si rebem títol?
 -   Ho hauríem d'escriure d'aquesta forma:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ELEMENT llibre((autor,titol?)|(titol,autor?)|EMPTY)>
 ```
 
@@ -416,7 +416,7 @@ Atributs dels atributs
 
 ![image](atributs-atributs.png)
 
-``` {.sourceCode .dtd}
+```dtd
 <!ATTLIST equip posicio ID #REQUIRED>
 <!ATTLIST nom dni NMTOKEN #IMPLIED>
 <!ATTLIST document versio CDATA #FIXED "1.0">
@@ -440,20 +440,20 @@ CDATA i enumeracions
 -   Els atributs de tipus **CDATA** permeten la entrada de text de
     qualsevol tipus
 
-``` {.sourceCode .dtd}
+```dtd
 <!ATTLIST empresa nom CDATA #REQUIRED>
 ```
 
 -   Ens permetria definir coses com
 
-``` {.sourceCode .xml}
+```xml
 <empresa nom=”Microsoft Corporation”>
 <empresa nom=”6tema desastre, SA”>
 ```
 
 -   Un cas especial serien les enumeracions
 
-``` {.sourceCode .dtd}
+```dtd
 <!ATTLIST curs inici (setembre|octubre) #IMPLIED>
 ```
 
@@ -469,11 +469,11 @@ ID
 -   Els valors han de començar per una lletra o pel caràcter de
     subratllat
 
-``` {.sourceCode .dtd}
+```dtd
 <!ATTLIST equip posicio ID #REQUIRED>
 ```
 
-``` {.sourceCode .xml}
+```xml
 <equip posicio=”primer”>F.C.Barcelona</equip>
 <equip posicio=”tretzè”>Real Madrid C.F.</equip>
 ```
@@ -484,12 +484,12 @@ IDREF o IDREFS
 -   Es fan servir quan el valor ha de ser una referència a un
     identificador
 
-``` {.sourceCode .dtd}
+```dtd
 <!ATTLIST recepta id ID #REQUIRED>
 <!ATTLIST ingredient ref IDREF #IMPLIED>
 ```
 
-``` {.sourceCode .xml}
+```xml
 <llibrecuina>
     <recepta id=”recepta1”>Patates fregides</recepta>
     <recepta id=”recepta2”>Patates bullides</recepta>
@@ -501,7 +501,7 @@ IDREF o IDREFS
 
     > &lt;!ATTLIST ingredient refs IDREFS \#IMPLIED&gt;
 
-``` {.sourceCode .xml}
+```xml
 <ingredient refs=”recepta1 recepta2”>patates</ingredient>
 ```
 
@@ -514,14 +514,14 @@ NMTOKEN i NMTOKENS
 -   Com la majoria de vegades el NMTOKENS ens en permet especificar
     diversos separats per espais
 
-``` {.sourceCode .dtd}
+```dtd
 <!ATTLIST home naixement NMTOKEN #IMPLIED>
 <!ATTLIST home fills NMTOKENS #IMPLIED>
 ```
 
 -   O sigui
 
-``` {.sourceCode .xml}
+```xml
 <home naixement=”1975”>Carles Punxatí</home>
 <home fills=”Maria Pere Albert”>Filomenu Pi</home>
 ```
@@ -531,7 +531,7 @@ NOTATION
 
 -   Aquest atribut permet associar una aplicació a un tipus d'informació
 
-``` {.sourceCode .dtd}
+```dtd
 <!NOTATION jpg PUBLIC “JPEG”>
 <!ATTLIST persona foto NOTATION jpg #IMPLIED>
 ```
@@ -539,7 +539,7 @@ NOTATION
 -   Es pot canviar PUBLIC per SYSTEM per poder definir una aplicació
     en particular. Per exemple un tipus *MIME*
 
-``` {.sourceCode .dtd}
+```dtd
 <!NOTATION jpg SYSTEM “image/jpeg”>
 ```
 
@@ -549,20 +549,20 @@ ENTITY / ENTITIES
 -   Les entitats permeten definir les constants pel document
 -   Els atributs poden fer referència a constants
 
-``` {.sourceCode .dtd}
+```dtd
 <!ATTLIST A a ENTITY #IMPLIED>
 <!ATTLIST A b ENTITIES #IMPLIED>
 ```
 
 -   Podem definir les nostres entitats:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ENTITY nom “valor”>
 ```
 
 -   I després usar-les en el document
 
-``` {.sourceCode .dtd}
+```dtd
 &nom;
 ```
 
@@ -584,7 +584,7 @@ Entitats predefinides i externes
 
 -   També podem carregar els valors d'un document extern
 
-``` {.sourceCode .dtd}
+```dtd
 <!ENTITY doc SYSTEM
 “http://www.iescendrassos.net/altre.xml”>
 ```
@@ -595,7 +595,7 @@ Entitats
 -   Un dels usos de les entitats en els DTD és combinar diferents parts
     del DTD per crear-ne un de sol:
 
-``` {.sourceCode .dtd}
+```dtd
 <!ENTITY % persona SYSTEM “persona.dtd”>
 <!ENTITY % adreca SYSTEM “adreca.dtd”>
     %persona;
@@ -612,7 +612,7 @@ Altres
 -   També disposem d'unes comandes més que ens permeten especificar
     seccions condicionals:
 
-``` {.sourceCode .dtd}
+```dtd
 <![INCLUDE [declaracions visibles]]>
 <![IGNORE [declaracions invisibles]]>
 ```
@@ -620,6 +620,6 @@ Altres
 -   Al fer servir **INCLUDE** el contingut és visible pel DTD i a
     l'inrevés
 
-``` {.sourceCode .dtd}
+```dtd
 <![IGNORE[<!ELEMENT nom #PCDATA]]>
 ```

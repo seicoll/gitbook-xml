@@ -247,6 +247,6 @@ XML s'està fent servir en múltiples camps:
 
 Però això a vegades és compensat per:
 
-* La facilitat d'interoperatibilitat entre programes.
+* La facilitat d'interoperabilitat entre programes.
 * El preu de l'emmagatzematge és baix.
 
