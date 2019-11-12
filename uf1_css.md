@@ -430,7 +430,7 @@ Serveixen per declarar estils que s'utilitzaran **varies vegades**.
 </div>
 
 
-* **Només** els paràgrafs de classe `destacat` es mostaran de color vermell.
+* **Només** els paràgrafs de classe `destacat` es mostraran de color vermell.
 
 > **Varies** etiquetes de la pàgina poden utilitzar el mateix valor en l'atribut `class`.
 
@@ -690,7 +690,7 @@ Des dels inicis del CSS, el box model (model de caixa) ha funcionat així:
 
 ![image](uf1_images/uf1-box-sizing.png)
 
-La gent s’ha adonant que que les matemàtiques no són divertides, de manera que s’ha creat una nova propietat **CSS3** anomenada `box-sizing`.
+La gent s’ha adonant que que les matemàtiques no són divertides, de manera que s'ha creat una nova propietat **CSS3** anomenada `box-sizing`.
 
 Quan s'estableix `box-sizing: border-box;` sobre un element, el padding i el border d'aquest element ja **no fa augmentar la seva amplada ni alçada total**. 
 
@@ -784,7 +784,7 @@ Es tracta del funcionament **per defecte**.
 
 ![image](uf1_images/uf1-posionament-normal.png)
 
-Només es té en compte si l’element és en bloc o en línia.
+Només es té en compte si l'element és en bloc o en línia.
 
 
 ### Posicionament Relatiu
@@ -874,7 +874,7 @@ El paràmetre `clear` pot tenir diferents valors:
 
 [Flexbox (Caixes Flexibles)](https://docs.google.com/presentation/d/1bYzqqzCPcE_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
 
-## Resum visual de posionaments
+## Resum visual de posicionaments
 
 ### Inline vs block
 
