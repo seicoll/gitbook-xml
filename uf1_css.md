@@ -42,7 +42,7 @@ En els sites amb moltes pàgines, els **canvis de formats** de eren **molt labor
 
 Per **aplicar fulles d'estil CSS a HTML** es pot fer a través de tres formes:
 
-* CSS **intregades** en un element HTML5 
+* CSS **integrades** en un element HTML5 
   * Amb l'atribut `style`  en etiquetes html.
 
 * CSS **internes** al document 
@@ -53,7 +53,7 @@ Per **aplicar fulles d'estil CSS a HTML** es pot fer a través de tres formes:
   * Amb un arxiu extern .css i utilitzant l'etiqueta `<link>`
 
 
-## CSS intregades en una etiqueda html
+## CSS integrades en una etiqueta html
 
 Permet especificar regles CSS d'una etiqueta HTML.
 > És la forma **menys recomanada** de fer-ho ja que complica la compartició.
@@ -206,7 +206,7 @@ Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines
 ![](uf1_images/uf1_css_regles.png)
 
 Si volem especificar **més d'una propietat** en una regla CSS:
-* Es posen una darrere l'altra dins dels corxets.
+* Es posen una darrere l'altra dins dels claudàtors.
 * Separades amb un punt i coma ( `;` )
 
 **Exemple:**
@@ -869,6 +869,10 @@ La propietat `clear` permet anul·lar el comportament per introduït per la prop
 El paràmetre `clear` pot tenir diferents valors:
 
 ![image](uf1_images/uf1-clear.png)
+
+### Posicionament Flexbox
+
+[Flexbox (Caixes Flexibles)](https://docs.google.com/presentation/d/1bYzqqzCPcE_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
 
 ## Resum visual de posionaments
 
