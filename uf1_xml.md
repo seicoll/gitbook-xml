@@ -130,8 +130,6 @@ El 1996 el consorci W3C es va proposar introduir el poder i la flexibilitat de l
 
 ## XML (Extensible Markup Language)
 
-### Què és l'XML
-
 > **XML** és un llenguatge de descripció d'informació.
 
 * XML és un format de text estandarditzat que serveix per representar i transportar informació estructurada.
@@ -159,7 +157,11 @@ Una de les idees més importants és:
 ---
 * Antigament per representar dades es feia separant els valors amb comes o algun altre símbol
 
-![image](uf1-xml-04.png)
+```
+"Nom","Cognom","Ofici","Naixament","Poblacio","Punts"
+"Pere","Pi","Professor","10/04/1978","Olot",12
+"Marta","Mata","Inforàtica","19/05/1990","Girona",20
+```
 
 * S'ha de saber que la primera línia són metadades
 * Afegir-hi noves dades pot ser molt problemàtic pel programa que les llegeixi --&gt; Probablement haurem de canviar el programa
@@ -275,7 +277,7 @@ Però això a vegades és compensat per:
 * La facilitat d'interoperabilitat entre programes.
 * El preu de l'emmagatzematge és baix.
 
-### Versions
+## Versions
 
 * El febrer de 1998 es llença l'especificació **1.0 d'XML**: <http://www.w3.org/TR/2004/REC-xml-20040204/>
 

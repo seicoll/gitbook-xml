@@ -9,6 +9,7 @@
 * [Llenguatge HTML](uf1_html.md)
 * [CSS](uf1_css.md)
 * [XML](uf1_xml.md)
+* [Creació documents XML](uf1_xml_creacio.md)
 * [Validació amb DTD](uf1_dtd.md)
 * [Validació amb XSD](uf1_xsd.md)
 

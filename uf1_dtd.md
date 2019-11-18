@@ -11,7 +11,7 @@ que va sortir primer
     té les seves limitacions)
 -   Alguns documents HTML fan servir DTD per definir-ne la estructura
 
-``` {.sourceCode .html}
+```html
 <!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN”
       “http://www.w3c.org/TR/xhtml11-transitional.dtd”>
 
@@ -51,7 +51,7 @@ que va sortir primer
 -   La majoria dels validadors poden validar DTD sense problemes
 -   Per exemple amb xmllint ho podem fer amb 'valid':
 
-``` {.sourceCode .bash}
+```bash
 $ xmllint --noout --valid exercici.xml
 $
 ```
