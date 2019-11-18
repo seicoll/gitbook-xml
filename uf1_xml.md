@@ -116,12 +116,11 @@ En general, falta una forma de:
 
 * **Buscar**, **moure**, **visualitzar** i **manipular** la informació continguda en els documents HTML.
 
----
-
 ### Naixement de l'XML
 
-* El consorci W3C va desenvolupar una alternativa a l'HTML que podés satisfer les necessitats futures del web.
-* El 1996 el consorci W3C es va proposar introduir el poder i la flexibilitat de l'**SGML** al web.
+El consorci **W3C** va desenvolupar una alternativa a l'HTML que podés satisfer les necessitats futures del web.
+
+El 1996 el consorci W3C es va proposar introduir el poder i la flexibilitat de l'**SGML** al web.
 
 **SGML** oferia tres avantatges que l'HTML no tenia:
 
@@ -133,18 +132,31 @@ En general, falta una forma de:
 
 ### Què és l'XML
 
-> **XML** és un simple llenguatge de descripció d'informació.
+> **XML** és un llenguatge de descripció d'informació.
 
-* És una estàndard que permet dissenyar i desenvolupar llenguatges de marques. XML és un format de text estandarditzat que serveix per representar i transportar informació estructurada
+* XML és un format de text estandarditzat que serveix per representar i transportar informació estructurada.
+
+```xml
+<persona>
+    <nom>
+        Sergi
+    </nom>
+    <cognom>
+        Coll
+    </cognom>
+</persona>
+```
 
 Una de les idees més importants és:
 
-> "Separar les dades de la presentació"
+> Separar les dades de la presentació
 
   * XML no es preocupa de com es presentaran les dades als usuaris
   * Per fer la presentació ja s'han desenvolupat mecanismes:
     *  **CSS**, **XSL-FO**, etc.
 
+
+---
 * Antigament per representar dades es feia separant els valors amb comes o algun altre símbol
 
 ![image](uf1-xml-04.png)
@@ -153,74 +165,65 @@ Una de les idees més importants és:
 * Afegir-hi noves dades pot ser molt problemàtic pel programa que les llegeixi --&gt; Probablement haurem de canviar el programa
 * El format **CSV (Comma separated value)** encara s'utilitza molt en el món de la informàtica, per exportar/importar dades normalment.
    * Es tracta d'enviar la informació utilitzant un caràcter per a separar cada un dels conceptes. Tot i que el nom pugui suggerir que sigui una coma, molts sistemes deixen definir el caràcter a utilitzar (punt i coma, salt de línia,...)
+---
 
-### Versions
-
-El febrer de 1998 es llença l'especificació **1.0 d'XML**:
-
-<http://www.w3.org/TR/2004/REC-xml-20040204/>
-
-L'ultima especificació d'**XML és la 1.1** que va sortir el 2004:
-
-<http://www.w3.org/TR/xml11/>
-
-Però d'alguna manera s'ha millorat la 1.0 en posterioritat (2008)
-
-<https://www.w3.org/TR/2008/REC-xml-20081126/>
-
-Totes les especificacions es revisen periòdicament:
-
-<https://www.w3.org/standards/techs/xml#w3c_all>
 
 ## Característiques dels llenguatges de marques
 
 * Els llenguatges de marques estan **basats en text**.
-* Poden ser **creats i editats** amb qualsevol editor de textos.
-* La utilització de sistemes de codificació estàndards (UNICODE), fa els documents **fàcilment transportables** entre diferents sistemes (Linux, Windows,etc).
+   * Poden ser **creats i editats** amb qualsevol editor de textos.
+
+* Són fàcilment transportables.
+  * La utilització de sistemes de codificació estàndards (UNICODE), fa els documents **fàcilment transportables** entre diferents sistemes (Linux, Windows,etc).
+
 * Però no estan pensats per ser llegits per una persona.
-* XML està pensat per transportar dades.
 
+* A diferència d'HTML si que es pot determinar de forma **automàtica** què **signifiquen** les dades.
 
-![image](uf1-xml-05.png)
+**Per exemple:**
+
+**HTML**
+```html
+<html>
+   <head><title>Professors</title></head>
+   <body>
+     <p>Pere Pi</p>
+     <p>Marta Mata</p>
+    <body>
+</html>
+```
+
+**XML**
+```xml
+<professors>
+  <professor>
+    <nom>Pere</nom>
+    <cognom>Pi</cognom>
+  </professor>
+  <professor>
+    <nom>Marta</nom>
+    <cognom>Mata</cognom>
+  </professor>
+</professors>
+```
+
+Es pot determinar automàticament:
+  * Quina informació conté el fitxer?
+  * Quina és l'estructura de la informació?
+  * Quines etiquetes s'han creat per descriure'n la informació?
+
 
 ## Formats Estàndards
 
-Tenim la capacitat de crear un vocabulari que només entengui el nostre programa
+Tenim la capacitat de crear un vocabulari per representar dades d'un àmbit.
 
--   No necessita llicència --&gt; podem fer-lo obert perquè l'entengui tothom
--   Al fer servir el mateix format la comunicació de dades és més fàcil
--   Ja hi ha vocabularis estàndards XML:
+Ja hi ha vocabularis estàndards XML:
 
- 
 * **SVG**: Pensat per gràfics vectorials escalables 2D
 * **MathML**: Representació de fórmules matemàtiques
 * **CML**: Intercanvi d'informació química
 * **SMIL**: Tractament de la informació multimèdia
 * **SSML**: Síntesi de la veu
-
-Molts programes que feien servir formats binaris han passat a algun tipus d'XML:
-
-**Microsoft Office**
-
-Va passar de guardar els documents en binari .DOC a XML .DOCX (OOXML) al estandaritzar-lo
-
-**OpenOffice.org**
-
-Molts dels documents de configuració dels sistemes operatius estan en XML!
-
-**Linux**
-
-```bash
-$ locate .xml | wc -l
-21829
-```
-
-**Windows**
-
-```bash
-C:\> dir /a-d /s *.xml | find /c /v “”
-698
-```
 
 ### Extensible
 
@@ -246,6 +249,30 @@ XML s'està fent servir en múltiples camps:
 * Intercanvi d'informació entre empreses.
 * Aplicacions ofimàtiques: Microsoft Office, OpenOffice, ..
 
+Molts programes que feien servir formats binaris han passat a algun tipus d'XML:
+
+**Microsoft Office**
+
+Va passar de guardar els documents en binari .DOC a XML .DOCX (OOXML) al estandaritzar-lo
+
+**OpenOffice.org**
+
+Molts dels documents de configuració dels sistemes operatius estan en XML!
+
+**Linux**
+
+```bash
+$ locate .xml | wc -l
+21829
+```
+
+**Windows**
+
+```bash
+C:\> dir /a-d /s *.xml | find /c /v “”
+698
+```
+
 ## Desavantatges de XML
 
 * Els fitxers XML tendeixen a ocupar molt d'espai.
@@ -257,4 +284,14 @@ Però això a vegades és compensat per:
 
 * La facilitat d'interoperabilitat entre programes.
 * El preu de l'emmagatzematge és baix.
+
+### Versions
+
+* El febrer de 1998 es llença l'especificació **1.0 d'XML**: <http://www.w3.org/TR/2004/REC-xml-20040204/>
+
+* L'ultima especificació d'**XML és la 1.1** que va sortir el 2004: <http://www.w3.org/TR/xml11/>
+
+* Però d'alguna manera s'ha millorat la 1.0 en posterioritat (2008): <https://www.w3.org/TR/2008/REC-xml-20081126/>
+
+* Totes les especificacions es revisen periòdicament: <https://www.w3.org/standards/techs/xml#w3c_all>
 
