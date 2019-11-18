@@ -1,14 +1,31 @@
 # Creació de documents XML
 
+## Declaració de XML
+
+Els documents XML han de començar amb la declaració que indiqui quina versió estem fent servir d'XML.
+
+```xml
+<?xml version="1.0" ?>
+```
+
+Atribut **Encoding** defineix el joc de caràcters que fem servir en el document:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+```
+
+
 ## Regles bàsiques
 
 ### Tots els documents tenen una etiqueta arrel
 
+L'etiqueta arrel és aquella que es defineix després de la declaració del document. 
+
 ```xml
-<persona>
+<persona>           <!-- Etiqueta arrel -->
   <nom>Pere Pi</nom>
   <nom>Marta Mata</nom>
-</persona>
+</persona>          <!--Tancament etiqueta arrel -->
 ```
 
 Aquest no seria un document XML correcte:
@@ -37,7 +54,7 @@ Si tenim una etiqueta sense dades el podem representar amb el tancament `/>`:
 
 ### Les etiquetes han d'estar niades correctament
 
-No es poden tancar de qualsevol forma:
+Cal tancar les etiquetes per l'ordre invers en què s'han obert.
 
 **INCORRECTE**
 ```xml
