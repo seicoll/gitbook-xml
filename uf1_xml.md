@@ -212,6 +212,18 @@ Es pot determinar automàticament:
   * Quina és l'estructura de la informació?
   * Quines etiquetes s'han creat per descriure'n la informació?
 
+## Extensible
+
+Un altre dels avantatges de XML és que es fàcilment **extensible i adaptable**:
+
+> XML **no defineix un nombre limitat d'etiquetes**.
+ 
+Podem crear les etiquetes (tags) que tinguin significat per nosaltres.
+Podem crear el vocabulari que ens faci falta per allò que busquem.
+
+A més, hi ha formes de definir quina és la **estructura** que nosaltres definim.
+  * Hi ha diversos estàndards ***DTD***, ***XML Schema Language***, ***Relax NG***, etc..
+  * Ens serviran per comprovar que el document compleix amb les normes del vocabulari.
 
 ## Formats Estàndards
 
@@ -225,53 +237,31 @@ Ja hi ha vocabularis estàndards XML:
 * **SMIL**: Tractament de la informació multimèdia
 * **SSML**: Síntesi de la veu
 
-### Extensible
-
-Un altre dels avantatges de XML és que es fàcilment **extensible i adaptable**:
-
-* XML **no defineix un nombre limitat d'etiquetes**.
-* Podem crear les etiquetes (tags) que tinguin significat per nosaltres.
-* Podem crear el vocabulari que ens faci falta per allò que busquem.
-
-A més, hi ha formes de definir quina és la **estructura** que nosaltres definim.
-  * Hi ha diversos estàndards ***DTD***, ***XML Schema Language***, ***Relax NG***, etc..
-  * Ens serviran per comprovar que el document compleix amb les normes del vocabulari
-
 ## Principals usos d'XML 
 
 XML s'està fent servir en múltiples camps:
 
 * Un dels estàndards que es fan servir en pàgines web XHTML està basat en XML.
-* Emmagatzematge de **paràmetres de configuració** (Organització de la informació).
-* Organització estructurada de la informació.
 * Desenvolupament de **documentació tècnica** en diferents àmbits acadèmics, investigació, ...
 * Intercanvi d'informació entre sistemes informàtics (distribuïts). 
 * Intercanvi d'informació entre empreses.
-* Aplicacions ofimàtiques: Microsoft Office, OpenOffice, ..
+* Aplicacions ofimàtiques: **Microsoft Office, OpenOffice**, ..
+  * Abans feien servir formats binaris però han passat a algun tipus d'XML.
+  * Va passar de guardar els documents en binari `.DOC` a XML `.DOCX` (OOXML).
+* Molts dels **documents de configuració** dels sistemes operatius estan en XML:
 
-Molts programes que feien servir formats binaris han passat a algun tipus d'XML:
+  **Linux**
 
-**Microsoft Office**
+  ```bash
+  $ locate .xml | wc -l
+  21829
+  ```
 
-Va passar de guardar els documents en binari .DOC a XML .DOCX (OOXML) al estandaritzar-lo
-
-**OpenOffice.org**
-
-Molts dels documents de configuració dels sistemes operatius estan en XML!
-
-**Linux**
-
-```bash
-$ locate .xml | wc -l
-21829
-```
-
-**Windows**
-
-```bash
-C:\> dir /a-d /s *.xml | find /c /v “”
-698
-```
+  **Windows**
+  ```bash
+  C:\> dir /a-d /s *.xml | find /c /v “”
+  698
+  ```
 
 ## Desavantatges de XML
 
