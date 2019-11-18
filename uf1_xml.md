@@ -77,7 +77,8 @@ Però no és el primer que ha existit, ni l'únic
 
 ## SGML
 
-La primera tecnologia estandarditzada de llenguatges de marques va ser l'**SGML**
+> La primera tecnologia estandarditzada de llenguatges de marques va ser l'**SGML**
+
 Es va fer servir com estàndard de la informació **de propòsit general**.
 Partia de la idea de que s'han de **separar les dades** d'un document **de la seva forma**.
 
@@ -86,29 +87,36 @@ Però:
 * La majoria dels documents estaven destinats a la **impressió**.
 * Era terriblement **complex** de manera que només el feien servir els especialistes.
 
----
-
 ## HTML
 
-* HTML és un format que descriu la visualització d'una pàgina web.
-* HTML està molt orientat a la visualització
+L'any 1989 Tim Berners-Lee i Anders Berglund van crear un llenguatge basat en etiquetes destinat a compartir informació per Internet: **HTML**.
 
-![image](uf1-xml-01.png)
+HTML és un format que descriu la visualització d'una pàgina web.
+  
+La web s'ha fet cada vegada més i més popular:
+  * Cada dia es generen milions de pàgines web amb informació.
+  * Això implica que cal buscar per trobar la informació que ens interessa.
 
-* Tot i això la web s'ha fet cada vegada més i més popular
-* Cada dia es generen milions de pàgines web amb informació
-* Això implica que cal buscar per trobar la informació que ens interessa
+```html
+<html>
+   <head>
+     <title>Professor</title>
+   </head>
+   <body>
+      <p>Nom: Federicu Pi </p>
+   </body>
+</html>
+```
 
-![image](uf1-xml-02.png)
+**Com pot una màquina determinar automàticament qué és el nom, què és el cognom, ...?**
 
-* Però l'HTML és molt difícil de reutilitzar
-* Fa falta alguna forma de poder fer-hi recerques intel·ligents i seleccionar-ne el resultats
-
-![image](uf1-xml-03.png)
+És necessari alguna forma de poder fer-hi recerques intel·ligents i seleccionar-ne el resultats.
 
 En general, falta una forma de:
 
-> “Buscar, moure, visualitzar i manipular la informació continguda en els documents HTML”
+* **Buscar**, **moure**, **visualitzar** i **manipular** la informació continguda en els documents HTML.
+
+---
 
 ### Naixement de l'XML
 
