@@ -559,6 +559,7 @@ Per exemple un tipus *MIME*
 
 
 > Les entitats permeten definir les constants pel document
+
 * Els atributs poden fer referència a constants
 
 ```dtd
