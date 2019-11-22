@@ -152,7 +152,6 @@ FPI
 
 ### Definició d'etiquetes
 
-
 S'han de definir tots els elements que formen el document:
 
 ```dtd
@@ -171,7 +170,7 @@ En el contingut és on definirem completament l'estructura del document XML:
 
 ### Elements genèrics
 
-* Si tenim elements que poden tenir qualsevol cosa a dins els podem definir amb `ANY`
+> Si tenim elements que poden tenir qualsevol cosa a dins els podem definir amb `ANY`
 
 **Per exemple:**
 
@@ -193,7 +192,7 @@ Podem definir `<persona>`:
 ### Entrada de text: \#PCDATA
 
 
-Un **\#PCDATA** indica que l'element que estem definint només pot tenir dades a dins.
+> Un **\#PCDATA** indica que l'element que estem definint només pot tenir dades a dins.
 
 **Per exemple:**
 
@@ -212,7 +211,7 @@ Es definiria el DTD amb:
 ### Elements sense dades
 
 
-Si tenim elements que **no tenen contingut** els podem definir amb `EMPTY`.
+> Si tenim elements que **no tenen contingut** els podem definir amb `EMPTY`.
 
 **XML**
 ```xml
@@ -270,8 +269,7 @@ Es poden definir elements **recursius**:
 
 ### Modificadors dels elements fills
 
-
-Podem especificar quantes instàncies dels elements fills hi poden haver en un element.
+> Podem especificar quantes instàncies dels elements fills hi poden haver en un element.
 
 * `?`: Indica que l'element hi pot ser o no.
 * `*`: Indica que l'element hi pot ser un número indeterminat de vegades o  no ser-hi.
@@ -299,7 +297,7 @@ Podem especificar quantes instàncies dels elements fills hi poden haver en un e
 
 ### Operador d'elecció
 
-També tenim un operador que ens permet posar alternatives `|`
+> També tenim un operador que ens permet posar alternatives `|`
 
 ```dtd
 <!ELEMENT titol (president|treballador)>
@@ -452,7 +450,7 @@ Existeixen diferents tipus de dades que es poden fer servir com a tipus d'atribu
 #### CDATA i enumeracions
 
 
-Els atributs de tipus **CDATA** permeten la entrada de text de qualsevol tipus.
+> Els atributs de tipus **CDATA** permeten la entrada de text de qualsevol tipus.
 
 ```dtd
 <!ATTLIST empresa nom CDATA #REQUIRED>
@@ -494,7 +492,7 @@ Un cas especial serien les **enumeracions**:
 #### IDREF o IDREFS
 
 
-Es fan servir quan el valor ha de ser una referència a un identificador.
+> Es fan servir quan el valor ha de ser una referència a un identificador.
 
 ```dtd
 <!ATTLIST recepta id ID #REQUIRED>
