@@ -435,7 +435,7 @@ Un aspecte curiós és que els atributs tenen atributs que permeten definir com 
 * La versió del document és "1.0" i no es pot canviar
 
 
-## Tipus de dades atributs
+### Tipus de dades atributs
 
 Existeixen diferents tipus de dades que es poden fer servir com a tipus d'atributs.
 
@@ -449,7 +449,7 @@ Existeixen diferents tipus de dades que es poden fer servir com a tipus d'atribu
 | **NMTOKEN NMTOKENS**  | Especifiquen els caràcters permesos per XML. O sigui que no s'hi permeten espais                          |
 | **NOTATION**          | Permet que l'atribut sigui d'una notació anteriorment declarada                                           |
 
-### CDATA i enumeracions
+#### CDATA i enumeracions
 
 
 Els atributs de tipus **CDATA** permeten la entrada de text de qualsevol tipus.
@@ -473,7 +473,7 @@ Un cas especial serien les **enumeracions**:
 
 * Que permetran que el valor de l'atribut sigui o "setembre" o "octubre" i cap més.
 
-### ID
+#### ID
 
 > **ID** serveix per quan els atributs es poden utilitzar com identificadors d'un element dins del document.
 
@@ -491,7 +491,7 @@ Un cas especial serien les **enumeracions**:
 <equip posicio="tretzè">Real Madrid C.F.</equip>
 ```
 
-### IDREF o IDREFS
+#### IDREF o IDREFS
 
 
 Es fan servir quan el valor ha de ser una referència a un identificador.
@@ -519,7 +519,7 @@ Es fan servir quan el valor ha de ser una referència a un identificador.
 <ingredient refs="recepta1 recepta2">patates</ingredient>
 ```
 
-### NMTOKEN i NMTOKENS
+#### NMTOKEN i NMTOKENS
 
 
 > Els tipus **NMTOKEN** permeten que especifiquem qualsevol caràcter acceptat per XML.
@@ -539,7 +539,7 @@ Es fan servir quan el valor ha de ser una referència a un identificador.
 <home fills="Maria Pere Albert">Filomenu Pi</home>
 ```
 
-### NOTATION
+#### NOTATION
 
 
 > Aquest atribut permet associar una aplicació a un tipus d'informació.
