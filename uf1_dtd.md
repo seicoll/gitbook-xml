@@ -1,67 +1,61 @@
 # Validació XML amb DTD
 
+## Introducció
+
+*  Validació de documents:
+
 ## Què és el DTD?
 
 
-El DTD (Document Type Definitions) és la forma de definició d'esquemes
-que va sortir primer
+> El **DTD** (*Document Type Definitions*) és la forma de definició d'esquemes que va sortir primer.
+* Va sorgir en el temps del **SGML**
 
--   Va sorgir en el temps del **SGML**
--   Encara hi ha molts documents XML que es validen amb DTD (tot i que
-    té les seves limitacions)
--   Alguns documents HTML fan servir DTD per definir-ne la estructura
+L'**objectiu principal** dels DTD és donar un mecanisme per validar les estructures dels documents XML.
+  * El document XML es comprovarà amb l'esquema DTD.
 
-```html
-<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN”
-      “http://www.w3c.org/TR/xhtml11-transitional.dtd”>
+> **Hi poden haver documents ben formats que no siguin vàlids**.
 
-<html xmlns=”http://w3c.org/1999/xhtml”>
-```
+El DTD pot ser compartit entre organitzacions o fins i tot definir-lo com a estàndard públic.
+  * Això permetrà conèixer les especificacions que defineixen un vocabulari concret.
 
 ## Limitacions del DTD
 
--   El DTD no és un llenguatge XML: Això obliga a aprendre dos
-    llenguatges en comptes d'un!
--   Pot ser que no puguem fer-hi tot el que ens faci falta: **DTD no pot
-    fer comprovacions del contingut de dades**
+* El DTD **no** és un llenguatge XML: Això obliga a aprendre dos llenguatges en comptes d'un!
+* Pot ser que no puguem fer-hi tot el que ens faci falta: 
+  * DTD no pot fer comprovacions del contingut de dades:
 
-```xml
-<data>.</data>
-```
-
--   No pot comprovar que és una data: Pot fer falta definir restriccions
-    en el document i **DTD no pot: per exemple una data entre 1970 i
-    2032**
-
-## Objectius
+  ```xml
+  <data>.</data>
+  ```
+    * No pot comprovar que és una data correcte.
 
 
--   L'objectiu principal dels DTD és donar un mecanisme per validar les
-    estructures dels documents XML
--   El document XML es comprovarà amb l'esquema DTD
--   Hi poden haver documents ben formats que no siguin vàlids
--   Pot ser compartit entre organitzacions o fins i tot definir-lo com a
-    estàndard públic
--   Això permetrà conèixer les especificacions que defineixen un
-    vocabulari concret
+* Podria fer falta definir restriccions en el document però amb DTD no es pot: 
+  * Per exemple una data entre 1970 i 2032.
+
+Encara hi ha molts documents XML que es validen amb DTD (tot i que té les seves limitacions).
 
 ## Validació
 
-
--   La majoria dels validadors poden validar DTD sense problemes
--   Per exemple amb xmllint ho podem fer amb 'valid':
+Amb **xmllint** ho podem fer amb `valid`:
 
 ```bash
 $ xmllint --noout --valid exercici.xml
-$
 ```
 
--   També es pot fer amb el programa *XML Copy Editor*, etc...
+També es pot fer amb el programa **XML Copy Editor**, etc...
 
-![image](xmlcopyeditor.png)
+![image](uf1_images/xmlcopyeditor.png)
 
-## Definició del DTD en el document XML
+O amb validadors **online**:
 
+* XML Validator Online: https://www.xmlvalidation.com/
+* XML Validator: http://xmlvalidator.new-studio.org/
+
+
+
+
+## Definició del DTD 
 
 ### Definició de DTD Interna
 
@@ -69,45 +63,45 @@ $
 -   Es poden incorporar DTD dins dels documents XML
 
 ```xml
-<?xml version=”1.0” encoding=”UTF-8” ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE process [
 <!ELEMENT adress (#PCDATA)>
 <!ELEMENT process (adress)>
 ]>
 <process>
-    <adress>http://www.iescendrassos.net</adress>
+    <adress>http://www.boscdelacoma.cat</adress>
 </process>
 ```
 
--   Tot i que es pot fer és millor fer-los externs
+-   Tot i que es pot fer és millor fer-los externs.
 -   Definir-los externament permet compartir-los més fàcilment i a més:
 
-> Separa les dades de la estructura
+> Separa les dades de la estructura.
 
 ### Definició de DTD Externa
 
+Per definir un DTD extern fem servir l'etiqueta `DOCTYPE` dins del document XML:
 
-Per definir un DTD extern fem servir l'etiqueta DOCTYPE dins del
-document XML:
-
-```xml
-<!DOCTYPE alumnes SYSTEM “http://www.iescendrassos.net/alumnes.dtd”>
-```
-
--   Es poden definir **DOCTYPES** d'Internet
+* Es poden definir **DOCTYPES** d'Internet:
 
 ```xml
-<?xml version=”1.0” encoding=”UTF-8” ?>
-<!DOCTYPE alumnes SYSTEM “alumnes.dtd”>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE alumnes SYSTEM "http://www.boscdelacoma.cat/alumnes.dtd">
+<alumnes>
+    <persona>
+        <nom>Pere</nom>
+        <cognom>Pi</cognom>
+    </persona>
+</alumnes>
 ```
 
--   O en fitxers locals de la màquina
+* O en fitxers locals:
 
 ```html
-<!DOCTYPE alumnes SYSTEM “C:\alumnes.dtd”>
+<!DOCTYPE alumnes SYSTEM "C:\alumnes.dtd">
 ```
 
--   I després només hem de crear el DTD extern en el lloc adequat:
+I després només hem de crear el DTD extern en el lloc adequat:
 
 ```dtd
 <!ELEMENT nom (#PCDATA)>
@@ -118,13 +112,13 @@ document XML:
 ## DOCTYPE
 
 
--   La declaració DOCTYPE és el que es posa en el document XML per
-    indicar el DTD
+-   La declaració DOCTYPE és el que es posa en el document XML per indicar el DTD
 
-![image](doctype.png)
+![image](/uf1_images/uf1-doctype.png)
 
+
+<!--
 ## Tipus de DTD
-
 
 -   En el tipus de DTD hi solem trobar dues paraules clau: **SYSTEM** o
     **PUBLIC**
@@ -157,7 +151,7 @@ ex. El fan servir els DOCTYPE de HTML
 ![image](fpi.png)
 
 ## El llenguatge
-
+-->
 
 ### Definició d'etiquetes
 
