@@ -80,7 +80,7 @@ O amb validadors **online**:
 
 ### Definició de DTD Externa
 
-Per definir un DTD extern fem servir l'etiqueta `DOCTYPE` dins del document XML:
+Per definir un DTD extern que s'utilitza fent servir l'etiqueta `DOCTYPE` dins del document XML:
 
 * Es poden definir **DOCTYPES** d'Internet:
 
@@ -101,6 +101,8 @@ Per definir un DTD extern fem servir l'etiqueta `DOCTYPE` dins del document XML:
 <!DOCTYPE alumnes SYSTEM "C:\alumnes.dtd">
 ```
 
+![image](/uf1_images/uf1-doctype.png)
+
 I després només hem de crear el DTD extern en el lloc adequat:
 
 ```dtd
@@ -109,16 +111,9 @@ I després només hem de crear el DTD extern en el lloc adequat:
 <!ELEMENT persona (nom,cognom)>
 ```
 
-## DOCTYPE
-
-
--   La declaració DOCTYPE és el que es posa en el document XML per indicar el DTD
-
-![image](/uf1_images/uf1-doctype.png)
-
-
 <!--
-## Tipus de DTD
+Tipus de DTD
+============
 
 -   En el tipus de DTD hi solem trobar dues paraules clau: **SYSTEM** o
     **PUBLIC**
@@ -145,52 +140,51 @@ ex. El fan servir els DOCTYPE de HTML
 
 ![image](public.png)
 
-## FPI
+FPI
+===
 
 
 ![image](fpi.png)
 
-## El llenguatge
 -->
+
+## El llenguatge DTD
 
 ### Definició d'etiquetes
 
 
--   La base de tot rau en la definició dels elements que composen el
-    llenguatge
--   S'han de definir tots els elements que formen el document:
+S'han de definir tots els elements que formen el document:
 
 ```dtd
 <!ELEMENT nom contingut >
 ```
 
-En el contingut és on definirem completament l'estructura del document
-XML:
+En el contingut és on definirem completament l'estructura del document XML:
 
-– Si hi ha dades – Si conté altres etiquetes – Etc...
+* Si hi ha dades 
+* Si conté altres etiquetes 
+* Etc.
 
-![image](etiqueta.png)
+![image](uf1_images/uf1-dtd-etiquetes.png)
 
 ## Elements
 
-
 ### Elements genèrics
 
+* Si tenim elements que poden tenir qualsevol cosa a dins els podem definir amb `ANY`
 
--   Si tenim elements que poden tenir qualsevol cosa a dins els podem
-    definir amb ANY
--   Si tenim un XML semblant a aquest:
+**Per exemple:**
 
 ```xml
-<persona>Federicu Pi</persona>
 
+<persona>Pere Pi</persona>
 <persona>
-    <nom>Xavier</nom>
-    <cognom>Sala</cognom>
+     <nom>Marta</nom>
+     <cognom>Mata</cognom>
 </persona>
 ```
 
--   Podem definir &lt;persona&gt;:
+Podem definir `<persona>`:
 
 ```xml
 <!ELEMENT persona ANY>
@@ -199,17 +193,16 @@ XML:
 ### Entrada de text: \#PCDATA
 
 
-Un **\#PCDATA** indica que l'element que estem definint només pot tenir
-dades a dins
+Un **\#PCDATA** indica que l'element que estem definint només pot tenir dades a dins.
 
--   Per definir una cosa com aquesta:
+**Per exemple:**
 
 ```xml
-<nom>Xavier</nom>
-<cognom>Sala</cognom>
+<nom>Pere</nom>
+<cognom>Pi</cognom>
 ```
 
--   Es definiria el DTD amb:
+Es definiria el DTD amb:
 
 ```xml
 <!ELEMENT nom (#PCDATA)>
@@ -219,21 +212,22 @@ dades a dins
 ### Elements sense dades
 
 
-Si tenim elements que no tenen contingut els podem definir amb EMPTY
+Si tenim elements que **no tenen contingut** els podem definir amb `EMPTY`.
 
+**XML**
 ```xml
 <persona>
-    <nom>Xavier</nom>
-    <cognom>Sala</cognom>
+    <nom>Pere</nom>
+    <cognom>Pi</cognom>
     <real />
 </persona>
 
 <persona>
-    <nom>Federicu</nom>
-    <cognom>Pi</cognom>
+    <nom>Marta</nom>
+    <cognom>Mata</cognom>
 </persona>
 ```
-
+**DTD**
 ```dtd
 <!ELEMENT real EMPTY>
 ```
@@ -241,47 +235,67 @@ Si tenim elements que no tenen contingut els podem definir amb EMPTY
 ### Elements fills
 
 
-El més normal és que una etiqueta en contingui d'altres
+El més normal és que una etiqueta en contingui d'altres:
 
 ```xml
 <persona>
-    <nom>Xavier</nom>
-    <cognom>Sala</cognom>
+    <nom>Pere</nom>
+    <cognom>Pi</cognom>
 </persona>
 ```
 
--   Els definim posant les etiquetes que pot contenir:
+Els definim posant les etiquetes que pot contenir:
 
+**DTD**
 ```dtd
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT cognom (#PCDATA)>
 <!ELEMENT persona (nom,cognom)>
 ```
 
-Es poden definir elements recursius
+Es poden definir elements **recursius**:
 
-![image](fills1.png)
+```dtd
+<!ELEMENT node (fulla | node, node)>
+```
 
--   Però s'ha d'anar amb compte perquè podem generar un problema molt
-    més gran
--   Definir elements que no s'acabin mai i que per tant no puguin ser
-    validats ...
+* Però s'ha d'anar amb compte perquè podem generar un problema molt més gran.
+* Definir elements que no s'acabin mai i que per tant no puguin ser validats.
 
-![image](fills2.png)
+```dtd
+<!ELEMENT node (node, node)>
+```
 
 -   O sigui que es poden fer però sempre s'han de tractar amb cura
 
 ### Modificadors dels elements fills
 
 
--   Podem especificar quantes instàncies dels elements fills hi poden
-    haver en un element
+Podem especificar quantes instàncies dels elements fills hi poden haver en un element.
 
-![image](modificadors.png)
+* `?`: Indica que l'element hi pot ser o no.
+* `*`: Indica que l'element hi pot ser un número indeterminat de vegades o  no ser-hi.
+* `+`: Indica que l'element hi ha de ser una vegada o més.
 
--   Per tant
+**Per exemple:**
 
-![image](modificadors-persones.png)
+**DTD**
+```dtd
+<!ELEMENT persona (nom, cognom+)>
+ ``` 
+
+**XML**
+```xml
+<persona>
+    <nom>Pere</nom>
+    <cognom>Pi</cognom>
+    <cognom>Pujol</cognom>
+</persona>
+<persona>
+    <nom>Marta</nom>
+    <cognom>Mata</cognom>
+</persona>
+```
 
 ### Operador d'elecció
 
