@@ -113,13 +113,13 @@ I després només hem de crear el DTD extern en el lloc adequat:
 
 <!--
 Tipus de DTD
-============
+
 
 -   En el tipus de DTD hi solem trobar dues paraules clau: **SYSTEM** o
     **PUBLIC**
 
 SYSTEM
-------
+
 
 -   Fa els DTD privats
 -   Això no implica que no es puguin compartir
@@ -129,7 +129,7 @@ SYSTEM
 ![image](system.png)
 
 PUBLIC
-------
+
 
 -   Implica que està definit per algun tipus de cos estàndard (oficial
     o no) l'ha definit i deixat disponible pel públic
@@ -141,7 +141,7 @@ ex. El fan servir els DOCTYPE de HTML
 ![image](public.png)
 
 FPI
-===
+
 
 
 ![image](fpi.png)
@@ -299,45 +299,46 @@ Podem especificar quantes instàncies dels elements fills hi poden haver en un e
 
 ### Operador d'elecció
 
-
--   També tenim un operador que ens permet posar alternatives “|”
+També tenim un operador que ens permet posar alternatives `|`
 
 ```dtd
 <!ELEMENT titol (president|treballador)>
 ```
 
--   Ens permetria fer o:
+Ens permetria fer:
 
 ```xml
 <titol>
-    <president>Federicu Pi</president>
+    <president>Pere Pi</president>
 </titol>
 ```
 
--   O per contra:
+O bé:
 
 ```xml
 <titol>
-<treballador>Federicu Pi</treballador>
+     <treballador>Pere Pi</treballador>
 </titol>
 ```
 
 ### Parèntesis
 
 
--   Evidentment podem fer tantes agrupacions de parèntesi com ens facin
-    falta
--   Centre i radi o bé centre i diàmetre
+Evidentment podem fer tantes agrupacions de parèntesi com ens facin falta.
+
+**Exemples:**
 
 ```dtd
 <!ELEMENT cercle (centre, (radi | diametre))>
 ```
+* Centre i radi o bé centre i diàmetre
 
--   cognom o nom+inicials+cognom o nom+cognom
+
 
 ```dtd
 <!ELEMENT comic (cognom | ( nom,(inicials, cognom) | cognom ))>
 ```
+* cognom o nom+inicials+cognom o nom+cognom
 
 ```dtd
 <!ELEMENT paragraf (#PCDATA | nom | professio | marca | data )* >
@@ -346,22 +347,22 @@ Podem especificar quantes instàncies dels elements fills hi poden haver en un e
 ### Limitacions
 
 
--   No es poden posar etiquetes i **\#PCDATA** que no siguin
-    “contingut mesclat”.
--   Això és erroni:
+No es poden posar etiquetes i **\#PCDATA** que no siguin "contingut barrejat".
+
+**Això és erroni:**
 
 ```dtd
 <!ELEMENT exercici (#PCDATA, apartat*)>
 ```
 
--   Tampoc podem duplicar definicions:
+Tampoc podem duplicar definicions:
 
 ```dtd
 <!ELEMENT exercici (#PCDATA)  >
 <!ELEMENT exercici (apartat*) >
 ```
 
--   O sigui que hem de fer això (tot i que pot no ser el que volem)
+O sigui que hem de fer això (tot i que pot no ser el que volem)
 
 ```dtd
 <!ELEMENT exercici (#PCDATA, apartat)*>
@@ -370,38 +371,41 @@ Podem especificar quantes instàncies dels elements fills hi poden haver en un e
 ### Expressions deterministes
 
 
--   Una altra de les limitacions és que obliga a que les expressions han
-    de ser deterministes
--   Això vol dir que no es pot fer això:
+Una altra de les limitacions és que obliga a que les expressions han de ser deterministes.
+
+Això vol dir que **no es pot fer això**:
 
 ```dtd
 <!ELEMENT terrestre((persona,home)|(persona,dona))>
 ```
 
--   Això és perquè el processador al rebre 'persona' no pot saber quina
-    és l'expressió que estem fent
--   Ho hem d'escriure:
+Això és perquè el processador al rebre 'persona' no pot saber quina és l'expressió que estem fent.
+
+Ho hem d'escriure:
 
 ```dtd
 <!ELEMENT terrestre(persona,(home|dona))>
 ```
 
--   El mateix ens passarà si fem servir modificadors:
--   Per exemple perquè surti en l'ordre que vulguem autor i títol:
+El mateix ens passarà si fem servir modificadors:
+
+Per exemple perquè surti en l'ordre que vulguem autor i títol:
 
 ```dtd
 <!ELEMENT llibre((autor?,titol?)|(titol?,autor?))>
 ```
 
--   Després de rebre autor en quina expressió estem? I si rebem títol?
--   Ho hauríem d'escriure d'aquesta forma:
+Després de rebre autor en quina expressió estem? I si rebem títol?
+Ho hauríem d'escriure d'aquesta forma:
 
 ```dtd
 <!ELEMENT llibre((autor,titol?)|(titol,autor?)|EMPTY)>
 ```
 
--   Ara no queda cap dubte de on som al rebre una etiqueta
+Ara no queda cap dubte de on som al rebre una etiqueta
 
+
+---
 ## Atributs
 
 
