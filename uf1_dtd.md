@@ -439,60 +439,64 @@ Un aspecte curiós és que els atributs tenen atributs que permeten definir com 
 ## Tipus de dades atributs
 
 
--   Existeixen diferents tipus de dades que es poden fer servir com a
-    tipus d'atributs
+Existeixen diferents tipus de dades que es poden fer servir com a tipus d'atributs.
 
-![image](tipus-dades.png)
+| Tipus             | Significat                                                                                                |
+|-------------------|-----------------------------------------------------------------------------------------------------------|
+| **CDATA**             | Pot contenir qualsevol cadena de caràcters acceptable.  Es pot fer servir per preus, URL, emails, etc...  |
+| Enumeracions      | Posem una llista de valors textuals dins de la declaració de l'atribut                                    |
+| **ID**                | Un atribut pot fer-se servir com identificador d'un element. Aquest atribut ha de ser únic en el document |
+| **IDREF o IDREFS**    | Referències a un ID. El seu valor s'ha de correspondre amb un identificador d'element existent            |
+| **ENTITY o ENTITIES** | Les entitats permeten definir constants pel document. Així doncs l'atribut ha de ser una entitat          |
+| **NMTOKEN NMTOKENS**  | Especifiquen els caràcters permesos per XML. O sigui que no s'hi permeten espais                          |
+| **NOTATION**          | Permet que l'atribut sigui d'una notació anteriorment declarada                                           |
 
 ### CDATA i enumeracions
 
 
--   Els atributs de tipus **CDATA** permeten la entrada de text de
-    qualsevol tipus
+Els atributs de tipus **CDATA** permeten la entrada de text de qualsevol tipus.
 
 ```dtd
 <!ATTLIST empresa nom CDATA #REQUIRED>
 ```
 
--   Ens permetria definir coses com
+Ens permetria definir coses com:
 
 ```xml
-<empresa nom=”Microsoft Corporation”>
-<empresa nom=”6tema desastre, SA”>
+<empresa nom="Microsoft Corporation">
+<empresa nom="6tema desastre, SA">
 ```
 
--   Un cas especial serien les enumeracions
+Un cas especial serien les **enumeracions**:
 
 ```dtd
 <!ATTLIST curs inici (setembre|octubre) #IMPLIED>
 ```
 
--   Que permetran que el valor de l'atribut sigui o “setembre” o
-    “octubre” i cap més
+* Que permetran que el valor de l'atribut sigui o "setembre" o "octubre" i cap més.
 
 ### ID
 
+> **ID** serveix per quan els atributs es poden utilitzar com identificadors d'un element dins del document.
 
--   **ID** serveix per quan els atributs es poden usar com
-    identificadors d'un element dins del document
--   Els valors no es poden repetir
--   Els valors han de començar per una lletra o pel caràcter de
-    subratllat
+* Els valors no es poden repetir.
+* Els valors han de començar per una lletra o pel caràcter de subratllat.
 
+**DTD**
 ```dtd
 <!ATTLIST equip posicio ID #REQUIRED>
 ```
 
+**XML**
 ```xml
-<equip posicio=”primer”>F.C.Barcelona</equip>
-<equip posicio=”tretzè”>Real Madrid C.F.</equip>
+<equip posicio="primer">F.C.Barcelona</equip>
+<equip posicio="tretzè">Real Madrid C.F.</equip>
 ```
 
 ### IDREF o IDREFS
 
 
--   Es fan servir quan el valor ha de ser una referència a un
-    identificador
+Es fan servir quan el valor ha de ser una referència a un identificador.
 
 ```dtd
 <!ATTLIST recepta id ID #REQUIRED>
@@ -501,28 +505,29 @@ Un aspecte curiós és que els atributs tenen atributs que permeten definir com 
 
 ```xml
 <llibrecuina>
-    <recepta id=”recepta1”>Patates fregides</recepta>
-    <recepta id=”recepta2”>Patates bullides</recepta>
-    <ingredient ref=”recepta1”>oli</ingredient>
+    <recepta id="recepta1">Patates fregides</recepta>
+    <recepta id="recepta2">Patates bullides</recepta>
+    <ingredient ref="recepta1">oli</ingredient>
 </llibrecuina>
 ```
 
--   **IDREFS** ens permet fer una llista d'**ID** separades per espais
+**IDREFS** ens permet fer una llista d'**ID** separades per espais.
 
-    > &lt;!ATTLIST ingredient refs IDREFS \#IMPLIED&gt;
+```dtd
+<!ATTLIST ingredient refs IDREFS #IMPLIED>
+```
 
 ```xml
-<ingredient refs=”recepta1 recepta2”>patates</ingredient>
+<ingredient refs="recepta1 recepta2">patates</ingredient>
 ```
 
 ### NMTOKEN i NMTOKENS
 
 
--   Els tipus **NMTOKEN** permeten que especifiquem qualsevol caràcter
-    acceptat per XML
--   Això implica text sense espais
--   Com la majoria de vegades el NMTOKENS ens en permet especificar
-    diversos separats per espais
+> Els tipus **NMTOKEN** permeten que especifiquem qualsevol caràcter acceptat per XML.
+
+* Això implica text sense espais.
+* Com la majoria de vegades el NMTOKENS ens en permet especificar diversos separats per espais
 
 ```dtd
 <!ATTLIST home naixement NMTOKEN #IMPLIED>
@@ -532,45 +537,46 @@ Un aspecte curiós és que els atributs tenen atributs que permeten definir com 
 -   O sigui
 
 ```xml
-<home naixement=”1975”>Carles Punxatí</home>
-<home fills=”Maria Pere Albert”>Filomenu Pi</home>
+<home naixement="1975">Carles Punxatí</home>
+<home fills="Maria Pere Albert">Filomenu Pi</home>
 ```
 
 ### NOTATION
 
 
--   Aquest atribut permet associar una aplicació a un tipus d'informació
+> Aquest atribut permet associar una aplicació a un tipus d'informació.
 
 ```dtd
-<!NOTATION jpg PUBLIC “JPEG”>
+<!NOTATION jpg PUBLIC “JPEG">
 <!ATTLIST persona foto NOTATION jpg #IMPLIED>
 ```
 
--   Es pot canviar PUBLIC per SYSTEM per poder definir una aplicació
-    en particular. Per exemple un tipus *MIME*
+Es pot canviar PUBLIC per SYSTEM per poder definir una aplicació en particular. 
+
+Per exemple un tipus *MIME*
 
 ```dtd
-<!NOTATION jpg SYSTEM “image/jpeg”>
+<!NOTATION jpg SYSTEM "image/jpeg">
 ```
 
-### ENTITY / ENTITIES
+## ENTITY / ENTITIES
 
 
--   Les entitats permeten definir les constants pel document
--   Els atributs poden fer referència a constants
+> Les entitats permeten definir les constants pel document
+* Els atributs poden fer referència a constants
 
 ```dtd
 <!ATTLIST A a ENTITY #IMPLIED>
 <!ATTLIST A b ENTITIES #IMPLIED>
 ```
 
--   Podem definir les nostres entitats:
+Podem definir les nostres entitats:
 
 ```dtd
-<!ENTITY nom “valor”>
+<!ENTITY nom "valor">
 ```
 
--   I després usar-les en el document
+I després utilitzar-les en el document
 
 ```dtd
 &nom;
@@ -591,22 +597,23 @@ Tenim entitats que ens permeten escriure caràcters amb el seu valor  hexadecima
 &lt; &gt; &amp; &apos;
 ```
 
+<!--
 -   També podem carregar els valors d'un document extern
 
 ```dtd
 <!ENTITY doc SYSTEM
-“http://www.iescendrassos.net/altre.xml”>
+“http://www.iescendrassos.net/altre.xml">
 ```
 
-### Entitats
 
+ Entitats
 
 -   Un dels usos de les entitats en els DTD és combinar diferents parts
     del DTD per crear-ne un de sol:
 
 ```dtd
-<!ENTITY % persona SYSTEM “persona.dtd”>
-<!ENTITY % adreca SYSTEM “adreca.dtd”>
+<!ENTITY % persona SYSTEM “persona.dtd">
+<!ENTITY % adreca SYSTEM “adreca.dtd">
     %persona;
     %adreca;
 <!ELEMENT home (persona, adreca)>
@@ -614,8 +621,9 @@ Tenim entitats que ens permeten escriure caràcters amb el seu valor  hexadecima
 
 Això permet reutilitzar els DTD que tinguem si els hem dissenyat amb cura
 
-Altres
-======
+
+ Altres
+
 
 També disposem d'unes comandes més que ens permeten especificar seccions condicionals:
 
@@ -629,3 +637,4 @@ Al fer servir **INCLUDE** el contingut és visible pel DTD i a l'inrevés
 ```dtd
 <![IGNORE[<!ELEMENT nom #PCDATA]]>
 ```
+-->
