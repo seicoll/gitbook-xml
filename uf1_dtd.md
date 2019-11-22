@@ -405,23 +405,24 @@ Ho hauríem d'escriure d'aquesta forma:
 Ara no queda cap dubte de on som al rebre una etiqueta
 
 
----
 ## Atributs
 
+* Ens pot interessar limitar quins atributs pot contenir una etiqueta.
+* No es poden fer atributs genèrics s'han de definir en cada element.
+* Els atributs es defineixen amb **ATTLIST**
 
--   Ens pot interessar limitar quins atributs pot contenir una etiqueta
--   No es poden fer atributs genèrics s'han de definir en cada element
--   Els atributs es defineixen amb **ATTLIST**
+![image](uf1_images/uf1-dtd-atributs.png)
 
-![image](atributs.png)
+**Atributs dels atributs**
 
-Atributs dels atributs
-----------------------
+Un aspecte curiós és que els atributs tenen atributs que permeten definir com s'usaran.
 
--   Un aspecte curiós és que els atributs tenen atributs que permeten
-    definir com s'usaran
+* **IMPLIED**: L'atribut és opcional. Cada instància de l'element pot o no pot donar-li valor.
+* **REQUIRED**: L'atribut és obligatori. Ha d'existir! 
+* **FIXED**: L'atribut és constant i inmutable. S'ha d'especificar per força ja que és permanent.
+* **DEFAULT**: L'atribut ja té un valor per defecte. Si no se n'hi posa cap un programa ha d'assumir aquest valor.
 
-![image](atributs-atributs.png)
+**Per exemple:**
 
 ```dtd
 <!ATTLIST equip posicio ID #REQUIRED>
@@ -429,20 +430,22 @@ Atributs dels atributs
 <!ATTLIST document versio CDATA #FIXED "1.0">
 ```
 
--   L'etiqueta equip ha de tenir l'atribut “posicio” obligatòriament
--   El dni associat al nom és opcional
--   La versió del document és “1.0” i no es pot canviar
+* L'etiqueta equip ha de tenir l'atribut "posicio" obligatòriament
+* El dni associat al nom és opcional
+* La versió del document és "1.0" i no es pot canviar
 
-Tipus de dades atributs
-=======================
+
+---
+## Tipus de dades atributs
+
 
 -   Existeixen diferents tipus de dades que es poden fer servir com a
     tipus d'atributs
 
 ![image](tipus-dades.png)
 
-CDATA i enumeracions
-====================
+### CDATA i enumeracions
+
 
 -   Els atributs de tipus **CDATA** permeten la entrada de text de
     qualsevol tipus
@@ -467,8 +470,8 @@ CDATA i enumeracions
 -   Que permetran que el valor de l'atribut sigui o “setembre” o
     “octubre” i cap més
 
-ID
-==
+### ID
+
 
 -   **ID** serveix per quan els atributs es poden usar com
     identificadors d'un element dins del document
@@ -485,8 +488,8 @@ ID
 <equip posicio=”tretzè”>Real Madrid C.F.</equip>
 ```
 
-IDREF o IDREFS
-==============
+### IDREF o IDREFS
+
 
 -   Es fan servir quan el valor ha de ser una referència a un
     identificador
@@ -512,8 +515,8 @@ IDREF o IDREFS
 <ingredient refs=”recepta1 recepta2”>patates</ingredient>
 ```
 
-NMTOKEN i NMTOKENS
-==================
+### NMTOKEN i NMTOKENS
+
 
 -   Els tipus **NMTOKEN** permeten que especifiquem qualsevol caràcter
     acceptat per XML
@@ -533,8 +536,8 @@ NMTOKEN i NMTOKENS
 <home fills=”Maria Pere Albert”>Filomenu Pi</home>
 ```
 
-NOTATION
-========
+### NOTATION
+
 
 -   Aquest atribut permet associar una aplicació a un tipus d'informació
 
@@ -550,8 +553,8 @@ NOTATION
 <!NOTATION jpg SYSTEM “image/jpeg”>
 ```
 
-ENTITY / ENTITIES
-=================
+### ENTITY / ENTITIES
+
 
 -   Les entitats permeten definir les constants pel document
 -   Els atributs poden fer referència a constants
@@ -573,11 +576,10 @@ ENTITY / ENTITIES
 &nom;
 ```
 
-Entitats predefinides i externes
-================================
+### Entitats predefinides i externes
 
--   Tenim entitats que ens permeten escriure caràcters amb el seu valor
-    hexadecimal:
+
+Tenim entitats que ens permeten escriure caràcters amb el seu valor  hexadecimal:
 
 ```bash
 &#41;
@@ -596,8 +598,8 @@ Entitats predefinides i externes
 “http://www.iescendrassos.net/altre.xml”>
 ```
 
-Entitats
-========
+### Entitats
+
 
 -   Un dels usos de les entitats en els DTD és combinar diferents parts
     del DTD per crear-ne un de sol:
