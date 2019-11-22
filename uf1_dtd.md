@@ -435,9 +435,7 @@ Un aspecte curiós és que els atributs tenen atributs que permeten definir com 
 * La versió del document és "1.0" i no es pot canviar
 
 
----
 ## Tipus de dades atributs
-
 
 Existeixen diferents tipus de dades que es poden fer servir com a tipus d'atributs.
 
