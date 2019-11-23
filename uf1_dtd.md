@@ -7,15 +7,17 @@
 ## Què és el DTD?
 
 
-> El **DTD** (*Document Type Definitions*) és la forma de definició d'esquemes que va sortir primer.
-* Va sorgir en el temps del **SGML**
+> El **DTD** (*Document Type Definitions*) és una forma de definir l'estructura i les etiquetes vàlides en un document XML.
+ 
+* És la forma de definició d'esquemes que va sortir primer.
+  * Va sorgir en el temps del **SGML**
 
-L'**objectiu principal** dels DTD és donar un mecanisme per validar les estructures dels documents XML.
+L'**objectiu principal** dels DTD és permetre validar les estructures dels documents XML.
   * El document XML es comprovarà amb l'esquema DTD.
 
 > **Hi poden haver documents ben formats que no siguin vàlids**.
 
-El DTD pot ser compartit entre organitzacions o fins i tot definir-lo com a estàndard públic.
+El DTD pot ser compartit entre organitzacions o, fins i tot, definir-lo com a estàndard públic.
   * Això permetrà conèixer les especificacions que defineixen un vocabulari concret.
 
 ## Limitacions del DTD
@@ -60,7 +62,7 @@ O amb validadors **online**:
 #### Definició de DTD Interna
 
 
--   Es poden incorporar DTD dins dels documents XML
+Es poden incorporar DTD **dins dels documents XML**:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -73,14 +75,14 @@ O amb validadors **online**:
 </process>
 ```
 
--   Tot i que es pot fer és millor fer-los externs.
--   Definir-los externament permet compartir-los més fàcilment i a més:
+* Tot i que es pot fer és millor fer-los externs.
+* Definir-los externament permet compartir-los més fàcilment i a més:
 
 > Separa les dades de la estructura.
 
 #### Definició de DTD Externa
 
-Per definir un DTD extern que s'utilitza fent servir l'etiqueta `DOCTYPE` dins del document XML:
+Per definir un **DTD extern** que s'utilitza fent servir l'etiqueta `DOCTYPE` dins del document XML:
 
 * Es poden definir **DOCTYPES** d'Internet:
 
@@ -98,7 +100,7 @@ Per definir un DTD extern que s'utilitza fent servir l'etiqueta `DOCTYPE` dins d
 * O en fitxers locals:
 
 ```html
-<!DOCTYPE alumnes SYSTEM "C:\alumnes.dtd">
+<!DOCTYPE alumnes SYSTEM "alumnes.dtd">
 ```
 
 ![image](/uf1_images/uf1-doctype.png)
@@ -150,15 +152,15 @@ FPI
 
 
 
-### Definició d'etiquetes
+## Elements
 
-S'han de definir tots els elements que formen el document:
+S'han de definir tots els **elements** que formen el document:
 
 ```dtd
-<!ELEMENT nom contingut >
+<!ELEMENT nom (contingut) >
 ```
 
-En el contingut és on definirem completament l'estructura del document XML:
+En el `contingut` és on definirem completament l'estructura del document XML:
 
 * Si hi ha dades 
 * Si conté altres etiquetes 
@@ -166,11 +168,11 @@ En el contingut és on definirem completament l'estructura del document XML:
 
 ![image](uf1_images/uf1-dtd-etiquetes.png)
 
-## Elements
-
 ### Elements genèrics
 
-> Si tenim elements que poden tenir qualsevol cosa a dins els podem definir amb `ANY`
+> Si tenim elements que poden tenir **qualsevol cosa a dins** els podem definir amb `ANY`
+
+Aquests elements podràn contenir **altres etiquetes** o bé **dades**.
 
 **Per exemple:**
 
@@ -213,6 +215,8 @@ Es definiria el DTD amb:
 
 > Si tenim elements que **no tenen contingut** els podem definir amb `EMPTY`.
 
+**Per exemple:**
+
 **XML**
 ```xml
 <persona>
@@ -233,8 +237,9 @@ Es definiria el DTD amb:
 
 ### Elements fills
 
+El més normal és que una etiqueta en contingui d'altres.
 
-El més normal és que una etiqueta en contingui d'altres:
+> Els elements que contenen altres etiquetes es defineixen amb el nom dels elements fills dins de parèntesis `()`.
 
 ```xml
 <persona>
@@ -252,6 +257,8 @@ Els definim posant les etiquetes que pot contenir:
 <!ELEMENT persona (nom,cognom)>
 ```
 
+> **ATENCIÓ:** Els elements fills han d'aparèixer en el XML en la mateixa seqüència (ordre) que en el DTD.
+
 Es poden definir elements **recursius**:
 
 ```dtd
@@ -267,7 +274,7 @@ Es poden definir elements **recursius**:
 
 -   O sigui que es poden fer però sempre s'han de tractar amb cura
 
-### Modificadors dels elements fills
+#### Modificadors dels elements fills
 
 > Podem especificar quantes instàncies dels elements fills hi poden haver en un element.
 
