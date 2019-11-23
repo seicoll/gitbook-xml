@@ -53,11 +53,11 @@ O amb validadors **online**:
 * XML Validator: http://xmlvalidator.new-studio.org/
 
 
+## El llenguatge DTD
 
+### Definició del DTD 
 
-## Definició del DTD 
-
-### Definició de DTD Interna
+#### Definició de DTD Interna
 
 
 -   Es poden incorporar DTD dins dels documents XML
@@ -78,7 +78,7 @@ O amb validadors **online**:
 
 > Separa les dades de la estructura.
 
-### Definició de DTD Externa
+#### Definició de DTD Externa
 
 Per definir un DTD extern que s'utilitza fent servir l'etiqueta `DOCTYPE` dins del document XML:
 
@@ -148,7 +148,7 @@ FPI
 
 -->
 
-## El llenguatge DTD
+
 
 ### Definició d'etiquetes
 
