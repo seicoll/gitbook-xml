@@ -2,34 +2,32 @@
 
 ## Què és l'XSD?
 
-L'**XSD** (**X**ML **S**chema **D**efinition Language) és la manera més completa de crear validadors per l'XML.
+> L'**XSD** (**X**ML **S**chema **D**efinition Language) és la manera més completa de crear validadors per l'XML.
 
--   Està definit en XML i per tant ja en coneixem les regles
--   Com que està en XML ha de començar amb l'etiqueta d'XML
+L'objectiu dels XSD és acabar substituint completament als DTD degut a les limitacions que tenen aquests darrers:
 
-```html
-<?xml version="1.0" ?>
-```
+**Avantatges:**
 
-Actualment es troba en la versió 1.1 (des del 2012) i se'n poden trobar les definicions a la pàgina <http://www.w3c.org/XML/Schema>
+- Està escrit en XML i per tant ja en coneixem les regles
+  - Com que està en XML ha de començar amb l'etiqueta d'XML.
+- Dóna més control sobre el contingut d'un document XML ja que permet definir la quantitat exacta d'elements fills d'un element
 
-Validació
-=========
+Actualment es troba en la **versió 1.1** (des del 2012) i se'n poden trobar les definicions a la pàgina <http://www.w3c.org/XML/Schema>
 
--   La majoria dels validadors poden validar els XML Schemas
--   Per exemple amb xmllint ho podem fer:
+## Validació
+
+La majoria dels validadors poden validar els XML Schemas
+
+Per exemple amb **xmllint** ho podem fer:
 
 ```bash
-$ xmllint --noout --schema ./exercici.xsd exercici.xml 
-exercici.xml validates    
+$ xmllint --noout --schema ./exercici.xsd exercici.xml
+exercici.xml validates
 ```
 
--   També es pot fer amb XML Copy Editor
+També es pot fer amb **XML Copy Editor**, Sublime, Notepad\*\*, etc.
 
-![image](xsd-copyeditor.jpg)
-
-Associació
-==========
+## Associació
 
 > Per fer servir un Schema en el nostre document XML n'hem de definir el lloc on és.
 
@@ -43,7 +41,7 @@ L'especifiquem en l'element **arrel del document**.
 </lliga>
 ```
 
-* El lloc on està el fitxer pot ser una **URL**:
+- El lloc on està el fitxer pot ser una **URL**:
 
 ```xml
 xsi:SchemaLocation="http://www.lloc.com/fitxer.xsd"
@@ -51,13 +49,13 @@ xsi:SchemaLocation="http://www.lloc.com/fitxer.xsd"
 
 **En l'associació hi definim**:
 
-* On es defineix l'esquema dins de l'estàndard:
+- On es defineix l'esquema dins de l'estàndard:
 
 ```xml
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 ```
 
-* On hi ha físicament el fitxer
+- On hi ha físicament el fitxer
 
 ```xml
    xsi:NamespaceSchemaLocation="fitxer.xsd"
@@ -65,8 +63,8 @@ xsi:SchemaLocation="http://www.lloc.com/fitxer.xsd"
 
 Poden ser:
 
-* `SchemaLocation`: Defineix on està l'esquema si necessita espai de noms.
-* `NoNamespaceSchemaLocation`: Defineix l'esquema quan no li fa falta cap espai de noms.
+- `NamespaceSchemaLocation`: Defineix on està l'esquema si necessita espai de noms.
+- `NoNamespaceSchemaLocation`: Defineix l'esquema quan no li fa falta cap espai de noms.
 
 Per **exemple**, si tenim un document XML:
 
@@ -88,12 +86,9 @@ Li definirem on és el fitxer d'esquema en l'etiqueta arrel:
      xsi:noNamespaceSchemaLocation="exercicixsl.xsd">
 ```
 
+## Definir un fitxer XML d'esquema
 
-Definir un fitxer XML d'esquema
-===============================
-
--   La definició d'un fitxer d'esquema comença amb l'etiqueta d'XML i
-    després segueix amb la definició de l'espai de noms de XML Schema
+La definició d'un fitxer d'esquema comença amb l'etiqueta d'XML i després segueix amb la definició de l'espai de noms de XML Schema.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -102,52 +97,45 @@ Definir un fitxer XML d'esquema
 </xs:schema>
 ```
 
--   Com que es tracta d'un document XML hi podem posar comentaris del
-    tipus
+### Comentaris
+
+- Com que es tracta d'un document XML hi podem posar **comentaris** del tipus:
 
 ```xml
-<! --  comentari -->
+<!-- Comentari -->
 ```
 
--   Però també podem fer servir una forma normalitzada de posar-hi
-    informació
+- Però també podem fer servir una forma normalitzada de posar-hi informació:
 
 ```xml
 <xs:annotation>
     <xs:documentation>
-        Aquest esquema XML està pensat per fer
-        Proves. Però aquí hi podria posar qualsevol Cosa
+        Aquest esquema XML està pensat per fer proves. Però aquí hi podria posar qualsevol cosa.
     </xs:documentation>
 </xs:annotation>
 ```
 
-XML Schemas
-===========
+## XML Schemas
 
 En XSD tenim diferents tipus d'etiquetes possibles:
 
-Elements de **tipus simples**
+- Elements de **tipus simples**: Només contenen text
 
-:   Només contenen text
+Elements de **tipus complexos**: Podem contenir text, altres etiquetes o res..
 
-Elements de **tipus complexos**
+> Sempre tindrem com a mínim un tipus complexe (l'arrel del document).
 
-:   Podem contenir text Altres etiquetes o res..
-
--   Sempre tindrem com a mínim un tipus complexe (l'arrel del document)
-
-Tipus simples
-=============
+### Tipus simples
 
 En Schema un element definit com a simple només conté text.
 
--   No té ni atributs
--   No té etiquetes filles
+- No té ni atributs
+- No té etiquetes filles
 
 ![image](tipusSimples.jpg)
 
--   Amb els tipus de dades podem controlar quin és el contingut de
-    les etiquetes.
+- Amb els tipus de dades podem controlar quin és el contingut de
+  les etiquetes.
 
 ```xml
 <xs:element name="nom" type="xs:string" />
@@ -161,87 +149,82 @@ Exemple per:
 <any>2010</any>
 ```
 
-Tipus de dades
-==============
+# Tipus de dades
 
--   En la definició de l'element es pot veure que definim quin tipus de
-    dades conté l'element
--   Els tipus bàsics els podem trobar a
-    <http://www.w3.org/TR/xmlschema-0/#CreatDt> :
+- En la definició de l'element es pot veure que definim quin tipus de
+  dades conté l'element
+- Els tipus bàsics els podem trobar a
+  <http://www.w3.org/TR/xmlschema-0/#CreatDt> :
 
 ![image](tipusDades.jpg)
 
--   Els tipus de dades generalment tenen diverses variants per
-    adaptar-se millor a les dades que han de representar:
+- Els tipus de dades generalment tenen diverses variants per
+  adaptar-se millor a les dades que han de representar:
 
 Text:
 
-:   string, normalizedString, token, Name, NMTOKEN, ...
+: string, normalizedString, token, Name, NMTOKEN, ...
 
 Números:
 
-:   integer, positiveInteger, negativeInteger, nonNegativeInteger,
-    nonPositiveInteger, long, unsignedLong, int, unsignedInt, byte,
-    unsignedByte, decimal, float, double
+: integer, positiveInteger, negativeInteger, nonNegativeInteger,
+nonPositiveInteger, long, unsignedLong, int, unsignedInt, byte,
+unsignedByte, decimal, float, double
 
 Dates:
 
-:   duration, dateTime, date, time, gYear, gMonth, gYearMonth, gDay,
-    gMonthDay,
+: duration, dateTime, date, time, gYear, gMonth, gYearMonth, gDay,
+gMonthDay,
 
-Tipus de dades: exemples
-------------------------
+## Tipus de dades: exemples
 
 ![image](tipusDades2.jpg)
 
-Altres atributs
----------------
+## Altres atributs
 
 Els elements simples també poden tenir altres atributs que ens permetran
 definir-hi altres coses:
 
--   Valors fixes: **"fixed"**
--   Valors per defecte: **"default"**
--   Número de vegades que pot sortir una etiqueta: **"maxOccurs"**,
-    **"minOccur"**
--   Restringir els valors: **"restriction"**
--   Definir patrons que han de complir el contingut
--   Llistes de valors
--   Unions
+- Valors fixes: **"fixed"**
+- Valors per defecte: **"default"**
+- Número de vegades que pot sortir una etiqueta: **"maxOccurs"**,
+  **"minOccur"**
+- Restringir els valors: **"restriction"**
+- Definir patrons que han de complir el contingut
+- Llistes de valors
+- Unions
 
-Valors fixes
-------------
+## Valors fixes
 
--   Podem definir que un element té un valor fixe definint-lo amb
-    l'etiqueta **'fixed'**
+- Podem definir que un element té un valor fixe definint-lo amb
+  l'etiqueta **'fixed'**
 
 ```xml
 <xs:element name="cap" type="xs:string" fixed="Manel" />
 ```
 
--   Això ens permet definir:
+- Això ens permet definir:
 
 ```xml
 <cap>Manel</cap>
 ```
 
--   Però no:
+- Però no:
 
 ```xml
 <cap></cap>
 ```
 
-Valors predefinits
-------------------
+## Valors predefinits
 
--   Podem definir que un element té un valor predefinit definint-lo amb
-    l'etiqueta **'default'**
+- Podem definir que un element té un valor predefinit definint-lo amb
+  l'etiqueta **'default'**
 
 ```xml
 <xs:element name="cap" type="xs:string" default="Manel" />
 ```
 
--   Això ens permet definir
+- Això ens permet definir
 
 ```xml
 <cap>Manel</cap>
@@ -249,32 +232,30 @@ Valors predefinits
 <cap>Xavier</cap>
 ```
 
-Ocurrències
------------
+## Ocurrències
 
--   També es pot definir el nombre de vegades que ha de sortir l'element
-    el document XML
+- També es pot definir el nombre de vegades que ha de sortir l'element
+  el document XML
 
 ```xml
 <xs:element name="cap" type="xs:string" minOccurs="1" />
 ```
 
--   Si té un valor de 0 és que no té mínim
--   També es pot definir el màxim:
+- Si té un valor de 0 és que no té mínim
+- També es pot definir el màxim:
 
 ```xml
 <xs:element name="cap" type="xs:string" maxOccurs="3" />
 ```
 
--   **'unbounded'** implica un número indeterminat de vegades
+- **'unbounded'** implica un número indeterminat de vegades
 
-Restringir els tipus simples
-----------------------------
+## Restringir els tipus simples
 
--   Podem fer modificacions als tipus simples perquè s'adaptin a allò
-    que ens interessa: Posar-hi restriccions, etc...
--   Definim el tipus amb **xs:simpleType** i el restringim amb
-    **xs:restriction**
+- Podem fer modificacions als tipus simples perquè s'adaptin a allò
+  que ens interessa: Posar-hi restriccions, etc...
+- Definim el tipus amb **xs:simpleType** i el restringim amb
+  **xs:restriction**
 
 ```xml
 <xs:element name="naixement">
@@ -287,11 +268,10 @@ Restringir els tipus simples
 </xs:element>
 ```
 
-Definir tipus
--------------
+## Definir tipus
 
--   Si hi ha alguna restricció que farem servir més vegades podem
-    definir un tipus amb nom:
+- Si hi ha alguna restricció que farem servir més vegades podem
+  definir un tipus amb nom:
 
 ```xml
 <xs:simpleType name="possible_naixement">
@@ -302,29 +282,27 @@ Definir tipus
 </xs:simpleType>
 ```
 
--   Que podrem usar en la definició de l'element
+- Que podrem usar en la definició de l'element
 
 ```xml
 <xs:element name="vida" type="possible_naixement" />
 ```
 
-Restriccions
-------------
+## Restriccions
 
--   Hi ha molts atributs per definir restriccions:
+- Hi ha molts atributs per definir restriccions:
 
 ![image](restriccions.jpg)
 
-Patrons
--------
+## Patrons
 
--   Els patrons els podem definir amb:
+- Els patrons els podem definir amb:
 
 ![image](patrons.jpg)
 
--   Els patrons són un avenç força important amb respecte als **DTD**
--   Per exemple podem fer que el contingut d'un camp tingui forma d'un
-    DNI:
+- Els patrons són un avenç força important amb respecte als **DTD**
+- Per exemple podem fer que el contingut d'un camp tingui forma d'un
+  DNI:
 
 ```xml
 <xs:element name="dni">
@@ -344,11 +322,10 @@ que validaria:
 </home>
 ```
 
-Llistes
--------
+## Llistes
 
--   Si volem que el contingut sigui una llista de valors ho podem
-    definir amb xs:list
+- Si volem que el contingut sigui una llista de valors ho podem
+  definir amb xs:list
 
 ```xml
 <xs:element name="partits">
@@ -358,7 +335,7 @@ Llistes
 </xs:element>
 ```
 
--   De manera que podrem definir coses com:
+- De manera que podrem definir coses com:
 
 ```xml
 <partits>
@@ -367,11 +344,10 @@ Llistes
 </partits>
 ```
 
-Unions
-------
+## Unions
 
--   També podem fer que el valor de l'element sigui el resultat d'un
-    tipus o d'un altre
+- També podem fer que el valor de l'element sigui el resultat d'un
+  tipus o d'un altre
 
 ```xml
 <xs:element name="valor">
@@ -381,52 +357,50 @@ Unions
 </xs:element>
 ```
 
--   En l'exemple el valor haurà de ser un valor dels tipus "euros" o de
-    "pessetes"
--   S'han de posar tipus obligatòriament
+- En l'exemple el valor haurà de ser un valor dels tipus "euros" o de
+  "pessetes"
+- S'han de posar tipus obligatòriament
 
-Tipus complexes
-===============
+# Tipus complexes
 
--   Un tipus complexe és un que conté elements fills, atributs o una
-    combinació d'ambdós
--   Sempre hi haurà com a mínim un tipus complexe en els documents:
-    l'arrel
--   Però també podem necessitar treballar amb atributs
--   Podem dividir els tipus complexes en:
+- Un tipus complexe és un que conté elements fills, atributs o una
+  combinació d'ambdós
+- Sempre hi haurà com a mínim un tipus complexe en els documents:
+  l'arrel
+- Però també podem necessitar treballar amb atributs
+- Podem dividir els tipus complexes en:
 
-    > Els que tenen contingut simple (SimpleType) o Els que tenen
-    > contingut complexe (ComplexType)
+  > Els que tenen contingut simple (SimpleType) o Els que tenen
+  > contingut complexe (ComplexType)
 
--   Hi ha 4 grans grups de tipus complexes
+- Hi ha 4 grans grups de tipus complexes
 
-1)"només text"
+  1)"només text"
 
-:   ● O sigui text i atributs
+: ● O sigui text i atributs
 
 2)"només elements"
 
-:   ● Permet atributs i altres elements
+: ● Permet atributs i altres elements
 
 3)"element buit"
 
-:   ● Pot contenir atributs (els tipus simples han de contenir text i
-    aquest no en té)
+: ● Pot contenir atributs (els tipus simples han de contenir text i
+aquest no en té)
 
 4)"contingut mixt"
 
-:   ● Pot tenir text, atributs, elements
+: ● Pot tenir text, atributs, elements
 
--   De la mateixa forma que els documents XML els tipus complexes es
-    desglossen en altres tipus complexes o en tipus simples
--   No hi ha tipus complexes predefinits: els hem de definir nosaltres
+- De la mateixa forma que els documents XML els tipus complexes es
+  desglossen en altres tipus complexes o en tipus simples
+- No hi ha tipus complexes predefinits: els hem de definir nosaltres
 
 ![image](complexType.jpg)
 
-ComplexType
------------
+## ComplexType
 
- El 'complexType' és la base del contingut complexe i el podrem modificar fent servir diferents modificadors:
+El 'complexType' és la base del contingut complexe i el podrem modificar fent servir diferents modificadors:
 
 **simpleContent**: Podrem definir restriccions o extensions a continguts de només text
 
@@ -438,18 +412,15 @@ ComplexType
 
 **choice**: Permet només un dels elements de dintre del tipus
 
-Tipus complexes només text (no els treballarem)
------------------------------------------------
+## Tipus complexes només text (no els treballarem)
 
 ![image](simpleContent.jpg)
 
-Tipus només elements (no el treballarem)
-----------------------------------------
+## Tipus només elements (no el treballarem)
 
 ![image](complexContent.jpg)
 
-Seqüències de fills
--------------------
+## Seqüències de fills
 
 Seqüències d'elements `<xs:sequence>`
 
@@ -462,11 +433,10 @@ Seqüències d'elements `<xs:sequence>`
 </xs:complexType>
 ```
 
--   Es defineixen en l'ordre en el que els volem
--   Pot contenir altres seqüències ...
+- Es defineixen en l'ordre en el que els volem
+- Pot contenir altres seqüències ...
 
-En qualsevol ordre
-------------------
+## En qualsevol ordre
 
 Quan ens interessi que els elements apareguin en qualsevol ordre fem servir `<xs:all>`
 
@@ -479,20 +449,19 @@ Quan ens interessi que els elements apareguin en qualsevol ordre fem servir `<xs
 </xs:complexType>
 ```
 
--   A pesar del nom han d'aparèixer només un cop
--   Només pot contenir elements
--   Però s'ha de tenir en compte que les etiquetes dins de all només
-    poden sortir UN COP
+- A pesar del nom han d'aparèixer només un cop
+- Només pot contenir elements
+- Però s'ha de tenir en compte que les etiquetes dins de all només
+  poden sortir UN COP
 
 ![image](all1solcop.jpg)
 
--   Una solució alternativa pot ser crear un tipus complexe amb la
-    repetició
+- Una solució alternativa pot ser crear un tipus complexe amb la
+  repetició
 
 ![image](solucioall1solcop.jpg)
 
-Seleccions
-----------
+## Seleccions
 
 Podem definir o uns elements o uns altres `<xs:choice>`
 
@@ -502,17 +471,16 @@ Podem definir o uns elements o uns altres `<xs:choice>`
         <xs:element name="nomCognom" type="xs:string"/>
         <xs:element name="dni"  type="xs:string"/>
     </xs:choice>
-</xs:complexType>   
+</xs:complexType>
 ```
 
--   A dins hi poden haver seqüències, ...
--   Es pot niuar
+- A dins hi poden haver seqüències, ...
+- Es pot niuar
 
-Determinisme
-------------
+## Determinisme
 
--   S'ha de tenir en compte que davant de cada decisió el processador ha de saber per quin camí ha de tirar
--   No es poden fer coses com:
+- S'ha de tenir en compte que davant de cada decisió el processador ha de saber per quin camí ha de tirar
+- No es poden fer coses com:
 
 ```xml
 <xs:choice>
@@ -528,8 +496,7 @@ Determinisme
 </xs:choice>
 ```
 
-Referències a elements
-----------------------
+## Referències a elements
 
 Podem definir els elements de forma global i després usar-los en les definicions de tipus
 
@@ -546,12 +513,11 @@ Podem definir els elements de forma global i després usar-los en les definicion
 
 Això ens permetrà reutilitzar-los quan ens facin falta.
 
-Tipus complexes buits
----------------------
+## Tipus complexes buits
 
 ![image](complexosBuits.jpg)
 
--   Si no té atributs podem definir (no ho treballarem)
+- Si no té atributs podem definir (no ho treballarem)
 
 ```xml
 <xs:complexContent>
@@ -559,11 +525,10 @@ Tipus complexes buits
 </xs:complexContent>
 ```
 
-Elements buits
---------------
+## Elements buits
 
--   Si no té atributs també podria haver definit la etiqueta amb el tipus simple.
--   Definint-ne la llargada a zero.
+- Si no té atributs també podria haver definit la etiqueta amb el tipus simple.
+- Definint-ne la llargada a zero.
 
 ```xml
 <xs:element name="delegat">
@@ -575,8 +540,7 @@ Elements buits
 </xs:element>
 ```
 
-Grups d'elements
-----------------
+## Grups d'elements
 
 > Si un grup d'elements surten varies vegades podem definir un **grup**.
 
@@ -589,8 +553,7 @@ Grups d'elements
 
 > S'han de definir al principi del fitxer.
 
-Atributs
-========
+# Atributs
 
 > Els **atributs** són elements simples que sempre estan dins de tipus complexes.
 
@@ -610,19 +573,18 @@ S'hi pot treballar igual que amb els elements:
 </xs:attribute>
 ```
 
-Atributs: use
--------------
+## Atributs: use
 
--   A menys que es digui el contrari els atributs sempre són opcionals
--   Per fer-lo necessari hem de definir-lo amb **use="required"**
+- A menys que es digui el contrari els atributs sempre són opcionals
+- Per fer-lo necessari hem de definir-lo amb **use="required"**
 
 ```xml
 <xs:attribute name="src" type="xs:anyURI" use="required" />
 ```
 
--   Perquè no es faci servir posem **use="prohibited"**
--   També existeix la opció **use="optional"** però realment és el comportament per defecte
--   Com amb les etiquetes podem definir valors per defecte, valors fixes i grups d'atributs
+- Perquè no es faci servir posem **use="prohibited"**
+- També existeix la opció **use="optional"** però realment és el comportament per defecte
+- Com amb les etiquetes podem definir valors per defecte, valors fixes i grups d'atributs
 
 ```xml
 <xs:attribute name="numero" type="xs:integer" default="1" />
@@ -633,7 +595,7 @@ Atributs: use
 <xs:attributeGroup ref="Persones" />
 ```
 
--   Per tant per definir els atributs d'aquest element:
+- Per tant per definir els atributs d'aquest element:
 
 ```xml
 <factura numero="24" empresa="Porquets, SA" />
@@ -646,7 +608,7 @@ Atributs: use
             <xs:element ref="nom" maxOccurs="1" />
         </xs:sequence>
         <xs:attribute name="numero" type="xs:integer" use="required"/>
-        <xs:attribute name="empresa" type="xs:string" />    
+        <xs:attribute name="empresa" type="xs:string" />
     </xs:complexType>
 </element>
 ```
