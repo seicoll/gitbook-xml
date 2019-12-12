@@ -119,11 +119,16 @@ La definició d'un fitxer d'esquema comença amb l'etiqueta d'XML i després seg
 
 En XSD tenim diferents tipus d'etiquetes possibles:
 
-- Elements de **tipus simples**: Només contenen text
+- Elements de **tipus simples**:
 
-Elements de **tipus complexos**: Podem contenir text, altres etiquetes o res..
+  - Només contenen text
+
+- Elements de **tipus complexos**:
+  - Podem contenir text, altres etiquetes o res..
 
 > Sempre tindrem com a mínim un tipus complexe (l'arrel del document).
+
+---
 
 ### Tipus simples
 
@@ -151,15 +156,12 @@ Exemple per:
 
 # Tipus de dades
 
-- En la definició de l'element es pot veure que definim quin tipus de
-  dades conté l'element
-- Els tipus bàsics els podem trobar a
-  <http://www.w3.org/TR/xmlschema-0/#CreatDt> :
+- En la definició de l'element es pot veure que definim quin tipus de dades conté l'element
+- Els tipus bàsics els podem trobar a <http://www.w3.org/TR/xmlschema-0/#CreatDt> :
 
 ![image](tipusDades.jpg)
 
-- Els tipus de dades generalment tenen diverses variants per
-  adaptar-se millor a les dades que han de representar:
+- Els tipus de dades generalment tenen diverses variants per adaptar-se millor a les dades que han de representar:
 
 Text:
 
@@ -167,14 +169,11 @@ Text:
 
 Números:
 
-: integer, positiveInteger, negativeInteger, nonNegativeInteger,
-nonPositiveInteger, long, unsignedLong, int, unsignedInt, byte,
-unsignedByte, decimal, float, double
+: integer, positiveInteger, negativeInteger, nonNegativeInteger, nonPositiveInteger, long, unsignedLong, int, unsignedInt, byte, unsignedByte, decimal, float, double
 
 Dates:
 
-: duration, dateTime, date, time, gYear, gMonth, gYearMonth, gDay,
-gMonthDay,
+: duration, dateTime, date, time, gYear, gMonth, gYearMonth, gDay, gMonthDay,
 
 ## Tipus de dades: exemples
 
@@ -194,7 +193,7 @@ definir-hi altres coses:
 - Llistes de valors
 - Unions
 
-## Valors fixes
+#### Valors fixes
 
 - Podem definir que un element té un valor fixe definint-lo amb
   l'etiqueta **'fixed'**
@@ -215,7 +214,7 @@ definir-hi altres coses:
 <cap></cap>
 ```
 
-## Valors predefinits
+#### Valors predefinits
 
 - Podem definir que un element té un valor predefinit definint-lo amb
   l'etiqueta **'default'**
@@ -232,7 +231,7 @@ definir-hi altres coses:
 <cap>Xavier</cap>
 ```
 
-## Ocurrències
+#### Ocurrències
 
 - També es pot definir el nombre de vegades que ha de sortir l'element
   el document XML
@@ -250,7 +249,7 @@ definir-hi altres coses:
 
 - **'unbounded'** implica un número indeterminat de vegades
 
-## Restringir els tipus simples
+#### Restringir els tipus simples
 
 - Podem fer modificacions als tipus simples perquè s'adaptin a allò
   que ens interessa: Posar-hi restriccions, etc...
@@ -268,7 +267,7 @@ definir-hi altres coses:
 </xs:element>
 ```
 
-## Definir tipus
+#### Definir tipus
 
 - Si hi ha alguna restricció que farem servir més vegades podem
   definir un tipus amb nom:
@@ -288,13 +287,13 @@ definir-hi altres coses:
 <xs:element name="vida" type="possible_naixement" />
 ```
 
-## Restriccions
+#### Restriccions
 
 - Hi ha molts atributs per definir restriccions:
 
 ![image](restriccions.jpg)
 
-## Patrons
+#### Patrons
 
 - Els patrons els podem definir amb:
 
@@ -322,7 +321,7 @@ que validaria:
 </home>
 ```
 
-## Llistes
+#### Llistes
 
 - Si volem que el contingut sigui una llista de valors ho podem
   definir amb xs:list
@@ -344,7 +343,7 @@ que validaria:
 </partits>
 ```
 
-## Unions
+#### Unions
 
 - També podem fer que el valor de l'element sigui el resultat d'un
   tipus o d'un altre
@@ -361,7 +360,7 @@ que validaria:
   "pessetes"
 - S'han de posar tipus obligatòriament
 
-# Tipus complexes
+### Tipus complexes
 
 - Un tipus complexe és un que conté elements fills, atributs o una
   combinació d'ambdós
