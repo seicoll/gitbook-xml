@@ -426,7 +426,9 @@ El **_complexType_** és la base del contingut complexe i el podrem modificar fe
 
 -->
 
-### Seqüències de fills
+### Tipus complexes amb només elements
+
+#### Seqüències de fills
 
 > Seqüències d'elements `<xs:sequence>` en un ordre determinat.
 
@@ -442,7 +444,7 @@ El **_complexType_** és la base del contingut complexe i el podrem modificar fe
 - Es defineixen **en l'ordre** en el que els volem.
 - Pot contenir altres seqüències ...
 
-### Fills en qualsevol ordre
+#### Fills en qualsevol ordre
 
 > Quan ens interessi que els elements apareguin en qualsevol ordre fem servir `<xs:all>`
 
@@ -464,7 +466,7 @@ Una solució alternativa pot ser crear un tipus complexe amb la repetició
 
 ![image](uf1_images/uf1-xsd-all-1solcop-solucio.jpg)
 
-### Seleccions
+#### Seleccions
 
 > Podem definir o bé uns elements o bé uns altres `<xs:choice>`
 
@@ -477,7 +479,7 @@ Una solució alternativa pot ser crear un tipus complexe amb la repetició
 </xs:complexType>
 ```
 
-### Determinisme
+#### Determinisme
 
 S'ha de tenir en compte que davant de cada decisió el processador ha de saber per quin camí ha de tirar.
 
@@ -496,23 +498,6 @@ No es poden fer coses com:
     </xs:sequence>
 </xs:choice>
 ```
-
-### Referències a elements
-
-Podem definir els elements de forma global i després usar-los en les definicions de tipus
-
-```xml
-<xs:element name="nom" type="xs:string" />
-<xs:element name="cognom" type="xs:string" />
-<xs:element name="persona">
-    <xs:complexType>
-        <xs:element ref="nom" />
-        <xs:element ref="cognom" />
-    </xs:complexType>
-</xs:element>
-```
-
-Això ens permetrà reutilitzar-los quan ens facin falta.
 
 ### Tipus complexes buits
 
@@ -542,7 +527,47 @@ Definint-ne la llargada a zero.
 </xs:element>
 ```
 
----
+### Tipus complexes mixtes
+
+> Un element que pot contenir etiquetes i text es defineix amb `mixed="true"`.
+
+```xml
+<xs:element name="carta">
+    <xs:complexType mixed="true">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string" />
+            <xs:element name="cita" type="xs:integer" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+```
+
+**XML**
+
+```xml
+<carta>Estimat senyor <nom>Pere<nom>:
+Li envio aquesta carta per recordar-li que hem quedat per
+trobar-nos el dia <cita>12</cita>
+Joan
+</carta>
+```
+
+### Referències a elements
+
+Podem definir els elements de forma global i després usar-los en les definicions de tipus
+
+```xml
+<xs:element name="nom" type="xs:string" />
+<xs:element name="cognom" type="xs:string" />
+<xs:element name="persona">
+    <xs:complexType>
+        <xs:element ref="nom" />
+        <xs:element ref="cognom" />
+    </xs:complexType>
+</xs:element>
+```
+
+Això ens permetrà reutilitzar-los quan ens facin falta.
 
 ### Grups d'elements
 
