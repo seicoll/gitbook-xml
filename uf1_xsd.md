@@ -416,17 +416,17 @@ El **_complexType_** és la base del contingut complexe i el podrem modificar fe
 - **choice**: Permet només un dels elements de dintre del tipus
 
 <!--
-## Tipus complexes només text (no els treballarem)
+ Tipus complexes només text (no els treballarem)
 
 ![image](simpleContent.jpg)
 
-## Tipus només elements (no el treballarem)
+ Tipus només elements (no el treballarem)
 
 ![image](complexContent.jpg)
 
 -->
 
-## Seqüències de fills
+### Seqüències de fills
 
 > Seqüències d'elements `<xs:sequence>` en un ordre determinat.
 
@@ -442,7 +442,7 @@ El **_complexType_** és la base del contingut complexe i el podrem modificar fe
 - Es defineixen **en l'ordre** en el que els volem.
 - Pot contenir altres seqüències ...
 
-## Fills en qualsevol ordre
+### Fills en qualsevol ordre
 
 > Quan ens interessi que els elements apareguin en qualsevol ordre fem servir `<xs:all>`
 
@@ -464,7 +464,7 @@ Una solució alternativa pot ser crear un tipus complexe amb la repetició
 
 ![image](uf1_images/uf1-xsd-all-1solcop-solucio.jpg)
 
-## Seleccions
+### Seleccions
 
 > Podem definir o bé uns elements o bé uns altres `<xs:choice>`
 
@@ -477,7 +477,7 @@ Una solució alternativa pot ser crear un tipus complexe amb la repetició
 </xs:complexType>
 ```
 
-## Determinisme
+### Determinisme
 
 S'ha de tenir en compte que davant de cada decisió el processador ha de saber per quin camí ha de tirar.
 
@@ -497,7 +497,7 @@ No es poden fer coses com:
 </xs:choice>
 ```
 
-## Referències a elements
+### Referències a elements
 
 Podem definir els elements de forma global i després usar-los en les definicions de tipus
 
@@ -514,7 +514,7 @@ Podem definir els elements de forma global i després usar-los en les definicion
 
 Això ens permetrà reutilitzar-los quan ens facin falta.
 
-## Tipus complexes buits
+### Tipus complexes buits
 
 ![image](uf1_images/uf1-xsd-complexosBuits.jpg)
 
@@ -527,8 +527,6 @@ Això ens permetrà reutilitzar-los quan ens facin falta.
 </xs:complexContent>
 ```
 -->
-
-## Elements simples buits
 
 **Si no té atributs** també podria haver definit la etiqueta amb el **tipus simple**.
 
