@@ -126,7 +126,7 @@ En XSD tenim diferents tipus d'**etiquetes possibles**:
 
 > Sempre tindrem com a mínim un tipus complexe (l'arrel del document).
 
-### Tipus simples
+## Tipus simples
 
 En Schema un element definit com a **simple** només conté text.
 
@@ -264,7 +264,7 @@ També es pot definir el **màxim**:
 
 #### Restriccions
 
-> Podem definir restriccions als tipus simples perquè s'adaptin a allò que ens interessa.
+> Podem definir **restriccions** als tipus simples perquè s'adaptin a allò que ens interessa.
 
 Definim el tipus amb `xs:simpleType` i el restringim amb `xs:restriction`
 
@@ -371,7 +371,7 @@ El valor haurà de ser un valor dels tipus "euros" o de "dolars"
 
 ---
 
-### Tipus complexes
+## Tipus complexes
 
 > Un tipus complexe és un que conté elements fills, atributs o una combinació d'ambdós.
 
