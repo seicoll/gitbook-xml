@@ -544,7 +544,7 @@ Definint-ne la llargada a zero.
 
 ---
 
-## Grups d'elements
+### Grups d'elements
 
 > Si un grup d'elements surten varies vegades podem definir un **grup**.
 
@@ -557,7 +557,7 @@ Definint-ne la llargada a zero.
 
 > S'han de definir al principi del fitxer.
 
-# Atributs
+## Atributs
 
 > Els **atributs** són elements simples que sempre estan dins de tipus complexes.
 
@@ -577,7 +577,7 @@ S'hi pot treballar igual que amb els elements:
 </xs:attribute>
 ```
 
-## Atributs: use
+### Atributs: use
 
 - A menys que es digui el contrari els atributs sempre són opcionals
 - Per fer-lo necessari hem de definir-lo amb **use="required"**
