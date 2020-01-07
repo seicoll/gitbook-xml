@@ -369,44 +369,37 @@ El valor haurà de ser un valor dels tipus "euros" o de "dolars"
 
 > S'han de posar tipus obligatòriament
 
----
-
 ## Tipus complexes
 
-> Un tipus complexe és un que conté elements fills, atributs o una combinació d'ambdós.
+> Un **tipus complexe** és un element XML que conté elements fills, atributs o una combinació d'ambdós.
 
 Sempre hi haurà com a mínim un tipus complexe en els documents: l'arrel del document.
 
-- Però també podem necessitar treballar amb atributs.
-- Podem dividir els tipus complexes en:
+<!--
+Podem dividir els tipus complexes en:
 
-  > Els que tenen contingut simple (SimpleType) o Els que tenen
-  > contingut complexe (ComplexType)
+- Els que tenen contingut simple (SimpleType)
+- Els que tenen contingut complexe (ComplexType)
+-->
 
-- Hi ha 4 grans grups de tipus complexes
+Hi ha 4 grans grups de tipus complexes:
 
-  1)"només text"
+1. **element buit**: Pot contenir atributs (els tipus simples han de contenir text i aquest no en té)
+   - Per exemple: `<producte id="123"/>`
+2. **només text**: Conté text i atributs
+   - Per exemple: `<food type="dessert">Ice cream</food>`
+3. **només elements**: Conté altres elements
+4. **contingut mixt**: Pot tenir text, atributs i elements.
 
-: ● O sigui text i atributs
+Els tipus complexes es desglossen en altres tipus complexes o en tipus simples.
 
-2)"només elements"
+### Definició de tipus complexes
 
-: ● Permet atributs i altres elements
+No hi ha tipus complexes predefinits: els hem de definir nosaltres:
 
-3)"element buit"
+![image](uf1_images/uf1-xsd-complexType.jpg)
 
-: ● Pot contenir atributs (els tipus simples han de contenir text i
-aquest no en té)
-
-4)"contingut mixt"
-
-: ● Pot tenir text, atributs, elements
-
-- De la mateixa forma que els documents XML els tipus complexes es
-  desglossen en altres tipus complexes o en tipus simples
-- No hi ha tipus complexes predefinits: els hem de definir nosaltres
-
-![image](complexType.jpg)
+---
 
 ## ComplexType
 
