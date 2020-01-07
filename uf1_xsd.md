@@ -203,35 +203,34 @@ Els elements simples també poden tenir **altres atributs** que ens permetran de
 
 #### Valors fixes
 
-- Podem definir que un element té un valor fixe definint-lo amb
-  l'etiqueta **'fixed'**
+> Podem definir que un element té un **valor fixe** definint-lo amb l'etiqueta **'fixed'**
 
 ```xml
 <xs:element name="cap" type="xs:string" fixed="Manel" />
 ```
 
-- Això ens permet definir:
+Això ens permet definir:
 
 ```xml
 <cap>Manel</cap>
 ```
 
-- Però no:
+Però no:
 
 ```xml
 <cap></cap>
+<cap>Pere</cap>
 ```
 
 #### Valors predefinits
 
-- Podem definir que un element té un valor predefinit definint-lo amb
-  l'etiqueta **'default'**
+> Podem definir que un element té un **valor predefinit** definint-lo amb l'etiqueta **'default'**
 
 ```xml
 <xs:element name="cap" type="xs:string" default="Manel" />
 ```
 
-- Això ens permet definir
+Això ens permet definir:
 
 ```xml
 <cap>Manel</cap>
@@ -241,21 +240,29 @@ Els elements simples també poden tenir **altres atributs** que ens permetran de
 
 #### Ocurrències
 
-- També es pot definir el nombre de vegades que ha de sortir l'element
-  el document XML
+> També es pot definir el **nombre de vegades** que ha de sortir l'element el document XML.
+
+Podem definir el nombre **mínim** de vegades que ha d'aparèixer:
 
 ```xml
 <xs:element name="cap" type="xs:string" minOccurs="1" />
 ```
 
-- Si té un valor de 0 és que no té mínim
-- També es pot definir el màxim:
+- Si té un valor de 0 és que no té mínim.
+
+També es pot definir el **màxim**:
 
 ```xml
 <xs:element name="cap" type="xs:string" maxOccurs="3" />
 ```
 
-- **'unbounded'** implica un número indeterminat de vegades
+**'unbounded'** implica un número indeterminat de vegades.
+
+```xml
+ <xs:element name="cap" maxOccurs="unbounded">
+```
+
+---
 
 #### Restringir els tipus simples
 
