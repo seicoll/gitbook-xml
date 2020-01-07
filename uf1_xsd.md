@@ -181,17 +181,21 @@ Els tipus de dades generalment tenen diverses **variants** per adaptar-se millor
 
 **Exemples**
 
-![image](tipusDades2.jpg)
+| XSD                                            | XML                                         |
+| ---------------------------------------------- | ------------------------------------------- |
+| <xs:element name="dia" type="xs:date" />       | `<dia>2020-09-15</dia>`                     |
+| <xs:element name="mes" type="xs:gMonth" />     | `<mes>--3</mes>`                            |
+| <xs:element name="altura" type="xs:integer" /> | `<altura>220</altura>`                      |
+| <xs:element name="nom" type="xs:string" />     | `<nom>Pere</nom>`                           |
+| <xs:element name="lloc" type="xs:anyURI" />    | `<lloc>http://www.iescendrassos.net</lloc>` |
 
 ### Altres atributs
 
-Els elements simples també poden tenir altres atributs que ens permetran
-definir-hi altres coses:
+Els elements simples també poden tenir **altres atributs** que ens permetran definir-hi aspectes com:
 
 - Valors fixes: **"fixed"**
 - Valors per defecte: **"default"**
-- Número de vegades que pot sortir una etiqueta: **"maxOccurs"**,
-  **"minOccur"**
+- Número de vegades que pot sortir una etiqueta: **"maxOccurs"**, **"minOccur"**
 - Restringir els valors: **"restriction"**
 - Definir patrons que han de complir el contingut
 - Llistes de valors
