@@ -167,27 +167,23 @@ Els tipus de dades principals són:
 | **xs:date**    | Contindrà una data (AAAA-MM-DD)                   |
 | **xs:anyURI**  | Contindrà una referència a un lloc (URL, disc...) |
 
-Podem trobat tots els tipus bàsics existents a <http://www.w3.org/TR/xmlschema-0/#CreatDt> :
+- Podem trobat tots els tipus bàsics existents a <http://www.w3.org/TR/xmlschema-0/#CreatDt>
 
-- Els tipus de dades generalment tenen diverses variants per adaptar-se millor a les dades que han de representar:
+**Variants de tipus de dades**
 
-Text:
+Els tipus de dades generalment tenen diverses **variants** per adaptar-se millor a les dades que han de representar:
 
-: string, normalizedString, token, Name, NMTOKEN, ...
+| Tipus       | Variants                                                                                                                                                            |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Text**    | string, normalizedString, token, Name, NMTOKEN, ...                                                                                                                 |
+| **Números** | integer, positiveInteger, negativeInteger, nonNegativeInteger, nonPositiveInteger, long, unsignedLong, int, unsignedInt, byte, unsignedByte, decimal, float, double |
+| **Dates**   | duration, dateTime, date, time, gYear, gMonth, gYearMonth, gDay, gMonthDay                                                                                          |
 
-Números:
-
-: integer, positiveInteger, negativeInteger, nonNegativeInteger, nonPositiveInteger, long, unsignedLong, int, unsignedInt, byte, unsignedByte, decimal, float, double
-
-Dates:
-
-: duration, dateTime, date, time, gYear, gMonth, gYearMonth, gDay, gMonthDay,
-
-## Tipus de dades: exemples
+**Exemples**
 
 ![image](tipusDades2.jpg)
 
-## Altres atributs
+### Altres atributs
 
 Els elements simples també poden tenir altres atributs que ens permetran
 definir-hi altres coses:
