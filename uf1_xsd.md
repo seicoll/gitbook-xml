@@ -403,18 +403,19 @@ No hi ha tipus complexes predefinits: els hem de definir nosaltres:
 
 ## ComplexType
 
-El 'complexType' és la base del contingut complexe i el podrem modificar fent servir diferents modificadors:
+El **_complexType_** és la base del contingut complexe i el podrem modificar fent servir diferents modificadors:
 
-**simpleContent**: Podrem definir restriccions o extensions a continguts de només text
+- **simpleContent**: Permet definir restriccions o extensions a continguts de només text
 
-**complexContent**: Per afegir restriccions o extensions d'un tipus complexe
+- **complexContent**: Permet afegir restriccions o extensions d'un tipus complexe
 
-**sequence**: Defineix seqüències d'etiquetes
+- **sequence**: Defineix seqüències d'etiquetes
 
-**all**: Permet especificar etiquetes que poden sortir en qualsevol ordre
+- **all**: Permet especificar etiquetes que poden sortir en qualsevol ordre
 
-**choice**: Permet només un dels elements de dintre del tipus
+- **choice**: Permet només un dels elements de dintre del tipus
 
+<!--
 ## Tipus complexes només text (no els treballarem)
 
 ![image](simpleContent.jpg)
@@ -423,9 +424,11 @@ El 'complexType' és la base del contingut complexe i el podrem modificar fent s
 
 ![image](complexContent.jpg)
 
+-->
+
 ## Seqüències de fills
 
-Seqüències d'elements `<xs:sequence>`
+> Seqüències d'elements `<xs:sequence>` en un ordre determinat.
 
 ```xml
 <xs:complexType nom="persona">
@@ -436,12 +439,12 @@ Seqüències d'elements `<xs:sequence>`
 </xs:complexType>
 ```
 
-- Es defineixen en l'ordre en el que els volem
+- Es defineixen **en l'ordre** en el que els volem.
 - Pot contenir altres seqüències ...
 
-## En qualsevol ordre
+## Fills en qualsevol ordre
 
-Quan ens interessi que els elements apareguin en qualsevol ordre fem servir `<xs:all>`
+> Quan ens interessi que els elements apareguin en qualsevol ordre fem servir `<xs:all>`
 
 ```xml
 <xs:complexType nom="persona">
@@ -452,21 +455,18 @@ Quan ens interessi que els elements apareguin en qualsevol ordre fem servir `<xs
 </xs:complexType>
 ```
 
-- A pesar del nom han d'aparèixer només un cop
-- Només pot contenir elements
-- Però s'ha de tenir en compte que les etiquetes dins de all només
-  poden sortir UN COP
+- Només pot contenir elements.
+- Les etiquetes dins de `all` **només poden sortir UN COP**.
 
-![image](all1solcop.jpg)
+![image](uf1_images/uf1-xsd-all1solcop.jpg)
 
-- Una solució alternativa pot ser crear un tipus complexe amb la
-  repetició
+Una solució alternativa pot ser crear un tipus complexe amb la repetició
 
-![image](solucioall1solcop.jpg)
+![image](uf1_images/uf1-xsd-all-1solcop-solucio.jpg)
 
 ## Seleccions
 
-Podem definir o uns elements o uns altres `<xs:choice>`
+> Podem definir o bé uns elements o bé uns altres `<xs:choice>`
 
 ```xml
 <xs:complexType nom="persona">
@@ -477,13 +477,11 @@ Podem definir o uns elements o uns altres `<xs:choice>`
 </xs:complexType>
 ```
 
-- A dins hi poden haver seqüències, ...
-- Es pot niuar
-
 ## Determinisme
 
-- S'ha de tenir en compte que davant de cada decisió el processador ha de saber per quin camí ha de tirar
-- No es poden fer coses com:
+S'ha de tenir en compte que davant de cada decisió el processador ha de saber per quin camí ha de tirar.
+
+No es poden fer coses com:
 
 ```xml
 <xs:choice>
@@ -518,8 +516,9 @@ Això ens permetrà reutilitzar-los quan ens facin falta.
 
 ## Tipus complexes buits
 
-![image](complexosBuits.jpg)
+![image](uf1_images/uf1-xsd-complexosBuits.jpg)
 
+<!--
 - Si no té atributs podem definir (no ho treballarem)
 
 ```xml
@@ -527,11 +526,13 @@ Això ens permetrà reutilitzar-los quan ens facin falta.
     <xs:restriction base="xs:anyType"/>
 </xs:complexContent>
 ```
+-->
 
-## Elements buits
+## Elements simples buits
 
-- Si no té atributs també podria haver definit la etiqueta amb el tipus simple.
-- Definint-ne la llargada a zero.
+**Si no té atributs** també podria haver definit la etiqueta amb el **tipus simple**.
+
+Definint-ne la llargada a zero.
 
 ```xml
 <xs:element name="delegat">
@@ -542,6 +543,8 @@ Això ens permetrà reutilitzar-los quan ens facin falta.
     </xs:simpleType>
 </xs:element>
 ```
+
+---
 
 ## Grups d'elements
 
