@@ -2,21 +2,21 @@
 
 ## Què és l'XSD?
 
-> L'**XSD** (**X**ML **S**chema **D**efinition Language) és la manera més completa de crear validadors per l'XML.
+> L'**XSD** (**X**ML **S**chema **D**efinition Language) és una manera més completa de crear validadors per l'XML.
 
-L'objectiu dels XSD és acabar substituint completament als DTD degut a les limitacions que tenen aquests darrers:
+L'objectiu dels XSD és acabar substituint completament als DTD degut a les limitacions que tenen aquests darrers.
 
 **Avantatges:**
 
-- Està escrit en XML i per tant ja en coneixem les regles
-  - Com que està en XML ha de començar amb l'etiqueta d'XML.
-- Dóna més control sobre el contingut d'un document XML ja que permet definir la quantitat exacta d'elements fills d'un element
+- Està escrit en XML i per tant ja en coneixem les regles.
+
+- Dóna més control sobre el contingut d'un document XML ja que permet definir la **quantitat exacta d'elements fills** d'un element.
 
 Actualment es troba en la **versió 1.1** (des del 2012) i se'n poden trobar les definicions a la pàgina <http://www.w3c.org/XML/Schema>
 
 ## Validació
 
-La majoria dels validadors poden validar els XML Schemas
+La majoria dels validadors poden validar els XML Schemas.
 
 Per exemple amb **xmllint** ho podem fer:
 
@@ -25,9 +25,9 @@ $ xmllint --noout --schema ./exercici.xsd exercici.xml
 exercici.xml validates
 ```
 
-També es pot fer amb **XML Copy Editor**, Sublime, Notepad\*\*, etc.
+També es pot fer amb **XML Copy Editor**, Sublime, Notepad++, etc.
 
-## Associació
+## Associar l'esquema a un fitxer XML
 
 > Per fer servir un Schema en el nostre document XML n'hem de definir el lloc on és.
 
@@ -41,13 +41,11 @@ L'especifiquem en l'element **arrel del document**.
 </lliga>
 ```
 
-- El lloc on està el fitxer pot ser una **URL**:
+El lloc on està el fitxer també pot ser una **URL**:
 
-```xml
-xsi:SchemaLocation="http://www.lloc.com/fitxer.xsd"
-```
+`xsi:SchemaLocation="http://www.lloc.com/fitxer.xsd"`
 
-**En l'associació hi definim**:
+###En l'associació hi definim:
 
 - On es defineix l'esquema dins de l'estàndard:
 
@@ -55,7 +53,7 @@ xsi:SchemaLocation="http://www.lloc.com/fitxer.xsd"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 ```
 
-- On hi ha físicament el fitxer
+- On hi ha físicament el fitxer:
 
 ```xml
    xsi:NamespaceSchemaLocation="fitxer.xsd"
@@ -66,7 +64,7 @@ Poden ser:
 - `NamespaceSchemaLocation`: Defineix on està l'esquema si necessita espai de noms.
 - `NoNamespaceSchemaLocation`: Defineix l'esquema quan no li fa falta cap espai de noms.
 
-Per **exemple**, si tenim un document XML:
+**Per exemple**, si tenim un document XML:
 
 ```xml
   <?xml version="1.0" encoding="UTF-8" ?>
@@ -78,17 +76,19 @@ Per **exemple**, si tenim un document XML:
   </classe>
 ```
 
-Li definirem on és el fitxer d'esquema en l'etiqueta arrel:
+Li **definirem on és el fitxer d'esquema** en l'etiqueta arrel:
 
 ```xml
   <?xml version="1.0" encoding="UTF-8"?>
   <classe xmlns:xsi="<http://www.w3.org/2001/XMLSchema-instance>"
-     xsi:noNamespaceSchemaLocation="exercicixsl.xsd">
+     xsi:noNamespaceSchemaLocation="exercici.xsd">
 ```
 
 ## Definir un fitxer XML d'esquema
 
-La definició d'un fitxer d'esquema comença amb l'etiqueta d'XML i després segueix amb la definició de l'espai de noms de XML Schema.
+> La definició d'un fitxer d'esquema com que està en XML **ha de començar amb l'etiqueta d'XML**.
+
+Després, segueix amb la definició de l'espai de noms de XML Schema.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -97,15 +97,17 @@ La definició d'un fitxer d'esquema comença amb l'etiqueta d'XML i després seg
 </xs:schema>
 ```
 
+> Com que és XML la etiqueta s'ha de tancar!
+
 ### Comentaris
 
-- Com que es tracta d'un document XML hi podem posar **comentaris** del tipus:
+Com que es tracta d'un document XML hi podem posar **comentaris** del tipus:
 
 ```xml
 <!-- Comentari -->
 ```
 
-- Però també podem fer servir una forma normalitzada de posar-hi informació:
+Però també podem fer servir una forma normalitzada de posar-hi informació:
 
 ```xml
 <xs:annotation>
@@ -117,49 +119,55 @@ La definició d'un fitxer d'esquema comença amb l'etiqueta d'XML i després seg
 
 ## XML Schemas
 
-En XSD tenim diferents tipus d'etiquetes possibles:
+En XSD tenim diferents tipus d'**etiquetes possibles**:
 
-- Elements de **tipus simples**:
-
-  - Només contenen text
-
-- Elements de **tipus complexos**:
-  - Podem contenir text, altres etiquetes o res..
+- Elements de **tipus simples**: Només contenen text
+- Elements de **tipus complexos**: Podem contenir text, altres etiquetes o res.
 
 > Sempre tindrem com a mínim un tipus complexe (l'arrel del document).
 
----
-
 ### Tipus simples
 
-En Schema un element definit com a simple només conté text.
+En Schema un element definit com a **simple** només conté text.
 
-- No té ni atributs
-- No té etiquetes filles
+- No té ni atributs.
+- No té etiquetes filles.
 
-![image](tipusSimples.jpg)
+![image](uf1_images/uf1_xsd-tipusSimples.jpg)
 
-- Amb els tipus de dades podem controlar quin és el contingut de
-  les etiquetes.
+Utilitzant els **tipus de dades** podem controlar quin és el contingut de les etiquetes.
+
+**Exemple per:**
+
+**XSD**
 
 ```xml
 <xs:element name="nom" type="xs:string" />
 <xs:element name="any" type="xs:integer"/>
 ```
 
-Exemple per:
+- En la definició de l'element es pot veure que definim quin **tipus de dades** conté l'element.
+
+**XML**
 
 ```xml
 <nom>Xavier</nom>
-<any>2010</any>
+<any>2020</any>
 ```
 
-# Tipus de dades
+### Tipus de dades
 
-- En la definició de l'element es pot veure que definim quin tipus de dades conté l'element
-- Els tipus bàsics els podem trobar a <http://www.w3.org/TR/xmlschema-0/#CreatDt> :
+Els tipus de dades principals són:
 
-![image](tipusDades.jpg)
+| Tipus          | Explicació                                        |
+| -------------- | ------------------------------------------------- |
+| **xs:string**  | Contindrà una cadena de caràcters                 |
+| **xs:decimal** | Contindrà un número                               |
+| **xs:boolean** | Contindrà 'true' o 'false' o (1 o 0)              |
+| **xs:date**    | Contindrà una data (AAAA-MM-DD)                   |
+| **xs:anyURI**  | Contindrà una referència a un lloc (URL, disc...) |
+
+Podem trobat tots els tipus bàsics existents a <http://www.w3.org/TR/xmlschema-0/#CreatDt> :
 
 - Els tipus de dades generalment tenen diverses variants per adaptar-se millor a les dades que han de representar:
 
