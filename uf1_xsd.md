@@ -88,11 +88,11 @@ Li **definirem on és el fitxer d'esquema** en l'etiqueta arrel:
 
 > La definició d'un fitxer d'esquema com que està en XML **ha de començar amb l'etiqueta d'XML**.
 
-Després, segueix amb la definició de l'espai de noms de XML Schema.
+L'etiqueta `<schema>` és l'element arrel dels XML Schema:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     ...
 </xs:schema>
 ```
@@ -181,13 +181,13 @@ Els tipus de dades generalment tenen diverses **variants** per adaptar-se millor
 
 **Exemples**
 
-| XSD                                            | XML                                         |
-| ---------------------------------------------- | ------------------------------------------- |
-| <xs:element name="dia" type="xs:date" />       | `<dia>2020-09-15</dia>`                     |
-| <xs:element name="mes" type="xs:gMonth" />     | `<mes>--3</mes>`                            |
-| <xs:element name="altura" type="xs:integer" /> | `<altura>220</altura>`                      |
-| <xs:element name="nom" type="xs:string" />     | `<nom>Pere</nom>`                           |
-| <xs:element name="lloc" type="xs:anyURI" />    | `<lloc>http://www.iescendrassos.net</lloc>` |
+| XSD                                              | XML                                         |
+| ------------------------------------------------ | ------------------------------------------- |
+| `<xs:element name="dia" type="xs:date" />`       | `<dia>2020-09-15</dia>`                     |
+| `<xs:element name="mes" type="xs:gMonth" />`     | `<mes>--3</mes>`                            |
+| `<xs:element name="altura" type="xs:integer" />` | `<altura>220</altura>`                      |
+| `<xs:element name="nom" type="xs:string" />`     | `<nom>Pere</nom>`                           |
+| `<xs:element name="lloc" type="xs:anyURI" />`    | `<lloc>http://www.iescendrassos.net</lloc>` |
 
 ### Altres atributs
 
@@ -262,14 +262,11 @@ També es pot definir el **màxim**:
  <xs:element name="cap" maxOccurs="unbounded">
 ```
 
----
+#### Restriccions
 
-#### Restringir els tipus simples
+> Podem definir restriccions als tipus simples perquè s'adaptin a allò que ens interessa.
 
-- Podem fer modificacions als tipus simples perquè s'adaptin a allò
-  que ens interessa: Posar-hi restriccions, etc...
-- Definim el tipus amb **xs:simpleType** i el restringim amb
-  **xs:restriction**
+Definim el tipus amb `xs:simpleType` i el restringim amb `xs:restriction`
 
 ```xml
 <xs:element name="naixement">
@@ -282,10 +279,9 @@ També es pot definir el **màxim**:
 </xs:element>
 ```
 
-#### Definir tipus
+##### Definir tipus
 
-- Si hi ha alguna restricció que farem servir més vegades podem
-  definir un tipus amb nom:
+> Si hi ha alguna restricció que farem servir més vegades podem **definir un tipus amb nom**.
 
 ```xml
 <xs:simpleType name="possible_naixement">
@@ -296,27 +292,27 @@ També es pot definir el **màxim**:
 </xs:simpleType>
 ```
 
-- Que podrem usar en la definició de l'element
+Que podrem usar en la definició de l'element:
 
 ```xml
 <xs:element name="vida" type="possible_naixement" />
 ```
 
-#### Restriccions
+##### Tipus de restriccions
 
-- Hi ha molts atributs per definir restriccions:
+Hi ha molts atributs per definir restriccions:
 
-![image](restriccions.jpg)
+![image](uf1_images/uf1-xsd-restriccions.jpg)
 
-#### Patrons
+##### Patrons
 
-- Els patrons els podem definir amb:
+Els patrons són un avenç força important amb respecte als **DTD**.
 
-![image](patrons.jpg)
+Els patrons els podem definir amb:
 
-- Els patrons són un avenç força important amb respecte als **DTD**
-- Per exemple podem fer que el contingut d'un camp tingui forma d'un
-  DNI:
+![image](uf1_images/uf1-xsd-patrons.jpg)
+
+**Per exemple** podem fer que el contingut d'un camp tingui forma d'un DNI:
 
 ```xml
 <xs:element name="dni">
@@ -328,7 +324,7 @@ També es pot definir el **màxim**:
 </xs:element>
 ```
 
-que validaria:
+que validaria correctament:
 
 ```xml
 <home>
@@ -338,8 +334,7 @@ que validaria:
 
 #### Llistes
 
-- Si volem que el contingut sigui una llista de valors ho podem
-  definir amb xs:list
+> Si volem que el contingut sigui una llista de valors ho podem definir amb `xs:list`
 
 ```xml
 <xs:element name="partits">
@@ -349,7 +344,7 @@ que validaria:
 </xs:element>
 ```
 
-- De manera que podrem definir coses com:
+De manera que podrem definir coses com:
 
 ```xml
 <partits>
@@ -360,28 +355,29 @@ que validaria:
 
 #### Unions
 
-- També podem fer que el valor de l'element sigui el resultat d'un
-  tipus o d'un altre
+També podem fer que el valor de l'element sigui el resultat d'un tipus o d'un altre.
 
 ```xml
 <xs:element name="valor">
     <xs:simpleType>
-        <xs:union memberTypes="euros pessetes" />
+        <xs:union memberTypes="euros dolars" />
     </xs:simpleType>
 </xs:element>
 ```
 
-- En l'exemple el valor haurà de ser un valor dels tipus "euros" o de
-  "pessetes"
-- S'han de posar tipus obligatòriament
+El valor haurà de ser un valor dels tipus "euros" o de "dolars"
+
+> S'han de posar tipus obligatòriament
+
+---
 
 ### Tipus complexes
 
-- Un tipus complexe és un que conté elements fills, atributs o una
-  combinació d'ambdós
-- Sempre hi haurà com a mínim un tipus complexe en els documents:
-  l'arrel
-- Però també podem necessitar treballar amb atributs
+> Un tipus complexe és un que conté elements fills, atributs o una combinació d'ambdós.
+
+Sempre hi haurà com a mínim un tipus complexe en els documents: l'arrel del document.
+
+- Però també podem necessitar treballar amb atributs.
 - Podem dividir els tipus complexes en:
 
   > Els que tenen contingut simple (SimpleType) o Els que tenen
