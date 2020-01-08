@@ -641,3 +641,51 @@ S'hi pot treballar igual que amb els elements:
     </xs:complexType>
 </element>
 ```
+
+### Comparació DTD i XSD
+
+**XML**
+
+```xml
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<paper>
+    <article>
+        <head>Títol</head>
+        <lead>Introducció</lead>
+        <paragraph>Paràgraf de text</paragraph>
+    </article>
+</paper>
+```
+
+**DTD**
+
+```xml
+<!ELEMENT paper (article+)>
+<!ELEMENT article (head,lead,paragraph+)>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT lead (#PCDATA)>
+<!ELEMENT paragraph (#PCDATA)>
+```
+
+**XSD**
+
+```xsd
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="paper">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="article" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="head" type="xsd:string"/>
+              <xsd:element name="lead" type="xsd:string"/>
+              <xsd:element name="paragraph" type="xsd:string" maxOccurs="10"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+```
