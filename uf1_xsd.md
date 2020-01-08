@@ -640,7 +640,7 @@ S'hi pot treballar igual que amb els elements:
 </element>
 ```
 
-### Comparació DTD i XSD
+## Comparació DTD i XSD
 
 **XML**
 
