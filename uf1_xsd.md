@@ -399,9 +399,7 @@ No hi ha tipus complexes predefinits: els hem de definir nosaltres:
 
 ![image](uf1_images/uf1-xsd-complexType.jpg)
 
----
-
-## ComplexType
+### ComplexType
 
 El **_complexType_** és la base del contingut complexe i el podrem modificar fent servir diferents modificadors:
 
@@ -428,7 +426,7 @@ El **_complexType_** és la base del contingut complexe i el podrem modificar fe
 
 ### Tipus complexes amb només elements
 
-#### Seqüències de fills
+#### Seqüències de fills (sequence)
 
 > Seqüències d'elements `<xs:sequence>` en un ordre determinat.
 
@@ -444,7 +442,7 @@ El **_complexType_** és la base del contingut complexe i el podrem modificar fe
 - Es defineixen **en l'ordre** en el que els volem.
 - Pot contenir altres seqüències ...
 
-#### Fills en qualsevol ordre
+#### Fills en qualsevol ordre (all)
 
 > Quan ens interessi que els elements apareguin en qualsevol ordre fem servir `<xs:all>`
 
@@ -466,7 +464,7 @@ Una solució alternativa pot ser crear un tipus complexe amb la repetició
 
 ![image](uf1_images/uf1-xsd-all-1solcop-solucio.jpg)
 
-#### Seleccions
+#### Seleccions (choice)
 
 > Podem definir o bé uns elements o bé uns altres `<xs:choice>`
 
