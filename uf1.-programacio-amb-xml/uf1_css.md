@@ -849,13 +849,71 @@ El paràmetre `clear` pot tenir diferents valors:
 
 ![image](../.gitbook/assets/uf1-clear.png)
 
-### Posicionament Flexbox
+## Posicionament Flexbox
 
 El **2009** el W3C comença a treballar en la especificació de **Flexbox.**
 
-Flexbox ve a solucionar un dels majors mals de caps dels dissenyadors de pàgines web: com era crear pàgines responsive que funcionin en l'àmplia varietat de dispositius.
+**Flexbox** ve a solucionar un dels majors mals de caps dels dissenyadors de pàgines web: com era crear pàgines **responsive** que funcionin en l'àmplia varietat de dispositius.
 
-Flexbox es crea un nou model de caixa, la caixa flexible o FlexBox amb display: flex
+**Flexbox** es crea un nou model de caixa, la caixa flexible o FlexBox amb&#x20;
+
+`display: flex`
+
+**Què ens permet controlar?**
+
+* La **orientació** dels elements.
+* La **distribució de l’espai** que ocupen els elements, inclòs si les seves mides són desconegudes o dinàmiques.
+* L’**ordre** dels elements.
+* L’**espai entremig** dels elements.
+
+### Propietats per la caixa pare (Flex container)
+
+#### Propietat display
+
+```css
+.container {
+    display: flex;
+}
+```
+
+La declaració `display: flex;` defineix:
+
+* Un **Flex container** (_**contenidor flexible**_) : element pare que conté elements flexibles.
+* Converteix de forma automàtica als seus **fills** directes a **Flex items** (_**elements flexibles**_).
+
+<figure><img src="../.gitbook/assets/00-basic-terminology.svg" alt=""><figcaption></figcaption></figure>
+
+Un **Flex container** té dos eixos:
+
+* Un **Main axis** (_Eix principal_): és l’eix que estableix la direcció en la qual es posicionen els elements flexibles.&#x20;
+  * En l’exemple es tracta d’un **flex container row** ja que es posicionen de forma horitzontal.&#x20;
+* I un **Cross axis** (_Eix transversal_), perpendicular a l'Eix principal.
+
+Els elements es col·locaran seguint la **direcció** del Main axis o bé Cross axis:
+
+* main-start | main-end
+* cross-start | cross-end
+
+#### Propietat flex-direction
+
+La propietat `flex-direction` especifica la **direcció respecte l’eix principal** en la qual es posicionen els elements flexibles.&#x20;
+
+<figure><img src="../.gitbook/assets/flex-direction.svg" alt=""><figcaption></figcaption></figure>
+
+```css
+.container {
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+```
+
+El valors acceptats són:&#x20;
+
+* **row** (default): de dreta a esquerra&#x20;
+* **row-reverse**: d’esquerra a dreta&#x20;
+* **column**: de dalt a baix&#x20;
+* **column-reverse**: de baix a dalt
+
+**Exemple:** [http://jsfiddle.net/seicoll/0p287xwk/1/](http://jsfiddle.net/seicoll/0p287xwk/1/)
 
 
 
