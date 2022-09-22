@@ -954,6 +954,29 @@ Equival a:
 }
 ```
 
+#### propietat justify-content
+
+Defeneix l'**alineament** dels elsement respecte l'eix principal (**Main Axis**).
+
+Si hi ha **espai extra** dins d'un contenidor flexible la propietat justify-content defineix com s'usa aquest espai que sobra.&#x20;
+
+<figure><img src="../.gitbook/assets/justify-content.svg" alt=""><figcaption></figcaption></figure>
+
+```css
+.container {
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+}
+```
+
+Les opcions són:
+
+* **flex-start**: es distribueixen tots enganxats a l'inici del flex-direction.&#x20;
+* **flex-end**: es distribueixen tots enganxats al final del flex-direction.&#x20;
+* **center**: es distribueixen tots alineats al centre.&#x20;
+* **space-between**: es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells, però sense deixar espai a l'inici i al final.&#x20;
+* **space-around**: es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells, deixant espai a l'inici i al final.
+* **space-evenly:** es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells i al l'inici i final.
+
 [Flexbox (Caixes Flexibles)](https://docs.google.com/presentation/d/1bYzqqzCPcE\_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
 
 ## Resum visual de posicionaments
