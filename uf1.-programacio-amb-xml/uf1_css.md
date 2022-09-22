@@ -2,7 +2,7 @@
 
 ## Introducció
 
-> Els **Cascading Style Sheets \(CSS\)** són la forma de donar format a les dades d'un document.
+> Els **Cascading Style Sheets (CSS)** són la forma de donar format a les dades d'un document.
 
 Les possibilitats de format de CSS es poden dividir en 3 àrees:
 
@@ -32,10 +32,10 @@ En els sites amb moltes pàgines, els **canvis de formats** de eren **molt labor
 
 ### Versions
 
-* **CSS 1** \(1996\)
-* **CSS 2** \(1998\) 
+* **CSS 1** (1996)
+* **CSS 2** (1998)&#x20;
 * **CSS 2.1** es finalitza al 2011.
-* **CSS 3** \(versió actual\) 
+* **CSS 3** (versió actual)&#x20;
 
 ![CSS3](../.gitbook/assets/css3.png)
 
@@ -47,7 +47,7 @@ Per **aplicar fulles d'estil CSS a HTML** es pot fer a través de tres formes:
   * Amb l'atribut `style`  en etiquetes html.
 * CSS **internes** al document
   * Amb una etiqueta `<style>`
-* CSS **externes** al document 
+* CSS **externes** al document&#x20;
   * Amb un arxiu extern .css i utilitzant l'etiqueta `<link>`
 
 ## CSS integrades en una etiqueta html
@@ -73,7 +73,7 @@ Es col·loca dins d'una etiqueta de HTML amb l'atribut `style`
 
 El resultat serà:
 
-![image](../.gitbook/assets/uf1_p_css.png)
+![image](../.gitbook/assets/uf1\_p\_css.png)
 
 **Exemple 2: Estil definit en petites parts d'una pàgina**
 
@@ -88,7 +88,7 @@ Mitjançant l'etiqueta `<span>` i l'atribut `style`.
 
 El resultat serà:
 
-![image](../.gitbook/assets/uf1_span.png)
+![image](../.gitbook/assets/uf1\_span.png)
 
 **Exemple 3: Estil definit en una part de la pàgina**
 
@@ -105,7 +105,7 @@ Mitjançant l'etiqueta `<div>` i l'atribut `style`.
 
 El resultat serà:
 
-![image](../.gitbook/assets/uf1_div-css.png)
+![image](../.gitbook/assets/uf1\_div-css.png)
 
 ## CSS internes al document
 
@@ -146,7 +146,7 @@ El resultat serà:
 
 **El resultat serà:**
 
-![image](../.gitbook/assets/uf1_pag-estil.png)
+![image](../.gitbook/assets/uf1\_pag-estil.png)
 
 ## CSS Externes
 
@@ -200,12 +200,12 @@ Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines
 
 > Les **regles CSS** defineixen de quina forma es representaran les diferents etiquetes HTML de la pàgina.
 
-![](../.gitbook/assets/uf1_css_regles.png)
+![](../.gitbook/assets/uf1\_css\_regles.png)
 
 Si volem especificar **més d'una propietat** en una regla CSS:
 
 * Es posen una darrere l'altra dins dels claudàtors.
-* Separades amb un punt i coma \( `;` \)
+* Separades amb un punt i coma ( `;` )
 
 **Exemple:**
 
@@ -225,15 +225,15 @@ h1 {
 
 > La "C" de CSS vol dir "_**Cascading**_".
 
-És possible tenir varies definicions d'estil \(externes, internes i integrades en etiqueta\).
+És possible tenir varies definicions d'estil (externes, internes i integrades en etiqueta).
 
 En cas que hi hagi un **conflicte entre els estils** definits s'aplica la següent prioritat:
 
 **De menor a major prioritat:**
 
 * 1er. Estils predeterminats del **navegador**.
-* 2on. Fulles d'estil **externes** \(en un arxiu CSS separat\).
-* 3er. Fulles d'estil **internes** \(en el `<head>`\).
+* 2on. Fulles d'estil **externes** (en un arxiu CSS separat).
+* 3er. Fulles d'estil **internes** (en el `<head>`).
 * 4rt. Estils **integrats** en etiquetes HTML.
 
 **Per exemple:**
@@ -337,13 +337,13 @@ Es poden definir atributs amb els següents formats:
 * `px` Pixels
 * `cm` Centimetres
 * `in` Polzades
-* `pt` Punts \(72 punts = 1 polzada\)
+* `pt` Punts (72 punts = 1 polzada)
 
 **Valors relatius:**
 
 * `%` Percentatges
-* `em` \(alçada "M"\)
-* `ex` \(alçada "x"\)
+* `em` (alçada "M")
+* `ex` (alçada "x")
 
 **Exemples:**
 
@@ -370,7 +370,7 @@ Disposem de diversos **tipus** de selectors:
 * Selectors descendents
 * Selectors pseudoclasse: links
 * Selectors pseudoelements
-* Selector universal \(\*\)
+* Selector universal (\*)
 
 ### Selectors de tipus o etiqueta
 
@@ -394,11 +394,11 @@ h2 { color: blue; }
 
 **Visualització:**
 
-###  Títol 1
+### &#x20;Títol 1
 
-####  Títol 2
+#### &#x20;Títol 2
 
-### Selectors de classe \(.\)
+### Selectors de classe (.)
 
 > Els **selectors de classe** seleccionen totes les etiquetes que tinguin el mateix atribut `class`.
 
@@ -431,7 +431,7 @@ Segon paràgraf
 
 > **Varies** etiquetes de la pàgina poden utilitzar el mateix valor en l'atribut `class`.
 
-### Selectors ID \(\#\)
+### Selectors ID (#)
 
 > Els **selectors ID** seleccionen qualsevol etiqueta que tingui l'identificador especificat en l'atribut `id`.
 
@@ -462,7 +462,7 @@ Garrotxa
 
 ### Selectors descendents
 
-> Selecciona les etiquetes que es trobin **dins** \(descendents\) de una altra d'etiqueta.
+> Selecciona les etiquetes que es trobin **dins** (descendents) de una altra d'etiqueta.
 
 **HTML**
 
@@ -484,7 +484,7 @@ p a { color: red; }
 
 **Visualització:**
 
- Consulteu la pàgina del [W3C](https://github.com/seicoll/xml/tree/efbc6bbbe9f8a8baea63114b48af8bf031721131/www.w3.org)
+&#x20;Consulteu la pàgina del [W3C](https://github.com/seicoll/xml/tree/efbc6bbbe9f8a8baea63114b48af8bf031721131/www.w3.org)
 
 ### Grups de selectors
 
@@ -517,7 +517,7 @@ a:hover {
 }
 ```
 
-[Exemple](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_hover)
+[Exemple](https://www.w3schools.com/cssref/tryit.asp?filename=trycss\_sel\_hover)
 
 ### Selectors pseudoelements
 
@@ -550,9 +550,9 @@ Segon paràgraf
 
 > CSS 3 afegeix molts més pseudoelements.
 
-**Més exemples a**: [http://www.w3schools.com/css/css\_pseudo\_elements.asp](http://www.w3schools.com/css/css_pseudo_elements.asp)
+**Més exemples a**: [http://www.w3schools.com/css/css\_pseudo\_elements.asp](http://www.w3schools.com/css/css\_pseudo\_elements.asp)
 
-### El selector universal \(\*\)
+### El selector universal (\*)
 
 > Selecciona totes les etiquetes del document.
 
@@ -576,15 +576,15 @@ Segon paràgraf
 
 **Visualització:**
 
-###  Títol principal
+### &#x20;Títol principal
 
 Primer paràgraf
 
 Segon paràgraf
 
-### Selectors jeràrquics \(germans i fills\)
+### Selectors jeràrquics (germans i fills)
 
-**Fill \(A &gt; B\):** Selecciona qualsevol element B que és fill **directe** de A.
+**Fill (A > B):** Selecciona qualsevol element B que és fill **directe** de A.
 
 ```css
 div > p {
@@ -592,7 +592,7 @@ div > p {
 }
 ```
 
-**Germà \(A + B\):** Selecciona qualsevol element B **precedit immediatament** d'un element A.
+**Germà (A + B):** Selecciona qualsevol element B **precedit immediatament** d'un element A.
 
 ```css
 h1+p { 
@@ -600,17 +600,17 @@ h1+p {
 }
 ```
 
-## Model de caixes \(_Box Model_\)
+## Model de caixes (_Box Model_)
 
 > Quan es visualitza qualsevol cosa amb CSS és tractada com si estes **dins d'una caixa** rectangular
 
 Cada caixa té quatre components:
 
-![image](../.gitbook/assets/uf1_box_model.png)
+![image](../.gitbook/assets/uf1\_box\_model.png)
 
 L'**ordre de visualització** des del punt de vista de l'usuari és:
 
-![image](../.gitbook/assets/uf1_box_model_order.gif)
+![image](../.gitbook/assets/uf1\_box\_model\_order.gif)
 
 ### Amplada i alçada
 
@@ -623,7 +623,7 @@ table {
 }
 ```
 
-![image](../.gitbook/assets/uf1_mides_caixa.png)
+![image](../.gitbook/assets/uf1\_mides\_caixa.png)
 
 > La **dimensió total** de l'element pot ser més gran si té margin i/o border.
 
@@ -634,14 +634,14 @@ table {
 Podem canviar-ne els valors amb les propietats:
 
 * **Margin**: margin, margin-left, margin-right, margin-top, margin-bottom
-* **Padding**: padding, padding-left, padding-right, padding-top, padding-bottom
+*   **Padding**: padding, padding-left, padding-right, padding-top, padding-bottom
 
-  ```css
-    h1 { 
-        margin: 3px; 
-        padding-left:4px; 
-    }
-  ```
+    ```css
+      h1 { 
+          margin: 3px; 
+          padding-left:4px; 
+      }
+    ```
 
 ### Border
 
@@ -649,9 +649,9 @@ Amb el `border` hi ha moltes més possibilitats:
 
 * **border-style:** pot ser `none, solid, dashet, dotted, double, groove, ridge, inset,outset`
 * **border-width:** especifiquem l'amplada.
-  * El més corrent és fer-ho amb pixels \(Per exemple: 10px\)
+  * El més corrent és fer-ho amb pixels (Per exemple: 10px)
 * **border-color:** el color que tindrà.
-  * Pot ser amb el nom en anglès, amb la funció rgb\(\) o en hexadecimal
+  * Pot ser amb el nom en anglès, amb la funció rgb() o en hexadecimal
 * **border:** tot de cop especificant un rere l'altre amplada, estil i color.
 
 ```css
@@ -660,11 +660,11 @@ p { border-color:#000000; border-style:solid; }
 p { border: 2px solid #000000; }
 ```
 
-[Exemple](http://www.w3schools.com/css/css_border.asp)
+[Exemple](http://www.w3schools.com/css/css\_border.asp)
 
 ### Propietat box-sizing
 
-Des dels inicis del CSS, el box model \(model de caixa\) ha funcionat així:
+Des dels inicis del CSS, el box model (model de caixa) ha funcionat així:
 
 > **width real** visible d’un element de caixa = width + padding + border + margin **height real** visible d’un element de caixa = height + padding + border + margin
 
@@ -689,7 +689,7 @@ div {
 
 ![image](../.gitbook/assets/uf1-box-sizing2.png)
 
-[Exemples](http://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
+[Exemples](http://www.w3schools.com/cssref/css3\_pr\_box-sizing.asp)
 
 ## Elements de bloc i en línia
 
@@ -698,7 +698,7 @@ Les caixes es poden comportar de formes diferents en respecte a les altres.
 El més corrent són dos comportaments:
 
 * **block:**
-  * Són posicionats **verticalment**. 
+  * Són posicionats **verticalment**.&#x20;
   * Blocs de contingut que ocupen tot l'espai d'una línia. Fa que la caixa defineixi un salt de línia rere seu.
 * **inline:**
   * Són posicionats **horitzontalment**.
@@ -735,11 +735,13 @@ L'espai que ocupava l'etiqueta queda lliure i és ocupat pels altres elements.
 
 ![image](../.gitbook/assets/hidden.png)
 
-## Posicionament \(_Layout_\)
+## Posicionament (_Layout_)
 
 **CSS** permet modificar el posicionament en el que es mostra cada caixa.
 
-El posicionament en CSS reposa sobre quatre opcions:
+Les tècniques de posicionament han anat variant amb el temps.  Van passar de **frames**, a **tables**, a divs (amb diferents tipus de posicionament) fins arribar el **Flexbox** i **Grid**.
+
+El posicionament tipus de **posicionament clàssics** són:
 
 * Posicionament **Estàtic o Normal**
 * Posicionament **Relatiu**
@@ -769,7 +771,7 @@ Consisteix en posicionar la caixa segons el posicionament normal i llavors **des
 ![image](../.gitbook/assets/uf1-posicionament-relatiu.gif)
 
 * Canviar la posició relativa pot fer que el contingut de dues caixes quedi **superposat**.
-* Es marca la posició original de l'element com a protegida \(la resta de caixes es pensen que encara hi és\).
+* Es marca la posició original de l'element com a protegida (la resta de caixes es pensen que encara hi és).
 
 El desplaçament de la caixa es controla amb les **propietats** `top`, `right`, `bottom` i `left`.
 
@@ -785,8 +787,8 @@ El desplaçament de la caixa es controla amb les **propietats** `top`, `right`, 
 
 ![image](../.gitbook/assets/uf1-posicionament-relatiu2.png)
 
-* `top:25px;`: es desplaça 25 píxels des de dalt de la posició normal de la caixa \(es desplaça cap a baix\).
-* `right:25px;`: es desplaça 25 píxels de la dreta de la posició original \(es desplaça cap a l'esquerra\).
+* `top:25px;`: es desplaça 25 píxels des de dalt de la posició normal de la caixa (es desplaça cap a baix).
+* `right:25px;`: es desplaça 25 píxels de la dreta de la posició original (es desplaça cap a l'esquerra).
 
 ### Posicionament Absolut
 
@@ -807,7 +809,7 @@ Es pot posicionar una caixa **en un lloc concret** fent servir `position:absolut
   * La resta del contingut no quedarà al voltant sinó que pot quedar per **sota**.
 * El posicionament absolut d'un element **fa referència al seu contenidor**.
   * És a dir que `top`, `right`, `bottom` o `left` depenen del seu contenidor.
-  * Si no hi ha cap element contenidor, els valos faran referència a l'element més alt de l'estructura HTML \(el `body`\).
+  * Si no hi ha cap element contenidor, els valos faran referència a l'element més alt de l'estructura HTML (el `body`).
 
 **Posicionament fixed**
 
@@ -825,7 +827,7 @@ Ens fixa una caixa en la pantalla de manera que **no es mourà** encara que es m
 
 ![image](../.gitbook/assets/uf1-posicionament-fixed.png)
 
-[Exemple posicionament fixed](https://www.w3schools.com/cssref/playit.asp?filename=playcss_position&preval=fixed) 
+[Exemple posicionament fixed](https://www.w3schools.com/cssref/playit.asp?filename=playcss\_position\&preval=fixed)&#x20;
 
 ### Posicionament Flotant
 
@@ -841,7 +843,7 @@ La propietat `clear` permet anul·lar el comportament per introduït per la prop
 
 * `clear: left;` anul·la els elements floants a l'esquerra.
 
-[Exemple clear](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_class-clear)
+[Exemple clear](https://www.w3schools.com/cssref/tryit.asp?filename=trycss\_class-clear)
 
 El paràmetre `clear` pot tenir diferents valors:
 
@@ -849,7 +851,15 @@ El paràmetre `clear` pot tenir diferents valors:
 
 ### Posicionament Flexbox
 
-[Flexbox \(Caixes Flexibles\)](https://docs.google.com/presentation/d/1bYzqqzCPcE_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
+El **2009** el W3C comença a treballar en la especificació de **Flexbox.**
+
+Flexbox ve a solucionar un dels majors mals de caps dels dissenyadors de pàgines web: com era crear pàgines responsive que funcionin en l'àmplia varietat de dispositius.
+
+Flexbox es crea un nou model de caixa, la caixa flexible o FlexBox amb display: flex
+
+
+
+[Flexbox (Caixes Flexibles)](https://docs.google.com/presentation/d/1bYzqqzCPcE\_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
 
 ## Resum visual de posicionaments
 
@@ -878,4 +888,3 @@ El paràmetre `clear` pot tenir diferents valors:
 Controla la profunditat de les capes
 
 ![image](../.gitbook/assets/z-index.png)
-
