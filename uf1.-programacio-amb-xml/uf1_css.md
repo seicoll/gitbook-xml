@@ -997,6 +997,86 @@ Defeneix l'**alineament** dels elements respecte l'eix transversal (**Cross Axis
 * strech (default)
 * baseline
 
+### Propietat per les caixes filles (Flex items)
+
+#### Propietat order
+
+Permet **establir l'ordre** en què apareixen els components dins d'una caixa flexible.&#x20;
+
+Per defecte apareixeran tal com apareixen en el codi HTML (equival a order: 0).
+
+<figure><img src="../.gitbook/assets/order.svg" alt=""><figcaption></figcaption></figure>
+
+```css
+.item {
+  order: 5; /* default is 0 */
+}
+```
+
+#### Propietat flex-grow
+
+Permet establir **com creix** un element flexible dins del contenidor en relació als altres quan hi ha espai disponible del contenidor a ocupar.&#x20;
+
+La propietat `flex-grow` especifica el **factor de creixement**. Per defecte és '0',
+
+<figure><img src="../.gitbook/assets/flex-grow.svg" alt=""><figcaption></figcaption></figure>
+
+#### Propietat flex-shrink
+
+Permet establir **com decreix** un element flexible dins del contenidor en relació als altres quan falta espai al contenidor.
+
+La propietat flex-shrink especifica el **factor de reducció**. Per defecte és '1'.&#x20;
+
+Si posem el valor '0', l’element flexible no es reduirà.
+
+#### Propietat flex-basis
+
+Estableix la **mida inicial de l'element** abans de distribuir l'espai lliure d'acord amb les ràtios de flex-grow o flex-shrink.&#x20;
+
+Pren el mateix valor que la propietat width i quan s'omet, el seu valor és 'main-size' (anteriorment,'auto').
+
+#### Propietat flex
+
+Estableix **com creix o decreix un element** flexible dins del contenidor en relació als altres.&#x20;
+
+És un forma abreviada de les propietats `flex-grow`, `flex-shrink` i `flex-basis`.&#x20;
+
+```css
+flex: <'flex-grow'> || <'flex-shrink'> || <'flex-basis'>
+```
+
+El segon i tercer paràmetres (`flex-shrink` i `flex-basis`) són opcionals.
+
+**Es recomana utilitzar aquesta forma abreujada** enlloc de les propietats individuals. La forma abreujada estableix els altres valors de forma intel·ligent.
+
+#### Propietat align-self
+
+Estableix l'**alineament** dels elements individuals sobreescrivint la propietat `align-items`.&#x20;
+
+<figure><img src="../.gitbook/assets/align-self.svg" alt=""><figcaption></figcaption></figure>
+
+El valors acceptats són:&#x20;
+
+* auto&#x20;
+* flex-start&#x20;
+* flex-end&#x20;
+* center&#x20;
+* baseline&#x20;
+* strech
+
+**Més informació**
+
+CSS-Tricks: A Complete Guide to Flexbox&#x20;
+
+[https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+**Anem a practicar:**&#x20;
+
+* [http://flexboxfroggy.com/ ](http://flexboxfroggy.com/)
+* [http://www.flexboxdefense.com/](http://www.flexboxdefense.com/)
+
+
+
 [Flexbox (Caixes Flexibles)](https://docs.google.com/presentation/d/1bYzqqzCPcE\_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
 
 ## Resum visual de posicionaments
