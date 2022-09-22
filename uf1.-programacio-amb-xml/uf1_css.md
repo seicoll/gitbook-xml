@@ -915,7 +915,44 @@ El valors acceptats són:&#x20;
 
 **Exemple:** [http://jsfiddle.net/seicoll/0p287xwk/1/](http://jsfiddle.net/seicoll/0p287xwk/1/)
 
+#### Propietat flex-wrap
 
+Per defecte els elements flexibles es situen tots en **una única** **fila**.
+
+La propietat `flex-wrap` permet especificar que els elements flexibles es col·loquin en **varies files** i la **direcció d’aquestes files**.
+
+<figure><img src="../.gitbook/assets/flex-wrap.svg" alt=""><figcaption></figcaption></figure>
+
+```css
+.container {
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+```
+
+Els valors acceptats són:&#x20;
+
+* **nowrap** (default): el contenidor té un única línia.&#x20;
+* **wrap**: el contenidor té múltiples línies&#x20;
+* **wrap-reverse**: el contenidor té múltiples línies que es col·loquen en ordre invers
+
+**Exemple:** [https://jsfiddle.net/seicoll/7286hsdu/](https://jsfiddle.net/seicoll/7286hsdu/)
+
+#### propietat flex-flox
+
+La propietat `flex-flow` és un forma abreviada de les propietats `flex-direccion` i `flex-wrap`.
+
+```css
+flex-direccion: column;
+flex-wrap: wrap;
+```
+
+Equival a:
+
+```css
+.container {
+  flex-flow: column wrap;
+}
+```
 
 [Flexbox (Caixes Flexibles)](https://docs.google.com/presentation/d/1bYzqqzCPcE\_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
 
