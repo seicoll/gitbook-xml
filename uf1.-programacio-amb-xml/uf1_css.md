@@ -954,9 +954,9 @@ Equival a:
 }
 ```
 
-#### propietat justify-content
+#### Propietat justify-content
 
-Defeneix l'**alineament** dels elsement respecte l'eix principal (**Main Axis**).
+Defeneix l'**alineament** dels elements respecte l'eix principal (**Main Axis**).
 
 Si hi ha **espai extra** dins d'un contenidor flexible la propietat justify-content defineix com s'usa aquest espai que sobra.&#x20;
 
@@ -976,6 +976,26 @@ Les opcions són:
 * **space-between**: es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells, però sense deixar espai a l'inici i al final.&#x20;
 * **space-around**: es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells, deixant espai a l'inici i al final.
 * **space-evenly:** es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells i al l'inici i final.
+
+#### Propietat align-items
+
+Defeneix l'**alineament** dels elements respecte l'eix transversal (**Cross Axis**).
+
+<figure><img src="../.gitbook/assets/align-items.svg" alt=""><figcaption></figcaption></figure>
+
+```css
+.container {
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+}
+```
+
+**El valors acceptats són:**
+
+* flex-start
+* flex-end
+* center
+* strech (default)
+* baseline
 
 [Flexbox (Caixes Flexibles)](https://docs.google.com/presentation/d/1bYzqqzCPcE\_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
 
