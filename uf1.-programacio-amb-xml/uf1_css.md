@@ -977,6 +977,8 @@ Les opcions són:
 * **space-around**: es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells, deixant espai a l'inici i al final.
 * **space-evenly:** es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells i al l'inici i final.
 
+**Exemple:** [https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_justify-content\_center](https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_justify-content\_center)
+
 #### Propietat align-items
 
 Defeneix l'**alineament** dels elements respecte l'eix transversal (**Cross Axis**).
@@ -996,6 +998,8 @@ Defeneix l'**alineament** dels elements respecte l'eix transversal (**Cross Axis
 * center
 * strech (default)
 * baseline
+
+**Exemple:** [https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_align-items\_stretch](https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_align-items\_stretch)
 
 ### Propietat per les caixes filles (Flex items)
 
@@ -1074,10 +1078,6 @@ CSS-Tricks: A Complete Guide to Flexbox&#x20;
 
 * [http://flexboxfroggy.com/ ](http://flexboxfroggy.com/)
 * [http://www.flexboxdefense.com/](http://www.flexboxdefense.com/)
-
-
-
-[Flexbox (Caixes Flexibles)](https://docs.google.com/presentation/d/1bYzqqzCPcE\_B-3uv4dV2VIjzVIOSLCfaCsxBLpuAlEk/edit?usp=sharing)
 
 ## Resum visual de posicionaments
 
