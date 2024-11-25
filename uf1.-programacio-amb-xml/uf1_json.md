@@ -1,6 +1,6 @@
 # JSON
 
-> JSON \(**J**ava **S**cript **O**bject **N**otacion**\)** és un format per emmagatzemar i intercanviar dades.
+> JSON \(**J**ava **S**cript **O**bject **N**otacion\) és un format per emmagatzemar i intercanviar dades.
 
 **JSON** és text, escrit amb sintaxi de JavaScript aprofitant l'ús dels objectes JavaScript.
 
