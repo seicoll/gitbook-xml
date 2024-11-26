@@ -9,7 +9,7 @@
 
 ## Unitat 2. XML i JSON
 
-* [XML](unitat-2.-xml-i-json/uf1_xml.md)
+* [XML](uf1.-programacio-amb-xml/uf1_xml.md)
 * [Creació documents XML](unitat-2.-xml-i-json/uf1_xml_creacio.md)
 * [JSON](unitat-2.-xml-i-json/uf1_json.md)
 * [Validació amb DTD](unitat-2.-xml-i-json/uf1_dtd.md)
