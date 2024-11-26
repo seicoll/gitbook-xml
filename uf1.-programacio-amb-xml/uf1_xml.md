@@ -86,19 +86,6 @@ El llenguatge de marques més conegut és l'**HTML** (el de les pàgines web) de
 </html>
 ```
 
-
-
-## SGML
-
-> La primera tecnologia estandarditzada de llenguatges de marques va ser l'**SGML**
-
-Es va fer servir com estàndard de la informació **de propòsit general**. Partia de la idea de que s'han de **separar les dades** d'un document **de la seva forma**.
-
-Però:
-
-* La majoria dels documents estaven destinats a la **impressió**.
-* Era terriblement **complex** de manera que només el feien servir els especialistes.
-
 ## HTML
 
 L'any 1989 Tim Berners-Lee i Anders Berglund van crear un llenguatge basat en etiquetes destinat a compartir informació per Internet: **HTML**.
@@ -129,23 +116,12 @@ En general, falta una forma de:
 
 * **Buscar**, **moure**, **visualitzar** i **manipular** la informació continguda en els documents HTML.
 
-### Naixement de l'XML
-
-El consorci **W3C** va desenvolupar una alternativa a l'HTML que podés satisfer les necessitats futures del web.
-
-El 1996 el consorci W3C es va proposar introduir el poder i la flexibilitat de l'**SGML** al web.
-
-**SGML** oferia tres avantatges que l'HTML no tenia:
-
-* Extensibilitat
-* Estructura
-* Validació
-
 ## XML (Extensible Markup Language)
 
 > **XML** és un llenguatge de descripció d'informació.
 
 * XML és un format de text estandarditzat que serveix per representar i transportar informació estructurada.
+* El consorci **W3C** va desenvolupar una alternativa a l'HTML que podés satisfer les necessitats futures del web.
 
 ```markup
 <persona>
