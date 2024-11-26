@@ -71,6 +71,24 @@ Tot i que els sistemes de marques en que ens concentrarem són els d'estil web c
 } }
 ```
 
+Exemple yaml
+
+```yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp3s0:
+      addresses:
+        - 10.10.10.2/24
+      nameservers:
+        search:
+          - "mycompany.local"
+        addresses:
+          - 10.10.10.253
+          - 8.8.8.8
+```
+
 **Exemple HTML**
 
 El llenguatge de marques més conegut és l'**HTML** (el de les pàgines web) destinat a l'intercanvi d'informació a través d'Internet.
