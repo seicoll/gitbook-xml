@@ -17,6 +17,21 @@
 * **Acordar quin format** o estructura ha tenir la informació.
 * A més, podrem utilitzar **eines estàndards per validar** si el document compleix amb l'especificació acordada.
 
+## CSV
+
+Antigament per representar dades es feia separant els valors amb comes o algun altre símbol.
+
+```
+"Nom","Cognom","Ofici","Naixament","Poblacio","Punts"
+"Pere","Pi","Professor","10/04/1978","Olot",12
+"Marta","Mata","Inforàtica","19/05/1990","Girona",20
+```
+
+* S'ha de saber que la primera línia són metadades
+* Afegir-hi noves dades pot ser molt problemàtic pel programa que les llegeixi --> Probablement haurem de canviar el programa.
+* El format **CSV (Comma separated value)** encara s'utilitza molt en el món de la informàtica, per exportar/importar dades normalment.
+  * Es tracta d'enviar la informació utilitzant un caràcter per a separar cada un dels conceptes. Tot i que el nom pugui suggerir que sigui una coma, molts sistemes deixen definir el caràcter a utilitzar (punt i coma, salt de línia, ...)
+
 ### Els llenguatges de marques
 
 Un **llenguatge de marques** combina dades i etiquetes que les marquen i que contenen informació addicional sobre l'estructura del text o la seva presentació.
@@ -150,18 +165,6 @@ Una de les idees més importants és:
 * XML no es preocupa de com es presentaran les dades als usuaris
 * Per fer la presentació ja s'han desenvolupat mecanismes:
   * **CSS**, **XSL-FO**, etc.
-* Antigament per representar dades es feia separant els valors amb comes o algun altre símbol
-
-```
-"Nom","Cognom","Ofici","Naixament","Poblacio","Punts"
-"Pere","Pi","Professor","10/04/1978","Olot",12
-"Marta","Mata","Inforàtica","19/05/1990","Girona",20
-```
-
-* S'ha de saber que la primera línia són metadades
-* Afegir-hi noves dades pot ser molt problemàtic pel programa que les llegeixi --> Probablement haurem de canviar el programa
-* El format **CSV (Comma separated value)** encara s'utilitza molt en el món de la informàtica, per exportar/importar dades normalment.
-  * Es tracta d'enviar la informació utilitzant un caràcter per a separar cada un dels conceptes. Tot i que el nom pugui suggerir que sigui una coma, molts sistemes deixen definir el caràcter a utilitzar (punt i coma, salt de línia,...)
 
 ## Característiques dels llenguatges de marques
 
@@ -271,6 +274,3 @@ Però això a vegades és compensat per:
 * La facilitat d'interoperabilitat entre programes.
 * El preu de l'emmagatzematge és baix.
 
-## Versions
-
-##
