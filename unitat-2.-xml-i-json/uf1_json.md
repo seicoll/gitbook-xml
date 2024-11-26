@@ -1,6 +1,6 @@
 # JSON
 
-> JSON \(**J**ava **S**cript **O**bject **N**otacion\) és un format per emmagatzemar i intercanviar dades.
+> JSON (**J**ava **S**cript **O**bject **N**otacion) és un format per emmagatzemar i intercanviar dades.
 
 **JSON** és text, escrit amb sintaxi de JavaScript aprofitant l'ús dels objectes JavaScript.
 
@@ -10,38 +10,47 @@ S’utilitza molt per enviar informació des del servidor a una pàgina web.
 
 Actualment està superant l'ús del **XML** en aplicacions web, gràcies a la **facilitat**, **portabilitat** i **llegibilitat.**
 
- L'**extensió** dels fitxers JSON és **`.json`**.
+L'**extensió** dels fitxers JSON és **`.json`**.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ![](../.gitbook/assets/1_vcvipmqmjdbefcqf5f7p9q.png)
 
 ## **Sintaxi JSON**
 
-* Les dades s'escriuen com a parelles de **`nom`** i **`valor`**.
-* Per **assignar** valor s'utilitza els dos punts \( **`:`** \)
+A JSON existeixen dos tipus d’elements: **objectes** i **arrays**.
+
+### Objectes
+
+* Els objectes s'escriuen com a parelles de **clau** i **`valor`**.
+* Per **assignar** valor s'utilitza els dos punts ( **`:`** )
 
 **Exemple:**
 
-```javascript
+```json
 { "name":"John" } 
 ```
 
 {% hint style="warning" %}
-Els noms JSON requereixen **cometes dobles.**
+Les claus a JSON requereixen **cometes dobles.**
 {% endhint %}
 
-* Les dades se separen per comes \( **`,`** \)
+* Les dades se separen per comes ( **`,`** )
 
 **Exemple:**
 
-```javascript
-{ "name" : "John" , "surname" : "Smith" } 
+```json
+{ 
+   "name" : "John" , 
+   "surname" : "Smith" 
+} 
 ```
 
-## Arrays
+### Arrays
 
-> Un **array** es una colección ordenada de valores.
+> Un **array** es una llista (col·lecció ordenada) de valores.
 
-Els arrays s'envolten de **claudàtors `[ ]`** i cada valor de dins va separat per una coma \( **`,`** \).
+Els arrays s'envolten de **claudàtors `[ ]`** i cada valor de dins va separat per una coma ( **`,`** ).
 
 **Exemple:**
 
@@ -53,11 +62,11 @@ Els arrays s'envolten de **claudàtors `[ ]`** i cada valor de dins va separat p
 }
 ```
 
-Un valor d'un array també potser un objecte **JSON**.
+Un valor d'un array també pot ser un objecte **JSON**.
 
 **Exemple**:
 
-```javascript
+```json
 {"students": 
     [
         {"firstName":"Tom" , "lastName":"Jackson"} ,
@@ -89,7 +98,7 @@ Els valors d'un **array** també poden ser **altres arrays**:
 
 Els següents exemples JSON i XML defineixen un objecte d'empleats, amb una matriu de 3 empleats:
 
-#### Exemple JSON 
+#### Exemple JSON
 
 ```javascript
 {"employees":[
@@ -119,8 +128,8 @@ Els següents exemples JSON i XML defineixen un objecte d'empleats, amb una matr
 
 Tant JSON com XML:
 
-* Són "**autodescriptibles**" \(llegibles per humans\)
-* Són **jeràrquics** \(valors dins dels valors\)
+* Són "**autodescriptibles**" (llegibles per humans)
+* Són **jeràrquics** (valors dins dels valors)
 * Es poden analitzar i utilitzar en molts llenguatges de programació.
 
 #### Avantatges de JSON
@@ -136,3 +145,9 @@ Podem comprovar la validesa d'un fitxer JSON amb eines on-line com per exemple:
 * [JSONFormatter](https://jsonformatter.curiousconcept.com/)
 * [JSONViewer](http://jsonviewer.stack.hu/)
 * [JSONLint](https://jsonlint.com/)
+
+Tot i que hi ha editors o **IDEs** que, directament o afegint plugins, també ens permeten fer aquesta validació.
+
+Però si, a més, ens volem assegurar que compleix una determinada estructura, podem fer servir:
+
+* [JSON Schema](https://json-schema.org/)
