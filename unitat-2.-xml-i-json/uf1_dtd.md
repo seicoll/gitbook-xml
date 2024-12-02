@@ -2,13 +2,13 @@
 
 ## Introducció
 
-* Validació de documents:
+La **validació de documents XML** és el procés de comprovar que un document XML compleix un conjunt de regles o estructures definides en un esquema.&#x20;
+
+Aquestes regles es poden definir mitjançant un **Document Type Definition (DTD)** o altres llenguatges d'esquema com **XML Schema (XSD)**
 
 ## Què és el DTD?
 
 > El **DTD** (_Document Type Definitions_) és una forma de definir l'estructura i les etiquetes vàlides en un document XML.
-
-* És la forma de definició d'esquemes que va sortir primer, en el el temps del **SGML**
 
 L'**objectiu principal** dels DTD és permetre validar les estructures dels documents XML.
 
@@ -72,8 +72,6 @@ Es poden incorporar DTD **dins dels documents XML**:
 ```
 
 * Tot i que es pot fer és millor fer-los externs.
-
-
 
 #### Definició de DTD Externa
 
