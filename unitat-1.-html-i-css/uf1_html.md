@@ -1,8 +1,8 @@
-# Llenguatge HTML
+# HTML
 
 ## Introducció
 
-> El **llenguatge HTML \(HyperText Markup Language\)** és el llenguatge amb el qual s'escriuen les pàgines web.
+> El **llenguatge HTML (HyperText Markup Language)** és el llenguatge amb el qual s'escriuen les pàgines web.
 
 L'any 1989 **Tim Berners-Lee** i **Anders Berglund**, dos investigadors del [CERN](https://ca.wikipedia.org/wiki/Organitzaci%C3%B3_Europea_per_a_la_Recerca_Nuclear), van crear un llenguatge basat en etiquetes destinat a compartir informació per Internet: **HTML**.
 
@@ -56,23 +56,9 @@ El llenguatge HTML té **número d'etiquetes limitat**.
 
 > Tot document **HTML5** ha de començar definint el **DOCTYPE**.
 >
-> L'etiqueta **DOCTYPE** serveix per indica al programa client \(navegador\) amb quina sintaxi s'ha creat la pàgina, és una sentencia que es posa al principi de tot de la pàgina.
+> L'etiqueta **DOCTYPE** serveix per indica al programa client (navegador) amb quina sintaxi s'ha creat la pàgina, és una sentencia que es posa al principi de tot de la pàgina.
 
 El **DOCTYPE** s'ha de posar a la primera línia.
-
-#### DOCTYPE en HTML4
-
-**Estricte**:
-
-`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "<http://www.w3.org/TR/html4/strict.dtd>">`
-
-**Transicional**:
-
-`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "<http://www.w3.org/TR/html4/loose.dtd>">`
-
-**Frames**:
-
-`<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">`
 
 #### DOCTYPE HTML5
 
@@ -102,14 +88,14 @@ Dins la pàgina HTML podem distingir-hi **dues parts**:
 
 **L'encapçalament**
 
-* Flanquejat per les etiquetes `<head>` i `</head>` 
+* Flanquejat per les etiquetes `<head>` i `</head>`
 * Dóna informació sobre la pàgina.
 * Col·locarem etiquetes de tipus informatiu, com per exemple el títol de la pàgina, autor, paraules clau.
 * **No es mostra en el navegador.**
 
 **El cos**
 
-* Flanquejat per les etiquetes `<body>` i `</body>` 
+* Flanquejat per les etiquetes `<body>` i `</body>`
 * Col·locarem el nostre contingut de la pàgina.
 * **És el que es veu realment.**
 
@@ -133,7 +119,7 @@ Conté els atributs _name_ i _content_
 
 > És important definir el joc de caràcters utilitzat.
 
-* El **joc de caràcters** determina la forma en què els caràcters es converteixen en bytes \(i viceversa\).
+* El **joc de caràcters** determina la forma en què els caràcters es converteixen en bytes (i viceversa).
 * El W3C recomana el charset **UTF-8**.
 
 ### Pàgina HTML bàsica
@@ -176,7 +162,7 @@ L'etiqueta `<br>` la qual no té tancament, ens serveix per fer un salt de líni
 
 Aquí comencem amb els perills de les **coses mal fetes** però que sembla que funcionin...
 
-![Forbidden](../.gitbook/assets/forbidden%20%282%29.jpg)
+![Forbidden](<../.gitbook/assets/forbidden (2).jpg>)
 
 **Què no s'ha de fer**
 
@@ -194,7 +180,7 @@ Mireu l'exemple de l'_abadia del crimen_, per entendre que una cosa ben feta dur
 
 > Si comencem a fer codi brut, "espaguetti" o altres defectes, les pàgines esdevenen totalment **inmantenibles**.
 
-En voleu més exemples? \(en MAJÚSCULES EL QUE HEM D'EVITAR\)
+En voleu més exemples? (en MAJÚSCULES EL QUE HEM D'EVITAR)
 
 Podíem definir el **color**, **tamany** i **tipus** de lletra de diferents formes:
 
@@ -211,13 +197,13 @@ Amb Es definien dins de l'etiqueta `<body>`;
 * BACKGROUND: Serveix per indicar la col·locació d'una imatge com a fons de pàgina.
 * COLOR DEL TEXT
 * TEXT: Serveix per definir el color del text de la pàgina.
-* LINK: El color del enllaços que no han estat visitats \( per defecte, és blau \) VLINK: El color dels enllaços visitats.
+* LINK: El color del enllaços que no han estat visitats ( per defecte, és blau ) VLINK: El color dels enllaços visitats.
 
 ... i un llarg etcètera...
 
 ### L'etiqueta pre
 
-> L'etiqueta `<pre>` defineix un paràgraf que respecte els codis propis del text pla \(intros, número d'espais, etc.\).
+> L'etiqueta `<pre>` defineix un paràgraf que respecte els codis propis del text pla (intros, número d'espais, etc.).
 
 Adequat per fer textos literals, per exemple els poemes amb els seus salts de línia sense `<br>`.
 
@@ -227,16 +213,16 @@ Adequat per fer textos literals, per exemple els poemes amb els seus salts de l�
 
 Serveixen per indicar que un text concret té un significat especial.
 
-* `<b></b>` \(bold\) o `<strong></strong>`: Text important \(es mostra en negreta\): 
-* `<i></i>` \(italic\): es mostra en cursiva
-* `<u></u>` \(underlined\): es mostra subratllat
+* `<b></b>` (bold) o `<strong></strong>`: Text important (es mostra en negreta):
+* `<i></i>` (italic): es mostra en cursiva
+* `<u></u>` (underlined): es mostra subratllat
 * `<sub></sub>`: Subindex
 * `<sup></sup>`: Superindex
-* `<blockquote></blockquote>`: per cites \(es mostra tabulat\). [Exemple](https://www.w3schools.com/html/html_quotation_elements.asp)
+* `<blockquote></blockquote>`: per cites (es mostra tabulat). [Exemple](https://www.w3schools.com/html/html_quotation_elements.asp)
 
-> No són per donar format sinò per donar significat especial al text. **Sempre** hem de formatar el contingut mitjançant les **fulles d'estil \(CSS\)**.
+> No són per donar format sinò per donar significat especial al text. **Sempre** hem de formatar el contingut mitjançant les **fulles d'estil (CSS)**.
 >
-> **MAI** fer servir _&lt;u&gt;_ per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link \(enllaç\).
+> **MAI** fer servir _\<u>_ per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
 
 ## Llistes
 
@@ -250,11 +236,11 @@ Podem distingir **tres tipus** de llistes:
 
 **Més informació**: [w3schools.com: HTML Lists](https://www.w3schools.com/html/html_lists.asp)
 
-### Llistes sense ordre \(Unordered Lists\)
+### Llistes sense ordre (Unordered Lists)
 
-Definides per les etiquetes `<ul>` i `</ul>` \(**u**nordered **l**ist\).
+Definides per les etiquetes `<ul>` i `</ul>` (**u**nordered **l**ist).
 
-Cada element de la llista queda enmarcat per l'etiqueta `<li>` \(**l**ist **i**tem\).
+Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**tem).
 
 ```markup
 <p> Països del mon </p>
@@ -266,7 +252,7 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>` \(**l**ist **i**t
 
 [Exemple de llista sense ordre](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered)
 
-![Forbidden](../.gitbook/assets/forbidden%20%284%29.jpg)
+![Forbidden](<../.gitbook/assets/forbidden (4).jpg>)
 
 L'atribut `type` ens serveix per definir el tipus de vinyeta.
 
@@ -276,9 +262,9 @@ On _**tipus vinyeta**_ pot ser: `circle`, `disc`, `square` o `none`.
 
 > Recordeu que això s'ha de fer **CSS**.
 
-### Llistes ordenades \(Ordered Lists\)
+### Llistes ordenades (Ordered Lists)
 
-Definides per les etiquetes `<ol>` i `</ol>` \(**o**rdered **l**ist\). Cada element de la llista queda enmarcat per l'etiqueta `<li>` \(**l**ist **i**tem\)
+Definides per les etiquetes `<ol>` i `</ol>` (**o**rdered **l**ist). Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**tem)
 
 ```markup
 <p> Països del mon </p>
@@ -290,7 +276,7 @@ Definides per les etiquetes `<ol>` i `</ol>` \(**o**rdered **l**ist\). Cada elem
 
 [Exemple de llista ordenada](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered)
 
-![Forbidden](../.gitbook/assets/forbidden%20%285%29.jpg)
+![Forbidden](<../.gitbook/assets/forbidden (5).jpg>)
 
 L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzarem.
 
@@ -300,12 +286,12 @@ L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzare
 * `i` per ordenar amb xifres romanes
 * `I` per ordenar amb xifres romanes majúscules
 
-### Llistes de definició \(Definition Lists\)
+### Llistes de definició (Definition Lists)
 
 > Cada element és presentat juntament amb la seva definició.
 
-* Definides per les etiquetes `<dl>` i `</dl>`   \(**d**efinition **l**ist\).
-* Les etiquetes de cada element són `<dt>` \(**d**efinition **t**erm\) i la seva definició `<dd>` \(**d**efinition **d**efinition\).
+* Definides per les etiquetes `<dl>` i `</dl>` (**d**efinition **l**ist).
+* Les etiquetes de cada element són `<dt>` (**d**efinition **t**erm) i la seva definició `<dd>` (**d**efinition **d**efinition).
 
 ```markup
 <dl>
@@ -347,7 +333,7 @@ Podem **aniuar** llistes, fins i tot de diferents tipus de llista:
 
 ## Enllaços
 
-> Els **enllaços** sorgeixen de la necessitat de que les pàgines HTML estiguin interconnectades \(hypertext\).
+> Els **enllaços** sorgeixen de la necessitat de que les pàgines HTML estiguin interconnectades (hypertext).
 
 * Per col·locar un enllaç utlitzarem les etiquetes `<a>` i `</a>` .
 * L'atribut `href`, ens indica el destí d'aquest enllaç.
@@ -394,17 +380,16 @@ Un lloc web està constituit de pàgines interconnectades.
 
 Per regla general, un lloc web ha d'estar ordenat per directoris. S'ha d'utilitzar la "/" per especificar on es troben les coses.
 
-* Els **enllaços locals** també poden apuntar a una secció en concret dintre d'un altre pàgina.
+*   Els **enllaços locals** també poden apuntar a una secció en concret dintre d'un altre pàgina.
 
-  ```markup
-   <a href="arxiu.html#seccio"> Arxiu </a>
-  ```
+    ```markup
+     <a href="arxiu.html#seccio"> Arxiu </a>
+    ```
+*   La pàgina **arxiu.html** ha de contenir la marca referent a la secció.
 
-* La pàgina **arxiu.html** ha de contenir la marca referent a la secció.
-
-  ```markup
-   <a id"seccio"> </a>
-  ```
+    ```markup
+     <a id"seccio"> </a>
+    ```
 
 ### Enllaços externs
 
@@ -435,7 +420,7 @@ A l'atribut `href` i col·loquem la paraula `mailto:` seguit de la direcció de 
 
 El mecanisme és el mateix que hem vist en els enllaços remots i locals.
 
-En comptes d'indicar la direcció web el que hem de fer és indicar el **nom del fitxer** \(i en cas que sigui necessari la **ruta**\).
+En comptes d'indicar la direcció web el que hem de fer és indicar el **nom del fitxer** (i en cas que sigui necessari la **ruta**).
 
 ```markup
 <a href="fitxer.pdf"> Descarregar el fitxer </a>
@@ -445,11 +430,11 @@ En comptes d'indicar la direcció web el que hem de fer és indicar el **nom del
 
 > L'aspecte més vistós i atractiu d'una pàgina web és el grafisme.
 
-Les **imatges** són emmagatzemades en forma d'arxius, principalment **GIF/PNG** \(per imatges\) i **JPG** \(per fotos\).
+Les **imatges** són emmagatzemades en forma d'arxius, principalment **GIF/PNG** (per imatges) i **JPG** (per fotos).
 
 L'etiqueta que utilitzem per insertar una imatge és `<img>`, **no cal fer el tancament**.
 
-Mitjançant l'atribut `src` \(_**source**_\), especifiquem el lloc \(URL\) on es troba la imatge.
+Mitjançant l'atribut `src` (_**source**_), especifiquem el lloc (URL) on es troba la imatge.
 
 ```markup
 <img src="img_girl.jpg" alt="Girl in a jacket">
@@ -470,14 +455,14 @@ Si la imatge es troba en una carpeta diferents que la pàgina HTML:
 
 Altres **coses mal fetes**:
 
-![Forbidden](../.gitbook/assets/forbidden%20%281%29.jpg)
+![Forbidden](<../.gitbook/assets/forbidden (1).jpg>)
 
 * **BORDER**: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
 * **LOWSRC**: Quant tenim activada aquesta opció primer es descarrega la imatge amb una baixa resolució i va millorant a mesura que es va descarregant.
 
 ### Tipus d'arxius per les imatges
 
-PNG \( per dibuixos \) JPG \( per fotos \).
+PNG ( per dibuixos ) JPG ( per fotos ).
 
 Els dos formats comprimeixen les imatges per guardar-les.
 
@@ -487,7 +472,7 @@ Els dos formats comprimeixen les imatges per guardar-les.
 * **Transparència**: És una utilitat per definir algunes parts de la imatge com a transparents.
 * **Colors**: Es poden utilitzar paletes, conjunts de 256 o menys. Quant menys colors utilitzem menys tamany ocuparà l'imatge.
 
-Actualment s'està utilitzant un format **PNG** que té les mateixes prestacions que el GIF \(transparència i animació\) i a més a més incorpora **color real**, 48 bits per píxel i compresió sense pèrdua.
+Actualment s'està utilitzant un format **PNG** que té les mateixes prestacions que el GIF (transparència i animació) i a més a més incorpora **color real**, 48 bits per píxel i compresió sense pèrdua.
 
 **JPG**
 
@@ -499,7 +484,7 @@ Actualment s'està utilitzant un format **PNG** que té les mateixes prestacions
 
 Hem de procurar de no posar imatges de tamany més gran que el que s'ha de visualitzar
 
-* Per exemple si té 200x200 la imatge màxima no  té sentit posar-hi una imatge a descarregar de més de 1000x1000 píxels!
+* Per exemple si té 200x200 la imatge màxima no té sentit posar-hi una imatge a descarregar de més de 1000x1000 píxels!
 
 **Arxius GIF**
 
@@ -516,7 +501,7 @@ Hem de procurar de no posar imatges de tamany més gran que el que s'ha de visua
 
 L'etiqueta per definir les taules és: `<table>` `</table>`
 
-Les taules són descrites per línies d'esquerra a dreta, mitjançant _&lt;tr&gt; &lt;/tr&gt;_
+Les taules són descrites per línies d'esquerra a dreta, mitjançant _\<tr> \</tr>_
 
 ```markup
 <table>
@@ -545,12 +530,12 @@ si afegim un atribut `border="1"` ho veurem més clar:
 </table>
 ```
 
-![Forbidden](../.gitbook/assets/forbidden%20%286%29.jpg)
+![Forbidden](<../.gitbook/assets/forbidden (6).jpg>)
 
 **ATRIBUTS PER FILES I CEL·LES no vàlids**
 
 * **Align**: Justifica el text de la cel·la
-* **Valign**: Podem escollir si el text apareix a dalt \(top\), a baix  \(bottom\) o al mig \(middle\) de la cel.la.
+* **Valign**: Podem escollir si el text apareix a dalt (top), a baix (bottom) o al mig (middle) de la cel.la.
 * **Bgcolor**: Donar color a la cel·la o la fila escollida.
 * **Bordercolor**: Defineix el color del marc.
 
@@ -565,7 +550,7 @@ si afegim un atribut `border="1"` ho veurem més clar:
 * **Border**: Defineix el tamany del marc.
 * **Bordercolor**: Defineix el color del marc.
 * **Cellpadding**: Defineix en pixels l'espai entre les cel·les dela taula i el seu contingut.
-* **Cellspacing**: Defineix l'espai entre els marcs \(en pixels\)
+* **Cellspacing**: Defineix l'espai entre els marcs (en pixels)
 * **Height**: Defineix l'altura de la taula en pixels o percentatge.
 * **Width**: Defineix l'amplada de la taula en pixels o percentatge.
 
@@ -584,15 +569,15 @@ Atribut `target` a enllaços: s'utilitza per decidir on es s'obrirà l'enllaç, 
 
 * **\_blank**: nova finestra.
 * **\_top**: finestra.
-* **\_self**:\(per defecte\) en el frame actual.
+* **\_self**:(per defecte) en el frame actual.
 * **\_parent**: es carrega al frame "pare", el que era havia cridat l'actual.
-* **-** o també un nom de **frame** \(definit amb l'atribut name\).
+* **-** o també un nom de **frame** (definit amb l'atribut name).
 
 ```markup
 <a href="nom-pagina-a-carregar.html" target="nom-del-marc-a-carregar">
 ```
 
-![Forbidden](../.gitbook/assets/forbidden%20%283%29.jpg)
+![Forbidden](<../.gitbook/assets/forbidden (3).jpg>)
 
 * Estan **obsolets** per l'HTML5, però eren vàlids per altres versions.
 * Té l'interès "històric" de saber com es feien abans les pàgines web, el CSS actualment les millora molt.
@@ -601,17 +586,16 @@ Atribut `target` a enllaços: s'utilitza per decidir on es s'obrirà l'enllaç, 
 
 **Doctypes de 4.01 o de XHTML, amb FRAMESET**
 
-* Html 4.01:
+*   Html 4.01:
 
-  ```markup
-  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">
-  ```
+    ```markup
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">
+    ```
+*   Xhtml:
 
-* Xhtml:
-
-  ```markup
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>">
-  ```
+    ```markup
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>">
+    ```
 
 L'**estructura de la pàgina** també es veu modificada. No té `<body>`, té `<frameset>`
 
@@ -647,11 +631,11 @@ L'**estructura de la pàgina** també es veu modificada. No té `<body>`, té `<
 
 **frameset**: l'atribut `cols` o `rows` defineix el percentatge total de la pantalla que ocuparà cada secció.
 
-* És interessant que alguna secció tingui \*     perquè el navegador calculi de forma automática l'ampada o l'alçada que ha de tenir.
+* És interessant que alguna secció tingui \* perquè el navegador calculi de forma automática l'ampada o l'alçada que ha de tenir.
 
 **frame**: hi ha tants frames com blocs s'hagin indicat a l'etiqueta frameset.
 
-* L'atribut `<src>` fa referència a la url de la pàgina volem que es carregui. 
+* L'atribut `<src>` fa referència a la url de la pàgina volem que es carregui.
 * L'atribut `<name>` indica el nom del frame per ser utilitzat amb _targets_
 
 ### Exemples
@@ -702,12 +686,11 @@ Apareixen **barres d'scroll** en el frame si la pàgina és més gran que l'espa
 
 ## Formularis
 
-* [Creació de formularis](https://docs.google.com/presentation/d/1fZ1F4p_dvXShnL7GVNHEygFBxDvgslEW9AuTi4rE5f4/edit?usp=sharing) 
-* Validació de camps:
+* [Creació de formularis](https://docs.google.com/presentation/d/1fZ1F4p_dvXShnL7GVNHEygFBxDvgslEW9AuTi4rE5f4/edit?usp=sharing)
+*   Validació de camps:
 
-  [https://lenguajehtml.com/p/html/formularios/validaciones-html5](https://lenguajehtml.com/p/html/formularios/validaciones-html5)
+    [https://lenguajehtml.com/p/html/formularios/validaciones-html5](https://lenguajehtml.com/p/html/formularios/validaciones-html5)
 
 ## Documentació i recursos
 
 * [Vídeo Història d'Internet](https://www.youtube.com/watch?v=h8K49dD52WA)
-
