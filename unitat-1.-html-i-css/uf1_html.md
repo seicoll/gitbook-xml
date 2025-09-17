@@ -584,87 +584,12 @@ Atribut `target` a enllaços: s'utilitza per decidir on es s'obrirà l'enllaç, 
 * Antigament els _**layouts**_ una mica complexes es feien o bé amb taules o bé amb frames. Les dues coses estan en desús avui en dia.
 * Podria interessar saber-los fer per actualitzar alguna pàgina web antiga.
 
-**Doctypes de 4.01 o de XHTML, amb FRAMESET**
-
-*   Html 4.01:
-
-    ```markup
-    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "<http://www.w3.org/TR/html4/frameset.dtd>">
-    ```
-*   Xhtml:
-
-    ```markup
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "<http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd>">
-    ```
-
-L'**estructura de la pàgina** també es veu modificada. No té `<body>`, té `<frameset>`
-
-```markup
-<HTML>
-<HEAD>
-    <TITLE> Mi titulo ></TITLE>
-</HEAD>
-
-    <FRAMESET>
-        <NOFRAMES>
-            <BODY>
-                Su visualizador no soporta frames. Pulse 
-                <A HREF="indice.htm">aquí</A> para volver.
-            </BODY>
-        </NOFRAMES>
-
-        <FRAME SRC="pagina1.htm" >
-        <FRAME SRC="pagina2.htm" >
-    </FRAMESET>
-
-</HTML>
-```
-
 ### Per què no s'utilitzen els frames
 
 * Els **motors de cerca** tenen problemes per indexar-los.
 * Ocupen **espai** a la pantalla.
 * No es poden utilitzar les funcionalitats d'anar endavant o endarrere a l'**historial** de navegació.
 * Tenen problemes d'**usabilitat i accessibilitat** web per persones invidents.
-
-### Etiquetes
-
-**frameset**: l'atribut `cols` o `rows` defineix el percentatge total de la pantalla que ocuparà cada secció.
-
-* És interessant que alguna secció tingui \* perquè el navegador calculi de forma automática l'ampada o l'alçada que ha de tenir.
-
-**frame**: hi ha tants frames com blocs s'hagin indicat a l'etiqueta frameset.
-
-* L'atribut `<src>` fa referència a la url de la pàgina volem que es carregui.
-* L'atribut `<name>` indica el nom del frame per ser utilitzat amb _targets_
-
-### Exemples
-
-Anem a veure diferents dissenys de frames
-
-**3 àrees verticals**
-
-![image](../.gitbook/assets/frames1.png)
-
-```markup
-<FRAMESET COLS=30%,20%,50%>
-   <FRAME SRC="a.htm">
-   <FRAME SRC="b.htm">
-   <FRAME SRC="c.htm">
-</FRAMESET>
-```
-
-**3 àrees horitzontals**
-
-![image](../.gitbook/assets/frames2.png)
-
-```markup
-<FRAMESET ROWS=25%,25%,50%>
-   <FRAME SRC="a.htm">
-   <FRAME SRC="b.htm">
-   <FRAME SRC="c.htm">
-</FRAMESET>
-```
 
 ## Iframes
 
