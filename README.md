@@ -1,13 +1,14 @@
 # Índex
 
-## UF1. Programació amb XML
+## UNITAT 1. HTML I CSS
 
-* [Llenguatge HTML](unitat-1.-html-i-css/uf1_html.md)
-* [CSS](unitat-1.-html-i-css/uf1_css.md)
-* [XML](unitat-2.-xml-i-json/uf1_xml.md)
-* [Validació amb DTD](unitat-2.-xml-i-json/uf1_dtd.md)
-* [Validació amb XSD](unitat-2.-xml-i-json/uf1_xsd.md)
+- [Llenguatge HTML](unitat-1.-html-i-css/uf1_html.md)
+- [CSS](unitat-1.-html-i-css/uf1_css.md)
 
-## UF2. Àmbits d'aplicació de l'XML
+## UNITAT 2. Llenguatges de marques (XML i JSON)
 
-## UF3.Sistemes de gestió empresarial
+- [XML](unitat-2.-xml-i-json/uf1_xml.md)
+- [Validació amb DTD](unitat-2.-xml-i-json/uf1_dtd.md)
+- [Validació amb XSD](unitat-2.-xml-i-json/uf1_xsd.md)
+
+## UF3.Javascript i Sistemes de gestió empresarial
