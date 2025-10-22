@@ -4,7 +4,7 @@
 
 * [Llenguatge HTML](unitat-1.-html-i-css/uf1_html.md)
 * [CSS](unitat-1.-html-i-css/uf1_css.md)
-* [XML](uf1.-programacio-amb-xml/uf1_xml.md)
+* [XML](unitat-2.-xml-i-json/uf1_xml.md)
 * [Validació amb DTD](unitat-2.-xml-i-json/uf1_dtd.md)
 * [Validació amb XSD](unitat-2.-xml-i-json/uf1_xsd.md)
 

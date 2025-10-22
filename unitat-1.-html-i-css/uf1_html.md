@@ -162,7 +162,7 @@ L'etiqueta `<br>` la qual no té tancament, ens serveix per fer un salt de líni
 
 Aquí comencem amb els perills de les **coses mal fetes** però que sembla que funcionin...
 
-![Forbidden](<../.gitbook/assets/forbidden (2).jpg>)
+![Forbidden](../.gitbook/assets/forbidden.jpg)
 
 **Què no s'ha de fer**
 
@@ -252,7 +252,7 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**te
 
 [Exemple de llista sense ordre](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered)
 
-![Forbidden](<../.gitbook/assets/forbidden (4).jpg>)
+![Forbidden](<../.gitbook/assets/forbidden (1).jpg>)
 
 L'atribut `type` ens serveix per definir el tipus de vinyeta.
 
@@ -276,7 +276,7 @@ Definides per les etiquetes `<ol>` i `</ol>` (**o**rdered **l**ist). Cada elemen
 
 [Exemple de llista ordenada](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered)
 
-![Forbidden](<../.gitbook/assets/forbidden (5).jpg>)
+![Forbidden](<../.gitbook/assets/forbidden (2).jpg>)
 
 L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzarem.
 
@@ -455,7 +455,7 @@ Si la imatge es troba en una carpeta diferents que la pàgina HTML:
 
 Altres **coses mal fetes**:
 
-![Forbidden](<../.gitbook/assets/forbidden (1).jpg>)
+![Forbidden](<../.gitbook/assets/forbidden (4).jpg>)
 
 * **BORDER**: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
 * **LOWSRC**: Quant tenim activada aquesta opció primer es descarrega la imatge amb una baixa resolució i va millorant a mesura que es va descarregant.
@@ -530,7 +530,7 @@ si afegim un atribut `border="1"` ho veurem més clar:
 </table>
 ```
 
-![Forbidden](<../.gitbook/assets/forbidden (6).jpg>)
+![Forbidden](<../.gitbook/assets/forbidden (5).jpg>)
 
 **ATRIBUTS PER FILES I CEL·LES no vàlids**
 
@@ -577,7 +577,7 @@ Atribut `target` a enllaços: s'utilitza per decidir on es s'obrirà l'enllaç, 
 <a href="nom-pagina-a-carregar.html" target="nom-del-marc-a-carregar">
 ```
 
-![Forbidden](<../.gitbook/assets/forbidden (3).jpg>)
+![Forbidden](<../.gitbook/assets/forbidden (6).jpg>)
 
 * Estan **obsolets** per l'HTML5, però eren vàlids per altres versions.
 * Té l'interès "històric" de saber com es feien abans les pàgines web, el CSS actualment les millora molt.

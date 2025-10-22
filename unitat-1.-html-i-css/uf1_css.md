@@ -33,9 +33,9 @@ En els sites amb moltes pàgines, els **canvis de formats** de eren **molt labor
 ### Versions
 
 * **CSS 1** (1996)
-* **CSS 2** (1998)&#x20;
+* **CSS 2** (1998)
 * **CSS 2.1** es finalitza al 2011.
-* **CSS 3** (versió actual)&#x20;
+* **CSS 3** (versió actual)
 
 ![CSS3](../.gitbook/assets/css3.png)
 
@@ -44,10 +44,10 @@ En els sites amb moltes pàgines, els **canvis de formats** de eren **molt labor
 Per **aplicar fulles d'estil CSS a HTML** es pot fer a través de tres formes:
 
 * CSS **integrades** en un element HTML5
-  * Amb l'atribut `style`  en etiquetes html.
+  * Amb l'atribut `style` en etiquetes html.
 * CSS **internes** al document
   * Amb una etiqueta `<style>`
-* CSS **externes** al document&#x20;
+* CSS **externes** al document
   * Amb un arxiu extern .css i utilitzant l'etiqueta `<link>`
 
 ## CSS integrades en una etiqueta html
@@ -58,7 +58,7 @@ Permet especificar regles CSS d'una etiqueta HTML.
 
 Es col·loca dins d'una etiqueta de HTML amb l'atribut `style`
 
-![image](../.gitbook/assets/forbidden.jpg)
+![image](<../.gitbook/assets/forbidden (3).jpg>)
 
 **Exemple 1: Estil definit per una etiqueta**
 
@@ -73,7 +73,7 @@ Es col·loca dins d'una etiqueta de HTML amb l'atribut `style`
 
 El resultat serà:
 
-![image](../.gitbook/assets/uf1\_p\_css.png)
+![image](../.gitbook/assets/uf1_p_css.png)
 
 **Exemple 2: Estil definit en petites parts d'una pàgina**
 
@@ -88,7 +88,7 @@ Mitjançant l'etiqueta `<span>` i l'atribut `style`.
 
 El resultat serà:
 
-![image](../.gitbook/assets/uf1\_span.png)
+![image](../.gitbook/assets/uf1_span.png)
 
 **Exemple 3: Estil definit en una part de la pàgina**
 
@@ -105,7 +105,7 @@ Mitjançant l'etiqueta `<div>` i l'atribut `style`.
 
 El resultat serà:
 
-![image](../.gitbook/assets/uf1\_div-css.png)
+![image](../.gitbook/assets/uf1_div-css.png)
 
 ## CSS internes al document
 
@@ -146,7 +146,7 @@ El resultat serà:
 
 **El resultat serà:**
 
-![image](../.gitbook/assets/uf1\_pag-estil.png)
+![image](../.gitbook/assets/uf1_pag-estil.png)
 
 ## CSS Externes
 
@@ -200,7 +200,7 @@ Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines
 
 > Les **regles CSS** defineixen de quina forma es representaran les diferents etiquetes HTML de la pàgina.
 
-![](../.gitbook/assets/uf1\_css\_regles.png)
+![](../.gitbook/assets/uf1_css_regles.png)
 
 Si volem especificar **més d'una propietat** en una regla CSS:
 
@@ -394,9 +394,9 @@ h2 { color: blue; }
 
 **Visualització:**
 
-### &#x20;Títol 1
+### Títol 1
 
-#### &#x20;Títol 2
+#### Títol 2
 
 ### Selectors de classe (.)
 
@@ -484,7 +484,7 @@ p a { color: red; }
 
 **Visualització:**
 
-&#x20;Consulteu la pàgina del [W3C](https://github.com/seicoll/xml/tree/efbc6bbbe9f8a8baea63114b48af8bf031721131/www.w3.org)
+Consulteu la pàgina del [W3C](https://github.com/seicoll/xml/tree/efbc6bbbe9f8a8baea63114b48af8bf031721131/www.w3.org)
 
 ### Grups de selectors
 
@@ -517,7 +517,7 @@ a:hover {
 }
 ```
 
-[Exemple](https://www.w3schools.com/cssref/tryit.asp?filename=trycss\_sel\_hover)
+[Exemple](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_hover)
 
 ### Selectors pseudoelements
 
@@ -550,7 +550,7 @@ Segon paràgraf
 
 > CSS 3 afegeix molts més pseudoelements.
 
-**Més exemples a**: [http://www.w3schools.com/css/css\_pseudo\_elements.asp](http://www.w3schools.com/css/css\_pseudo\_elements.asp)
+**Més exemples a**: [http://www.w3schools.com/css/css\_pseudo\_elements.asp](http://www.w3schools.com/css/css_pseudo_elements.asp)
 
 ### El selector universal (\*)
 
@@ -576,7 +576,7 @@ Segon paràgraf
 
 **Visualització:**
 
-### &#x20;Títol principal
+### Títol principal
 
 Primer paràgraf
 
@@ -606,11 +606,11 @@ h1+p {
 
 Cada caixa té quatre components:
 
-![image](../.gitbook/assets/uf1\_box\_model.png)
+![image](../.gitbook/assets/uf1_box_model.png)
 
 L'**ordre de visualització** des del punt de vista de l'usuari és:
 
-![image](../.gitbook/assets/uf1\_box\_model\_order.gif)
+![image](../.gitbook/assets/uf1_box_model_order.gif)
 
 ### Amplada i alçada
 
@@ -623,7 +623,7 @@ table {
 }
 ```
 
-![image](../.gitbook/assets/uf1\_mides\_caixa.png)
+![image](../.gitbook/assets/uf1_mides_caixa.png)
 
 > La **dimensió total** de l'element pot ser més gran si té margin i/o border.
 
@@ -660,7 +660,7 @@ p { border-color:#000000; border-style:solid; }
 p { border: 2px solid #000000; }
 ```
 
-[Exemple](http://www.w3schools.com/css/css\_border.asp)
+[Exemple](http://www.w3schools.com/css/css_border.asp)
 
 ### Propietat box-sizing
 
@@ -689,7 +689,7 @@ div {
 
 ![image](../.gitbook/assets/uf1-box-sizing2.png)
 
-[Exemples](http://www.w3schools.com/cssref/css3\_pr\_box-sizing.asp)
+[Exemples](http://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
 
 ## Elements de bloc i en línia
 
@@ -698,7 +698,7 @@ Les caixes es poden comportar de formes diferents en respecte a les altres.
 El més corrent són dos comportaments:
 
 * **block:**
-  * Són posicionats **verticalment**.&#x20;
+  * Són posicionats **verticalment**.
   * Blocs de contingut que ocupen tot l'espai d'una línia. Fa que la caixa defineixi un salt de línia rere seu.
 * **inline:**
   * Són posicionats **horitzontalment**.
@@ -707,7 +707,7 @@ El més corrent són dos comportaments:
 ![image](../.gitbook/assets/uf1-inline-block.png)
 
 * El primer element és un **paràgraf** que ocupa tota la línia perquè és un element de _**block**_.
-* El segon element és un **enllaç** que ocupa només l'espai necessari pel     seu contingut ja que és un element _**inline**_.
+* El segon element és un **enllaç** que ocupa només l'espai necessari pel seu contingut ja que és un element _**inline**_.
 
 ### inline-block
 
@@ -739,7 +739,7 @@ L'espai que ocupava l'etiqueta queda lliure i és ocupat pels altres elements.
 
 **CSS** permet modificar el posicionament en el que es mostra cada caixa.
 
-Les tècniques de posicionament han anat variant amb el temps.  Van passar de **frames**, a **tables**, a divs (amb diferents tipus de posicionament) fins arribar el **Flexbox** i **Grid**.
+Les tècniques de posicionament han anat variant amb el temps. Van passar de **frames**, a **tables**, a divs (amb diferents tipus de posicionament) fins arribar el **Flexbox** i **Grid**.
 
 El posicionament tipus de **posicionament clàssics** són:
 
@@ -827,7 +827,7 @@ Ens fixa una caixa en la pantalla de manera que **no es mourà** encara que es m
 
 ![image](../.gitbook/assets/uf1-posicionament-fixed.png)
 
-[Exemple posicionament fixed](https://www.w3schools.com/cssref/playit.asp?filename=playcss\_position\&preval=fixed)&#x20;
+[Exemple posicionament fixed](https://www.w3schools.com/cssref/playit.asp?filename=playcss_position\&preval=fixed)
 
 ### Posicionament Flotant
 
@@ -843,7 +843,7 @@ La propietat `clear` permet anul·lar el comportament per introduït per la prop
 
 * `clear: left;` anul·la els elements floants a l'esquerra.
 
-[Exemple clear](https://www.w3schools.com/cssref/tryit.asp?filename=trycss\_class-clear)
+[Exemple clear](https://www.w3schools.com/cssref/tryit.asp?filename=trycss_class-clear)
 
 El paràmetre `clear` pot tenir diferents valors:
 
@@ -855,7 +855,7 @@ El **2009** el W3C comença a treballar en la especificació de **Flexbox.**
 
 **Flexbox** ve a solucionar un dels majors mals de caps dels dissenyadors de pàgines web: com era crear pàgines **responsive** que funcionin en l'àmplia varietat de dispositius.
 
-**Flexbox** es crea un nou model de caixa, la caixa flexible o FlexBox amb&#x20;
+**Flexbox** es crea un nou model de caixa, la caixa flexible o FlexBox amb
 
 `display: flex`
 
@@ -885,8 +885,8 @@ La declaració `display: flex;` defineix:
 
 Un **Flex container** té dos eixos:
 
-* Un **Main axis** (_Eix principal_): és l’eix que estableix la direcció en la qual es posicionen els elements flexibles.&#x20;
-  * En l’exemple es tracta d’un **flex container row** ja que es posicionen de forma horitzontal.&#x20;
+* Un **Main axis** (_Eix principal_): és l’eix que estableix la direcció en la qual es posicionen els elements flexibles.
+  * En l’exemple es tracta d’un **flex container row** ja que es posicionen de forma horitzontal.
 * I un **Cross axis** (_Eix transversal_), perpendicular a l'Eix principal.
 
 Els elements es col·locaran seguint la **direcció** del Main axis o bé Cross axis:
@@ -896,7 +896,7 @@ Els elements es col·locaran seguint la **direcció** del Main axis o bé Cross 
 
 #### Propietat flex-direction
 
-La propietat `flex-direction` especifica la **direcció respecte l’eix principal** en la qual es posicionen els elements flexibles.&#x20;
+La propietat `flex-direction` especifica la **direcció respecte l’eix principal** en la qual es posicionen els elements flexibles.
 
 <figure><img src="../.gitbook/assets/flex-direction.svg" alt=""><figcaption></figcaption></figure>
 
@@ -906,11 +906,11 @@ La propietat `flex-direction` especifica la **direcció respecte l’eix princip
 }
 ```
 
-El valors acceptats són:&#x20;
+El valors acceptats són:
 
-* **row** (default): de dreta a esquerra&#x20;
-* **row-reverse**: d’esquerra a dreta&#x20;
-* **column**: de dalt a baix&#x20;
+* **row** (default): de dreta a esquerra
+* **row-reverse**: d’esquerra a dreta
+* **column**: de dalt a baix
 * **column-reverse**: de baix a dalt
 
 **Exemple:** [http://jsfiddle.net/seicoll/0p287xwk/1/](http://jsfiddle.net/seicoll/0p287xwk/1/)
@@ -929,10 +929,10 @@ La propietat `flex-wrap` permet especificar que els elements flexibles es col·l
 }
 ```
 
-Els valors acceptats són:&#x20;
+Els valors acceptats són:
 
-* **nowrap** (default): el contenidor té un única línia.&#x20;
-* **wrap**: el contenidor té múltiples línies&#x20;
+* **nowrap** (default): el contenidor té un única línia.
+* **wrap**: el contenidor té múltiples línies
 * **wrap-reverse**: el contenidor té múltiples línies que es col·loquen en ordre invers
 
 **Exemple:** [https://jsfiddle.net/seicoll/7286hsdu/](https://jsfiddle.net/seicoll/7286hsdu/)
@@ -958,7 +958,7 @@ Equival a:
 
 Defeneix l'**alineament** dels elements respecte l'eix principal (**Main Axis**).
 
-Si hi ha **espai extra** dins d'un contenidor flexible la propietat justify-content defineix com s'usa aquest espai que sobra.&#x20;
+Si hi ha **espai extra** dins d'un contenidor flexible la propietat justify-content defineix com s'usa aquest espai que sobra.
 
 <figure><img src="../.gitbook/assets/justify-content.svg" alt=""><figcaption></figcaption></figure>
 
@@ -970,14 +970,14 @@ Si hi ha **espai extra** dins d'un contenidor flexible la propietat justify-cont
 
 Les opcions són:
 
-* **flex-start**: es distribueixen tots enganxats a l'inici del flex-direction.&#x20;
-* **flex-end**: es distribueixen tots enganxats al final del flex-direction.&#x20;
-* **center**: es distribueixen tots alineats al centre.&#x20;
-* **space-between**: es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells, però sense deixar espai a l'inici i al final.&#x20;
+* **flex-start**: es distribueixen tots enganxats a l'inici del flex-direction.
+* **flex-end**: es distribueixen tots enganxats al final del flex-direction.
+* **center**: es distribueixen tots alineats al centre.
+* **space-between**: es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells, però sense deixar espai a l'inici i al final.
 * **space-around**: es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells, deixant espai a l'inici i al final.
 * **space-evenly:** es distribueixen ocupant tot l'espai disponible, amb separacions iguals entre ells i al l'inici i final.
 
-**Exemple:** [https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_justify-content\_center](https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_justify-content\_center)
+**Exemple:** [https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_justify-content\_center](https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_justify-content_center)
 
 #### Propietat align-items
 
@@ -999,13 +999,13 @@ Defeneix l'**alineament** dels elements respecte l'eix transversal (**Cross Axis
 * strech (default)
 * baseline
 
-**Exemple:** [https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_align-items\_stretch](https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_align-items\_stretch)
+**Exemple:** [https://www.w3schools.com/css/tryit.asp?filename=trycss3\_flexbox\_align-items\_stretch](https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_align-items_stretch)
 
 ### Propietat per les caixes filles (Flex items)
 
 #### Propietat order
 
-Permet **establir l'ordre** en què apareixen els components dins d'una caixa flexible.&#x20;
+Permet **establir l'ordre** en què apareixen els components dins d'una caixa flexible.
 
 Per defecte apareixeran tal com apareixen en el codi HTML (equival a order: 0).
 
@@ -1019,7 +1019,7 @@ Per defecte apareixeran tal com apareixen en el codi HTML (equival a order: 0).
 
 #### Propietat flex-grow
 
-Permet establir **com creix** un element flexible dins del contenidor en relació als altres quan hi ha espai disponible del contenidor a ocupar.&#x20;
+Permet establir **com creix** un element flexible dins del contenidor en relació als altres quan hi ha espai disponible del contenidor a ocupar.
 
 La propietat `flex-grow` especifica el **factor de creixement**. Per defecte és '0',
 
@@ -1029,21 +1029,21 @@ La propietat `flex-grow` especifica el **factor de creixement**. Per defecte és
 
 Permet establir **com decreix** un element flexible dins del contenidor en relació als altres quan falta espai al contenidor.
 
-La propietat flex-shrink especifica el **factor de reducció**. Per defecte és '1'.&#x20;
+La propietat flex-shrink especifica el **factor de reducció**. Per defecte és '1'.
 
 Si posem el valor '0', l’element flexible no es reduirà.
 
 #### Propietat flex-basis
 
-Estableix la **mida inicial de l'element** abans de distribuir l'espai lliure d'acord amb les ràtios de flex-grow o flex-shrink.&#x20;
+Estableix la **mida inicial de l'element** abans de distribuir l'espai lliure d'acord amb les ràtios de flex-grow o flex-shrink.
 
 Pren el mateix valor que la propietat width i quan s'omet, el seu valor és 'main-size' (anteriorment,'auto').
 
 #### Propietat flex
 
-Estableix **com creix o decreix un element** flexible dins del contenidor en relació als altres.&#x20;
+Estableix **com creix o decreix un element** flexible dins del contenidor en relació als altres.
 
-És un forma abreviada de les propietats `flex-grow`, `flex-shrink` i `flex-basis`.&#x20;
+És un forma abreviada de les propietats `flex-grow`, `flex-shrink` i `flex-basis`.
 
 ```css
 flex: <'flex-grow'> || <'flex-shrink'> || <'flex-basis'>
@@ -1055,28 +1055,28 @@ El segon i tercer paràmetres (`flex-shrink` i `flex-basis`) són opcionals.
 
 #### Propietat align-self
 
-Estableix l'**alineament** dels elements individuals sobreescrivint la propietat `align-items`.&#x20;
+Estableix l'**alineament** dels elements individuals sobreescrivint la propietat `align-items`.
 
 <figure><img src="../.gitbook/assets/align-self.svg" alt=""><figcaption></figcaption></figure>
 
-El valors acceptats són:&#x20;
+El valors acceptats són:
 
-* auto&#x20;
-* flex-start&#x20;
-* flex-end&#x20;
-* center&#x20;
-* baseline&#x20;
+* auto
+* flex-start
+* flex-end
+* center
+* baseline
 * strech
 
 **Més informació**
 
-CSS-Tricks: A Complete Guide to Flexbox&#x20;
+CSS-Tricks: A Complete Guide to Flexbox
 
 [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-**Anem a practicar:**&#x20;
+**Anem a practicar:**
 
-* [http://flexboxfroggy.com/ ](http://flexboxfroggy.com/)
+* [http://flexboxfroggy.com/](http://flexboxfroggy.com/)
 * [http://www.flexboxdefense.com/](http://www.flexboxdefense.com/)
 
 ## Resum visual de posicionaments
