@@ -896,8 +896,3 @@ El paràmetre `clear` pot tenir diferents valors:
 
 ![image](uf1_images/resum-float.png)
 
-### Z-index
-
-Controla la profunditat de les capes
-
-![image](uf1_images/z-index.png)
