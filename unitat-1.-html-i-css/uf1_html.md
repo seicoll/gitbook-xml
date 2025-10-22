@@ -14,7 +14,7 @@ Conseqüentment, el **llenguatge HTML** serveix al navegador per mostrar les pà
 
 **HTML** ha sofert molts canvis al llarg del temps.
 
-* La versió actual del llenguatge HTML és **HTML5**.
+- La versió actual del llenguatge HTML és **HTML5**.
 
 ![](../.gitbook/assets/html5.png)
 
@@ -46,9 +46,9 @@ Però tot i que funciona, no és el que busquem, falta especificar molt millor l
 
 El llenguatge HTML té **número d'etiquetes limitat**.
 
-* Cada etiqueta està pensada per representar documents d'una forma determinada o per marcar-ne l'estructura.
-* Aquí hi trobaràs una llista d'**etiquetes vàlides**:
-  * **HTML Element Reference:** [https://www.w3schools.com/TAGS/default.asp](https://www.w3schools.com/TAGS/default.asp)
+- Cada etiqueta està pensada per representar documents d'una forma determinada o per marcar-ne l'estructura.
+- Aquí hi trobaràs una llista d'**etiquetes vàlides**:
+  - **HTML Element Reference:** [https://www.w3schools.com/TAGS/default.asp](https://www.w3schools.com/TAGS/default.asp)
 
 ## Creació de documents HTML
 
@@ -70,14 +70,14 @@ Un document HTML ha d'estar delimitat per l'etiqueta `<html>` i `</html>`.
 
 Pot incloure l'atribut **lang**:
 
-* **lang** ens permet definir l'idioma en el que està la pàgina
-* Aquesta informació és important pels motors de cerca i els programes de síntesis de veu.
+- **lang** ens permet definir l'idioma en el que està la pàgina
+- Aquesta informació és important pels motors de cerca i els programes de síntesis de veu.
 
 ```markup
 <!DOCTYPE html>
 <html lang="ca">
 
-     ... 
+     ...
 
 </html>
 ```
@@ -88,16 +88,16 @@ Dins la pàgina HTML podem distingir-hi **dues parts**:
 
 **L'encapçalament**
 
-* Flanquejat per les etiquetes `<head>` i `</head>`
-* Dóna informació sobre la pàgina.
-* Col·locarem etiquetes de tipus informatiu, com per exemple el títol de la pàgina, autor, paraules clau.
-* **No es mostra en el navegador.**
+- Flanquejat per les etiquetes `<head>` i `</head>`
+- Dóna informació sobre la pàgina.
+- Col·locarem etiquetes de tipus informatiu, com per exemple el títol de la pàgina, autor, paraules clau.
+- **No es mostra en el navegador.**
 
 **El cos**
 
-* Flanquejat per les etiquetes `<body>` i `</body>`
-* Col·locarem el nostre contingut de la pàgina.
-* **És el que es veu realment.**
+- Flanquejat per les etiquetes `<body>` i `</body>`
+- Col·locarem el nostre contingut de la pàgina.
+- **És el que es veu realment.**
 
 ## Les metadades
 
@@ -119,8 +119,8 @@ Conté els atributs _name_ i _content_
 
 > És important definir el joc de caràcters utilitzat.
 
-* El **joc de caràcters** determina la forma en què els caràcters es converteixen en bytes (i viceversa).
-* El W3C recomana el charset **UTF-8**.
+- El **joc de caràcters** determina la forma en què els caràcters es converteixen en bytes (i viceversa).
+- El W3C recomana el charset **UTF-8**.
 
 ### Pàgina HTML bàsica
 
@@ -150,7 +150,7 @@ HTML defineix **6 nivells de capçaleres o títols**.
 <h6>Títol 6</h6>
 ```
 
-**Més informació**: w3schools HTML Headings [https://www.w3schools.com/html/html\_headings.asp](https://www.w3schools.com/html/html_headings.asp)
+**Més informació**: w3schools HTML Headings [https://www.w3schools.com/html/html_headings.asp](https://www.w3schools.com/html/html_headings.asp)
 
 ## Paràgrafs
 
@@ -168,9 +168,9 @@ Aquí comencem amb els perills de les **coses mal fetes** però que sembla que f
 
 Llegireu que hi ha atributs per alinear els paràgrafs, com `align`
 
-* Text alineat a l'esquerre: `<p align="left"> Text left.</p>`
-* Text alineat al centre: `<p align="center"> Text center </p>`
-* Text alineat a la dreta: `<p align="right"> Text right </p>`
+- Text alineat a l'esquerre: `<p align="left"> Text left.</p>`
+- Text alineat al centre: `<p align="center"> Text center </p>`
+- Text alineat a la dreta: `<p align="right"> Text right </p>`
 
 Antigament es feia servir però ara **no és correcte**, a vegades el camí més ràpid no és el millor.
 
@@ -186,18 +186,18 @@ Podíem definir el **color**, **tamany** i **tipus** de lletra de diferents form
 
 Mitjançant l'etiqueta `<FONT>` teníem els atributs:
 
-* FACE: Defineix el tipus de lletra.
-* SIZE: Defineix el tamany de la lletra.
-* COLOR: Defineix el color del text de la lletra.
+- FACE: Defineix el tipus de lletra.
+- SIZE: Defineix el tamany de la lletra.
+- COLOR: Defineix el color del text de la lletra.
 
 Amb Es definien dins de l'etiqueta `<body>`;
 
-* ATRIBUTS
-* BGCOLOR: Especifica el color de fons de la pàgina
-* BACKGROUND: Serveix per indicar la col·locació d'una imatge com a fons de pàgina.
-* COLOR DEL TEXT
-* TEXT: Serveix per definir el color del text de la pàgina.
-* LINK: El color del enllaços que no han estat visitats ( per defecte, és blau ) VLINK: El color dels enllaços visitats.
+- ATRIBUTS
+- BGCOLOR: Especifica el color de fons de la pàgina
+- BACKGROUND: Serveix per indicar la col·locació d'una imatge com a fons de pàgina.
+- COLOR DEL TEXT
+- TEXT: Serveix per definir el color del text de la pàgina.
+- LINK: El color del enllaços que no han estat visitats ( per defecte, és blau ) VLINK: El color dels enllaços visitats.
 
 ... i un llarg etcètera...
 
@@ -213,12 +213,12 @@ Adequat per fer textos literals, per exemple els poemes amb els seus salts de l�
 
 Serveixen per indicar que un text concret té un significat especial.
 
-* `<b></b>` (bold) o `<strong></strong>`: Text important (es mostra en negreta):
-* `<i></i>` (italic): es mostra en cursiva
-* `<u></u>` (underlined): es mostra subratllat
-* `<sub></sub>`: Subindex
-* `<sup></sup>`: Superindex
-* `<blockquote></blockquote>`: per cites (es mostra tabulat). [Exemple](https://www.w3schools.com/html/html_quotation_elements.asp)
+- `<b></b>` (bold) o `<strong></strong>`: Text important (es mostra en negreta):
+- `<i></i>` (italic): es mostra en cursiva
+- `<u></u>` (underlined): es mostra subratllat
+- `<sub></sub>`: Subindex
+- `<sup></sup>`: Superindex
+- `<blockquote></blockquote>`: per cites (es mostra tabulat). [Exemple](https://www.w3schools.com/html/html_quotation_elements.asp)
 
 > No són per donar format sinò per donar significat especial al text. **Sempre** hem de formatar el contingut mitjançant les **fulles d'estil (CSS)**.
 >
@@ -230,9 +230,9 @@ Serveixen per indicar que un text concret té un significat especial.
 
 Podem distingir **tres tipus** de llistes:
 
-* Llistes desordenades
-* Llistes ordenades
-* Llistes de definició
+- Llistes desordenades
+- Llistes ordenades
+- Llistes de definició
 
 **Més informació**: [w3schools.com: HTML Lists](https://www.w3schools.com/html/html_lists.asp)
 
@@ -280,18 +280,18 @@ Definides per les etiquetes `<ol>` i `</ol>` (**o**rdered **l**ist). Cada elemen
 
 L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzarem.
 
-* `1` per ordenar amb nombres
-* `a` per lletra de l'alfabet
-* `A` per lletres majúscules de l'alfabet
-* `i` per ordenar amb xifres romanes
-* `I` per ordenar amb xifres romanes majúscules
+- `1` per ordenar amb nombres
+- `a` per lletra de l'alfabet
+- `A` per lletres majúscules de l'alfabet
+- `i` per ordenar amb xifres romanes
+- `I` per ordenar amb xifres romanes majúscules
 
 ### Llistes de definició (Definition Lists)
 
 > Cada element és presentat juntament amb la seva definició.
 
-* Definides per les etiquetes `<dl>` i `</dl>` (**d**efinition **l**ist).
-* Les etiquetes de cada element són `<dt>` (**d**efinition **t**erm) i la seva definició `<dd>` (**d**efinition **d**efinition).
+- Definides per les etiquetes `<dl>` i `</dl>` (**d**efinition **l**ist).
+- Les etiquetes de cada element són `<dt>` (**d**efinition **t**erm) i la seva definició `<dd>` (**d**efinition **d**efinition).
 
 ```markup
 <dl>
@@ -335,8 +335,8 @@ Podem **aniuar** llistes, fins i tot de diferents tipus de llista:
 
 > Els **enllaços** sorgeixen de la necessitat de que les pàgines HTML estiguin interconnectades (hypertext).
 
-* Per col·locar un enllaç utlitzarem les etiquetes `<a>` i `</a>` .
-* L'atribut `href`, ens indica el destí d'aquest enllaç.
+- Per col·locar un enllaç utlitzarem les etiquetes `<a>` i `</a>` .
+- L'atribut `href`, ens indica el destí d'aquest enllaç.
 
 ```markup
 <a href="destí"> contingut </a>
@@ -346,11 +346,11 @@ Essent _contingut_ un text o una imatge i destí un arxiu, un correu electrònic
 
 Els enllaços es poden classificar de la següent manera:
 
-* **Enllaços interns:** els que es dirigeixen a diferents llocs de la mateixa pàgina.
-* **Enllaços locals:** els dirigeixen a un altre pàgina dintre de la mateixa web.
-* **Enllaços remots:** els dirigits cap a altres pàgines web.
-* **Enllaços amb direccions de correu:** per crear un missatge de correu dirigit a una direcció.
-* **Enllaços amb arxius:** perquè els usuaris puguin descarregar arxius.
+- **Enllaços interns:** els que es dirigeixen a diferents llocs de la mateixa pàgina.
+- **Enllaços locals:** els dirigeixen a un altre pàgina dintre de la mateixa web.
+- **Enllaços remots:** els dirigits cap a altres pàgines web.
+- **Enllaços amb direccions de correu:** per crear un missatge de correu dirigit a una direcció.
+- **Enllaços amb arxius:** perquè els usuaris puguin descarregar arxius.
 
 ### Enllaços interns
 
@@ -380,16 +380,17 @@ Un lloc web està constituit de pàgines interconnectades.
 
 Per regla general, un lloc web ha d'estar ordenat per directoris. S'ha d'utilitzar la "/" per especificar on es troben les coses.
 
-*   Els **enllaços locals** també poden apuntar a una secció en concret dintre d'un altre pàgina.
+- Els **enllaços locals** també poden apuntar a una secció en concret dintre d'un altre pàgina.
 
-    ```markup
-     <a href="arxiu.html#seccio"> Arxiu </a>
-    ```
-*   La pàgina **arxiu.html** ha de contenir la marca referent a la secció.
+  ```markup
+   <a href="arxiu.html#seccio"> Arxiu </a>
+  ```
 
-    ```markup
-     <a id"seccio"> </a>
-    ```
+- La pàgina **arxiu.html** ha de contenir la marca referent a la secció.
+
+  ```markup
+   <a id"seccio"> </a>
+  ```
 
 ### Enllaços externs
 
@@ -413,8 +414,8 @@ A l'atribut `href` i col·loquem la paraula `mailto:` seguit de la direcció de 
 <a href="mailto:pep@hotmail.com"> Contactar amb en Pep </a>
 ```
 
-* Per tal de configurar altres paràmetres del correu electrònic s'afegeix un interrogant després de la direcció de correu.
-* No és recomenable posar enllaços a correus, pel tema dels robots i l'SPAM.
+- Per tal de configurar altres paràmetres del correu electrònic s'afegeix un interrogant després de la direcció de correu.
+- No és recomenable posar enllaços a correus, pel tema dels robots i l'SPAM.
 
 ### Enllaços a arxius
 
@@ -450,15 +451,15 @@ Si la imatge es troba en una carpeta diferents que la pàgina HTML:
 
 ### Atributs de l'etiqueta `<img>`
 
-* **Alt:** Breu descripció de l'imatge. És **obligatori** per tal que el document HTLM sigui validat correctament.
-* **Height** i **Width**: Defineixen l'altura i amplada de les imatges en pixels.
+- **Alt:** Breu descripció de l'imatge. És **obligatori** per tal que el document HTLM sigui validat correctament.
+- **Height** i **Width**: Defineixen l'altura i amplada de les imatges en pixels.
 
 Altres **coses mal fetes**:
 
 ![Forbidden](<../.gitbook/assets/forbidden (4).jpg>)
 
-* **BORDER**: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
-* **LOWSRC**: Quant tenim activada aquesta opció primer es descarrega la imatge amb una baixa resolució i va millorant a mesura que es va descarregant.
+- **BORDER**: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
+- **LOWSRC**: Quant tenim activada aquesta opció primer es descarrega la imatge amb una baixa resolució i va millorant a mesura que es va descarregant.
 
 ### Tipus d'arxius per les imatges
 
@@ -468,32 +469,32 @@ Els dos formats comprimeixen les imatges per guardar-les.
 
 **GIF** - Arxiu ideal per imatges que estan dibuixades.
 
-* **Compresió**: És molt bona per dibuixos.
-* **Transparència**: És una utilitat per definir algunes parts de la imatge com a transparents.
-* **Colors**: Es poden utilitzar paletes, conjunts de 256 o menys. Quant menys colors utilitzem menys tamany ocuparà l'imatge.
+- **Compresió**: És molt bona per dibuixos.
+- **Transparència**: És una utilitat per definir algunes parts de la imatge com a transparents.
+- **Colors**: Es poden utilitzar paletes, conjunts de 256 o menys. Quant menys colors utilitzem menys tamany ocuparà l'imatge.
 
 Actualment s'està utilitzant un format **PNG** que té les mateixes prestacions que el GIF (transparència i animació) i a més a més incorpora **color real**, 48 bits per píxel i compresió sense pèrdua.
 
 **JPG**
 
-* **Compresió**: El seu algorisme de compressió és ideal per guardar fotos.
-* **Transparència**: Aquest format no té possiblitats de crear arees transparents.
-* **Colors**: Treballa sempre amb 16 milions de colors.
+- **Compresió**: El seu algorisme de compressió és ideal per guardar fotos.
+- **Transparència**: Aquest format no té possiblitats de crear arees transparents.
+- **Colors**: Treballa sempre amb 16 milions de colors.
 
 ### Optimitzar els fitxers d'imatge
 
 Hem de procurar de no posar imatges de tamany més gran que el que s'ha de visualitzar
 
-* Per exemple si té 200x200 la imatge màxima no té sentit posar-hi una imatge a descarregar de més de 1000x1000 píxels!
+- Per exemple si té 200x200 la imatge màxima no té sentit posar-hi una imatge a descarregar de més de 1000x1000 píxels!
 
 **Arxius GIF**
 
-* Reduïm el numero de colors de la paleta.
+- Reduïm el numero de colors de la paleta.
 
 **Arxius JPG**
 
-* Ajustem la qualitat i la mida de l'arxiu quant l'estem guardant.
-* És impresindible disposar d'un bon editor fotogràfic a fi d'optimitzar una imatge: **GIMP**
+- Ajustem la qualitat i la mida de l'arxiu quant l'estem guardant.
+- És impresindible disposar d'un bon editor fotogràfic a fi d'optimitzar una imatge: **GIMP**
 
 ## Taules
 
@@ -513,7 +514,7 @@ Les taules són descrites per línies d'esquerra a dreta, mitjançant _\<tr> \</
     <tr>
         <td> Cel.la1-fila2 </td>
         <td> Cel.la2-fila2 </td>
-        <td> Cel.la3-fila2 </td>        
+        <td> Cel.la3-fila2 </td>
     </tr>
 </table>
 ```
@@ -534,62 +535,46 @@ si afegim un atribut `border="1"` ho veurem més clar:
 
 **ATRIBUTS PER FILES I CEL·LES no vàlids**
 
-* **Align**: Justifica el text de la cel·la
-* **Valign**: Podem escollir si el text apareix a dalt (top), a baix (bottom) o al mig (middle) de la cel.la.
-* **Bgcolor**: Donar color a la cel·la o la fila escollida.
-* **Bordercolor**: Defineix el color del marc.
+- **Align**: Justifica el text de la cel·la
+- **Valign**: Podem escollir si el text apareix a dalt (top), a baix (bottom) o al mig (middle) de la cel.la.
+- **Bgcolor**: Donar color a la cel·la o la fila escollida.
+- **Bordercolor**: Defineix el color del marc.
 
 **ATRIBUTS PER CEL.LES no vàlids**
 
-* **Background**: Ens permet col·locar de fons una imatge en una cel·la.
-* **Height**: Defineix l'altura de la cel·la en pixels o percentatge.
-* **Width**: Defineix l'amplada de la cel·la en pixels o percentatge.
-* **Align**: Alinea la taula respecte al seu entorn
-* **Background**: Ens permet col·locar un fons per la taula a partir d'una imatge.
-* **Bgcolor**: Color de fons de la taula.
-* **Border**: Defineix el tamany del marc.
-* **Bordercolor**: Defineix el color del marc.
-* **Cellpadding**: Defineix en pixels l'espai entre les cel·les dela taula i el seu contingut.
-* **Cellspacing**: Defineix l'espai entre els marcs (en pixels)
-* **Height**: Defineix l'altura de la taula en pixels o percentatge.
-* **Width**: Defineix l'amplada de la taula en pixels o percentatge.
+- **Background**: Ens permet col·locar de fons una imatge en una cel·la.
+- **Height**: Defineix l'altura de la cel·la en pixels o percentatge.
+- **Width**: Defineix l'amplada de la cel·la en pixels o percentatge.
+- **Align**: Alinea la taula respecte al seu entorn
+- **Background**: Ens permet col·locar un fons per la taula a partir d'una imatge.
+- **Bgcolor**: Color de fons de la taula.
+- **Border**: Defineix el tamany del marc.
+- **Bordercolor**: Defineix el color del marc.
+- **Cellpadding**: Defineix en pixels l'espai entre les cel·les dela taula i el seu contingut.
+- **Cellspacing**: Defineix l'espai entre els marcs (en pixels)
+- **Height**: Defineix l'altura de la taula en pixels o percentatge.
+- **Width**: Defineix l'amplada de la taula en pixels o percentatge.
 
 **Atributs de taula vàlids**
 
-* **Colspan:**: Expandeix una cel·la horitzontalment.
-* **Rowspan:**: Expandeix una cel·la verticalment.
+- **Colspan:**: Expandeix una cel·la horitzontalment.
+- **Rowspan:**: Expandeix una cel·la verticalment.
 
 També es poden utilitzar taules anidades.
 
 ## Frames
 
-### Atribut target
-
-Atribut `target` a enllaços: s'utilitza per decidir on es s'obrirà l'enllaç, pot ser:
-
-* **\_blank**: nova finestra.
-* **\_top**: finestra.
-* **\_self**:(per defecte) en el frame actual.
-* **\_parent**: es carrega al frame "pare", el que era havia cridat l'actual.
-* **-** o també un nom de **frame** (definit amb l'atribut name).
-
-```markup
-<a href="nom-pagina-a-carregar.html" target="nom-del-marc-a-carregar">
-```
-
-![Forbidden](<../.gitbook/assets/forbidden (6).jpg>)
-
-* Estan **obsolets** per l'HTML5, però eren vàlids per altres versions.
-* Té l'interès "històric" de saber com es feien abans les pàgines web, el CSS actualment les millora molt.
-* Antigament els _**layouts**_ una mica complexes es feien o bé amb taules o bé amb frames. Les dues coses estan en desús avui en dia.
-* Podria interessar saber-los fer per actualitzar alguna pàgina web antiga.
+- Estan **obsolets** per l'HTML5, però eren vàlids per altres versions.
+- Té l'interès "històric" de saber com es feien abans les pàgines web, el CSS actualment les millora molt.
+- Antigament els _**layouts**_ una mica complexes es feien o bé amb taules o bé amb frames. Les dues coses estan en desús avui en dia.
+- Podria interessar saber-los fer per actualitzar alguna pàgina web antiga.
 
 ### Per què no s'utilitzen els frames
 
-* Els **motors de cerca** tenen problemes per indexar-los.
-* Ocupen **espai** a la pantalla.
-* No es poden utilitzar les funcionalitats d'anar endavant o endarrere a l'**historial** de navegació.
-* Tenen problemes d'**usabilitat i accessibilitat** web per persones invidents.
+- Els **motors de cerca** tenen problemes per indexar-los.
+- Ocupen **espai** a la pantalla.
+- No es poden utilitzar les funcionalitats d'anar endavant o endarrere a l'**historial** de navegació.
+- Tenen problemes d'**usabilitat i accessibilitat** web per persones invidents.
 
 ## Iframes
 
@@ -598,9 +583,9 @@ Atribut `target` a enllaços: s'utilitza per decidir on es s'obrirà l'enllaç, 
 Un `iframe` s'utilitza per mostrar una web dins una altra pàgina web.
 
 ```markup
-<iframe src="index.htm" 
-     width="300" height="100" 
-     frameborder="1" 
+<iframe src="index.htm"
+     width="300" height="100"
+     frameborder="1"
      scrolling="Auto">
  </iframe>
 ```
@@ -611,11 +596,11 @@ Apareixen **barres d'scroll** en el frame si la pàgina és més gran que l'espa
 
 ## Formularis
 
-* [Creació de formularis](https://docs.google.com/presentation/d/1fZ1F4p_dvXShnL7GVNHEygFBxDvgslEW9AuTi4rE5f4/edit?usp=sharing)
-*   Validació de camps:
+- [Creació de formularis](https://docs.google.com/presentation/d/1fZ1F4p_dvXShnL7GVNHEygFBxDvgslEW9AuTi4rE5f4/edit?usp=sharing)
+- Validació de camps:
 
-    [https://lenguajehtml.com/p/html/formularios/validaciones-html5](https://lenguajehtml.com/p/html/formularios/validaciones-html5)
+  [https://lenguajehtml.com/p/html/formularios/validaciones-html5](https://lenguajehtml.com/p/html/formularios/validaciones-html5)
 
 ## Documentació i recursos
 
-* [Vídeo Història d'Internet](https://www.youtube.com/watch?v=h8K49dD52WA)
+- [Vídeo Història d'Internet](https://www.youtube.com/watch?v=h8K49dD52WA)
