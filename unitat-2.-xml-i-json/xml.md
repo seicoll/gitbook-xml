@@ -152,7 +152,23 @@ Aquesta declaració és opcional, però recomanable per assegurar la correcta in
 
 ### Tots els documents tenen una etiqueta arrel
 
-L'etiqueta arrel és aquella que es defineix després de la declaració del document.
+### 1. Elements
+
+Els elements en XML estan delimitats per etiquetes d'obertura i tancament, on l'etiqueta d'obertura és `<element>` i l'etiqueta de tancament és `</element>`. Un element pot contenir dades o altres elements.
+
+**Exemple d'un element:**
+
+```xml
+<nom>Pit de pollastre</nom>
+```
+
+En aquest exemple, `nom` és l'element que conté el valor `Pit de pollastre`.
+
+### 2. Etiqueta arrel
+
+Tot document XML ha de tenir una **única** etiqueta arrel que contingui tots els altres elements del document.
+
+L'**etiqueta arrel** és aquella que es defineix després de la declaració del document.
 
 ```markup
 <persona>           <!-- Etiqueta arrel -->
@@ -168,7 +184,7 @@ Aquest no seria un document XML correcte:
   <nom>Marta Mata</nom>
 ```
 
-### Totes les etiquetes s'han de tancar
+### 3. Totes les etiquetes s'han de tancar
 
 ```markup
 <article>Pissarra</article>
@@ -186,7 +202,7 @@ Si tenim una etiqueta sense dades el podem representar amb el tancament `/>`:
 <article nom="pissarra"/>
 ```
 
-### Les etiquetes han d'estar niades correctament
+### 4. Les etiquetes han d'estar niades correctament
 
 Cal tancar les etiquetes per l'ordre invers en què s'han obert.
 
@@ -202,7 +218,7 @@ Cal tancar les etiquetes per l'ordre invers en què s'han obert.
 
 Les etiquetes estan tancades en ordre invers i per tant és incorrecte.
 
-### Les majúscules i minúscules són diferents
+### 5. Les majúscules i minúscules són diferents
 
 Per tant aquestes dues són etiquetes diferents:
 
@@ -216,6 +232,20 @@ Per tant aquestes dues són etiquetes diferents:
 ```markup
 <Article>Pissarra</article>
 ```
+
+### 6. Atributs
+
+Els elements poden tenir atributs que proporcionen informació addicional.
+
+Els atributs es defineixen dins de l'etiqueta d'obertura i tenen el format clau-valor.
+
+**Exemple d'un element amb atributs:**
+
+```xml
+<llibre idioma="català">El Petit Príncep</llibre>
+```
+
+En aquest exemple, `idioma` és un atribut amb el valor `català`, i l'element conté el text `El Petit Príncep`.
 
 ### Els valors dels atributs han d'estar entre cometes
 
