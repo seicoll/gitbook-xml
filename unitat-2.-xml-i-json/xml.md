@@ -1,9 +1,8 @@
-# XML (Extensible Markup Language)
+# XML
 
-> **XML** és un llenguatge de descripció d'informació.
+> **XML** (_Extensible Markup Language_) és un llenguatge de marques dissenyat per emmagatzemar i transportar dades de manera estructurada.
 
-- XML és un format de text estandarditzat que serveix per representar i transportar informació estructurada.
-- El consorci **W3C** va desenvolupar una alternativa a l'HTML que podés satisfer les necessitats futures del web.
+Exemple bàsic d'un document XML:
 
 ```markup
 <persona>
@@ -32,7 +31,7 @@ Un altre dels avantatges de XML és que es fàcilment **extensible i adaptable**
 
 Podem crear les etiquetes (tags) que tinguin significat per nosaltres. Podem crear el vocabulari que ens faci falta per allò que busquem.
 
-A més, hi ha formes de definir quina és la **estructura** que nosaltres definim.
+A més, hi ha formes de definir quina és l'**estructura** que volem que tinguin els document XMLs.
 
 - Hi ha diversos estàndards _**DTD**_, _**XML Schema Language**_, _**Relax NG**_, etc..
 - Ens serviran per comprovar que el document compleix amb les normes del vocabulari.
@@ -53,13 +52,39 @@ Ja hi ha vocabularis estàndards XML:
 
 XML s'està fent servir en múltiples camps:
 
-- Un dels estàndards que es fan servir en pàgines web XHTML està basat en XML.
-- Desenvolupament de **documentació tècnica** en diferents àmbits acadèmics, investigació, ...
-- Intercanvi d'informació entre sistemes informàtics (distribuïts).
-- Intercanvi d'informació entre empreses.
-- Aplicacions ofimàtiques: **Microsoft Office, OpenOffice**, ..
-  - Abans feien servir formats binaris però han passat a algun tipus d'XML.
-  - Va passar de guardar els documents en binari `.DOC` a XML `.DOCX` (OOXML).
+- **Intercanvi de dades entre aplicacions**: Moltes aplicacions utilitzen XML per intercanviar dades en formats estructurats. Per exemple, els serveis web sovint usen XML per enviar respostes i sol·licituds.
+
+- **Emmagatzematge de dades en documents**: Aplicacions com Microsoft Office o LibreOffice utilitzen XML per desar documents en formats com DOCX, XLSX o ODT, els quals són paquets ZIP amb fitxers XML a dins.
+
+  **Exemple**: Part d’un document de text en format DOCX.
+
+  ```xml
+    <w:document>
+      <w:body>
+        <w:p>
+          <w:r>
+            <w:t>Hola món!</w:t>
+          </w:r>
+        </w:p>
+      </w:body>
+    </w:document>
+  ```
+
+- **Fitxers de configuració**: XML és utilitzat per guardar configuracions de programari o aplicacions, perquè permet una estructura clara i jeràrquica de les dades.
+
+  **Exemple**: Un fitxer de configuració per a una aplicació web.
+
+  ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <configuració>
+      <baseDeDades>
+        <servidor>localhost</servidor>
+        <usuari>admin</usuari>
+        <contrasenya>12345</contrasenya>
+      </baseDeDades>
+    </configuració>
+  ```
+
 - Molts dels **documents de configuració** dels sistemes operatius estan en XML:
 
   **Linux**
@@ -75,6 +100,13 @@ XML s'està fent servir en múltiples camps:
   C:\> dir /a-d /s *.xml | find /c /v “”
   698
   ```
+
+## Aplicacions on s’utilitza XML
+
+- **Android**: Els fitxers de disseny d'interfícies d’usuari (UI) en Android estan escrits en XML.
+- **Microsoft Office i OpenOffice**: Els documents (com DOCX, XLSX, ODT) estan basats en XML.
+- **Servidors web**: Configuracions i respostes de serveis web sovint utilitzen XML.
+- **Sistemes RSS**: Distribució de notícies i continguts d'un lloc web a través de canals RSS.
 
 ## Desavantatges de XML
 
@@ -94,16 +126,26 @@ Però això a vegades és compensat per:
 
 ## Declaració de XML
 
-Els documents XML han de començar amb la declaració que indiqui quina versió estem fent servir d'XML.
-
-```markup
-<?xml version="1.0" ?>
-```
-
-Atribut **Encoding** defineix el joc de caràcters que fem servir en el document:
+Els documents XML han de començar amb la declaració que indiqui la versió i la codificació utilitzada en el document XML.
 
 ```markup
 <?xml version="1.0" encoding="UTF-8" ?>
+```
+
+- **`version="1.0"`**: especifica que el document segueix l'estàndard XML 1.0.
+- **`encoding="utf-8"`**: indica que la codificació de caràcters del document és UTF-8, una codificació que permet representar una gran varietat de caràcters internacionals.
+
+Aquesta declaració és opcional, però recomanable per assegurar la correcta interpretació del document. Es posa a la primera línia del document:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<llibres>
+  <llibre>
+    <títol>El petit príncep</títol>
+    <autor>Antoine de Saint-Exupéry</autor>
+    <any>1943</any>
+  </llibre>
+</llibres>
 ```
 
 ## Regles bàsiques
@@ -190,3 +232,44 @@ I no importa si són cometes simples o dobles.
 ```markup
 <article quantitat=3>Pissarra</article>
 ```
+
+# PER REVISAR
+
+## Pràctica: Creació i validació d'un document XML
+
+Objectiu: Aprendre a estructurar informació en un document XML i validar que la sintàxi és correcte.
+
+Es vol emmagatzemar informació sobre libres en un document xml. La informació a emmagatzemar és.
+
+- Títol, ISBN i categoria
+- Autor
+- Any de publicació
+- Gènere
+
+Un exemple d'xml és aquest:
+
+```xml
+<llibreria>
+  <llibre isbn="3423423432" categoria="aventures">
+    <titol>El Petit Príncep</titol>
+    <autor>Antoine de Saint-Exupéry</autor>
+    <any>1943</any>
+  </llibre>
+  <llibre isbn="343432888" categoria="distopies">
+    <titol>1984</titol>
+    <autor>George Orwell</autor>
+    <any>1949</any>
+  </llibre>
+</llibreria>
+```
+
+Fes ara tu un fitxer xml que contingui informació sobre menjars:
+
+- **Nom** i **categoria** (Exemple: Pit de pollastre, categoria carn)
+- **Kilocalories** per 100 grams (Ex: 100)
+- **Proteines** per 100 grams (Ex: 20)
+- **Greixos** per 100 grams (Ex: 10)
+
+Comprova que el teu document té un format correcte, per exemple a [XMLValidation](https://www.xmlvalidation.com/)
+
+**Nota: si veus que es correcte, prova errors per tal que sigui incorrecte i vegis com el validador t'avisa que no és correcte**
