@@ -1,4 +1,4 @@
-# Introducció a XML
+# Introducció als llenguatges de marques
 
 ## Què resol un llenguatge de marques?
 
@@ -23,6 +23,52 @@ La informació pot estar en **diversos formats** (fulles de càlcul, bases de da
 - A més, podrem utilitzar **eines estàndards per validar** si el document compleix amb l'especificació acordada.
 
 Llenguatges com **XML**, **JSON** i **YAML** permeten l'intercanvi de dades estructurades entre aplicacions diferents. També asseguren que els continguts siguin accessibles en diversos dispositius.
+
+---
+
+## Característiques dels llenguatges de marques
+
+- Els llenguatges de marques estan **basats en text**.
+  - Poden ser **creats i editats** amb qualsevol editor de textos.
+- Són fàcilment transportables.
+  - La utilització de sistemes de codificació estàndards (UNICODE), fa els documents **fàcilment transportables** entre diferents sistemes (Linux, Windows,etc).
+- Però no estan pensats per ser llegits per una persona.
+- A diferència d'HTML si que es pot determinar de forma **automàtica** què **signifiquen** les dades.
+
+**Per exemple:**
+
+**HTML**
+
+```markup
+<html>
+   <head><title>Professors</title></head>
+   <body>
+     <p>Pere Pi</p>
+     <p>Marta Mata</p>
+    <body>
+</html>
+```
+
+**XML**
+
+```markup
+<professors>
+  <professor>
+    <nom>Pere</nom>
+    <cognom>Pi</cognom>
+  </professor>
+  <professor>
+    <nom>Marta</nom>
+    <cognom>Mata</cognom>
+  </professor>
+</professors>
+```
+
+Es pot determinar automàticament:
+
+- Quina informació conté el fitxer?
+- Quina és l'estructura de la informació?
+- Quines etiquetes s'han creat per descriure'n la informació?
 
 ---
 
@@ -306,137 +352,3 @@ La web s'ha fet cada vegada més i més popular:
 En general, falta una forma de:
 
 - **Buscar**, **moure**, **visualitzar** i **manipular** la informació continguda en els documents HTML.
-
-## XML (Extensible Markup Language)
-
-> **XML** és un llenguatge de descripció d'informació.
-
-- XML és un format de text estandarditzat que serveix per representar i transportar informació estructurada.
-- El consorci **W3C** va desenvolupar una alternativa a l'HTML que podés satisfer les necessitats futures del web.
-
-```markup
-<persona>
-    <nom>
-        Sergi
-    </nom>
-    <cognom>
-        Coll
-    </cognom>
-</persona>
-```
-
-Una de les idees més importants és:
-
-> Separar les dades de la presentació
-
-- XML no es preocupa de com es presentaran les dades als usuaris
-- Per fer la presentació ja s'han desenvolupat mecanismes:
-  - **CSS**, **XSL-FO**, etc.
-
-## Característiques dels llenguatges de marques
-
-- Els llenguatges de marques estan **basats en text**.
-  - Poden ser **creats i editats** amb qualsevol editor de textos.
-- Són fàcilment transportables.
-  - La utilització de sistemes de codificació estàndards (UNICODE), fa els documents **fàcilment transportables** entre diferents sistemes (Linux, Windows,etc).
-- Però no estan pensats per ser llegits per una persona.
-- A diferència d'HTML si que es pot determinar de forma **automàtica** què **signifiquen** les dades.
-
-**Per exemple:**
-
-**HTML**
-
-```markup
-<html>
-   <head><title>Professors</title></head>
-   <body>
-     <p>Pere Pi</p>
-     <p>Marta Mata</p>
-    <body>
-</html>
-```
-
-**XML**
-
-```markup
-<professors>
-  <professor>
-    <nom>Pere</nom>
-    <cognom>Pi</cognom>
-  </professor>
-  <professor>
-    <nom>Marta</nom>
-    <cognom>Mata</cognom>
-  </professor>
-</professors>
-```
-
-Es pot determinar automàticament:
-
-- Quina informació conté el fitxer?
-- Quina és l'estructura de la informació?
-- Quines etiquetes s'han creat per descriure'n la informació?
-
-## Extensible
-
-Un altre dels avantatges de XML és que es fàcilment **extensible i adaptable**:
-
-> XML **no defineix un nombre limitat d'etiquetes**.
-
-Podem crear les etiquetes (tags) que tinguin significat per nosaltres. Podem crear el vocabulari que ens faci falta per allò que busquem.
-
-A més, hi ha formes de definir quina és la **estructura** que nosaltres definim.
-
-- Hi ha diversos estàndards _**DTD**_, _**XML Schema Language**_, _**Relax NG**_, etc..
-- Ens serviran per comprovar que el document compleix amb les normes del vocabulari.
-
-## Formats Estàndards
-
-Tenim la capacitat de crear un vocabulari per representar dades d'un àmbit.
-
-Ja hi ha vocabularis estàndards XML:
-
-- **SVG**: Pensat per gràfics vectorials escalables 2D
-- **MathML**: Representació de fórmules matemàtiques
-- **CML**: Intercanvi d'informació química
-- **SMIL**: Tractament de la informació multimèdia
-- **SSML**: Síntesi de la veu
-
-## Principals usos d'XML
-
-XML s'està fent servir en múltiples camps:
-
-- Un dels estàndards que es fan servir en pàgines web XHTML està basat en XML.
-- Desenvolupament de **documentació tècnica** en diferents àmbits acadèmics, investigació, ...
-- Intercanvi d'informació entre sistemes informàtics (distribuïts).
-- Intercanvi d'informació entre empreses.
-- Aplicacions ofimàtiques: **Microsoft Office, OpenOffice**, ..
-  - Abans feien servir formats binaris però han passat a algun tipus d'XML.
-  - Va passar de guardar els documents en binari `.DOC` a XML `.DOCX` (OOXML).
-- Molts dels **documents de configuració** dels sistemes operatius estan en XML:
-
-  **Linux**
-
-  ```bash
-  $ locate .xml | wc -l
-  21829
-  ```
-
-  **Windows**
-
-  ```bash
-  C:\> dir /a-d /s *.xml | find /c /v “”
-  698
-  ```
-
-## Desavantatges de XML
-
-- Els fitxers XML tendeixen a ocupar molt d'espai.
-  - XML ocupa més espai a disc que els seus equivalents en format binari.
-  - Lentitud en el temps de càrrega.
-  - Temps de transferència més elevat.
-
-Però això a vegades és compensat per:
-
-- La facilitat d'interoperabilitat entre programes.
-- El preu de l'emmagatzematge és baix.

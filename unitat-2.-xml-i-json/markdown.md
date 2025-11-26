@@ -1,8 +1,8 @@
-## Introducció a Markdown
+# Introducció a Markdown
 
 **Markdown** és un llenguatge de marques senzill que s'utilitza per formatar text de manera clara i fàcil de llegir. És molt popular per la seva simplicitat i perquè permet generar text formatat sense la complexitat d'altres llenguatges com HTML. És àmpliament utilitzat en llocs web, blocs, documentació i fitxers README.
 
-### Característiques principals de Markdown
+## Característiques principals de Markdown
 
 1. **Encapçalaments**  
    Per crear encapçalaments, s'utilitzen símbols de coixinet (`#`). La quantitat de coixinets determina el nivell de l'encapçalament:
@@ -57,7 +57,7 @@
    | Contingut | Contingut |
    ```
 
-### Exemple combinant elements
+## Exemple combinant elements
 
 Aquest és un exemple d'un document en Markdown:
 
@@ -79,9 +79,19 @@ Aquest és un paràgraf amb **negreta** i _cursiva_.
 > Aquesta és una cita.
 ```
 
-### Pràctica
+## Exercicis
+
+### Exercici 1
 
 - Instal·lat VS Code
 - Instal·lat un plugin per fer previsualització de markdown a VSCode.
 - Crea un petit document markdown i previsualitza'l.
 - Busca alguna web permeti utilitzar markdown per tal de formatar el text
+
+### Exercici 2
+
+Crea document MarkDown amb el vostre perfil de GitHub
+
+- GitHub permet crear un repositori especial on posar dades del vostre perfil.
+- Aquestes són les instruccions oficials per fer-ho: https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile
+- I aquestes són unes instruccions extraoficials més divertides i amb idees: https://github.com/rzashakeri/beautify-github-profile
