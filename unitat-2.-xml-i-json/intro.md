@@ -2,7 +2,22 @@
 
 ## Què resol un llenguatge de marques?
 
-Els llenguatges de marques s'utilitzen per estructurar i presentar informació de manera coherent, estandarditzada i comprensible per humans i màquines.
+Un **llenguatge de marques** combina dades i etiquetes que les marquen i que contenen informació addicional sobre l'estructura del text o la seva presentació.
+
+Els llenguatges de marques s'utilitzen per estructurar i presentar informació de manera coherent, estandarditzada i comprensible **per humans i màquines**.
+
+Les marques estan barrejades amb el propi text.
+
+```markup
+<persona>
+    <nom>
+        Sergi
+    </nom>
+    <cognom>
+        Coll
+    </cognom>
+</persona>
+```
 
 ---
 
@@ -299,56 +314,3 @@ Antigament per representar dades es feia separant els valors amb comes o algun a
 - Afegir-hi noves dades pot ser molt problemàtic pel programa que les llegeixi --> Probablement haurem de canviar el programa.
 - El format **CSV (Comma separated value)** encara s'utilitza molt en el món de la informàtica, per exportar/importar dades normalment.
   - Es tracta d'enviar la informació utilitzant un caràcter per a separar cada un dels conceptes. Tot i que el nom pugui suggerir que sigui una coma, molts sistemes deixen definir el caràcter a utilitzar (punt i coma, salt de línia, ...)
-
-## NO REVISAT
-
-### Els llenguatges de marques
-
-Un **llenguatge de marques** combina dades i etiquetes que les marquen i que contenen informació addicional sobre l'estructura del text o la seva presentació.
-
-Les marques estan barrejades amb el propi text.
-
-```markup
-<persona>
-    <nom>
-        Sergi
-    </nom>
-    <cognom>
-        Coll
-    </cognom>
-</persona>
-```
-
-Tot i que els sistemes de marques en que ens concentrarem són els d'estil web cal no oblidar que n'hi ha d'altres:
-
-- TeX, DocBook, RTF, JSON
-
-## HTML
-
-L'any 1989 Tim Berners-Lee i Anders Berglund van crear un llenguatge basat en etiquetes destinat a compartir informació per Internet: **HTML**.
-
-HTML és un format que descriu la visualització d'una pàgina web.
-
-La web s'ha fet cada vegada més i més popular:
-
-- Cada dia es generen milions de pàgines web amb informació.
-- Això implica que cal buscar per trobar la informació que ens interessa.
-
-```markup
-<html>
-   <head>
-     <title>Professor</title>
-   </head>
-   <body>
-      <p>Nom: Federicu Pi </p>
-   </body>
-</html>
-```
-
-**Com pot una màquina determinar automàticament qué és el nom, què és el cognom, ...?**
-
-És necessari alguna forma de poder fer-hi recerques intel·ligents i seleccionar-ne el resultats.
-
-En general, falta una forma de:
-
-- **Buscar**, **moure**, **visualitzar** i **manipular** la informació continguda en els documents HTML.
