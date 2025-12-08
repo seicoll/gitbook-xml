@@ -306,11 +306,13 @@ Un exemple d'xml és aquest:
 Desa el fitxer amb el nom `receptes.xml`
 
 **Recepta 1**
+
 ![Recepta 1](./img/recepta1.png)
 
 **Recepta 2**
+
 ![Recepta 2](./img/recepta2.png)
 
 Comprova que el teu document té un format correcte, per exemple a [XMLValidation](https://www.xmlvalidation.com/)
 
-> **Nota:** si veus que es correcte, prova errors per tal que sigui incorrecte i vegis com el validador t'avisa que no és correcte\*\*
+> **Nota:** si veus que es correcte, prova errors per tal que sigui incorrecte i vegis com el validador t'avisa que no és correcte.
