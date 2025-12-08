@@ -293,13 +293,24 @@ Un exemple d'xml és aquest:
 </llibreria>
 ```
 
-Fes ara tu un fitxer xml que contingui informació sobre menjars:
+**Fes un document XML que serveixi per representar les dues receptes de cuina següents de manera que no es perdin dades.**
 
-- **Nom** i **categoria** (Exemple: Pit de pollastre, categoria carn)
-- **Kilocalories** per 100 grams (Ex: 100)
-- **Proteines** per 100 grams (Ex: 20)
-- **Greixos** per 100 grams (Ex: 10)
+1. Comença amb la declaració XML adequada.
+2. Crea una etiqueta arrel que contingui totes les receptes.
+3. Per a cada recepta, crea un element que contingui els següents subelements:
+   - Nom del plat
+   - Ingredients (cada ingredient ha de ser un subelement)
+   - Informació nutricional (calories, proteïnes, greixos, hidrats de carboni).
+4. Pots utilitzar atributs per indicar la dificultat de la recepta (fàcil, mitjana, difícil), temps de preparació i el nombre de racions .
+
+Desa el fitxer amb el nom `receptes.xml`
+
+**Recepta 1**
+![Recepta 1](./img/recepta1.png)
+
+**Recepta 2**
+![Recepta 2](./img/recepta2.png)
 
 Comprova que el teu document té un format correcte, per exemple a [XMLValidation](https://www.xmlvalidation.com/)
 
-**Nota: si veus que es correcte, prova errors per tal que sigui incorrecte i vegis com el validador t'avisa que no és correcte**
+> **Nota:** si veus que es correcte, prova errors per tal que sigui incorrecte i vegis com el validador t'avisa que no és correcte\*\*
