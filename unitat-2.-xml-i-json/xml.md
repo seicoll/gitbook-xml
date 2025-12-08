@@ -263,11 +263,11 @@ I no importa si són cometes simples o dobles.
 <article quantitat=3>Pissarra</article>
 ```
 
-# PER REVISAR
+## Exercicis
 
-## Pràctica: Creació i validació d'un document XML
+### Exercici 1: Creació i validació d'un document XML
 
-Objectiu: Aprendre a estructurar informació en un document XML i validar que la sintàxi és correcte.
+> **Objectiu**: Aprendre a estructurar informació en un document XML i validar que la sintàxi és correcte.
 
 Es vol emmagatzemar informació sobre libres en un document xml. La informació a emmagatzemar és.
 
