@@ -37,3 +37,29 @@
 ```
 
 ### Exercici 2: Conversió JSON a XML
+
+## Validació de documents amb DTD
+
+### Exercici 3: Creació d'una DTD per a un document XML
+
+> **Objectiu**: Aprendre a crear una DTD per validar l'estructura d'un document XML.
+
+**Instruccions**:
+
+1.  Crea una DTD que defineixi l'estructura del següent document XML:
+
+```xml
+<llibre>
+    <titol>El Quixot</titol>
+    <autor>Miguel de Cervantes</autor>
+    <any_publicacio>1605</any_publicacio>
+    <editorial>Francisco de Robles</editorial>
+</llibre>
+```
+
+2.  Utilitza la DTD per validar el document XML i assegura't que és vàlid.
+3.  Prova a modificar el document XML per provocar errors i comprova que la DTD els detecta correctament.
+
+## Exercici 4: Creació d'un document XML a partir d'una DTD
+
+>
