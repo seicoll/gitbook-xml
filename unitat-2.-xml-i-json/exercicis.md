@@ -112,7 +112,7 @@
 2.  Utilitza el DTD per validar el document XML i assegura't que és vàlid.
 3.  Prova a modificar el document XML per provocar errors i comprova que la DTD els detecta correctament.
 
-## Exercici 4: Creació d'un document XML a partir d'una DTD
+### Exercici 4: Creació d'un document XML a partir d'una DTD
 
 > **Objectiu**: Aprendre a crear un document XML que compleixi una DTD donada.
 
