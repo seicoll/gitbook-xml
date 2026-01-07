@@ -16,3 +16,4 @@
 - [Validació amb DTD](unitat-2.-xml-i-json/uf1_dtd.md)
 - [Validació amb XSD](unitat-2.-xml-i-json/uf1_xsd.md)
 - [Validació amb JSON Schema](unitat-2.-xml-i-json/json-schema.md)
+- [Exercicis](unitat-2.-xml-i-json/exercicis.md)
