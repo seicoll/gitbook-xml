@@ -81,6 +81,8 @@
 1.  Crea una DTD que defineixi l'estructura del següent document XML:
 
 ```xml
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE smartphones SYSTEM "smartphones.dtd">
 <smartphones any="2025">
     <smartphone id="S01" gamma="alta">
         <marca>Apple</marca>
