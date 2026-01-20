@@ -135,7 +135,8 @@
 <!ELEMENT assignatures (assignatura+)>
 <!ELEMENT assignatura (nom_assignatura, nota)>
 <!ELEMENT nom_assignatura (#PCDATA)>
-<!ELEMENT nota (NA | AS | AN | AE)>
+<!ELEMENT nota EMPTY>
+<!ATTLIST nota valor (NA | AS | AN | AE) #REQUIRED>
 
 <!ELEMENT comentari (#PCDATA)>
 
