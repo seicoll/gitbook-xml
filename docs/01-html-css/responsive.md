@@ -1,6 +1,6 @@
 # Disseny Responsive amb CSS
 
-## Què és el disseny responsive?
+## Què és el disseny responsive? -
 
 El **disseny responsive** (o *Responsive Web Design*) és una tècnica de desenvolupament web que permet que una pàgina s'adapti automàticament a diferents mides de pantalla.
 
