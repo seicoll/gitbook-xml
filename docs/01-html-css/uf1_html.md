@@ -195,7 +195,7 @@ Serveixen per indicar que un text concret té un significat especial.
 
 > No són per donar format sinò per donar significat especial al text. **Sempre** hem de formatar el contingut mitjançant les **fulles d'estil (CSS)**.
 >
-> **MAI** fer servir _\<u>_ per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
+> **MAI** fer servir \<u\> per subratllar. Dóna lloc a equivocacions per l'usuari, que es pot pensar que és un link (enllaç).
 
 ## Llistes
 
