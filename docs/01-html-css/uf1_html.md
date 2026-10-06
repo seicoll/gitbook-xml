@@ -16,7 +16,7 @@ Conseqüentment, el **llenguatge HTML** serveix al navegador per mostrar les pà
 
 - La versió actual del llenguatge HTML és **HTML5**.
 
-![](../../.gitbook/assets/html5.png)
+![](../assets/html5.png)
 
 ### Què és una pàgina web?
 
@@ -40,7 +40,7 @@ Tot el que estigui dintre d'aquesta etiqueta tindrà les modificacions que carac
 
 El resultat serà:
 
-![](../../.gitbook/assets/hola.png)
+![](../assets/hola.png)
 
 Però tot i que funciona, no és el que busquem, falta especificar molt millor les parts de la pàgina i la sintaxi de les etiquetes.
 
@@ -162,7 +162,7 @@ L'etiqueta `<br>` la qual no té tancament, ens serveix per fer un salt de líni
 
 Aquí comencem amb els perills de les **coses mal fetes** però que sembla que funcionin...
 
-![Forbidden](../../.gitbook/assets/forbidden.jpg)
+![Forbidden](../assets/forbidden.jpg)
 
 **Què no s'ha de fer**
 
@@ -252,7 +252,7 @@ Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**te
 
 [Exemple de llista sense ordre](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered)
 
-![Forbidden](<../../.gitbook/assets/forbidden (1).jpg>)
+![Forbidden](<../assets/forbidden (1).jpg>)
 
 L'atribut `type` ens serveix per definir el tipus de vinyeta.
 
@@ -276,7 +276,7 @@ Definides per les etiquetes `<ol>` i `</ol>` (**o**rdered **l**ist). Cada elemen
 
 [Exemple de llista ordenada](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered)
 
-![Forbidden](<../../.gitbook/assets/forbidden (2).jpg>)
+![Forbidden](<../assets/forbidden (2).jpg>)
 
 L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzarem.
 
@@ -512,7 +512,7 @@ Les taules són descrites per línies d'esquerra a dreta, mitjançant _\<tr> \</
 </table>
 ```
 
-![](../../.gitbook/assets/taula1.png)
+![](../assets/taula1.png)
 
 Com es pot veure així no es veu massa clar que hi hagi una taula...
 
@@ -524,7 +524,7 @@ si afegim un atribut `border="1"` ho veurem més clar:
 </table>
 ```
 
-![Forbidden](<../../.gitbook/assets/forbidden (5).jpg>)
+![Forbidden](<../assets/forbidden (5).jpg>)
 
 **Atributs de taula vàlids**
 
