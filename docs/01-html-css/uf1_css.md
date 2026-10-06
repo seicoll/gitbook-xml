@@ -12,7 +12,7 @@ Les possibilitats de format de CSS es poden dividir en 3 àrees:
 
 Abans que es generalitzés l'ús dels **CSS**, s'utilitzaven etiquetes especials per modificar l'aspecte dels elements d'una pàgina.
 
-```markup
+```html
 <body>
   <h1><font color="red" face="Arial" size="5">Titular de la pàgina</font></h1>
   <p><font color="gray" face="Verdana" size="2">Un paràgraf de text.</font></p>
@@ -62,7 +62,7 @@ Es col·loca dins d'una etiqueta de HTML amb l'atribut `style`
 
 **Exemple 1: Estil definit per una etiqueta**
 
-```markup
+```html
 <p style="color:#990000">
    Això és un paràgraf de color vermell
 </p> 
@@ -79,7 +79,7 @@ El resultat serà:
 
 Mitjançant l'etiqueta `<span>` i l'atribut `style`.
 
-```markup
+```html
 <p>
    Això és un paràgraf que té diverses paraules  
    <SPAN style="color:green">de color verd</SPAN>. fàcil, no?
@@ -94,7 +94,7 @@ El resultat serà:
 
 Mitjançant l'etiqueta `<div>` i l'atribut `style`.
 
-```markup
+```html
 <div style="color:#000099; font-weight:bold">
     <h3>Aquestes etiquetes van en <i>blau i negreta</i></h3>
     <p>
@@ -115,7 +115,7 @@ El resultat serà:
 * Es defineixen dintre del `<head>`.
 * S'utilitza l'etiqueta `<style>` i `</style>`
 
-```markup
+```html
 <html>
 <head>
    <title>Exemple d'estils en una pàgina</title>
@@ -187,7 +187,7 @@ body  {
 
 Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines que tenim, mitjançant l'etiqueta `<link>`
 
-```markup
+```html
 <head>
    <link rel="stylesheet" href="estil.css">
 </head>
@@ -238,7 +238,7 @@ En cas que hi hagi un **conflicte entre els estils** definits s'aplica la següe
 
 **Per exemple:**
 
-```markup
+```html
 <html>
 <head>
     <style>
@@ -378,7 +378,7 @@ Disposem de diversos **tipus** de selectors:
 
 **HTML**
 
-```markup
+```html
 <body>
     <h1> Títol 1 </h1>
     <h2> Títol 2 </h2>
