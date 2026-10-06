@@ -217,6 +217,11 @@
   --md-code-fg-color: #1f2937;
 }
 
+blockquote{
+  background-color: lightblue;
+  padding: 7px;
+}
+
 .md-typeset pre > code {
   border-radius: 12px;
 }

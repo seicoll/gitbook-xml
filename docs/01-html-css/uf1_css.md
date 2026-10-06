@@ -37,7 +37,7 @@ En els sites amb moltes pàgines, els **canvis de formats** de eren **molt labor
 * **CSS 2.1** es finalitza al 2011.
 * **CSS 3** (versió actual)
 
-![CSS3](../../.gitbook/assets/css3.png)
+![CSS3](../assets/css3.png)
 
 ## Utilització dels CSS
 
@@ -58,7 +58,7 @@ Permet especificar regles CSS d'una etiqueta HTML.
 
 Es col·loca dins d'una etiqueta de HTML amb l'atribut `style`
 
-![image](<../../.gitbook/assets/forbidden (3).jpg>)
+![image](<../assets/forbidden (3).jpg>)
 
 **Exemple 1: Estil definit per una etiqueta**
 
@@ -88,7 +88,7 @@ Mitjançant l'etiqueta `<span>` i l'atribut `style`.
 
 El resultat serà:
 
-![image](../../.gitbook/assets/uf1_span.png)
+![image](../assets/uf1_span.png)
 
 **Exemple 3: Estil definit en una part de la pàgina**
 
@@ -105,7 +105,7 @@ Mitjançant l'etiqueta `<div>` i l'atribut `style`.
 
 El resultat serà:
 
-![image](../../.gitbook/assets/uf1_div-css.png)
+![image](../assets/uf1_div-css.png)
 
 ## CSS internes al document
 
@@ -146,7 +146,7 @@ El resultat serà:
 
 **El resultat serà:**
 
-![image](../../.gitbook/assets/uf1_pag-estil.png)
+![image](../assets/uf1_pag-estil.png)
 
 ## CSS Externes
 
@@ -200,7 +200,7 @@ Un cop tenim creat l'arxiu CSS, l'hem d'**enllaçar** amb les diferents pàgines
 
 > Les **regles CSS** defineixen de quina forma es representaran les diferents etiquetes HTML de la pàgina.
 
-![](../../.gitbook/assets/uf1_css_regles.png)
+![](../assets/uf1_css_regles.png)
 
 Si volem especificar **més d'una propietat** en una regla CSS:
 
@@ -316,15 +316,15 @@ Les propietats poden ser agrupades en quatre grans **grups**:
 
 ### Tipus de lletra
 
-![image](../../.gitbook/assets/uf1-css-font.png)
+![image](../assets/uf1-css-font.png)
 
 ### Text
 
-![image](../../.gitbook/assets/uf1-css-text.png)
+![image](../assets/uf1-css-text.png)
 
 ### Fons de pantalla
 
-![image](../../.gitbook/assets/uf1-css-backgrounds.png)
+![image](../assets/uf1-css-backgrounds.png)
 
 ## Unitats
 
@@ -606,11 +606,11 @@ h1+p {
 
 Cada caixa té quatre components:
 
-![image](../../.gitbook/assets/uf1_box_model.png)
+![image](../assets/uf1_box_model.png)
 
 L'**ordre de visualització** des del punt de vista de l'usuari és:
 
-![image](../../.gitbook/assets/uf1_box_model_order.gif)
+![image](../assets/uf1_box_model_order.gif)
 
 ### Amplada i alçada
 
@@ -623,7 +623,7 @@ table {
 }
 ```
 
-![image](../../.gitbook/assets/uf1_mides_caixa.png)
+![image](../assets/uf1_mides_caixa.png)
 
 > La **dimensió total** de l'element pot ser més gran si té margin i/o border.
 
@@ -668,7 +668,7 @@ Des dels inicis del CSS, el box model (model de caixa) ha funcionat així:
 
 > **width real** visible d’un element de caixa = width + padding + border + margin **height real** visible d’un element de caixa = height + padding + border + margin
 
-![image](../../.gitbook/assets/uf1-box-sizing.png)
+![image](../assets/uf1-box-sizing.png)
 
 La gent s’ha adonant que que les matemàtiques no són divertides, de manera que s'ha creat una nova propietat **CSS3** anomenada `box-sizing`.
 
@@ -687,7 +687,7 @@ div {
 }
 ```
 
-![image](../../.gitbook/assets/uf1-box-sizing2.png)
+![image](../assets/uf1-box-sizing2.png)
 
 [Exemples](http://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
 
@@ -704,7 +704,7 @@ El més corrent són dos comportaments:
   * Són posicionats **horitzontalment**.
   * Les altres caixes permeten que les altres es posin al seu costat.
 
-![image](../../.gitbook/assets/uf1-inline-block.png)
+![image](../assets/uf1-inline-block.png)
 
 * El primer element és un **paràgraf** que ocupa tota la línia perquè és un element de _**block**_.
 * El segon element és un **enllaç** que ocupa només l'espai necessari pel seu contingut ja que és un element _**inline**_.
@@ -717,7 +717,7 @@ Per això s'han definit els _**inline-block**_.
 
 Són elements inline que es comporten com un block:
 
-![image](../../.gitbook/assets/uf1-inline-block2.png)
+![image](../assets/uf1-inline-block2.png)
 
 ## Amagar contingut
 
@@ -725,7 +725,7 @@ Una caixa serà **invisible** si se li aplica la propietat `visibility:hidden;`
 
 Es reserva l'espai que ocupava l'etiqueta i queda buit.
 
-![image](../../.gitbook/assets/uf1-visibility.png)
+![image](../assets/uf1-visibility.png)
 
 ## Eliminar contingut
 
@@ -733,7 +733,7 @@ Perquè una etiqueta **no es representi** es fa servir `display:none;`
 
 L'espai que ocupava l'etiqueta queda lliure i és ocupat pels altres elements.
 
-![image](../../.gitbook/assets/hidden.png)
+![image](../assets/hidden.png)
 
 ## Posicionament (_Layout_)
 
@@ -760,7 +760,7 @@ Es tracta del funcionament **per defecte**.
 
 > Les caixes apareixen una rere l'altra i de dalt a baix.
 
-![image](../../.gitbook/assets/uf1-posionament-normal.png)
+![image](../assets/uf1-posionament-normal.png)
 
 Només es té en compte si l'element és en bloc o en línia.
 
@@ -768,7 +768,7 @@ Només es té en compte si l'element és en bloc o en línia.
 
 Consisteix en posicionar la caixa segons el posicionament normal i llavors **desplaçar-la respecte de la seva posició original**.
 
-![image](../../.gitbook/assets/uf1-posicionament-relatiu.gif)
+![image](../assets/uf1-posicionament-relatiu.gif)
 
 * Canviar la posició relativa pot fer que el contingut de dues caixes quedi **superposat**.
 * Es marca la posició original de l'element com a protegida (la resta de caixes es pensen que encara hi és).
@@ -785,7 +785,7 @@ El desplaçament de la caixa es controla amb les **propietats** `top`, `right`, 
 }
 ```
 
-![image](../../.gitbook/assets/uf1-posicionament-relatiu2.png)
+![image](../assets/uf1-posicionament-relatiu2.png)
 
 * `top:25px;`: es desplaça 25 píxels des de dalt de la posició normal de la caixa (es desplaça cap a baix).
 * `right:25px;`: es desplaça 25 píxels de la dreta de la posició original (es desplaça cap a l'esquerra).
@@ -802,7 +802,7 @@ Es pot posicionar una caixa **en un lloc concret** fent servir `position:absolut
 }
 ```
 
-![image](../../.gitbook/assets/uf1-posicionament-absolut.png)
+![image](../assets/uf1-posicionament-absolut.png)
 
 * Treu l'element del fluxe normal.
 * L'element _**s'eleva**_ i tots els altres elements es comporten com si no hi fos.
@@ -825,7 +825,7 @@ Ens fixa una caixa en la pantalla de manera que **no es mourà** encara que es m
 }
 ```
 
-![image](../../.gitbook/assets/uf1-posicionament-fixed.png)
+![image](../assets/uf1-posicionament-fixed.png)
 
 [Exemple posicionament fixed](https://www.w3schools.com/cssref/playit.asp?filename=playcss_position\&preval=fixed)
 
@@ -833,13 +833,13 @@ Ens fixa una caixa en la pantalla de manera que **no es mourà** encara que es m
 
 Podem definir una **caixa flotant** que deixa que les altres caixes es posin al seu voltant amb la propietat `float`.
 
-![image](../../.gitbook/assets/uf1-posicionament-flotant.gif)
+![image](../assets/uf1-posicionament-flotant.gif)
 
 * La caixa que hem definit `float:right;` es posa primer, al més a la dreta o esquerra possible, i les altres es posen al seu voltant sense sobreesciure-la.
 
 La propietat `clear` permet anul·lar el comportament per introduït per la propietat float.
 
-![image](../../.gitbook/assets/uf1-posicionament-flotant-clear.gif)
+![image](../assets/uf1-posicionament-flotant-clear.gif)
 
 * `clear: left;` anul·la els elements floants a l'esquerra.
 
@@ -847,7 +847,7 @@ La propietat `clear` permet anul·lar el comportament per introduït per la prop
 
 El paràmetre `clear` pot tenir diferents valors:
 
-![image](../../.gitbook/assets/uf1-clear.png)
+![image](../assets/uf1-clear.png)
 
 ## Posicionament Flexbox
 
@@ -881,7 +881,7 @@ La declaració `display: flex;` defineix:
 * Un **Flex container** (_**contenidor flexible**_) : element pare que conté elements flexibles.
 * Converteix de forma automàtica als seus **fills** directes a **Flex items** (_**elements flexibles**_).
 
-<figure><img src="../../.gitbook/assets/00-basic-terminology.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/00-basic-terminology.svg" alt=""><figcaption></figcaption></figure>
 
 Un **Flex container** té dos eixos:
 
@@ -898,7 +898,7 @@ Els elements es col·locaran seguint la **direcció** del Main axis o bé Cross 
 
 La propietat `flex-direction` especifica la **direcció respecte l’eix principal** en la qual es posicionen els elements flexibles.
 
-<figure><img src="../../.gitbook/assets/flex-direction.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/flex-direction.svg" alt=""><figcaption></figcaption></figure>
 
 ```css
 .container {
@@ -921,7 +921,7 @@ Per defecte els elements flexibles es situen tots en **una única** **fila**.
 
 La propietat `flex-wrap` permet especificar que els elements flexibles es col·loquin en **varies files** i la **direcció d’aquestes files**.
 
-<figure><img src="../../.gitbook/assets/flex-wrap.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/flex-wrap.svg" alt=""><figcaption></figcaption></figure>
 
 ```css
 .container {
@@ -960,7 +960,7 @@ Defeneix l'**alineament** dels elements respecte l'eix principal (**Main Axis**)
 
 Si hi ha **espai extra** dins d'un contenidor flexible la propietat justify-content defineix com s'usa aquest espai que sobra.
 
-<figure><img src="../../.gitbook/assets/justify-content.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/justify-content.svg" alt=""><figcaption></figcaption></figure>
 
 ```css
 .container {
@@ -983,7 +983,7 @@ Les opcions són:
 
 Defeneix l'**alineament** dels elements respecte l'eix transversal (**Cross Axis**).
 
-<figure><img src="../../.gitbook/assets/align-items.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/align-items.svg" alt=""><figcaption></figcaption></figure>
 
 ```css
 .container {
@@ -1009,7 +1009,7 @@ Permet **establir l'ordre** en què apareixen els components dins d'una caixa fl
 
 Per defecte apareixeran tal com apareixen en el codi HTML (equival a order: 0).
 
-<figure><img src="../../.gitbook/assets/order.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/order.svg" alt=""><figcaption></figcaption></figure>
 
 ```css
 .item {
@@ -1023,7 +1023,7 @@ Permet establir **com creix** un element flexible dins del contenidor en relaci�
 
 La propietat `flex-grow` especifica el **factor de creixement**. Per defecte és '0',
 
-<figure><img src="../../.gitbook/assets/flex-grow.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/flex-grow.svg" alt=""><figcaption></figcaption></figure>
 
 #### Propietat flex-shrink
 
@@ -1057,7 +1057,7 @@ El segon i tercer paràmetres (`flex-shrink` i `flex-basis`) són opcionals.
 
 Estableix l'**alineament** dels elements individuals sobreescrivint la propietat `align-items`.
 
-<figure><img src="../../.gitbook/assets/align-self.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/align-self.svg" alt=""><figcaption></figcaption></figure>
 
 El valors acceptats són:
 
@@ -1083,21 +1083,21 @@ CSS-Tricks: A Complete Guide to Flexbox
 
 ### Inline vs block
 
-![image](../../.gitbook/assets/resum-inline-block.png)
+![image](../assets/resum-inline-block.png)
 
 ### Absolute
 
-![image](../../.gitbook/assets/resum-absolute.png)
+![image](../assets/resum-absolute.png)
 
 ### Fixed
 
-![image](../../.gitbook/assets/resum-fixed.png)
+![image](../assets/resum-fixed.png)
 
 ### Relatiu
 
-![image](../../.gitbook/assets/resum-relatiu.png)
+![image](../assets/resum-relatiu.png)
 
 ### Float
 
-![image](../../.gitbook/assets/resum-float.png)
+![image](../assets/resum-float.png)
 
