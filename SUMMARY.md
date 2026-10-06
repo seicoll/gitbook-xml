@@ -4,7 +4,7 @@
 
 ## Unitat 1. HTML i CSS
 
-- [HTML](unitat-1.-html-i-css/uf1_html.md)
+- [HTML](docs/01-html-css/uf1_html.md/uf1_html.md)
 - [CSS](unitat-1.-html-i-css/uf1_css.md)
 
 ## Unitat 2. Llenguatges de marques

@@ -20,9 +20,9 @@ Conseqüentment, el **llenguatge HTML** serveix al navegador per mostrar les pà
 
 ### Què és una pàgina web?
 
-> Una **pàgina web** és un arxiu de text amb extensió _.html_ o _.htm_
+> Una **pàgina web** és un arxiu de text amb extensió **_.html_**
 
-Pot ser creada amb el bloc de notes o programes Editors de codi HTML.
+Pot ser creada amb el bloc de notes o programes **Editors de codi HTML**.
 
 **HTML** és únicament text pla.
 
