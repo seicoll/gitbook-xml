@@ -466,7 +466,7 @@ Garrotxa
 
 **HTML**
 
-```markup
+```html
 <body>
      <p>
          Consulteu la pàgina del <a href="www.w3.org">W3C</a>
@@ -529,7 +529,7 @@ a:hover {
 
 **HTML**
 
-```markup
+```html
 <body>
   <p>Primer paràgraf</p>
   <p>Segon paràgraf</p>
@@ -558,7 +558,7 @@ Segon paràgraf
 
 **HTML**
 
-```markup
+```html
 <body>
     <h1> Títol principal </h1>
     <p>Primer paràgraf </p>
