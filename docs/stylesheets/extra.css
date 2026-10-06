@@ -197,6 +197,10 @@
     color: #111827;
 }
 
+.md-typeset blockquote p{
+  margin: 0;
+}
+
 .md-typeset h1 {
   font-weight: 800;
   color: #111827;
