@@ -47,13 +47,13 @@ nav:
       - Disseny responsiu: 01-html-css/responsive.md
 
   - UNITAT 2. Llenguatges de marques:
-      - Introducció: unitat-2.-xml-i-json/intro.md
-      - Markdown: unitat-2.-xml-i-json/markdown.md
-      - XML: unitat-2.-xml-i-json/xml.md
-      - JSON: unitat-2.-xml-i-json/json.md
-      - Validació amb DTD: unitat-2.-xml-i-json/uf1_dtd.md
-      - Validació amb XSD: unitat-2.-xml-i-json/uf1_xsd.md
-      - Exercicis: unitat-2.-xml-i-json/exercicis.md
+      - Introducció: 02-xml-json/intro.md
+      - Markdown: 02-xml-json/markdown.md
+      - XML: 02-xml-json/xml.md
+      - JSON: 02-xml-json/json.md
+      - Validació amb DTD: 02-xml-json/uf1_dtd.md
+      - Validació amb XSD: 02-xml-json/uf1_xsd.md
+      - Exercicis: 02-xml-json/exercicis.md
 
   # - UNITAT 3. Javascript i Sistemes de gestió empresarial:
 
