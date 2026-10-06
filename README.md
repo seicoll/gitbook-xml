@@ -2,8 +2,9 @@
 
 ## UNITAT 1. HTML I CSS
 
-- [Llenguatge HTML](unitat-1.-html-i-css/uf1_html.md)
-- [CSS](unitat-1.-html-i-css/uf1_css.md)
+- [Llenguatge HTML](01-html-css/uf1_html.md)
+- [CSS](01-html-css/uf1_css.md)
+- [Disseny responsiu](01-html-css/responsive.md)
 
 ## UNITAT 2. Llenguatges de marques
 
