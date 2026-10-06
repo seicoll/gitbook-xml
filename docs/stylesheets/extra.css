@@ -180,6 +180,18 @@
    CONTINGUT
 ============================== */
 
+.md-typeset {
+    font-size: 0.9rem;
+}
+
+/* Blockquote */
+.md-typeset blockquote {
+    background-color: rgb(207, 233, 241);
+    padding: 10px;;
+    border-left: 5px solid #2196f3;
+    border-radius: 4px;
+}
+
 .md-typeset h1 {
   font-weight: 800;
   color: #111827;
@@ -215,14 +227,6 @@
 :root {
   --md-code-bg-color: #f7f9fb;
   --md-code-fg-color: #1f2937;
-}
-
-/* Blockquote */
-.md-typeset blockquote {
-    background-color: rgb(207, 233, 241);
-    padding: 10px;;
-    border-left: 5px solid #2196f3;
-    border-radius: 4px;
 }
 
 .md-typeset pre > code {
