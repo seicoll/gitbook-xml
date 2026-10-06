@@ -1,6 +1,6 @@
 # HTML
 
-## Introducció
+## Introducció ---
 
 > El **llenguatge HTML (HyperText Markup Language)** és el llenguatge amb el qual s'escriuen les pàgines web.
 
