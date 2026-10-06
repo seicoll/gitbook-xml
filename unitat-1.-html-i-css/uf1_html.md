@@ -454,13 +454,6 @@ Si la imatge es troba en una carpeta diferents que la pàgina HTML:
 - **Alt:** Breu descripció de l'imatge. És **obligatori** per tal que el document HTLM sigui validat correctament.
 - **Height** i **Width**: Defineixen l'altura i amplada de les imatges en pixels.
 
-Altres **coses mal fetes**:
-
-![Forbidden](<../.gitbook/assets/forbidden (4).jpg>)
-
-- **BORDER**: Defineix el tamany en pixels del quadrat que rodeja l'imatge.
-- **LOWSRC**: Quant tenim activada aquesta opció primer es descarrega la imatge amb una baixa resolució i va millorant a mesura que es va descarregant.
-
 ### Tipus d'arxius per les imatges
 
 PNG ( per dibuixos ) JPG ( per fotos ).
@@ -533,28 +526,6 @@ si afegim un atribut `border="1"` ho veurem més clar:
 
 ![Forbidden](<../.gitbook/assets/forbidden (5).jpg>)
 
-**ATRIBUTS PER FILES I CEL·LES no vàlids**
-
-- **Align**: Justifica el text de la cel·la
-- **Valign**: Podem escollir si el text apareix a dalt (top), a baix (bottom) o al mig (middle) de la cel.la.
-- **Bgcolor**: Donar color a la cel·la o la fila escollida.
-- **Bordercolor**: Defineix el color del marc.
-
-**ATRIBUTS PER CEL.LES no vàlids**
-
-- **Background**: Ens permet col·locar de fons una imatge en una cel·la.
-- **Height**: Defineix l'altura de la cel·la en pixels o percentatge.
-- **Width**: Defineix l'amplada de la cel·la en pixels o percentatge.
-- **Align**: Alinea la taula respecte al seu entorn
-- **Background**: Ens permet col·locar un fons per la taula a partir d'una imatge.
-- **Bgcolor**: Color de fons de la taula.
-- **Border**: Defineix el tamany del marc.
-- **Bordercolor**: Defineix el color del marc.
-- **Cellpadding**: Defineix en pixels l'espai entre les cel·les dela taula i el seu contingut.
-- **Cellspacing**: Defineix l'espai entre els marcs (en pixels)
-- **Height**: Defineix l'altura de la taula en pixels o percentatge.
-- **Width**: Defineix l'amplada de la taula en pixels o percentatge.
-
 **Atributs de taula vàlids**
 
 - **Colspan:**: Expandeix una cel·la horitzontalment.
@@ -568,13 +539,6 @@ També es poden utilitzar taules anidades.
 - Té l'interès "històric" de saber com es feien abans les pàgines web, el CSS actualment les millora molt.
 - Antigament els _**layouts**_ una mica complexes es feien o bé amb taules o bé amb frames. Les dues coses estan en desús avui en dia.
 - Podria interessar saber-los fer per actualitzar alguna pàgina web antiga.
-
-### Per què no s'utilitzen els frames
-
-- Els **motors de cerca** tenen problemes per indexar-los.
-- Ocupen **espai** a la pantalla.
-- No es poden utilitzar les funcionalitats d'anar endavant o endarrere a l'**historial** de navegació.
-- Tenen problemes d'**usabilitat i accessibilitat** web per persones invidents.
 
 ## Iframes
 
