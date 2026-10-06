@@ -1,6 +1,6 @@
 # Disseny Responsive amb CSS
 
-## Què és el disseny responsive? -
+## Què és el disseny responsive?
 
 El **disseny responsive** (o *Responsive Web Design*) és una tècnica de desenvolupament web que permet que una pàgina s'adapti automàticament a diferents mides de pantalla.
 
@@ -16,7 +16,7 @@ L'objectiu és que el contingut sigui **fàcil de veure i utilitzar independentm
 
 ![](../uf1_images/u1-responsive_web_design.webp)
 
-# El viewport
+## El viewport
 
 Perquè un document HTML s'adapti correctament als dispositius mòbils, és molt important definir el **viewport**.
 
@@ -51,7 +51,7 @@ Aquesta línia indica al navegador que:
 </html>
 ```
 
-# Media Queries
+## Media Queries
 
 Les **media queries** són una funcionalitat de CSS que permet aplicar regles diferents segons les característiques del dispositiu o la pantalla. 
 
