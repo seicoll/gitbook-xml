@@ -41,7 +41,7 @@
 
 /* Sidebar dreta (TOC) */
 .md-sidebar--secondary {
-  width: 14rem;
+  width: 15rem;
 }
 
 /* Ajust fi en pantalles grans */
@@ -51,7 +51,7 @@
   }
 
   .md-sidebar--secondary {
-    width: 14rem;
+    width: 15rem;
   }
 }
 
