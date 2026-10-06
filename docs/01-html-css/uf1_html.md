@@ -124,7 +124,7 @@ Conté els atributs _name_ i _content_
 
 ### Pàgina HTML bàsica
 
-```markup
+```html
 <!DOCTYPE html>
 <html lang="ca">
      <head>
@@ -141,13 +141,13 @@ Conté els atributs _name_ i _content_
 
 HTML defineix **6 nivells de capçaleres o títols**.
 
-```markup
-<h1>Títol 1</h1>
-<h2>Títol 2</h2>
-<h3>Títol 3</h3>
-<h4>Títol 4</h4>
-<h5>Títol 5</h5>
-<h6>Títol 6</h6>
+```html
+    <h1>Títol 1</h1>
+    <h2>Títol 2</h2>
+    <h3>Títol 3</h3>
+    <h4>Títol 4</h4>
+    <h5>Títol 5</h5>
+    <h6>Títol 6</h6>
 ```
 
 **Més informació**: w3schools HTML Headings [https://www.w3schools.com/html/html_headings.asp](https://www.w3schools.com/html/html_headings.asp)
@@ -173,33 +173,6 @@ Llegireu que hi ha atributs per alinear els paràgrafs, com `align`
 - Text alineat a la dreta: `<p align="right"> Text right </p>`
 
 Antigament es feia servir però ara **no és correcte**, a vegades el camí més ràpid no és el millor.
-
-**Coneixeu el CSS?**
-
-Mireu l'exemple de l'_abadia del crimen_, per entendre que una cosa ben feta dura més, és més fàcil de mantenir i es pot millorar amb facilitat.
-
-> Si comencem a fer codi brut, "espaguetti" o altres defectes, les pàgines esdevenen totalment **inmantenibles**.
-
-En voleu més exemples? (en MAJÚSCULES EL QUE HEM D'EVITAR)
-
-Podíem definir el **color**, **tamany** i **tipus** de lletra de diferents formes:
-
-Mitjançant l'etiqueta `<FONT>` teníem els atributs:
-
-- FACE: Defineix el tipus de lletra.
-- SIZE: Defineix el tamany de la lletra.
-- COLOR: Defineix el color del text de la lletra.
-
-Amb Es definien dins de l'etiqueta `<body>`;
-
-- ATRIBUTS
-- BGCOLOR: Especifica el color de fons de la pàgina
-- BACKGROUND: Serveix per indicar la col·locació d'una imatge com a fons de pàgina.
-- COLOR DEL TEXT
-- TEXT: Serveix per definir el color del text de la pàgina.
-- LINK: El color del enllaços que no han estat visitats ( per defecte, és blau ) VLINK: El color dels enllaços visitats.
-
-... i un llarg etcètera...
 
 ### L'etiqueta pre
 
@@ -242,7 +215,7 @@ Definides per les etiquetes `<ul>` i `</ul>` (**u**nordered **l**ist).
 
 Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**tem).
 
-```markup
+```html
 <p> Països del mon </p>
 <ul>
     <li> Argentina </li>
@@ -266,7 +239,7 @@ On _**tipus vinyeta**_ pot ser: `circle`, `disc`, `square` o `none`.
 
 Definides per les etiquetes `<ol>` i `</ol>` (**o**rdered **l**ist). Cada element de la llista queda enmarcat per l'etiqueta `<li>` (**l**ist **i**tem)
 
-```markup
+```html
 <p> Països del mon </p>
 <ol>
     <li> Argentina </li>
@@ -309,7 +282,7 @@ L'atribut **TYPE** ens serveix per definir el tipus de numeració que utilitzare
 
 Podem **aniuar** llistes, fins i tot de diferents tipus de llista:
 
-```markup
+```html
 <p>Ciutats del mon</p>
 <ul>
     <li>
@@ -374,7 +347,7 @@ Enllaç destí: <a id="avall"> </a>
 
 Un lloc web està constituit de pàgines interconnectades.
 
-```markup
+```html
 <a href="arxiu.html"> Arxiu </a>
 ```
 
@@ -382,14 +355,14 @@ Per regla general, un lloc web ha d'estar ordenat per directoris. S'ha d'utilitz
 
 - Els **enllaços locals** també poden apuntar a una secció en concret dintre d'un altre pàgina.
 
-  ```markup
+  ```html
    <a href="arxiu.html#seccio"> Arxiu </a>
   ```
 
 - La pàgina **arxiu.html** ha de contenir la marca referent a la secció.
 
-  ```markup
-   <a id"seccio"> </a>
+  ```html
+   <a id="seccio"> </a>
   ```
 
 ### Enllaços externs
@@ -400,7 +373,7 @@ A l'atribut `href` i col·loquem la **URL** o direcció de la pàgina amb la que
 
 Totes les direccions van precedides de `http://`
 
-```markup
+```html
 <a href="http://www.elmundodeportivo.es"> Anar a El Mundo deportivo </a>
 ```
 
