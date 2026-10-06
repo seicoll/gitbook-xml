@@ -881,7 +881,7 @@ La declaració `display: flex;` defineix:
 * Un **Flex container** (_**contenidor flexible**_) : element pare que conté elements flexibles.
 * Converteix de forma automàtica als seus **fills** directes a **Flex items** (_**elements flexibles**_).
 
-<figure><img src="../assets/00-basic-terminology.svg" alt=""><figcaption></figcaption></figure>
+![image](../assets/00-basic-terminology.svg)
 
 Un **Flex container** té dos eixos:
 
@@ -898,7 +898,7 @@ Els elements es col·locaran seguint la **direcció** del Main axis o bé Cross 
 
 La propietat `flex-direction` especifica la **direcció respecte l’eix principal** en la qual es posicionen els elements flexibles.
 
-<figure><img src="../assets/flex-direction.svg" alt=""><figcaption></figcaption></figure>
+![image](../assets/flex-direction.svg)
 
 ```css
 .container {
@@ -921,7 +921,7 @@ Per defecte els elements flexibles es situen tots en **una única** **fila**.
 
 La propietat `flex-wrap` permet especificar que els elements flexibles es col·loquin en **varies files** i la **direcció d’aquestes files**.
 
-<figure><img src="../assets/flex-wrap.svg" alt=""><figcaption></figcaption></figure>
+![image](../assets/flex-wrap.svg)
 
 ```css
 .container {
@@ -960,7 +960,8 @@ Defeneix l'**alineament** dels elements respecte l'eix principal (**Main Axis**)
 
 Si hi ha **espai extra** dins d'un contenidor flexible la propietat justify-content defineix com s'usa aquest espai que sobra.
 
-<figure><img src="../assets/justify-content.svg" alt=""><figcaption></figcaption></figure>
+![image](../assets/justify-content.svg)
+
 
 ```css
 .container {
@@ -983,7 +984,8 @@ Les opcions són:
 
 Defeneix l'**alineament** dels elements respecte l'eix transversal (**Cross Axis**).
 
-<figure><img src="../assets/align-items.svg" alt=""><figcaption></figcaption></figure>
+![image](../assets/align-items.svg)
+
 
 ```css
 .container {
@@ -1009,7 +1011,8 @@ Permet **establir l'ordre** en què apareixen els components dins d'una caixa fl
 
 Per defecte apareixeran tal com apareixen en el codi HTML (equival a order: 0).
 
-<figure><img src="../assets/order.svg" alt=""><figcaption></figcaption></figure>
+![image](../assets/order.svg)
+
 
 ```css
 .item {
@@ -1023,7 +1026,8 @@ Permet establir **com creix** un element flexible dins del contenidor en relaci�
 
 La propietat `flex-grow` especifica el **factor de creixement**. Per defecte és '0',
 
-<figure><img src="../assets/flex-grow.svg" alt=""><figcaption></figcaption></figure>
+![image](../assets/flex-grow.svg)
+
 
 #### Propietat flex-shrink
 
@@ -1057,7 +1061,8 @@ El segon i tercer paràmetres (`flex-shrink` i `flex-basis`) són opcionals.
 
 Estableix l'**alineament** dels elements individuals sobreescrivint la propietat `align-items`.
 
-<figure><img src="../assets/align-self.svg" alt=""><figcaption></figcaption></figure>
+![image](../assets/align-self.svg)
+
 
 El valors acceptats són:
 
