@@ -3,7 +3,7 @@
 ============================== */
 
 .md-grid {
-  max-width: 1700px;
+  max-width: 1900px;
 }
 
 .md-content {
@@ -62,7 +62,7 @@
 /* Títol principal del bloc */
 .md-sidebar--primary .md-nav__title {
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #111827;
   padding: 0.9rem 0.6rem 0.6rem 0.6rem;
   background: transparent;
