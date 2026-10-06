@@ -4,8 +4,8 @@ repo_url: https://github.com/seicoll/gitbook-xml
 
 theme:
   name: material
-  logo: assets/js_icon.png
-  favicon: assets/js_icon.png
+  # logo: assets/js_icon.png
+  # favicon: assets/js_icon.png
 
   features:
     - navigation.sections
@@ -26,7 +26,7 @@ plugins:
   - search
 
 copyright: |
-  © 2026 Sergi Coll  
+  © 2027 Sergi Coll  
    – Institut Bosc de la Coma
 
 markdown_extensions:
