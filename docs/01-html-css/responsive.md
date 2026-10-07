@@ -63,11 +63,6 @@ Aquesta línia indica al navegador que:
 
 
 
-
-
-
-
----
 ## Media Queries
 
 Les **media queries** són una funcionalitat de CSS que permet aplicar CSS diferent segons les característiques del dispositiu o la pantalla. 
@@ -112,187 +107,82 @@ A partir d'una amplada de pantalla de 769 píxels o superiors, el text serà mé
 
 
 
+## Breakpoints
 
-# 11. Exemple de canvi de columnes
+> Els punts on modifiquem el disseny s'anomenen **breakpoints**.
 
-Suposem una web amb tres columnes.
+**Breakpoints habituals**
 
-```css
-.productes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-```
-
-Podem modificar-la en pantalles petites.
-
-```css
-@media (max-width: 768px) {
-
-    .productes {
-        grid-template-columns: 1fr;
-    }
-
-}
-```
-
-Resultat:
-
-### Ordinador
-
-```text
-┌────────┬────────┬────────┐
-│   1    │   2    │   3    │
-└────────┴────────┴────────┘
-```
-
-### Mòbil
-
-```text
-┌──────────────────┐
-│        1         │
-├──────────────────┤
-│        2         │
-├──────────────────┤
-│        3         │
-└──────────────────┘
-```
-
----
-
-# 12. Breakpoints
-
-Els punts on modifiquem el disseny s'anomenen **breakpoints**.
-
+![](../assets/u1-breakpoints.png)
 Per exemple:
 
-```css
-@media (max-width: 1200px) {
 
+### Estratègia Desktop First
+
+* Una possible manera de treballar consisteix a dissenyar primer la versió d'ordinador.
+
+**Primer** es creen les regles CSS per als navegadors **d'ordinadors** i després s'afegeixen Media Queries per definir els estils en navegadors de tablets i mòbils.
+
+
+```css
+/* Regles CSS per a Ordinador */
+* {
+    box-sizing: border-box;
 }
-```
 
-```css
-@media (max-width: 992px) {
 
-}
-```
-
-```css
+/* Tauleta */
 @media (max-width: 768px) {
 
+
+}
+
+/* Mòbil */
+@media (max-width: 480px) {
+
 }
 ```
+
+
+### Estratègia Mobile First
+
+> Actualment és molt habitual utilitzar l'estratègia **Mobile First**.
+
+* **Primer** programem la versió més senzilla: el mòbil.
+
+* **Després** ampliem el disseny a mesura que tenim més espai.
+
+Exemple:
 
 ```css
-@media (max-width: 576px) {
-
-}
-```
-
-Però aquests valors **no són obligatoris**.
-
-No hem de pensar:
-
-> A 768 px sempre he de canviar el disseny.
-
-És millor pensar:
-
-> En quin punt el meu disseny deixa de funcionar correctament?
-
-Aquest serà un bon lloc per posar un breakpoint.
-
----
-
-# 13. Estratègia Desktop First
-
-Una possible manera de treballar consisteix a dissenyar primer la versió d'ordinador.
-
-```css
-.menu {
-    display: flex;
+/* Regles CSS per a Mòbil */
+* {
+    box-sizing: border-box;
 }
 
-.productes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-```
 
-Després adaptem el disseny per a pantalles més petites.
+/* Tauleta */
+@media (min-width: 481px) {
 
-```css
-@media (max-width: 768px) {
-
-    .menu {
-        flex-direction: column;
-    }
-
-    .productes {
-        grid-template-columns: 1fr;
-    }
 
 }
-```
 
-Aquesta tècnica s'anomena:
+/* Ordinador */
+@media (min-width: 769px) {
 
-**Desktop First**
-
----
-
-# 14. Estratègia Mobile First
-
-Actualment és molt habitual utilitzar l'estratègia **Mobile First**.
-
-Primer programem la versió més senzilla: el mòbil.
-
-```css
-.productes {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-```
-
-Després ampliem el disseny a mesura que tenim més espai.
-
-```css
-@media (min-width: 768px) {
-
-    .productes {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
 
 }
-```
-
-```css
-@media (min-width: 1200px) {
-
-    .productes {
-        grid-template-columns:
-            repeat(4, 1fr);
-    }
-
-}
-```
-
-Resultat:
-
-```text
-Mòbil
-1 columna
-↓
-Tauleta
-2 columnes
-↓
-Ordinador
-4 columnes
 ```
 
 Aquest enfocament acostuma a ser una bona opció perquè obliga a començar pel contingut essencial.
+
+---
+
+
+
+
+per revisar
+
 
 ---
 
