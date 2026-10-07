@@ -42,6 +42,7 @@ extra_css:
 nav:
   - UNITAT 1. HTML I CSS:
       - Llenguatge HTML: 01-html-css/uf1_html.md
+      - Formularis: 01-html-css/u1-forms.md 
       - CSS: 01-html-css/uf1_css.md
       - Disseny responsiu: 01-html-css/responsive.md
 
