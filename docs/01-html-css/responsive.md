@@ -17,7 +17,6 @@ L'objectiu és que el contingut sigui **fàcil de veure i utilitzar independentm
 ![](../uf1_images/u1-responsive_web_design.webp)
 
 
-
 ## El problema de les mides fixes
 
 Considerem aquest CSS:
@@ -81,7 +80,6 @@ La més habitual és comprovar-ne l'amplada.
 }
 ```
 
----
 ### Exemple pràctic
 
 ```css
@@ -103,10 +101,6 @@ La més habitual és comprovar-ne l'amplada.
 A partir d'una amplada de pantalla de 769 píxels o superiors, el text serà més gran.
 
 
----
-
-
-
 ## Breakpoints
 
 > Els punts on modifiquem el disseny s'anomenen **breakpoints**.
@@ -119,7 +113,7 @@ Per exemple:
 
 ### Estratègia Desktop First
 
-* Una possible manera de treballar consisteix a dissenyar primer la versió d'ordinador.
+> Una possible manera de treballar consisteix a dissenyar primer la versió d'ordinador.
 
 **Primer** es creen les regles CSS per als navegadors **d'ordinadors** i després s'afegeixen Media Queries per definir els estils en navegadors de tablets i mòbils.
 
@@ -143,7 +137,6 @@ Per exemple:
 }
 ```
 
-
 ### Estratègia Mobile First
 
 > Actualment és molt habitual utilitzar l'estratègia **Mobile First**.
@@ -152,7 +145,7 @@ Per exemple:
 
 * **Després** ampliem el disseny a mesura que tenim més espai.
 
-Exemple:
+**Exemple:**
 
 ```css
 /* Regles CSS per a Mòbil */
@@ -164,18 +157,15 @@ Exemple:
 /* Tauleta */
 @media (min-width: 481px) {
 
-
 }
 
 /* Ordinador */
 @media (min-width: 769px) {
 
-
 }
 ```
 
 Aquest enfocament acostuma a ser una bona opció perquè obliga a començar pel contingut essencial.
-
 
 ## Com provar una web responsive
 
@@ -183,13 +173,10 @@ Els navegadors actuals permeten **simular diferents dispositius**.
 
 A Chrome o Edge podem obrir les eines de desenvolupament amb **F12**.
 
-
 i activar **Toggle device toolbar**
-
 
 També podem utilitzar 
 **Ctrl + Shift + M**
-
 
 Podrem seleccionar dispositius com:
 
@@ -205,8 +192,7 @@ Però no ens hem de limitar als dispositius predefinits.
 
 Això permet detectar exactament en quin punt es trenca el disseny.
 
-
-# Exercici proposat
+## Exercici proposat
 
 Crea una pàgina web d'una botiga d'informàtica amb:
 
@@ -247,6 +233,7 @@ Condicions:
 - Utilitza almenys dues `media queries`.
 - La pàgina no pot tenir scroll horitzontal en cap resolució.
 - Comprova el resultat amb les eines de desenvolupador del navegador.
+
 
 
 
