@@ -198,46 +198,30 @@ Aquest nom és el que permet identificar la dada quan el formulari s'envia al se
 - `readonly`: fa que el camp sigui només de lectura.
 
 
-/* PER REVISAR */
 
-## L'etiqueta `<label>`
 
-`<label>` permet associar una etiqueta de text a un camp del formulari.
 
-És especialment important per millorar l'**accessibilitat**.
-
-```html
-<label for="nom">Nom</label>
-<input type="text" id="nom">
-```
-
-El valor de `for` ha de coincidir amb l'`id` del camp.
-
-Quan l'usuari fa clic sobre el `label`, el navegador posiciona el focus en el control associat.
 
 
 
 ## Formularis amb HTML5
 
-HTML5 incorpora nous tipus de camps que permeten:
-
-- una entrada de dades més adequada;
-- un millor control del format;
-- validació automàtica per part del navegador.
-
-
+**HTML5** incorpora nous tipus de camps que permeten:
+- una millor **experiència d'usuari** amb una entrada de dades més adequada;
+- un millor **control del format**;
+- **validació automàtica** per part del navegador.
 
 ### `type="email"`
 
-S'utilitza per introduir una adreça de correu electrònic.
+> S'utilitza per introduir una **adreça de correu electrònic**.
 
 ```html
 <input type="email" name="correu">
 ```
 
-El navegador pot comprovar si el valor té un format de correu electrònic vàlid.
+El navegador pot comprovar si el valor té un **format de correu electrònic vàlid**.
 
-
+![](../assets/u1-form-email.png)
 
 ### `type="url"`
 
@@ -247,13 +231,14 @@ S'utilitza per introduir una URL.
 <input type="url" name="paginaweb">
 ```
 
-El navegador pot validar que el contingut tingui format d'URL.
+El navegador pot **validar** que el contingut tingui format d'URL.
 
+![](../assets/u1-form-url.png)
 
 
 ### `type="date"`
 
-Permet seleccionar una data.
+> Permet seleccionar una **data**.
 
 ```html
 <input type="date" name="aniversari">
@@ -261,7 +246,7 @@ Permet seleccionar una data.
 
 El navegador pot mostrar un selector de calendari.
 
-
+![](../assets/u1-form-date.png)
 
 ### `type="time"`
 
@@ -271,11 +256,11 @@ Permet introduir una hora vàlida.
 <input type="time" name="hora">
 ```
 
-
+![](../assets/u1-form-time.png)
 
 ### `type="number"`
 
-S'utilitza per introduir valors numèrics.
+> S'utilitza per introduir **valors numèrics**.
 
 ```html
 <input type="number" name="quantitat" min="1" max="5">
@@ -287,10 +272,12 @@ Atributs habituals:
 - `max`: valor màxim.
 - `value`: valor inicial.
 - `step`: increment entre valors.
+  
+![](../assets/u1-form-number.png)
 
 ### `type="range"`
 
-Permet seleccionar un valor dins d'un interval numèric.
+> Permet seleccionar un valor **dins d'un interval numèric**.
 
 ```html
 <input type="range" name="points" min="1" max="10">
@@ -298,15 +285,18 @@ Permet seleccionar un valor dins d'un interval numèric.
 
 Normalment el navegador el representa com un control lliscant.
 
+![](../assets/u1-form-range.png)
 
+### `type="color"` 
 
-### `type="color"`
-
-Permet seleccionar un color utilitzant el selector de colors del navegador.
+> Permet seleccionar un color utilitzant el selector de **colors** del navegador.
 
 ```html
 <input type="color" name="color">
 ```
+![](../assets/u1-form-color.png)
+
+/* PER REVISAR */
 
 ## Atributs per als camps
 
@@ -364,7 +354,20 @@ Exemple: codi postal de cinc dígits.
 
 El valor introduït haurà de complir el patró indicat.
 
+## L'etiqueta `<label>`
 
+`<label>` permet associar una etiqueta de text a un camp del formulari.
+
+És especialment important per millorar l'**accessibilitat**.
+
+```html
+<label for="nom">Nom</label>
+<input type="text" id="nom">
+```
+
+El valor de `for` ha de coincidir amb l'`id` del camp.
+
+Quan l'usuari fa clic sobre el `label`, el navegador posiciona el focus en el control associat.
 
 ## Llistes de suggeriments amb `<datalist>`
 
@@ -404,8 +407,6 @@ i:
 
 
 ## Documentació i recursos
-
-- [Creació de formularis](https://docs.google.com/presentation/d/1fZ1F4p_dvXShnL7GVNHEygFBxDvgslEW9AuTi4rE5f4/edit?usp=sharing)
   
 - Validació de camps:
   [https://lenguajehtml.com/p/html/formularios/validaciones-html5](https://lenguajehtml.com/p/html/formularios/validaciones-html5)
