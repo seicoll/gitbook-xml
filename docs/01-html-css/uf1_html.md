@@ -531,12 +531,7 @@ Apareixen **barres d'scroll** en el frame si la pàgina és més gran que l'espa
 
 [Exemple de iFrame](https://www.w3schools.com/html/html_iframe.asp)
 
-## Formularis
 
-- [Creació de formularis](https://docs.google.com/presentation/d/1fZ1F4p_dvXShnL7GVNHEygFBxDvgslEW9AuTi4rE5f4/edit?usp=sharing)
-- Validació de camps:
-
-  [https://lenguajehtml.com/p/html/formularios/validaciones-html5](https://lenguajehtml.com/p/html/formularios/validaciones-html5)
 
 ## Documentació i recursos
 

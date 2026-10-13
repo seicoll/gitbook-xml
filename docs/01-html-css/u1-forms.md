@@ -14,9 +14,7 @@ Un formulari es defineix amb l'etiqueta `<form>`.
     <input type="submit" value="Enviar">
 </form>
 ```
-/* IMATGE */
-
----
+![](../assets/u1-formulari.png)
 
 ## L'etiqueta `<form>`
 
@@ -32,9 +30,11 @@ Indica **on s'enviaran les dades** del formulari.
 
 En aquest cas, quan l'usuari enviï el formulari, les dades es processaran a `processar.php`.
 
+![](../assets/u1-form-action.png)
+
 ### `method`
 
-Indica **com s'enviaran les dades** al servidor.
+> Indica **com s'enviaran les dades** al servidor.
 
 Els dos mètodes HTTP més habituals són:
 
@@ -44,26 +44,22 @@ Els dos mètodes HTTP més habituals són:
 ```html
 <form method="get" action="resultat.html">
 ```
+> Les dades enviades amb `GET` es poden veure a la barra d'adreces del navegador.
 
 ```html
 <form method="post" action="resultat.html">
 ```
+> Les dades enviades amb `POST` no es mostren a la barra d'adreces del navegador.
 
----
+**Exemple w3schools:** [GET](https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_form_method) i [POST](https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_form_method)
 
 ## Camps d'entrada amb `<input>`
 
 ### L'etiqueta `<input>`
 
-L'etiqueta `<input>` defineix un **punt d'entrada de dades**.
+> L'etiqueta `<input>` defineix un **camp d'entrada de dades**.
 
 L'atribut `type` determina quin tipus de control es mostrarà.
-
-```html
-<input type="text" name="usuari">
-```
-
----
 
 ### Camps de text
 
@@ -83,15 +79,7 @@ Permet introduir una contrasenya ocultant visualment els caràcters.
 <input type="password" name="contrasenya">
 ```
 
-#### `type="hidden"`
-
-Permet enviar una dada sense mostrar cap control visible a l'usuari.
-
-```html
-<input type="hidden" name="id" value="25">
-```
-
-
+![](../assets/u1-form-input.png)
 
 ### Checkbox
 
@@ -195,7 +183,7 @@ Permet crear una **llista desplegable**.
 
 Cada opció es defineix amb `<option>`.
 
----
+
 
 ### L'etiqueta `<textarea>`
 
@@ -205,7 +193,7 @@ Permet introduir **text de diverses línies**.
 <textarea name="comentaris" rows="6" cols="40"></textarea>
 ```
 
----
+
 
 ### L'etiqueta `<label>`
 
@@ -244,7 +232,7 @@ S'utilitza per introduir una adreça de correu electrònic.
 
 El navegador pot comprovar si el valor té un format de correu electrònic vàlid.
 
----
+
 
 ### `type="url"`
 
@@ -256,7 +244,7 @@ S'utilitza per introduir una URL.
 
 El navegador pot validar que el contingut tingui format d'URL.
 
----
+
 
 ### `type="date"`
 
@@ -268,7 +256,7 @@ Permet seleccionar una data.
 
 El navegador pot mostrar un selector de calendari.
 
----
+
 
 ### `type="time"`
 
@@ -295,8 +283,6 @@ Atributs habituals:
 - `value`: valor inicial.
 - `step`: increment entre valors.
 
----
-
 ### `type="range"`
 
 Permet seleccionar un valor dins d'un interval numèric.
@@ -307,7 +293,7 @@ Permet seleccionar un valor dins d'un interval numèric.
 
 Normalment el navegador el representa com un control lliscant.
 
----
+
 
 ### `type="color"`
 
@@ -317,9 +303,7 @@ Permet seleccionar un color utilitzant el selector de colors del navegador.
 <input type="color" name="color">
 ```
 
----
-
-## Atributs HTML5 per als camps
+## Atributs per als camps
 
 ### `autofocus`
 
@@ -331,7 +315,7 @@ Fa que un camp tingui el focus automàticament quan es carrega la pàgina.
 
 La presentació indica que només hi ha d'haver un element amb aquest atribut dins del document.
 
----
+
 
 ### `placeholder`
 
@@ -349,7 +333,7 @@ Pot servir per mostrar:
 
 La presentació l'aplica als tipus `text`, `search`, `url`, `tel`, `email` i `password`.
 
----
+
 
 ### `required`
 
@@ -361,7 +345,7 @@ Indica que el camp és obligatori.
 
 Si el camp està buit, el navegador no permet enviar el formulari.
 
----
+
 
 ### `pattern`
 
@@ -375,7 +359,7 @@ Exemple: codi postal de cinc dígits.
 
 El valor introduït haurà de complir el patró indicat.
 
----
+
 
 ## Llistes de suggeriments amb `<datalist>`
 
@@ -414,6 +398,10 @@ i:
 ```
 
 
+## Documentació i recursos
 
-
+- [Creació de formularis](https://docs.google.com/presentation/d/1fZ1F4p_dvXShnL7GVNHEygFBxDvgslEW9AuTi4rE5f4/edit?usp=sharing)
+  
+- Validació de camps:
+  [https://lenguajehtml.com/p/html/formularios/validaciones-html5](https://lenguajehtml.com/p/html/formularios/validaciones-html5)
 
