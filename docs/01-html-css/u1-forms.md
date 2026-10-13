@@ -59,7 +59,7 @@ Els dos mètodes HTTP més habituals són:
 
 L'atribut `type` determina quin tipus de control es mostrarà.
 
-### Camps de text
+### Camps d'entrada més habituals
 
 #### `type="text"`
 
@@ -114,41 +114,69 @@ Permet seleccionar un fitxer.
 ```
 ![](../assets/u1-form-file.png)
 
+### L'etiqueta `<select>`
+
+> Permet crear una **llista desplegable**.
+
+```html
+<select name="desplegable">
+    <option value="Llet2">Llet</option>
+    <option value="Cafe2">Cafè</option>
+    <option value="Sucre2">Sucre</option>
+</select>
+```
+
+Cada opció es defineix amb `<option>`.
+
+![](../assets/u1-form-select.png)
+
+### L'etiqueta `<textarea>`
+
+> Permet introduir **text de diverses línies**.
+
+```html
+<textarea name="comentaris" rows="6" cols="40"></textarea>
+```
+![](../assets/u1-form-textarea.png)
+
 ## Botons
 
 ### `type="submit"`
 
-Envia les dades del formulari.
+> Envia les dades del formulari.
 
 ```html
-<input type="submit" value="Acceptar">
+<input type="submit" value="Enviar">
 ```
 
 ### `<button>`
 
-L'etiqueta `<button>` també permet crear botons i pot contenir text o altres elements.
+> L'etiqueta `<button>` també permet crear botons.
+
+La diferència entre els dos és que l’etiqueta `button` pot tenir contingut com pot ser **text** o bé **imatges**.
+
 
 ```html
-<button type="button">Acceptar</button>
+<button type="button">Enviar →</button>
 ```
+
+![](../assets/u1-form-buttons.png)
 
 ### `type="reset"`
 
-Permet buidar o restaurar els camps del formulari.
+> Permet buidar o restaurar els camps del formulari.
 
 ```html
 <input type="reset" value="Netejar">
 ```
 
-
-
 ## Atributs importants de `<input>`
 
 ### `name`
 
-Defineix el nom del camp.
+> Defineix el nom del camp.
 
-Aquest nom és el que permet identificar la dada quan el formulari s'envia.
+Aquest nom és el que permet identificar la dada quan el formulari s'envia al servidor.
 
 ```html
 <input type="text" name="usuari">
@@ -156,7 +184,7 @@ Aquest nom és el que permet identificar la dada quan el formulari s'envia.
 
 ### `value`
 
-Defineix el valor inicial del control.
+> Defineix el valor inicial del control.
 
 ```html
 <input type="text" name="ciutat" value="Olot">
@@ -169,35 +197,10 @@ Defineix el valor inicial del control.
 - `checked`: marca inicialment un `radio` o `checkbox`.
 - `readonly`: fa que el camp sigui només de lectura.
 
-## Altres controls de formulari
 
-### L'etiqueta `<select>`
+/* PER REVISAR */
 
-Permet crear una **llista desplegable**.
-
-```html
-<select name="desplegable">
-    <option value="Llet2">Llet</option>
-    <option value="Cafe2">Cafè</option>
-    <option value="Sucre2">Sucre</option>
-</select>
-```
-
-Cada opció es defineix amb `<option>`.
-
-
-
-### L'etiqueta `<textarea>`
-
-Permet introduir **text de diverses línies**.
-
-```html
-<textarea name="comentaris" rows="6" cols="40"></textarea>
-```
-
-
-
-### L'etiqueta `<label>`
+## L'etiqueta `<label>`
 
 `<label>` permet associar una etiqueta de text a un camp del formulari.
 
