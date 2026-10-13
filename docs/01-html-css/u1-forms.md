@@ -452,6 +452,7 @@ input:required {
 ![](../assets/u1-forms-estils.png)
 
 **Més exemples:** 
+
 * Exemple de formulari modern: 
   [https://codepen.io/MattDiMu/pen/bepmEK?editors=1100](https://codepen.io/MattDiMu/pen/bepmEK?editors=1100)
 
