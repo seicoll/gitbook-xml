@@ -296,90 +296,16 @@ Normalment el navegador el representa com un control lliscant.
 ```
 ![](../assets/u1-form-color.png)
 
-/* PER REVISAR */
 
-## Atributs per als camps
+### `<datalist>`
 
-### `autofocus`
-
-Fa que un camp tingui el focus automàticament quan es carrega la pàgina.
-
-```html
-<input type="text" name="nom" autofocus>
-```
-
-La presentació indica que només hi ha d'haver un element amb aquest atribut dins del document.
-
-
-
-### `placeholder`
-
-Permet mostrar un text orientatiu dins del camp.
-
-```html
-<input type="text" name="cognom" placeholder="Primer Cognom">
-```
-
-Pot servir per mostrar:
-
-- un exemple;
-- una breu descripció;
-- el format esperat.
-
-La presentació l'aplica als tipus `text`, `search`, `url`, `tel`, `email` i `password`.
-
-
-
-### `required`
-
-Indica que el camp és obligatori.
-
-```html
-<input type="text" name="cognom" required>
-```
-
-Si el camp està buit, el navegador no permet enviar el formulari.
-
-
-
-### `pattern`
-
-Permet definir una **expressió regular** per validar el contingut del camp.
-
-Exemple: codi postal de cinc dígits.
-
-```html
-<input type="text" name="CP" pattern="[0-9]{5}">
-```
-
-El valor introduït haurà de complir el patró indicat.
-
-## L'etiqueta `<label>`
-
-`<label>` permet associar una etiqueta de text a un camp del formulari.
-
-És especialment important per millorar l'**accessibilitat**.
-
-```html
-<label for="nom">Nom</label>
-<input type="text" id="nom">
-```
-
-El valor de `for` ha de coincidir amb l'`id` del camp.
-
-Quan l'usuari fa clic sobre el `label`, el navegador posiciona el focus en el control associat.
-
-## Llistes de suggeriments amb `<datalist>`
-
-### Què és `<datalist>`?
-
-`<datalist>` no és un tipus d'entrada.
-
-Serveix per definir una llista de **valors suggerits** per a un camp.
+> `<datalist>` no és un tipus d'entrada és un element que permet definir una llista de **valors suggerits** per a un camp d'entrada.
 
 A diferència de `<select>`, l'usuari **no està obligat** a seleccionar una de les opcions proposades.
 
 El navegador mostra suggeriments a mesura que l'usuari escriu.
+
+
 
 ```html
 <label for="xocolata">Tipus de xocolata preferit</label>
@@ -405,6 +331,84 @@ i:
 <datalist id="tipusXocolata">
 ```
 
+![](../assets/u1-form-datalist.png)
+
+**Exemple:** [Datalist w3schools](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_datalist)
+
+## Atributs per als camps
+
+### `autofocus`
+
+> Fa que un camp tingui el **focus automàticament** quan es carrega la pàgina.
+
+```html
+<input type="text" name="nom" autofocus>
+```
+
+Només hi ha d'haver un element amb aquest atribut dins del document.
+
+### `placeholder`
+
+> Permet mostrar un **text orientatiu dins del camp**.
+
+```html
+<input type="text" name="cognom" placeholder="Primer Cognom">
+```
+![](../assets/u1-form-placeholder.png)
+
+Pot servir per mostrar:
+
+- un exemple;
+- una breu descripció;
+- el format esperat.
+
+Es pot ser servir als camps d'entrada de tipus `text`, `search`, `url`, `tel`, `email` i `password`.
+
+
+### `required`
+
+> Indica que el camp és **obligatori**.
+
+```html
+<input type="text" name="cognom" required>
+```
+
+Si el camp està buit, el navegador no permet enviar el formulari.
+
+![](../assets/u1-form-required.png)
+
+
+### `pattern`
+
+> Permet definir una **expressió regular** per validar el contingut del camp.
+
+**Exemple:** codi postal de cinc dígits.
+
+```html
+<input type="text" name="CP" pattern="[0-9]{5}">
+```
+
+El valor introduït haurà de complir el patró indicat.
+
+![](../assets/u1-form-pattern.png)
+
+## L'etiqueta `<label>`
+
+> `<label>` permet associar una etiqueta de text a un camp del formulari.
+
+És especialment important per millorar l'**accessibilitat**.
+
+```html
+<label for="nom">Nom</label>
+<input type="text" id="nom">
+```
+
+El valor de `for` ha de coincidir amb l'`id` del camp.
+
+
+![](../assets/u1-form-label.png)
+
+Quan l'usuari fa clic sobre el `label`, el navegador posiciona el focus en el control associat.
 
 ## Documentació i recursos
   
