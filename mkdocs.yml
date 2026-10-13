@@ -4,8 +4,8 @@ repo_url: https://github.com/seicoll/gitbook-xml
 
 theme:
   name: material
-  # logo: assets/js_icon.png
-  # favicon: assets/js_icon.png
+  logo: assets/icon-html.png
+  favicon: assets/icon-html.png
 
   features:
     - navigation.sections
