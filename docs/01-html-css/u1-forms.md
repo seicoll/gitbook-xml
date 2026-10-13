@@ -411,8 +411,51 @@ El valor de `for` ha de coincidir amb l'`id` del camp.
 
 Quan l'usuari fa clic sobre el `label`, el navegador posiciona el focus en el control associat.
 
-## Documentació i recursos
+
+## Estils en formularis
+
+CSS té un conjunt de pseudo-classes que donar un estil CSS als camps en funció del seu estat: 
+
+- `:valid`: quan el camp és vàlid.
+- `:invalid`: quan el camp és invàlid.
+- `:required`: quan el camp és obligatori.
+- `:optional`: quan el camp és opcional.
+- `:focus`: quan el camp té el focus.
+
+**Exemple d'estils CSS per a formularis:**
+
+```css  
+input:required {
+	border: 1px solid blue;
+}
+input:valid {
+	border: 1px solid green;
+}
+input:invalid {
+	border: 1px solid red;
+}
+input:focus:required:valid {
+	border: 1px solid gray;
+}
+```
+
+**Exemple per camps obligatoris:**
+
+```css
+input:required {
+   border: 1px solid red;
+   background-image: url('asterisk.png');
+   background-repeat: no-repeat;                
+   background-position: right center;
+}
+```
+![](../assets/u1-forms-estils.png)
+
+**Més exemples:** 
+* Exemple de formulari modern: 
+  [https://codepen.io/MattDiMu/pen/bepmEK?editors=1100](https://codepen.io/MattDiMu/pen/bepmEK?editors=1100)
+
   
-- Validació de camps:
+*  Validació de camps:
   [https://lenguajehtml.com/p/html/formularios/validaciones-html5](https://lenguajehtml.com/p/html/formularios/validaciones-html5)
 
