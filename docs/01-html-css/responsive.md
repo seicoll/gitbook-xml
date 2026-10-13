@@ -192,48 +192,5 @@ Però no ens hem de limitar als dispositius predefinits.
 
 Això permet detectar exactament en quin punt es trenca el disseny.
 
-## Exercici proposat
-
-Crea una pàgina web d'una botiga d'informàtica amb:
-
-- capçalera;
-- logotip;
-- menú de navegació;
-- secció de productes;
-- un mínim de 6 productes;
-- imatge, nom, descripció i preu de cada producte;
-- peu de pàgina.
-
-La web haurà de tenir el següent comportament:
-
-### Mòbil
-
-```text
-1 producte per fila
-```
-
-### Tauleta
-
-```text
-2 productes per fila
-```
-
-### Ordinador
-
-```text
-3 productes per fila
-```
-
-Condicions:
-
-- Utilitza una estratègia **Mobile First**.
-- No utilitzis amplades fixes per al contenidor principal.
-- Les imatges han de ser responsive.
-- Utilitza **CSS Grid** per als productes.
-- Utilitza almenys dues `media queries`.
-- La pàgina no pot tenir scroll horitzontal en cap resolució.
-- Comprova el resultat amb les eines de desenvolupador del navegador.
-
-
 
 
