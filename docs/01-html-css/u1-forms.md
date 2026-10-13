@@ -55,8 +55,6 @@ Els dos mètodes HTTP més habituals són:
 
 ## Camps d'entrada amb `<input>`
 
-### L'etiqueta `<input>`
-
 > L'etiqueta `<input>` defineix un **camp d'entrada de dades**.
 
 L'atribut `type` determina quin tipus de control es mostrarà.
@@ -65,7 +63,7 @@ L'atribut `type` determina quin tipus de control es mostrarà.
 
 #### `type="text"`
 
-Permet introduir text.
+Permet introduir **text**.
 
 ```html
 <input type="text" name="usuari">
@@ -73,7 +71,7 @@ Permet introduir text.
 
 #### `type="password"`
 
-Permet introduir una contrasenya ocultant visualment els caràcters.
+Permet introduir una **contrasenya** ocultant visualment els caràcters.
 
 ```html
 <input type="password" name="contrasenya">
@@ -83,7 +81,7 @@ Permet introduir una contrasenya ocultant visualment els caràcters.
 
 ### Checkbox
 
-Els `checkbox` permeten seleccionar **una o diverses opcions**.
+> Els `checkbox` permeten seleccionar **una o diverses opcions**.
 
 ```html
 <input type="checkbox" name="opcio1" value="Cafe" checked> Cafè
@@ -91,11 +89,13 @@ Els `checkbox` permeten seleccionar **una o diverses opcions**.
 <input type="checkbox" name="opcio3" value="Sucre"> Sucre
 ```
 
-En l'exemple de la presentació, cada checkbox té un `name` diferent.
+Cada checkbox ha de tenir **un `name` diferent.**
+
+![](../assets/u1-form-checkbox.png)
 
 ### Radio buttons
 
-Els `radio` permeten triar **una única opció** dins d'un grup.
+> Els `radio` permeten triar **una única opció** dins d'un grup.
 
 Perquè formin part del mateix grup han de tenir el **mateix `name`**.
 
@@ -103,8 +103,7 @@ Perquè formin part del mateix grup han de tenir el **mateix `name`**.
 <input type="radio" name="paga" value="comptat"> Comptat
 <input type="radio" name="paga" value="visa"> Visa
 ```
-
-## Fitxers i botons
+![](../assets/u1-form-radio.png)
 
 ### `type="file"`
 
@@ -113,6 +112,9 @@ Permet seleccionar un fitxer.
 ```html
 <input type="file">
 ```
+![](../assets/u1-form-file.png)
+
+## Botons
 
 ### `type="submit"`
 
