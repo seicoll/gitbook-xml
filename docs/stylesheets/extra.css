@@ -72,7 +72,7 @@ html {
 /* Títol principal del bloc */
 .md-sidebar--primary .md-nav__title {
     font-weight: 700;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: #111827;
     padding: 0.9rem 0.6rem 0.6rem 0.6rem;
     background: transparent;
@@ -81,7 +81,7 @@ html {
 /* Elements secció */
 .md-sidebar--primary .md-nav__item--section>.md-nav__link {
     font-weight: 700;
-    font-size: 0.65rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #374151;
@@ -195,7 +195,7 @@ html {
 ============================== */
 
 .md-typeset {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
 /* Blockquote */
