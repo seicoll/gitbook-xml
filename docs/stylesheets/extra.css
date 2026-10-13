@@ -47,7 +47,7 @@
 /* Ajust fi en pantalles grans */
 @media screen and (min-width: 76.25em) {
     .md-sidebar--primary {
-        width: 18rem;
+        width: 16rem;
     }
 
     .md-sidebar--secondary {

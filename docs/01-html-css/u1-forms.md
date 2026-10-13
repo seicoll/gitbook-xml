@@ -265,6 +265,7 @@ Permet introduir una hora vàlida.
 ```html
 <input type="number" name="quantitat" min="1" max="5">
 ```
+![](../assets/u1-form-number.png)
 
 Atributs habituals:
 
@@ -273,7 +274,7 @@ Atributs habituals:
 - `value`: valor inicial.
 - `step`: increment entre valors.
   
-![](../assets/u1-form-number.png)
+
 
 ### `type="range"`
 
