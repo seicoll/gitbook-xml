@@ -51,7 +51,7 @@ Els dos mètodes HTTP més habituals són:
 ```
 > Les dades enviades amb `POST` no es mostren a la barra d'adreces del navegador.
 
-**Exemple w3schools:** [GET](https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_form_method) i [POST](https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_form_method)
+**Exemple w3schools:** [GET](https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_form_method) i [POST](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_post)
 
 ## Camps d'entrada amb `<input>`
 
@@ -197,19 +197,13 @@ Aquest nom és el que permet identificar la dada quan el formulari s'envia al se
 - `checked`: marca inicialment un `radio` o `checkbox`.
 - `readonly`: fa que el camp sigui només de lectura.
 
-
-
-
-
-
-
-
 ## Formularis amb HTML5
 
 **HTML5** incorpora nous tipus de camps que permeten:
-- una millor **experiència d'usuari** amb una entrada de dades més adequada;
-- un millor **control del format**;
-- **validació automàtica** per part del navegador.
+
+- una millor **experiència d'usuari** amb una entrada de dades més adequada
+- un millor **control del format**
+- **validació automàtica** per part del navegador
 
 ### `type="email"`
 
