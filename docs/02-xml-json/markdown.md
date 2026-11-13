@@ -83,14 +83,11 @@ Aquest és un paràgraf amb **negreta** i _cursiva_.
 
 ### Exercici 1
 
-- Instal·lat VS Code
+- Instal·lat VS Code.
 - Instal·lat un plugin per fer previsualització de markdown a VSCode.
 - Crea un petit document markdown i previsualitza'l.
-- Busca alguna web permeti utilitzar markdown per tal de formatar el text
 
-### Exercici 2
-
-#### Crea document MarkDown amb el vostre perfil de GitHub
+### Exercici 2: Crea el teu perfil de GitHub amb Markdown
 
 - **GitHub** és una plataforma que permet allotjar projectes de programació, compartir codi i col·laborar amb altres desenvolupadors.
 
