@@ -97,36 +97,35 @@ Aquest és un paràgraf amb **negreta** i _cursiva_.
 
 - El vostre perfil haurà de contenir, com a mínim, els **apartats** següents:
 
-    ##### Presentació personal
+    #### Presentació personal
 
-    - Un títol amb el vostre nom, àlies o nom professional.
-    - Una breu presentació sobre qui sou.
-    - Quins estudis esteu cursant.
-    - Quines àrees de la informàtica us interessen especialment.
-    - Quins objectius professionals teniu.
+    - Un **títol** amb el vostre nom, àlies o nom professional.
+    - Una breu **presentació** sobre qui sou.
+    - Quins **estudis** esteu cursant.
+    - Quines **àrees** de la informàtica us interessen especialment.
+    - Quins **objectius** professionals teniu.
 
     Podeu incloure emoticones o alguna frase que us identifiqui.
 
-    ##### Coneixements i tecnologies
+    #### Coneixements i tecnologies
 
-    - Creeu un apartat on presenteu les tecnologies i eines informàtiques que coneixeu o esteu aprenent.
+    - Creeu un apartat on presenteu les **tecnologies i eines informàtiques** que coneixeu o esteu aprenent.
 
     - Podeu organitzar-les per categories:
-
-      - **Llenguatges de programació:** Java, JavaScript, Python, PHP, C#...
-      - **Desenvolupament web:** HTML, CSS, React, Node.js...
-      - **Bases de dades:** MySQL, PostgreSQL, MongoDB...
-      - **Sistemes operatius:** Windows, Linux...
-      - **Eines:** Git, Docker, Visual Studio Code, GitHub...
+  
+        - **Llenguatges de programació:** Java, JavaScript, Python, PHP, C#...
+        - **Desenvolupament web:** HTML, CSS, React, Node.js...
+        - **Bases de dades:** MySQL, PostgreSQL, MongoDB...
+        - **Sistemes operatius:** Windows, Linux...
+        - **Eines:** Git, Docker, Visual Studio Code, GitHub...
 
     Incloeu només les que heu utilitzat, diferenciant, si cal, les que domineu de les que esteu aprenent.
 
+#### Recursos i exemples
 
-##### Recursos i exemples
-
-- Aquestes són les instruccions oficials crear el perfil a GitHub per fer-ho:
+- Aquestes són les **instruccions oficials** crear el perfil a GitHub per fer-ho:
   [https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile](https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile)
 
-- I aquestes són unes instruccions extraoficials més divertides i amb idees: [https://github.com/rzashakeri/beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile)
+- I aquestes són unes **instruccions extraoficials** més divertides i amb idees: [https://github.com/rzashakeri/beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile)
 
 
