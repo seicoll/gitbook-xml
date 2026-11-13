@@ -90,10 +90,46 @@ Aquest és un paràgraf amb **negreta** i _cursiva_.
 
 ### Exercici 2
 
-**Crea document MarkDown amb el vostre perfil de GitHub**
+#### Crea document MarkDown amb el vostre perfil de GitHub
 
-- GitHub permet crear un repositori especial on posar dades del vostre perfil.
-- Aquestes són les instruccions oficials per fer-ho:
+**GitHub** és una plataforma que permet allotjar projectes de programació, compartir codi i col·laborar amb altres desenvolupadors.
+
+**GitHub** permet crear un repositori especial on posar dades del vostre perfil mitjançant un fitxer Markdown (README.md).
+
+En aquesta activitat creareu el **vostre perfil de GitHub** amb l'objectiu de presentar-vos com a futurs professionals del sector informàtic.
+
+El vostre perfil haurà de contenir, com a mínim, els **apartats** següents:
+
+##### Presentació personal
+
+  - Un títol amb el vostre nom, àlies o nom professional.
+  - Una breu presentació sobre qui sou.
+  - Quins estudis esteu cursant.
+  - Quines àrees de la informàtica us interessen especialment.
+  - Quins objectius professionals teniu.
+
+Podeu incloure emoticones o alguna frase que us identifiqui.
+
+##### Coneixements i tecnologies
+
+    - Creeu un apartat on presenteu les tecnologies i eines informàtiques que coneixeu o esteu aprenent.
+
+Podeu organitzar-les per categories:
+
+- **Llenguatges de programació:** Java, JavaScript, Python, PHP, C#...
+- **Desenvolupament web:** HTML, CSS, React, Node.js...
+- **Bases de dades:** MySQL, PostgreSQL, MongoDB...
+- **Sistemes operatius:** Windows, Linux...
+- **Eines:** Git, Docker, Visual Studio Code, GitHub...
+
+Incloeu només les que heu utilitzat, diferenciant, si cal, les que domineu de les que esteu aprenent.
+
+
+##### Recursos i exemples
+
+- Aquestes són les instruccions oficials crear el perfil a GitHub per fer-ho:
   [https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile](https://docs.github.com/en/get-started/start-your-journey/setting-up-your-profile)
 
 - I aquestes són unes instruccions extraoficials més divertides i amb idees: [https://github.com/rzashakeri/beautify-github-profile](https://github.com/rzashakeri/beautify-github-profile)
+
+
