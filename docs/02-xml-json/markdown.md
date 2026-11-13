@@ -92,37 +92,37 @@ Aquest és un paràgraf amb **negreta** i _cursiva_.
 
 #### Crea document MarkDown amb el vostre perfil de GitHub
 
-**GitHub** és una plataforma que permet allotjar projectes de programació, compartir codi i col·laborar amb altres desenvolupadors.
+- **GitHub** és una plataforma que permet allotjar projectes de programació, compartir codi i col·laborar amb altres desenvolupadors.
 
-**GitHub** permet crear un repositori especial on posar dades del vostre perfil mitjançant un fitxer Markdown (README.md).
+- **GitHub** permet crear un repositori especial on posar dades del vostre perfil mitjançant un fitxer Markdown (README.md).
 
-En aquesta activitat creareu el **vostre perfil de GitHub** amb l'objectiu de presentar-vos com a futurs professionals del sector informàtic.
+- En aquesta activitat creareu el **vostre perfil de GitHub** amb l'objectiu de presentar-vos com a futurs professionals del sector informàtic.
 
-El vostre perfil haurà de contenir, com a mínim, els **apartats** següents:
+- El vostre perfil haurà de contenir, com a mínim, els **apartats** següents:
 
-##### Presentació personal
+    ##### Presentació personal
 
-  - Un títol amb el vostre nom, àlies o nom professional.
-  - Una breu presentació sobre qui sou.
-  - Quins estudis esteu cursant.
-  - Quines àrees de la informàtica us interessen especialment.
-  - Quins objectius professionals teniu.
+    - Un títol amb el vostre nom, àlies o nom professional.
+    - Una breu presentació sobre qui sou.
+    - Quins estudis esteu cursant.
+    - Quines àrees de la informàtica us interessen especialment.
+    - Quins objectius professionals teniu.
 
-Podeu incloure emoticones o alguna frase que us identifiqui.
+    Podeu incloure emoticones o alguna frase que us identifiqui.
 
-##### Coneixements i tecnologies
+    ##### Coneixements i tecnologies
 
     - Creeu un apartat on presenteu les tecnologies i eines informàtiques que coneixeu o esteu aprenent.
 
-Podeu organitzar-les per categories:
+    - Podeu organitzar-les per categories:
 
-- **Llenguatges de programació:** Java, JavaScript, Python, PHP, C#...
-- **Desenvolupament web:** HTML, CSS, React, Node.js...
-- **Bases de dades:** MySQL, PostgreSQL, MongoDB...
-- **Sistemes operatius:** Windows, Linux...
-- **Eines:** Git, Docker, Visual Studio Code, GitHub...
+      - **Llenguatges de programació:** Java, JavaScript, Python, PHP, C#...
+      - **Desenvolupament web:** HTML, CSS, React, Node.js...
+      - **Bases de dades:** MySQL, PostgreSQL, MongoDB...
+      - **Sistemes operatius:** Windows, Linux...
+      - **Eines:** Git, Docker, Visual Studio Code, GitHub...
 
-Incloeu només les que heu utilitzat, diferenciant, si cal, les que domineu de les que esteu aprenent.
+    Incloeu només les que heu utilitzat, diferenciant, si cal, les que domineu de les que esteu aprenent.
 
 
 ##### Recursos i exemples
