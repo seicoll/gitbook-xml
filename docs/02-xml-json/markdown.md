@@ -7,9 +7,9 @@
 1. **Encapçalaments**  
    Per crear encapçalaments, s'utilitzen símbols de coixinet (`#`). La quantitat de coixinets determina el nivell de l'encapçalament:
 
-   - `#` Títol de nivell 1
-   - `##` Títol de nivell 2
-   - `###` Títol de nivell 3
+    - `#` Títol de nivell 1
+    - `##` Títol de nivell 2
+    - `###` Títol de nivell 3
 
 2. **Text en negreta i cursiva**
 
