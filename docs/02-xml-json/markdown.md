@@ -13,24 +13,24 @@
 
 2. **Text en negreta i cursiva**
 
-   - Per **negreta**, es col·loca el text entre dos asteriscs (`**text**`).
-   - Per _cursiva_, es col·loca el text entre un asterisc (`*text*`).
+    - Per **negreta**, es col·loca el text entre dos asteriscs (`**text**`).
+    - Per _cursiva_, es col·loca el text entre un asterisc (`*text*`).
 
 3. **Llistes**
 
-   - Les llistes no numerades es creen utilitzant guions o asteriscs:
+    - Les llistes no numerades es creen utilitzant guions o asteriscs:
 
-   ```
-       - Element de llista 1
-       - Element de llista 2
-   ```
+    ```
+        - Element de llista 1
+        - Element de llista 2
+    ```
 
-   - Les llistes numerades es creen simplement utilitzant números:
+    - Les llistes numerades es creen simplement utilitzant números:
 
-   ```
-       1. Primer element
-       2. Segon element
-   ```
+    ```
+        1. Primer element
+        2. Segon element
+    ```
 
 4. **Enllaços**
    Els enllaços es creen utilitzant la sintaxi `[text](url)`. Per exemple:  
