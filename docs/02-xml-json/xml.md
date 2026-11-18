@@ -263,9 +263,9 @@ I no importa si són cometes simples o dobles.
 <article quantitat=3>Pissarra</article>
 ```
 
-# Exercicis
+## Exercicis
 
-## Exercici 1: Creació i validació d'un document XML
+### Exercici 1: Creació i validació d'un document XML
 
 > **Objectiu**: Aprendre a estructurar informació en un document XML i validar que la sintàxi és correcte.
 
@@ -292,6 +292,8 @@ Un exemple d'xml és aquest:
   </llibre>
 </llibreria>
 ```
+
+### Exercici 2: Receptes de cuina
 
 **Fes un document XML que serveixi per representar les dues receptes de cuina següents de manera que no es perdin dades.**
 
