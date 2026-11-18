@@ -298,9 +298,9 @@ Un exemple d'xml és aquest:
 1. Comença amb la declaració XML adequada.
 2. Crea una etiqueta arrel que contingui totes les receptes.
 3. Per a cada recepta, crea un element que contingui els següents subelements:
-   - Nom del plat
-   - Ingredients (cada ingredient ha de ser un subelement)
-   - Informació nutricional (calories, proteïnes, greixos, hidrats de carboni).
+    - Nom del plat
+    - Ingredients (cada ingredient ha de ser un subelement)
+    - Informació nutricional (calories, proteïnes, greixos, hidrats de carboni).
 4. Pots utilitzar atributs per indicar la dificultat de la recepta (fàcil, mitjana, difícil), temps de preparació i el nombre de racions .
 
 Desa el fitxer amb el nom `receptes.xml`
